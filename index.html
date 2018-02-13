@@ -1,0 +1,75 @@
+<!--
+ (C)2013 Aleksei Aksenov, SUAI, Saint-Petersburg, Russia
+ http://aksenov.tk
+ Licensed under GPL 3.0
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <title>Параллелепипед</title>
+    <link rel="stylesheet" href="http://www.x3dom.org/download/x3dom.css" />
+    <script src="http://www.x3dom.org/download/x3dom.js"></script>
+  </head>
+  <body>
+    <h1>Параллелепипед</h1>
+    <X3D id="x3d" xmlns="http://www.x3dom.org/x3dom" height="600" width="1000">      
+        <Scene DEF='scene'>
+    <Viewpoint DEF='Cam0' position='0 0 30'></Viewpoint>
+    <Viewpoint DEF='Cam1' orientation='1 0 0 -0.8' position='0 20 20'></Viewpoint>
+    <TimeSensor DEF='lTS' cycleInterval='10' loop='true'></TimeSensor>
+    <PositionInterpolator DEF='lPS' key='0 0.5 1' keyValue='-1 -1 -1 -1 1 -1 -1 -1 -1'></PositionInterpolator>
+    <Transform DEF='trans' rotation='0 1 0 -0.3'>
+      <Transform DEF='sourceTrans'>
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity='0.508497' diffuseColor='0.6 0.4 0.3' specularColor='1 1 1'></Material>
+          </Appearance>
+          <Sphere radius='1.1'></Sphere>
+        </Shape>
+      </Transform>
+      <Shape>
+        <Appearance DEF='MAT'>
+          <Material ambientIntensity='0.508497' diffuseColor='0.337255 0.4 0.788235' specularColor='1 1 1'></Material>
+        </Appearance>
+        <Sphere radius='3'></Sphere>
+      </Shape>
+      <Transform rotation='0 0 1 -0.463559' translation='0 -5 0'>
+        <Shape>
+          <Appearance USE='MAT'></Appearance>
+          <Cylinder height='0.05' radius='10'></Cylinder>
+        </Shape>
+      </Transform>
+      <Shape>
+        <Appearance>
+          <BlendMode srcFactor='src_alpha' destFactor='one' colorTransparency='0.5'></BlendMode>
+          <Material ambientIntensity='0.508497' diffuseColor='1 1 1' specularColor='1 1 1'></Material>
+          <ImageTexture envMode='modulate' url='"texture/gauss.jpg"'></ImageTexture>
+        </Appearance>
+        <ParticleSet DEF='particleSet' drawOrder='backToFront' lit='false'>
+          <Coordinate DEF='coord' containerField='coord' point='0 0 0'></Coordinate>
+          <ColorRGBA DEF='color' color='0 0 0 0'></ColorRGBA>
+        </ParticleSet>
+      </Shape>
+    </Transform>
+    
+  
+    <PositionInterpolator DEF='posI' key='0 0.5 1' keyValue='6 5 0 -6 8 0 6 5 0'></PositionInterpolator>
+    <TimeSensor DEF='ts' cycleInterval='20' loop='true'></TimeSensor>
+    <OrientationInterpolator DEF='oi' key='0 0.25 0.5 0.75 1' keyValue='0 1 0 0 0 1 0 1.57 0 1 0 3.14 0 1 0 4.71 0 1 0 6.28'></OrientationInterpolator>
+    <ROUTE fromNode='lTS' fromField='fraction_changed' toNode='lPS' toField='set_fraction'></ROUTE>
+    <ROUTE fromNode='ts' fromField='time' toNode='particle' toField='set_time'></ROUTE>
+    <ROUTE fromNode='ts' fromField='fraction_changed' toNode='sourceI' toField='set_fraction'></ROUTE>
+    <ROUTE fromNode='sourceI' fromField='value_changed' toNode='particle' toField='set_sourceDomainParam'></ROUTE>
+    <ROUTE fromNode='ts' fromField='fraction_changed' toNode='posI' toField='set_fraction'></ROUTE>
+    <ROUTE fromNode='posI' fromField='value_changed' toNode='sourceTrans' toField='set_translation'></ROUTE>
+    <ROUTE fromNode='particle' fromField='coord_changed' toNode='coord' toField='set_point'></ROUTE>
+    <ROUTE fromNode='particle' fromField='color_changed' toNode='color' toField='set_color'></ROUTE>
+    <ROUTE fromNode='particle' fromField='size_changed' toNode='particleSet' toField='set_size'></ROUTE>
+    <ROUTE fromNode='ts' fromField='fraction_changed' toNode='oi' toField='set_fraction'></ROUTE>
+  </Scene>
+    </X3D>
+  </body>
+</html>
