@@ -1,13 +1,179 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html>
+	<head>
+		<title>Лабораторная №2</title>
+		<link rel="stylesheet" type="text/css" href="https://www.x3dom.org/x3dom/release/x3dom.css"></link>
+		<script type="text/javascript" src="https://www.x3dom.org/x3dom/release/x3dom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<style type="text/css">
+			X3D{left:0px; top:0px; width:100%; height:100%; border:none;}
+		</style>
+<X3D>
+	<Scene>
+	
+		<Transform  rotation='0 1 0 3.14' scale='1 1 1' translation='0 0 0'>
+		
+		<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 10'><Shape>
+			<Appearance><material diffuseColor='#269926'></material></Appearance>
+			<box></box></Shape>
+		<Transform translation="0 -1.8 0">
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -1.5 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="3" radius="0.7"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.1" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.2" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3.2 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<box Size="3.5 0.2 3.5"></box></Shape>
+			</Transform>
+		</Transform></Transform>
+	
+		<Transform  rotation='0 0 0 0' scale='1 1 1' translation='8 0 5'><Shape>
+			<Appearance><material diffuseColor='#1d7373'></material></Appearance>
+			<Sphere></Sphere></Shape>
+		<Transform translation="0 -1.8 0">
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -1.5 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="3" radius="0.7"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.1" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.2" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3.2 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<box Size="3.5 0.2 3.5"></box></Shape>
+			</Transform>
+		</Transform></Transform>
+	
+		<Transform  rotation='0 0 0 0' scale='1 1 1' translation='8 0 -5'><Shape>
+			<Appearance>
+				<material diffuseColor='#bf7130'></material>
+			</Appearance>
+			<Cylinder></Cylinder></Shape>
+		<Transform translation="0 -1.8 0">
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -1.5 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="3" radius="0.7"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.1" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.2" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3.2 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<box Size="3.5 0.2 3.5"></box></Shape>
+			</Transform>
+		</Transform></Transform>
+	
+		<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 -10'><Shape>
+			<Appearance><material diffuseColor='#ff7373'></material></Appearance>
+			<Cone></Cone></Shape>
+		<Transform translation="0 -1.8 0">
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -1.5 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="3" radius="0.7"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.1" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.2" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3.2 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<box Size="3.5 0.2 3.5"></box></Shape>
+			</Transform>
+		</Transform></Transform>
+	
+		<Transform  rotation='0 0 0 0' scale='1 1 1' translation='-8 0 -5'><Shape>
+			<Appearance><material diffuseColor='#33cccc'></material></Appearance>
+			<Torus></Torus></Shape>
+		<Transform translation="0 -1.8 0">
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -1.5 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="3" radius="0.7"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.1" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.2" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3.2 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<box Size="3.5 0.2 3.5"></box></Shape>
+			</Transform>
+		</Transform></Transform>
+	
+		<Transform  rotation='0 0 0 0' scale='1 1 1' translation='-8 0 5'>
+		<Transform   rotation='0 1 0 2' scale='1 1 1' translation='0 0 0'>
+		<Shape>
+			<Appearance><material diffuseColor='#000'></material></Appearance>
+			 <Text string='Лабораторная №2' ccw="true">
+				<FontStyle style='BOLD' />
+			</Text>
+		</Shape>
+		</Transform>
+		<Transform   rotation='0 1 0 5.14' scale='1 1 1' translation='0 0 0'>
+		<Shape>
+			<Appearance><material diffuseColor='#000'></material></Appearance>
+			 <Text string='Лабораторная №2' ccw="true">
+				<FontStyle style='BOLD' />
+			</Text>
+		</Shape>
+		</Transform>
+		<Transform translation="0 -1.8 0">
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -1.5 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="3" radius="0.7"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.1" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<Cylinder height="0.2" radius="1.5"></Cylinder></Shape>
+			</Transform>
+			<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 -3.2 0'><Shape>
+				<Appearance><material diffuseColor='#aaa'></material></Appearance>
+				<box Size="3.5 0.2 3.5"></box></Shape>
+			</Transform>
+		</Transform>		</Transform>
+		
+		<Transform translation='0 -5.7 0'><Shape>
+          <Appearance>
+			<ImageTexture url="texture.jpg"></ImageTexture>
+			<TextureTransform scale='3 3'></TextureTransform>
+		  </Appearance>
+          <Box size='30 1 30'/>
+        </Shape></Transform>
+		
+		</Transform>
+	</Scene>
+</X3D>
+
+	</body>
 </html>
