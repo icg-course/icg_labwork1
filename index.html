@@ -1,13 +1,65 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+
+<html>
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="https://www.x3dom.org/x3dom/release/x3dom.css"> </link>
+		<script type="text/javascript" src="https://www.x3dom.org/x3dom/release/x3dom.js"> </script>
+	</head>
+	<body>
+		
+		<x3d width='1380 px' height='766px'>
+			<scene>
+				<transform translation="2 2 0">
+					<shape>
+						<appearance>
+						 <ImageTexture url="https://pp.userapi.com/c844618/v844618851/4d6ee/-Dk8KIYgrHQ.jpg"></ImageTexture>
+							<texturetransform translation="-0.1 0"> </texturetransform>
+						</appearance>
+						<sphere radius="0.8"> </sphere>
+					</shape>
+				</transform>
+				<transform rotation="1 0.5 0 -1.2" translation="2 1.85 0">
+					<shape>
+						<appearance>
+							<material diffusecolor='blue' transparency="0.3"> </material>
+						</appearance>
+						<torus innerradius="0.1" outerradius="1.1"> </torus>
+					</shape>
+				</transform>
+				<transform translation="-1.5 -2 0">
+					<shape>
+						<appearance>
+						
+							<imagetexture url="https://sun9-9.userapi.com/c840634/v840634854/574b7/J50zIfcxkWE.jpg"> </imagetexture>
+						</appearance>
+						<box size="3 3 3"> </box>
+					</shape>
+				</transform>
+				<transform translation="-1.5 0 0">
+					<shape>
+						<appearance>
+							<imagetexture url="https://sun9-9.userapi.com/c840634/v840634854/574a6/8N-tydE3lQw.jpg"> </imagetexture>
+						</appearance>
+						<cylinder radius="1" height="2"> </cylinder>
+					</shape>
+				</transform>
+				<transform translation="2 3.4 0">
+					<shape>
+						<appearance>
+							<imagetexture url="https://sun9-9.userapi.com/c840634/v840634892/5c08d/B-0QH8BQUzU.jpg"> </imagetexture>
+						</appearance>
+						<cone bottomradius="0.3" height="2"> </cone>
+					</shape>
+				</transform>
+				<transform translation="2 -3.5 0">
+					<shape>
+						<appearance>
+							<material ambientIntensity="0.0933" diffuseColor="0 0.54 1" shininess="0.51" specularColor="0.23 0.23 0.23"> </material>
+						</appearance>
+						
+					</shape>
+				</transform>
+			</scene>
+		</x3d>
+	</body>
 </html>
