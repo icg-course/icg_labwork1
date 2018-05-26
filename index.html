@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
@@ -7,7 +7,76 @@
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+ <body>
+<x3d width="1100px" height="650px">
+ <h1></h1>
+ <scene>
+     <!--Куб -->
+     <Transform translation="0 -1 0">
+         <shape>
+             <appearance>
+                 <material diffuseColor="0 0 0"></material>
+                 <ImageTexture url='Trava_2.jpg'></ImageTexture>
+                 <TextureTransform translation="0.1 0.1" rotation="0.707" scale="1 1"></TextureTransform>
+             </appearance>
+             <box size="10 0.01 10 "></box>
+         </shape>
+     </Transform>
+     <!--Cфера-->
+     <Transform translation="3 0 0" rotation="0 1 0 -0.5">
+         <shape>
+             <appearance>
+                 <material diffuseColor="0 0 0"></material>
+                 <ImageTexture url='kolobok_2.png'></ImageTexture>
+             </appearance>
+             <sphere radius="1"></sphere>
+         </shape>
+     </Transform>
+     <!--Конус-->
+     <Transform def="Cone_1" translation="-3 0 0">
+         <shape>
+             <appearance>
+                 <TwoSidedMaterial diffuseColor="0 1 0"></TwoSidedMaterial>
+             </appearance>
+             <cone bottomRadius="1" height="2" bottom="false"></cone>
+         </shape>
+     </Transform>
+     <!--Копия конуса 1-->
+     <Transform  translation="3 0 -4">
+         <shape use="Cone_1">
+         </shape>
+     </Transform>
+     <!--Копия конуса 2-->
+     <Transform  translation="3 0 3">
+         <shape use="Cone_1">
+         </shape>
+     </Transform>
+     <!--Копия конуса 3-->
+     <Transform  translation="-1.6 0 4">
+         <shape use="Cone_1">
+         </shape>
+     </Transform>
+     <!--Тор-->
+     <Transform translation="-0.5 4 -0.5" center="0 -1 0" rotation="1 1 0 -0.5">
+         <shape>
+             <appearance>
+                 <!--белый цвет, желтый блеск-->
+                 <material diffuseColor="1 1 1" specularColor="1 1 0" shininess="0"></material>
+             </appearance>
+             <Torus innerRadius="0.45" outerRadius="0.5"></Torus>
+         </shape>
+     </Transform>
+     <!--Текст-->
+     <Transform translation="0 -2 0">
+         <shape>
+             <appearance>
+                 <TwoSidedMaterial diffuseColor="0 0 0"></TwoSidedMaterial>
+             </appearance>
+             <Text string="Котович Кирилл 4542" style='BOLDITALIC' justify="MIDDLE"></Text>
+             <FontStyle></FontStyle>
+         </shape>
+     </Transform>
+ </scene>
+  </x3d>
+ </body>
 </html>
