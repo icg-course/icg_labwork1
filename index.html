@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
@@ -8,6 +8,80 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>Лабораторная № 2</h1>
+	<X3D width="800px" height="600px">
+<scene>
+    <transform translation="-2 0 0"  rotation='0 0 1 0.5'>
+      <shape>
+        <appearance>
+          <imagetexture url="wall.jpg"></imagetexture>
+        </appearance>
+        <box size=' 2 4 2'></box>
+      </shape>
+    </transform>
+    <transform translation="2 0 0">
+      <shape>
+        <appearance>
+        <texturetransform scale='3 3' >            
+       </texturetransform>
+         <imagetexture url="fruitpeel-texture_(21).jpg"> </imagetexture>        
+        </appearance>
+        <sphere radius='1.5'></sphere>
+      </shape>
+    </transform>
+   <transform translation='0 0 4'>
+	<shape>
+	   <appearance>
+              <material diffuseColor='0.4 0 0.6'></material>
+           </appearance>
+           <cone></cone>
+        </shape>
+   </transform>
+    <transform translation='0 2 4' rotation='1 0 0 3.14'>
+	<shape>
+	   <appearance>
+              <material diffuseColor='0.4 0 0.6'></material>
+           </appearance>
+           <cone></cone>
+        </shape>
+   </transform>
+   <transform translation='0 4 0'>
+      <shape>
+        <appearance>        
+         <imagetexture url="lines.jpg"> </imagetexture>      
+        </appearance>
+        <cylinder></cylinder>
+      </shape>
+   </transform >
+   
+   <transform translation='0 -2 4' rotation='1 0 0 1.57'>
+    <shape>
+       <appearance>
+          <imagetexture url="sky.jpg"> </imagetexture>
+       </appearance>
+       <torus innerradius ='0.5' outerradius ='0.8' ></torus>
+    </shape>
+   </transform>
+   <transform translation ='0 6 0'> 
+      <shape> 
+         <appearance>
+             <material diffusecolor='0.4 0 0.6'></material>
+         </appearance>
+         <text string ='Интерактивная компьютерная графика'>
+           <fontstyle size='1' style='bold'>
+           </fontstyle>
+         </text>
+      </shape>
+   </transform>
+   <transform translation='0 -2.5 4' rotation='1 0 0 -1.57'>
+		<shape>
+			<appearance>
+				<material diffuseColor='0.2 0.5 0.3'></material>
+			</appearance>
+			<plane size='10 10'></plane>
+		</shape>
+   </transform>
+  </scene>
+</X3D>
   </body> 
 </html>
