@@ -1,13 +1,71 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
-</html>
+<html> 
+        <head>      
+            <script type='text/javascript' src='https://www.x3dom.org/download/1.7.2/x3dom.js'> </script> 
+            <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/1.7.2/x3dom.css'></link> 
+        </head> 
+        <body> 
+            <h1>Лабораторная работа №2</h1> 
+            <p> 
+               Геометрические примитивы. Трансформация. Материалы. Текстурирование.
+            </p> 
+            <x3d width='640px' height='480px'> 
+                <scene> 
+                    <transform translation='0 0 0' > <!--translation Ц смещение по ос¤м X Y Z.--> 
+                        <shape>     <!--форма-->     
+                            <appearance>      <!--внешний вид-->
+                                <imageTexture url='earth.jpg'> </imageTexture>
+                            </appearance> 
+                            <box size='2 3 3'></box> 
+                        </shape> 
+                    </transform> 
+                    
+                    <transform translation='3 0 0'> 
+                        <shape> 
+                            <appearance> 
+                                <textureTransform scale='1 1' rotation='0.1'></textureTransform> <!--scale Ц определ¤ет коэффициенты масштабировани¤ осей s и t. rotation Ц определ¤ет угол (в радианах) поворота осей координат (s,t)-->
+                                <imageTexture url='fire.jpg'> </imageTexture>
+                            </appearance> 
+                            <Sphere></Sphere> 
+                        </shape> 
+                    </transform>
+
+                    <transform translation='6 0 0'> 
+                        <shape> 
+                            <appearance> 
+                                <material diffuseColor='#00ff00'></material> <!--diffuseColor Ц нормальный цвет объекта (R G B, каждые R,G или B в интервале от 0 до 1; например, серый Ц 0.5 0.5 0.5). ќписывает цвет отражаемого объектом света в зависимости от удаленности источника освещени¤ и угла падени¤ света на поверхность объекта.--> 
+                            </appearance> 
+                            <cylinder></cylinder> 
+                        </shape> 
+                    </transform>
+
+                    <transform translation='-3 0 0' rotation="1 0 0 3.14"> 
+                        <shape> 
+                            <appearance> 
+                                <material diffuseColor='#ff33cc'></material> 
+                            </appearance> 
+                            <cone height='4'></cone>   <!--конус--> 
+                        </shape>
+                    </transform>
+
+                    <transform translation='-6 0 0' rotation="0 1 1 2.14">
+                        <shape> 
+                            <appearance> 
+                                <material diffuseColor='#ffff66'></material> 
+                            </appearance> 
+							<torus></torus> 
+                        </shape> 
+                    </transform>
+                    <transform translation='0 3 0'>
+                        <shape>
+                            <appearance>
+                                <material diffuseColor='#000000'></material>                           
+                            </appearance> 
+                            <text string="GUAP 4542 Kovalenko Nikita" solid='false'>  <!--string Цстроки текста, которые будут отображены.-->
+                                <fontstyle style="italic"></fontstyle> <!--style - стиль шрифта: УPLAINФ (обычный), УBOLDФ (полужирный), УITALICФ (курсив) или УBOLDITALICФ (полужирный курсив).-->
+                            </text>
+                        </shape>
+					</transform>
+                </scene> 
+            </x3d>
+        </body> 
+    </html>
