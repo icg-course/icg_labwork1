@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 2</title>
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<body>
+  <h1>Лабораторная работа</h1>
+  <ol>
+    <li>Геометрические примитивы</li>
+    <li>Трансформация</li>
+    <li>Материалы</li>
+    <li>Текстурирование</li>
+  </ol>
+  <x3d width='640px' height='480px'>
+    <scene>
+      <transform translation='-7 -4 0'>
+        <shape>
+          <appearance>
+            <textureTransform scale='2 2'></textureTransform>
+            <imageTexture url='kladka.jpg'> </imageTexture>
+          </appearance>
+          <box size='3 6 3'></box>
+        </shape>
+      </transform>
+      <transform translation='-12 -4 0' rotation="0 0 1 1.57">
+        <shape>
+          <appearance>
+            <textureTransform scale='2 2'></textureTransform>
+            <imageTexture url='kladka.jpg'> </imageTexture>
+          </appearance>
+          <box size='3 6 3'></box>
+        </shape>
+      </transform>
+      <transform translation='-17 -4 0' rotation="0 0 1 1.57">
+        <shape>
+          <appearance>
+            <material diffuseColor='#ff3333'></material>
+          </appearance>
+          <cone height='4' bottomRadius='1.5'></cone>
+        </shape>
+      </transform>
+      <transform translation='7 -4 0'>
+        <shape>
+          <appearance>
+            <material diffuseColor='#255a8b'></material>
+          </appearance>
+          <cylinder height='6'></cylinder>
+        </shape>
+      </transform>
+      <transform translation='7 0 0'>
+        <shape>
+          <appearance>
+            <imageTexture url='glaz.jpg'> </imageTexture>
+          </appearance>
+          <Sphere radius='2'></Sphere>
+        </shape>
+      </transform>
+      <transform translation='7 0 0' rotation="1 1 0 2">
+        <shape>
+          <appearance>
+            <textureTransform scale='3 3' rotation ='2'></textureTransform>
+            <imageTexture url='kladka.jpg'> </imageTexture>
+          </appearance>
+          <torus outerRadius='2.3' innerRadius='0.3'></torus>
+        </shape>
+      </transform>
+      <transform translation='-7 1 0'>
+        <shape>
+          <appearance>
+            <material diffuseColor='#ff3333'></material>
+          </appearance>
+          <cone height='4' bottomRadius='1.5'></cone>
+        </shape>
+      </transform>
+      <transform translation='0 -3 0'>
+        <shape>
+          <appearance>
+            <material diffuseColor='#000000'></material>
+          </appearance>
+          <text string="HTML CSS JS developer" solid='false'>
+</text>
+        </shape>
+        </transform>
+    </scene>
+  </x3d>
+  </body>
 </html>
