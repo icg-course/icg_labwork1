@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
@@ -8,6 +8,85 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<h1>Лабораторная работа 2</h1>
+<x3d width='600px' height='500px'>
+<Scene>
+<viewpoint position='0 0 18'></viewpoint>
+<transform translation='0 -3 0'>
+<Shape>
+<Appearance>
+<ImageTexture url="sky.jpg"></ImageTexture>
+</Appearance>
+<Cone bottom='true'
+bottomRadius='1.0'
+ccw='true'
+height='2.0'
+lit='true'
+metadata='X3DMetadataObject'
+side='true' solid='true'
+subdivision='32'
+top='true'
+topRadius='0'
+useGeoCache='true' ></Cone>
+</Shape>
+</transform>
+<transform translation='-3 0 0'>
+<Shape>
+<Appearance>
+<textureTransform scale='3 1' ></textureTransform>
+<ImageTexture url="kitty.jpg"></ImageTexture>
+</Appearance>
+<Cylinder
+bottom='true' 
+ccw='true' height='2.0'
+lit='true'
+metadata='X3DMetadataObject'
+radius='1.0'
+side='true'
+solid='true'
+subdivision='32'
+top='true'
+useGeoCache='true' >
+</Cylinder>
+</Shape>
+</transform>
+<transform translation='0 3 0'>
+<shape>
+ <appearance>
+
+<ImageTexture url="notice-me-senpai.jpg"></ImageTexture>
+ </appearance>
+ <box></box>
+</shape>
+</transform>
+<transform translation='3 0 0'>
+ <shape>
+<appearance>
+ <ImageTexture url="fur.jpg"></ImageTexture>
+</appearance>
+<sphere></sphere>
+ </shape>
+</transform>
+<transform translation='0 0 0'>
+<Shape>
+<Appearance>
+<ImageTexture url="donut.jpg"></ImageTexture>
+</Appearance>
+<torus> </torus>
+</Shape>
+</transform>
+<transform translation='0 -6 0'>
+<Shape>
+<Appearance>
+<Material diffuseColor='#ff99dd'></Material>
+</Appearance>
+<Text string="I hate Comic Sans">
+<fontstyle family="cursive" style="Comic Sans MS" solid='false'
+ccw='true'></fontstyle>
+</Text>
+</Shape>
+</transform>
+</Scene>
+</x3d>
+</body> 
 </html>
