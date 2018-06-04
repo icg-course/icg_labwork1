@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 2</title>
@@ -8,6 +8,121 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <x3d id='someUniqueId' showStat='false' showLog='false' x='0px' y='0px' width='1500px' height='580px'  >
+      <scene>
+
+        <!-- BOX -->
+
+        <shape>
+          <appearance>
+            <material diffuseColor='#FF4500'/>
+          </appearance>
+          <box size="2 0.2 3"/>
+        </shape>
+
+        <transform translation='-0.8 -0.7 -1.2' >
+          <shape>
+            <appearance>
+              <material diffuseColor='#FF4500'/>
+            </appearance>
+            <box size="0.2 1.5 0.2"/>
+          </shape>
+        </transform>
+
+        <transform translation='0.8 -0.7 -1.2' >
+          <shape>
+            <appearance>
+              <material diffuseColor='#FF4500'/>
+            </appearance>
+            <box size="0.2 1.5 0.2"/>
+          </shape>
+        </transform>
+
+        <transform translation='-0.8 -0.7 1.2' >
+          <shape>
+            <appearance>
+              <material diffuseColor='#FF4500'/>
+            </appearance>
+            <box size="0.2 1.5 0.2"/>
+          </shape>
+        </transform>
+
+        <transform translation='0.8 -0.7 1.2' >
+          <shape>
+            <appearance>
+            <material diffuseColor='#FF4500'/>
+            </appearance>
+            <box size="0.2 1.5 0.2"/>
+          </shape>
+        </transform>
+          <!-- CONE -->
+
+        <transform translation='0 0.4 0.8' >
+          <shape>
+            <appearance>
+              <material diffuseColor='#FF0000'></material>
+            </appearance>
+            <cone bottomRadius='0.2' height='0.5'/>
+          </shape>
+        </transform>
+
+        <!-- SPHERE -->
+
+        <transform translation='0 0.3 -1' >
+          <shape>
+            <appearance>
+              <material diffuseColor="#20B2AA"></material>
+            </appearance>
+            <sphere radius='0.2'/>
+          </shape>
+        </transform>
+
+        <!-- CYLINDER -->
+
+        <transform translation='0 0.2 0.8' >
+          <shape>
+            <appearance>
+              <ImageTexture url='https://rfclipart.com/image/thumbnail/77-0f-39/abstract-plaited-background-Download-Royalty-free-Vector-File-EPS-68016.jpg'></ImageTexture>
+        <!--	<TextureTransform scale='0.8,0.3' ></TextureTransform> -->
+            </appearance>
+            <cylinder  radius="0.2" height="0.2"></cylinder>
+          </shape>
+        </transform>
+
+
+        <transform rotation='1 0 0 1.5708' translation='0 0.2 0'>
+          <shape>
+            <appearance>
+              <material diffuseColor='#FFFF00'/>
+            </appearance>
+            <cylinder radius='0.1' height='1'/>
+          </shape>
+        </transform>
+
+        <!-- TORUS -->
+
+        <transform translation='0 0.15 -1'rotation='1 0 0 1.6'>
+          <shape>
+            <appearance>
+              <material diffuseColor='#00FF00'></material>
+            </appearance>
+            <Torus   innerRadius='0.05' insideOutsideRadius='false' outerRadius='0.3'></Torus>
+          </shape>
+        </transform>
+
+        <!-- TEXT -->
+
+        <transform translation="0 2 0">
+          <shape>
+            <appearance>
+              <material diffuseColor="#000080"></material>
+             </appearance>
+             <text string="ИКГ ЛР №2" length="10">
+              <fontstyle family="TYPEWRITER"    style='BOLDITALIC' size="0.5"></fontstyle>
+             </text>
+           </shape>
+        </transform>
+      </scene>
+      </x3d>
+  </body>
 </html>
