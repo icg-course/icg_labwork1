@@ -1,13 +1,131 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+  <meta charset="utf-8">
+  <title>Lab2</title>
+  <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css">
+  <style>
+     body {
+       font-family: arial;
+     }
+  </style>
+</head>
+<body>
+ <article>
+  <h1>Лабораторная работа №2</h1>
+  <p>Васильев Геннадий / гр.4541</p>
+ </article>
+<x3d style="width:100%;height:500px;">
+ <scene>
+   <transform translation="1.5 -0.1 1.5">
+     <shape>
+       <appearance>
+         <ImageTexture url="doska.jpg" repeatT="false"></ImageTexture>
+       </appearance>
+       <box size="31 0.1 25"></box>
+     </shape>
+   </transform>
+
+   <transform translation="">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Cylinder  radius="1" height="0.1"></Cylinder>
+     </shape>
+   </transform>
+
+   <transform translation="0 0.3 0">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Cylinder  radius="0.9" height="0.5"></Cylinder>
+     </shape>
+   </transform>
+
+   <transform translation="0 0.6 0" rotation="1 0 0 1.5708">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Torus innerRadius="0.1" outerRadius="0.8"></Torus>
+     </shape>
+   </transform>
+
+   <transform translation="0 2.1 0">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Cone bottomRadius="0.80" height="3"></Cone>
+     </shape>
+   </transform>
+
+   <transform translation="0 2.7 0" rotation="1 0 0 3.1416">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Cone bottomRadius="0.5" height="1"></Cone>
+     </shape>
+   </transform>
+
+   <transform translation="0 2.7 0" rotation="1 0 0 1.5708">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Torus innerRadius="0.1" outerRadius="0.3"></Torus>
+     </shape>
+   </transform>
+
+   <transform translation="0 3.6 0">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Box size="0.2 0.7 0.2"></Box>
+     </shape>
+   </transform>
+
+   <transform translation="0 3.65 0">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Box size="0.7 0.2 0.2"></Box>
+     </shape>
+   </transform>
+
+   <transform translation="0 4.05 0">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Sphere radius="0.13"></Sphere>
+     </shape>
+   </transform>
+
+   <transform translation="0 3.25 0">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#1a1a1a" specularColor="#3b3b3b"></Material>
+       </appearance>
+       <Cylinder  radius="0.3" height="0.15"></Cylinder>
+     </shape>
+   </transform>
+
+   <transform translation="-15.5 5 0" rotation="0 1 0 1.5708">
+     <shape>
+       <appearance>
+         <Material diffuseColor="#000000"></Material>
+       </appearance>
+       <Text string="ВАСИЛЬЕВ ГЕННАДИЙ / 4541" size="14" style="bold" family="Arial"></Text>
+     </shape>
+   </transform>
+ </scene>
+</x3d>
+</body>
 </html>
