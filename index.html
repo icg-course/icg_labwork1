@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="x3d/x3dom.css" />
+    <script type="text/javascript" src="x3d/x3dom-full.js"></script>
+  </head>
+  <body>
+    <X3D style="left:0px; top:0px; width:100%; height:100%; border: none;">
+      <Scene>
+        <Viewpoint position="0.27 3 10.9" orientation="-1 0.175 -0.01 0.12" ></Viewpoint>
+
+      <!-- Box Plane-->
+      <shape>
+        <appearance>
+          <imagetexture url="Textures/Snow.jpg" repeats="true" repeatt="true"></imagetexture>
+          <texturetransform scale="2 2"></texturetransform>
+        </appearance>
+        <box size="10 0.2 10"></box>
+      </shape>
+
+      <!-- Sphere x3 SnowMan -->
+      <transform translation="3 1 3" scale="1 1 1">
+        <shape>
+          <appearance>
+            <imagetexture url="Textures/SnowMan.jpg"></imagetexture>
+          </appearance>
+          <sphere></sphere>
+        </shape>
+      </transform>
+      <transform translation="3 2.55 3" scale="0.75 0.75 0.75">
+        <shape>
+          <appearance>
+            <imagetexture url="Textures/SnowMan.jpg"></imagetexture>
+          </appearance>
+          <sphere></sphere>
+        </shape>
+      </transform>
+      <transform translation="3 3.7 3" scale="0.5 0.5 0.5">
+        <shape>
+          <appearance>
+            <imagetexture url="Textures/SnowMan.jpg"></imagetexture>
+          </appearance>
+          <sphere></sphere>
+        </shape>
+      </transform>
+	  <transform translation="2.67 4.05 2.8" scale="0.05 0.05 0.05">
+        <shape>
+          <appearance>
+            <Material diffuseColor='0 0 0' />
+          </appearance>
+          <sphere></sphere>
+        </shape>
+      </transform>
+	  <transform translation="2.67 4.05 3.2" scale="0.05 0.05 0.05">
+        <shape>
+          <appearance>
+            <Material diffuseColor='0 0 0' />
+          </appearance>
+          <sphere></sphere>
+        </shape>
+      </transform>
+
+      <!-- Cylinder Hat-->
+      <transform translation="3.2 4.35 3" rotation="0 0 1 -0.3" scale="0.25 0.25 0.25">
+        <shape>
+          <appearance>
+            <imagetexture url="Textures/Hat.jpg"></imagetexture>
+          </appearance>
+          <cylinder></cylinder>
+        </shape>
+      </transform>
+
+      <!-- Cone Nose-->
+      <transform translation="2.3 4.1 3" rotation="0 0 1 1">
+        <shape>
+          <appearance>
+            <imagetexture url="Textures/Karrot.jpg"></imagetexture>
+          </appearance>
+          <cone bottomRadius="0.1" height="0.8"></cone>
+        </shape>
+      </transform>
+
+      <!-- Torus HatBottom-->
+      <transform rotation="0 0 1 -0.3">
+        <transform translation="1.77 4.86 3" rotation="1 0 0 1.6" scale="1 1 0.4">
+          <shape>
+            <appearance>
+              <imagetexture url="Textures/HatBottom.jpg" repeats="true" repeatt="true"></imagetexture>
+              <texturetransform scale="2 2"></texturetransform>
+            </appearance>
+            <torus innerRadius="0.05" outerRadius="0.3"></torus>
+          </shape>
+        </transform>
+      </transform>
+
+      <!-- Text "SnowMan"-->
+      <transform translation="0 5 0">
+        <shape>
+          <appearance>
+            <material diffuseColor="0 0 1"></material>
+          </appearance>
+          <text string="SnowMan" solid="false">
+            <fontstyle family="SERIF" size="1.5" justify="MIDDLE"></fontstyle>
+          </text>
+        </shape>
+      </transform>
+
+      </Scene>
+    </X3D>
+  </body>
+</html>
