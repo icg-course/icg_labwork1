@@ -1,13 +1,74 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+		<script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>
+		<link rel='stylesheet' type='text/css' href='https://www.x3dom.org/x3dom/release/x3dom.css'/>
+	</head>
+	<body>
+		<X3D xmlns='https://www.web3d.org/specifications/x3d-namespace' id='someUniqueId' showStat='false' showLog='false' x='0px' y='0px' width='800px' height='400px'>
+<Scene>
+	<Transform DEF='Plane' translation='0 -3 0' rotation='1 0 0 -1.57'>
+		<Shape DEF='MyPlane'>
+			<Appearance DEF='WireColor' >
+				<Material diffuseColor='0.5 0.1 0.05' />
+			</Appearance>
+			<Plane size='15 15'></Plane>
+		</Shape>
+	</Transform>
+	   <Transform DEF='Box' translation='-2 -1.75 0' rotation='0 1 0 0.7'>
+			 <Shape DEF='MyBox'>
+				  <Appearance>
+					  <Material diffuseColor='0.5 0.7 0' specularColor='1 0 0'></Material>
+						<ImageTexture url='t.png' repeatS='true'></ImageTexture>
+            <TextureTransform translation='0.0,1.0' rotation='0.7'></TextureTransform>
+		      </Appearance>
+			    <Box></Box>
+		   </Shape>
+		 </Transform>
+		 <Transform DEF='Sphere' translation='2 -1.75 0'>
+			  <Shape DEF='MySphere'>
+					<Appearance>
+						<Material diffuseColor='0 1 0'></Material>
+						<ImageTexture url='earth.png' repeatS='true'></ImageTexture>
+					</Appearance>
+					<Sphere></Sphere>
+				</Shape>
+		 </Transform>
+		 <Transform DEF='Cylinder' translation='6 -1.75 0'>
+				<Shape DEF='MyCylinder'>
+					<Appearance>
+						<Material diffuseColor='0 0 1'></Material>
+					</Appearance>
+					<Cylinder></Cylinder>
+				</Shape>
+		 </Transform>
+		 <Transform DEF='Cone' translation='-6 -1.75 0' scale='1 2 1'>
+				<Shape DEF='MyCone'>
+					<Appearance>
+						<Material diffuseColor='0 1 1'></Material>
+					</Appearance>
+					<Cone></Cone>
+				</Shape>
+		 </Transform>
+		 <Transform DEF='Torus' translation='3 0 -6' scale='1 2 2'>
+				<Shape DEF='MyTorus'>
+					<Appearance>
+						<Material diffuseColor='1 1 0' emissiveColor='1 0 0' ambientIntensity='0.4'></Material>
+					</Appearance>
+					<Torus></Torus>
+				</Shape>
+		 </Transform>
+		 <Transform DEF='Text' translation='-4 -1.75 6'>
+				<Shape DEF='MyText'>
+					<Appearance>
+						<Material diffuseColor='1 0 1'></Material>
+					</Appearance>
+					<Text string='4541guap' maxExtent='3'></Text>
+				</Shape>
+		 </Transform>
+
+	</Scene>
+</body>
 </html>
