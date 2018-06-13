@@ -1,13 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+	<meta charset="utf-8" />
+	<title>Тищенко А. И. - Лабораторная работа 2</title>
+	<link rel="stylesheet" type="text/css"
+	href="http://www.x3dom.org/download/dev/x3dom.css" />
+	<script type="text/javascript"
+	src="http://www.x3dom.org/download/dev/x3dom.js"></script>
+</head>
+<body>
+    <x3d width="800" height="600">    
+        <transform traslation='-3 0 0'> 
+        <shape> 
+        <appearance> 
+        <imageTexture  url="image.jpg"/>
+        </appearance> 
+        <box size='1 1 1'/> 
+        </shape>
+        </transform>
+        <transform translation='-3 0 0'> 
+        <shape> 
+            <appearance> 
+            <material diffuseColor='#50ff50'/>
+            </appearance> 
+            <sphere radius='0.5'/> 
+        </shape> 
+        </transform> 
+        <transform translation='3 0 0'> 
+        <shape> 
+            <appearance> 
+            <material diffuseColor='#5050ff' />
+            </appearance> 
+            <cylinder height='0.5' radius='0.5'/>
+        </shape> 
+        </transform>
+        <transform translation='3 2 0'> 
+        <shape> 
+            <appearance> 
+            <material diffuseColor='#de9400' />
+            </appearance> 
+            <cone topradius='0.1' bottomradius='1' height='0.5'/>
+        </shape> 
+        </transform>
+        <transform translation='-3 2 0'> 
+        <shape> 
+            <appearance> 
+            <material diffuseColor='#de94cc' />
+            </appearance> 
+            <torus innerradius='0.1' outerRadius='0.2'/>
+        </shape> 
+        </transform>
+        <transform translation='0 -3 0'> 
+        <shape> 
+            <appearance> 
+            <material diffuseColor='#ff8449' />
+            </appearance> 
+            <text string='Tischenko A. I.'>
+                <fontStyle family='Ubuntu' horizontal='true' quality='5.0' size='0.5' style='"BOLD"' />
+            </text>
+        </shape> 
+        </transform>
+    </scene>
+    </x3d>
+	<x3d width="800" height="600">    
+    <scene>   
+	<!-- Тело -->
+	<transform translation='0 -2.5 0'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#ffffff'/>
+		</appearance> 
+		<sphere radius='1'/> 
+	</shape> 
+	</transform> 
+	<transform translation='0 -1 0'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#ffffff'/>
+		</appearance> 
+		<sphere radius='0.9'/> 
+	</shape> 
+	</transform> 
+	<transform translation='0 0.3 0'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#ffffff'/>
+		</appearance> 
+		<sphere radius='0.8'/> 
+	</shape> 
+	</transform>
+	<!-- Шапка -->
+	<transform translation='0 1.4 0'> 
+	<shape> 
+		<appearance> 
+		<ImageTexture url='"hat.jpg"'/>
+		</appearance> 
+		<cone topradius='0.6' bottomradius='0.8' height='1.2'/>
+	</shape> 
+	</transform>
+	<!-- Глаза -->
+	<transform translation='-0.3 0.6 0.69'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#de94cc' />
+		</appearance> 
+		<torus innerradius='0.03' outerRadius='0.05'/>
+	</shape> 
+	</transform>
+	<transform translation='0.3 0.6 0.69'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#de94cc' />
+		</appearance> 
+		<torus innerradius='0.03' outerRadius='0.05'/>
+	</shape> 
+	</transform>
+	<!-- Нос -->
+	<transform translation='0.0 0.4 0.9' rotation='1.0 0.0 0.0 1.57'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#ff0101' />
+		</appearance> 
+		<cone topradius='0.01' bottomradius='0.2' height='0.5'/>
+	</shape> 
+	</transform>
+	<!-- Руки -->
+	<transform translation='-1 -1 0'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#ffffff'/>
+		</appearance> 
+		<sphere radius='0.3'/> 
+	</shape> 
+	</transform> 
+	<transform translation='1 -1 0'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#ffffff'/>
+		</appearance> 
+		<sphere radius='0.3'/> 
+	</shape> 
+	</transform> 
+	<!-- Ноги -->
+	<transform translation='-0.5 -3.3 0'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#5050ff' />
+		</appearance> 
+		<cylinder height='0.5' radius='0.2'/>
+	</shape> 
+	</transform>
+	<transform translation='0.5 -3.3 0'> 
+	<shape> 
+		<appearance> 
+		<material diffuseColor='#5050ff' />
+		</appearance> 
+		<cylinder height='0.5' radius='0.2'/>
+	</shape> 
+	</transform>
+	</scene>
+	</x3d>	
+</body>
 </html>
+ 
