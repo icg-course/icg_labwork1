@@ -1,13 +1,85 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html>
+<html>
+	<head>
+		<meta http-equiv='X-UA-Compatible' content='chrome=1' />
+		<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+		<link rel='stylesheet' type='text/css' href='http://www.x3dom.org/x3dom/release/x3dom.css'/>
+		<script type='text/javascript' src='http://www.x3dom.org/x3dom/release/x3dom.js'></script>
+	</head>
+	<body>
+		</body>
+		<h1> Demchuk lab №2</h1>
+		<X3D id='someUniqueId' showStat='false' showLog='false' x='0px' y='0px' width='400px' height='400px'>
+			<Scene>
+				<Background skyColor='255.000 255.000 255.000'></Background>
+					<Transform translation='0 0 0'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0.758 0.256 0.330' ></Material>
+								<ImageTexture url="ss11.jpg"> </ImageTexture>
+							</Appearance>
+							<Box size='3 1 1'>
+						</Shape>
+					</Transform>
+					<Transform translation='1.3 -0.5 0.53'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0 0 0' ></Material>
+							</Appearance>
+							<Torus innerRadius='0.1' outerRadius='0.2'></Torus>
+						</Shape>
+					</Transform>
+					<Transform translation='1.3 -0.5 -0.53'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0 0 0' ></Material>
+							</Appearance>
+							<Torus innerRadius='0.1' outerRadius='0.2'></Torus>
+						</Shape>
+					</Transform>
+					<Transform translation='-1.3 -0.5 0.53'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0 0 0' ></Material>
+							</Appearance>
+							<Torus innerRadius='0.1' outerRadius='0.2'></Torus>
+						</Shape>
+					</Transform>
+					<Transform translation='-1.3 -0.5 -0.53'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0 0 0' ></Material>
+							</Appearance>
+							<Torus innerRadius='0.1' outerRadius='0.2'></Torus>
+						</Shape>
+					</Transform>
+					<Transform translation='0.3 0.6 0'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0.255 0.255 0.7' ></Material>
+								<ImageTexture url="wood.jpg"> </ImageTexture>
+								<TextureTransform scale="3 3" > </TextureTransform>
+							</Appearance>
+							<Sphere radius='0.5'></Sphere>
+						</Shape>
+					</Transform>
+					<Transform translation='1.7 0 0' rotation='0 0 1 -1.57'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0.758 0.2 0.330' ></Material>
+							</Appearance>
+							<Cone bottomRadius='0.5' height='0.5'></Cone>
+						</Shape>
+					</Transform>
+					<Transform translation='1 0.8 0'>
+						<Shape>
+							<Appearance>
+								<Material diffuseColor='0.758 0.2 0.330' ></Material>
+							</Appearance>
+							<Cylinder radius='0.5' height='0.7'></Cylinder>
+						</Shape>
+					</Transform>
+			</Scene>
+		</X3D>
+	</body>
 </html>
