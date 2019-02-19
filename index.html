@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 2</title>
@@ -8,6 +8,65 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Иванов Алексей 4642</h1>
+    <x3d style="left:0px; top:0px; width:100%; height:100%; border:none">
+      <scene>
+        <transform translation="0 -1 0">
+          <shape>
+            <appearance>
+              <material diffuseColor="1 1 1" shininess = "0.5"></material>
+            </appearance>
+            <sphere redius="2"></sphere>
+          </shape>
+        </transform>
+
+        <transform rotation="0 0 1 -0.7" translation="0 -0.8 0">
+          <shape>
+            <appearance>
+              <material diffuseColor="0 0 0"></material>
+            </appearance>
+            <box size="0.5 0.5 2"></box>
+          </shape>
+        </transform>
+
+        <transform scale="2 2 1">
+          <shape>
+            <appearance>
+              <material diffuseColor="1 1 0"></material>
+            </appearance>
+            <cone></cone>
+          </shape>
+        </transform>
+
+        <transform translation="0 2.3 2">
+          <shape>
+            <appearance>
+              <material diffuseColor="0 0 0"></material>
+            </appearance>
+            <text string="Gravity Falls" solid="false"></text>
+          </shape>
+        </transform>
+
+        <transform translation="0 1 -2" rotation="1 0 0 1.57">
+          <shape>
+            <appearance>
+              <TextureTransform scale="0.9 0.9"></TextureTransform>
+              <ImageTexture url="img2.jpg" repeatS="True" repeatT="True"></ImageTexture>
+            </appearance>
+            <cylinder height="0.01" radius="4"></cylinder>
+          </shape>
+        </transform>
+
+        <transform translation="0 0.8 0">
+          <shape>
+            <appearance>
+              <material diffuseColor="0 1 0"></material>
+            </appearance>
+            <torus innerRadius="0.2" outerRadius="3.5"></torus>
+          </shape>
+        </transform>
+
+      </scene>
+    </x3d>
+  </body>
 </html>
