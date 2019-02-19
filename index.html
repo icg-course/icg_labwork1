@@ -1,13 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <title>Goatse</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Goatse</h1>
+    <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom", width = "1000", height = "1000">
+      <Scene>
+        <transform translation='-1 0 0', rotation = "0 0 1 -2.2">
+        <shape>
+            <appearance>
+            <material diffuseColor='1 0.73 0.418'></material>
+            </appearance>
+            <box size = "5 1 1"></box>
+        </shape>
+        </transform>
+
+        <transform translation='1 0 0', rotation = "0 0 1 2.2">
+        <shape>
+            <appearance>
+                <material diffuseColor='1 0.73 0.418'></material>
+            </appearance>
+                <box size = "5 1 1"></box>
+        </shape>
+        </transform>
+
+        <transform translation='0 1 2', rotation = "1 0 0 -1.6">
+        <shape>
+            <appearance>
+            <material diffuseColor='1 0 0'></material>
+            </appearance>
+            <cone bottomRadius = "0.3", height = "1"></cone>
+        </shape>
+        </transform>
+
+        <transform translation='0 3.5 -5'>
+        <shape>
+            <appearance>
+              <ImageTexture url="360-degree-portrait-v2.jpg" repeatS="True", repeatT="True"></ImageTexture>
+              <TextureTransform translation = "0.5 0"></TextureTransform>
+              <TwoSidedMaterial shininess="0.0" backDiffuseColor="0 0 1" backShininess="0.0" separateBackColor="true" backTransparency="0.0"></TwoSidedMaterial>
+            </appearance>
+            <sphere radius = "2"></sphere>
+        </shape>
+        </transform>
+
+        <transform translation='0 0 2'>
+        <shape>
+            <appearance>
+            <material diffuseColor='0.9 0.73 0.418'></material>
+            </appearance>
+            <cylinder radius = "0.2", height = "1"></cylinder>
+        </shape>
+        </transform>
+<transform rotation = "1 0 0 -0.1">
+        <transform translation='-1 1 3'>
+        <shape>
+            <appearance>
+            <material diffuseColor='0.95 0.74 0.420'></material>
+            </appearance>
+            <box size = "1 0.5 1"></box>
+        </shape>
+        </transform>
+
+        <transform translation='1 1 1'>
+        <shape>
+            <appearance>
+            <material diffuseColor='0.95 0.74 0.420'></material>
+            </appearance>
+            <box size = "1 0.5 1"></box>
+        </shape>
+        </transform>
+</transform>
+
+        <transform translation='-0.6 1.4 3.36', rotation = "0 1 0 -1.6">
+        <shape>
+            <appearance>
+            <material diffuseColor='1 1 0', shininess = "0.5", emissiveColor = " 0.5 0.5 0"></material>
+            </appearance>
+            <torus innerRadius = "0.03", outerRadius = "0.04" ></torus>
+        </shape>
+        </transform>
+
+      <transform translation='-5 8 -8'>
+        <Shape>
+        <Text string='"The goatse.cx lawyer has informed us that we need a warning!"
+        "So.. if you are under the age of 18 or find this photograph offensive, please dont look at it."
+        "Thank you!"' solid='false'>
+          <FontStyle family="MISTRAL" size='0.6'  language='en'></FontStyle>
+        </Text>
+        <Appearance>
+          <Material diffuseColor='#ff1493'></Material>
+        </Appearance>
+      </Shape>
+    </transform>
+
+
+      </Scene>
+    </X3D>
+  </body>
 </html>
