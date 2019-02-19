@@ -1,13 +1,258 @@
-<!DOCTYPE html>
+﻿<!--DOCTYPE html-->
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+  <meta charset="utf-8" />
+  <title>1laba</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+  <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+</head>
+<body>
+  <h1>ИКГ лабораторная работа 1 Рябов В.Э. 4642</h1>
+  <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" width="1200px" height="600px" >
+    <Scene>
+      <Transform translation='0 18 0' rotation='0 0 0 1'>
+        <!--Тело-->
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='turquoise'></Material>
+          </Appearance>
+          <Box size="8 12 4"></Box>
+        </Shape>
+
+        <!--Правая рука и футболка-->
+        <Transform translation='6 4 0' rotation='1 0 0 0.26'>
+          <!--Футболка-->
+          <Transform translation='0 0 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='turquoise'></Material>
+              </Appearance>
+              <Box size="4 4 4"></Box>
+            </Shape>
+          </Transform>
+          <!--Правая рука-->
+          <Transform translation='0 -6 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.75 0.53 0.42'></Material>
+              </Appearance>
+              <Box size="4 8 4"></Box>
+            </Shape>
+          </Transform>
+        </Transform>
+
+        <!--Левая рука и футболка-->
+        <Transform translation='-6 4 0' rotation='1 0 0 -0.79'>
+          <!--Футболка-->
+          <Transform translation='0 0 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='turquoise'></Material>
+              </Appearance>
+              <Box size="4 4 4"></Box>
+            </Shape>
+          </Transform>
+          <!--Левая рука-->
+          <Transform translation='0 -6 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.75 0.53 0.42'></Material>
+              </Appearance>
+              <Box size="4 8 4"></Box>
+            </Shape>
+          </Transform>
+        </Transform>
+
+        <!--Левая нога с мячем-->
+        <Transform translation='2 -6 0' rotation='1 0 0 -1'>
+          <!--Левая нога-->
+          <Transform translation='0 -6 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='blue'></Material>
+              </Appearance>
+              <Box size="4 12 4"></Box>
+            </Shape>
+          </Transform>
+          <!--Мяч-->
+          <Transform translation='0 -11 10'>
+            <Shape>
+              <Appearance>
+                <ImageTexture url="https://farm4.static.flickr.com/3061/2709425696_18010ee440_b.jpg"></ImageTexture>
+                <TextureTransform  translation="0.3 0" rotate="180" ></TextureTransform>
+              </Appearance>
+              <Sphere radius="4"></Sphere>
+            </Shape>
+          </Transform>
+        </Transform>
+
+        <!----Правая нога-->
+        <Transform translation='-2 -6 0' rotation='0 0 0 1'>
+          <Transform translation='0 -6 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='blue'></Material>
+              </Appearance>
+              <Box size="4 12 4"></Box>
+            </Shape>
+          </Transform>
+        </Transform>
+
+        <!--Голова полностью-->
+        <Transform translation='0 6 0' rotation='1 0.2 0 0.52'>
+          <!--Часть рта-->
+          <Transform translation='0 0.5 3.52'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.25 0.13 0.05'></Material>
+              </Appearance>
+              <Box size="4 1 1"></Box>
+            </Shape>
+          </Transform>
+          <!--Часть рта-->
+          <Transform translation='-1.5 1.5 3.52'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.25 0.13 0.05'></Material>
+              </Appearance>
+              <Box size="1 1 1"></Box>
+            </Shape>
+          </Transform>
+          <!--Часть рта-->
+          <Transform translation='1.5 1.5 3.52'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.25 0.13 0.05'></Material>
+              </Appearance>
+              <Box size="1 1 1"></Box>
+            </Shape>
+          </Transform>
+          <!--Правый зрачек-->
+          <Transform translation='-1.5 3.5 3.52'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.32 0.24 0.54'></Material>
+              </Appearance>
+              <Box size="1 1 1"></Box>
+            </Shape>
+          </Transform>
+          <!--Правый глаз-->
+          <Transform translation='-2.5 3.5 3.52'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='white'></Material>
+              </Appearance>
+              <Box size="1 1 1"></Box>
+            </Shape>
+          </Transform>
+          <!--левый зрачек-->
+          <Transform translation='1.5 3.5 3.52'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.32 0.24 0.54'></Material>
+              </Appearance>
+              <Box size="1 1 1"></Box>
+            </Shape>
+          </Transform>
+          <!--Левый глаз-->
+          <Transform translation='2.5 3.5 3.52'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='white'></Material>
+              </Appearance>
+              <Box size="1 1 1"></Box>
+            </Shape>
+          </Transform>
+          <!--Корпус головы-->
+          <Transform translation='0 4 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='0.75 0.53 0.42'></Material>
+              </Appearance>
+              <Box size="8 8 8"></Box>
+            </Shape>
+          </Transform>
+          <!--Нимб-->
+          <Transform translation='0 11 0' rotation='1 0 0 1.57'>
+            <Shape>
+              <Appearance>
+                <Material emissiveColor='1 1 1'></Material>
+              </Appearance>
+              <Torus innerRadius="0.4" outerRadius="4"></Torus>
+            </Shape>
+          </Transform>
+          <!--Каска-->
+          <Transform translation='0 7.5 0'>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='silver' shininess='0.5'></Material>
+              </Appearance>
+              <Box size="10 4 10"></Box>
+            </Shape>
+          </Transform>
+        </Transform>
+      </Transform>
+
+      <!--Ворота-->
+      <Transform translation='0 0 60' rotation='0 0 0 0'>
+        <!--Левая опора штанги-->
+        <Transform translation='20 2 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='black'></Material>
+            </Appearance>
+            <Cone height="4" bottomRadius="4" topRadius="2" ></Cone>
+          </Shape>
+        </Transform>
+        <!--Левая штанга-->
+        <Transform translation='20 17 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='white'></Material>
+            </Appearance>
+            <Cylinder radius="2" height="30"></Cylinder>
+          </Shape>
+        </Transform>
+        <!--Правая опора штанги-->
+        <Transform translation='-20 2 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='black'></Material>
+            </Appearance>
+            <Cone height="4" bottomRadius="4" topRadius="2" ></Cone>
+          </Shape>
+        </Transform>
+        <!--Правая штанга-->
+        <Transform translation='-20 17 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='white'></Material>
+            </Appearance>
+            <Cylinder radius="2" height="30"></Cylinder>
+          </Shape>
+        </Transform>
+        <!--Перекладина-->
+        <Transform translation='0 30 0' rotation='0 0 1 1.57'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='white'></Material>
+            </Appearance>
+            <Cylinder radius="2" height="40"></Cylinder>
+          </Shape>
+        </Transform>
+      </Transform>
+      <!--Текст-->
+      <Transform translation='0 5 -40'>
+        <Shape>
+          <Text string='"FOOTBALL"' solid='false'>
+            <FontStyle family="TYPEWRITER" size='10' language='en'></FontStyle>
+          </Text>
+          <Appearance>
+            <Material diffuseColor='0 0 0'></Material>
+          </Appearance>
+        </Shape>
+      </Transform>
+    </Scene>
+  </X3D>
+</body>
 </html>
