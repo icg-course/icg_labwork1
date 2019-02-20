@@ -1,13 +1,239 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+  <meta charset="utf-8" />
+  <title>Лаба 1</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css">
+  <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+</head>
+<body>
+  <h1>Лаба 1</h1>
+  <X3D style="width:900px; height:600px">
+    <Scene>
+       <!--столешница-->
+      <transform rotation="0 0 1 1.57" translation="0 -1.2 0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="новое-дерево_1.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="0.2 7 5"></Box>
+      </Shape> 
+      <!--ножка_1-->
+      <transform rotation="1 0 0 1.57" translation="-1.5 -3 -2">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="новые-доски_43.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="3 0.3 0.3"></Box>
+      </Shape> 
+      <!--ножка_2-->
+      <transform rotation="1 0 0 1.57" translation="0 4 0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="новые-доски_43.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="3 0.3 0.3"></Box>
+      </Shape> 
+      <!--ножка_3-->
+      <transform rotation="1 0 0 1.57" translation="0 -6 0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="новые-доски_43.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="3 0.3 0.3"></Box>
+      </Shape> 
+      <!--ножка_4-->
+      <transform rotation="1 0 0 1.57" translation="0 4 0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="новые-доски_43.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="3 0.3 0.3"></Box>
+      </Shape> 
+      <!--монитор-->
+      <transform rotation="0 1 0 1.57" translation="3.5 -3 0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="меттал_75.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="0.1 3.5 2.5"></Box>
+      </Shape>
+       <!--ножка монитора верт-->
+      <transform rotation="1 0 0 1.57" translation="0.090 0 -1">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="меттал_10.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="0.1 2 0.4"></Box>
+      </Shape>
+       <!--экран-->
+      <transform rotation="1 0 0 1.57" translation="-0.150 1 -0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="q7rGyaOtxQw.png">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="0.005 3 2"></Box>
+      </Shape>
+       <!--ножка монитора гориз-->
+      <transform rotation="0 0 1 1.57" translation="0.075 0 1.85">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="меттал_75.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="1 0.2 0.1"></Box>
+      </Shape>
+       <!--клавиатура-->
+      <transform rotation="1 0 0 1.57" translation="0.075 1.05 0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="кнопки_43.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="2 0.05 1"></Box>
+      </Shape>
+       <!--коврик-->
+      <transform rotation="0 1 0 1.57" translation="2 0.050 0">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="мех_4.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Cylinder height="0.055" radius="0.75"></Cylinder>
+      </Shape>
+       <!--мышь-->
+      <transform rotation="0 1 0 1.57" translation="0 -0.025 0" scale="0.3 2 0.4">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="кнопки_157.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Cylinder height="0.055" radius="0.75"></Cylinder>
+      </Shape>
+       <!--кружка-->
+      <transform rotation="0 1 0 1.57" translation="14 -0.05 3" scale="0.85 0.85 1.25">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="старая-краска_50.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Cylinder height="0.3" radius="0.80"></Cylinder>
+      </Shape>
+      <!--ручка кружки-->
+      <Transform scale="0.5 0.1 0.5" rotation="0 1 0 1.57" translation="0 -0.045 1">
+      <Shape>
+        <Appearance>
+          <Material></Material>
+        </Appearance>
+          <Torus innerRadius="0.1" outherRadius="13.6"></Torus>
+      </Shape>
+      <!--апельсин_1-->
+      <Transform translation="0 0.25 -5">
+      <Shape>
+      <Appearance>
+        <ImageTexture url="pipisinka.png">
+        </ImageTexture>
+          <Material></Material>
+      </Appearance>
+          <Sphere radius="1"></Sphere>
+      </Shape>
+      <!--апельсин_2-->
+      <Transform translation="0 0.05 -2.5">
+      <Shape>
+      <Appearance>
+        <ImageTexture url="pipisinka.png">
+        </ImageTexture>
+          <Material></Material>
+      </Appearance>
+          <Sphere radius="1"></Sphere>
+      </Shape>
+        <!--апельсин_3-->
+      <Transform translation="2 -0.05 1">
+      <Shape>
+      <Appearance>
+        <ImageTexture url="pipisinka.png">
+        </ImageTexture>
+          <Material></Material>
+      </Appearance>
+          <Sphere radius="1"></Sphere>
+      </Shape>  
+        <!--апельсин_4-->
+      <Transform translation="-1.5 -1 0">
+      <Shape>
+      <Appearance>
+        <ImageTexture url="pipisinka.png">
+        </ImageTexture>
+          <Material></Material>
+      </Appearance>
+          <Sphere radius="1"></Sphere>
+      </Shape>
+      <!--шишка братишка-->
+      <Transform translation="-1.5 1 12" rotation="0 0 1 3.14"> 
+      <Shape>
+        <Appearance>
+          <ImageTexture url="shishyla.png">
+        </ImageTexture>
+        <TextureTransform scale="3 3" >
+        </TextureTransform>
+          <Material></Material>
+        </Appearance>
+          <Cone bottomRadius="1" height="2"></Cone>
+      </Shape>
+       <!--книга_низ-->
+      <transform rotation="1 1 0 1.57 1.57" translation="-12 -0.85 -10">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="обложки-старых-книг_106.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="10 0.3 7"></Box>
+      </Shape>
+       <!--книга_верх-->
+      <transform rotation="1 1 0 1.57 1.57" translation="-8 0.025 -2">
+        <transform rotation="0 1 0 2.54">
+      <Shape>
+        <Appearance>
+        <ImageTexture url="обложки-старых-книг_16.jpg">
+        </ImageTexture>
+          <Material></Material>
+        </Appearance>
+          <Box size="10 0.3 7"></Box>
+      </Shape>
+       <!--текст-->
+      <transform rotation="1 1 0 1.57 1.57" translation="0 20 -20">
+      <Shape>
+        <Appearance>
+          <Material diffusecolor="0.7 0.6 0.7"  specularcolor="1 1 0" shininess="0.7"/>
+          </Material>
+        </Appearance>
+        <Text string="работа не волк, walk это ходить" maxExtent ="30" lenght="35" solid="false">
+            <FontStyle size="5" family="SANS" style="BOLD" horizontal="true" leftToRignt="false" topToBottom="true" language="ru" justify="MIDDLE" spacing="2">
+            </FontStyle>
+        </Text> 
+      </Shape>
+    </Scene> 
+  </X3D>
+</body>
 </html>
