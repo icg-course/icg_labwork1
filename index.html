@@ -1,13 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+	<meta charset="utf-8" />
+	<title>Лабораторная работа №2</title>
+	<link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+	<script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+</head>
+<body>
+	<h1 align="center">Детская</h1>
+	<X3D style="width:900px; height:600px">
+		<Scene>
+			<!--Пирамидка-->
+			<Shape>
+				<Appearance>
+					<Material diffuseColor='green'></Material>
+				</Appearance>
+				<Cylinder radius="6" height="0.2"></Cylinder>
+			</Shape>
+			<Transform rotation="1 0 0 -1.57" rotation="0 1 0 -0.79" translation ="0 0.4 0">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='1 0 0'></Material>
+					</Appearance>
+					<Torus innerRadius="0.3" outerRadius="1.0"></Torus>
+				</Shape>
+			</Transform>
+			<Transform rotation="1 0 0 -1.57" rotation="0 1 0 -0.79" translation ="0 0.95 0">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='0 0 1'></Material>
+					</Appearance>
+					<Torus innerRadius="0.3" outerRadius="0.7"></Torus>
+				</Shape>
+			</Transform>
+			<Transform rotation="1 0 0 -1.57" rotation="0 1 0 -0.79" translation ="0 1.5 0">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='0 1 0'></Material>
+					</Appearance>
+					<Torus innerRadius="0.3" outerRadius="0.4"></Torus>
+				</Shape>
+			</Transform>
+			<Transform rotation="1 0 0 -1.57" rotation="0 1 0 -0.79" translation ="0 2 0">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='254 255 0'></Material>
+					</Appearance>
+					<Torus innerRadius="0.3" outerRadius="0.1"></Torus>
+				</Shape>
+			</Transform>
+			<!--Мячик-->
+			<Transform translation ="3 0.8 3">
+				<Shape>
+					<Appearance>
+						<ImageTexture url="https://pp.userapi.com/c850020/v850020001/129e90/souyVvK73z8.jpg" repeatS = true repeatT = true></ImageTexture>
+					</Appearance>
+					<Sphere radius="0.7"></Sphere>
+				</Shape>
+			</Transform>
+			<!--Домик-->
+			<Transform translation ="-3 0.6 3">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='yellow'></Material>
+					</Appearance>
+					<Cylinder radius="0.5" height="1"></Cylinder>
+				</Shape>
+			</Transform>
+			<Transform translation ="-3 0.6 3.4">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='blue'></Material>
+					</Appearance>
+					<Box size="0.2 0.2 0.2"></Box>
+				</Shape>
+			</Transform>
+			<Transform translation ="-3 1.6 3">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red'></Material>
+					</Appearance>
+					<Cone height="1" bottomRadius="0.8"></Cone>
+				</Shape>
+			</Transform>
+			<!--Кубики-->
+			<Transform translation ="-3 0.5 -3">
+				<Shape>
+					<Appearance>
+						<ImageTexture url="http://3.bp.blogspot.com/-Dl3D98KkCeQ/Ud6zaQUDbnI/AAAAAAAAAuc/ACJELCNkk7s/s1600/collage.jpg"></ImageTexture>
+					</Appearance>
+					<Box size="0.7 0.7 0.7"></Box>
+				</Shape>
+			</Transform>
+			<Transform translation ="-3.9 0.5 -3">
+				<Shape>
+					<Appearance>
+						<ImageTexture url="http://3.bp.blogspot.com/-Dl3D98KkCeQ/Ud6zaQUDbnI/AAAAAAAAAuc/ACJELCNkk7s/s1600/collage.jpg"></ImageTexture>
+						<TextureTransform scale="2 2" rotation="0.78">
+						</TextureTransform>
+					</Appearance>
+					<Box size="0.7 0.7 0.7"></Box>
+				</Shape>
+			</Transform>
+			<Transform translation ="-3.4 0.5 -2">
+				<Shape>
+					<Appearance>
+						<ImageTexture url="http://3.bp.blogspot.com/-Dl3D98KkCeQ/Ud6zaQUDbnI/AAAAAAAAAuc/ACJELCNkk7s/s1600/collage.jpg"></ImageTexture>
+						<TextureTransform translation="0.25 0">
+						</TextureTransform>
+					</Appearance>
+					<Box size="0.7 0.7 0.7"></Box>
+				</Shape>
+			</Transform>
+
+			<Transform translation ="0 5 0">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red'></Material>
+					</Appearance>
+					<Text string='В данной лабораторной работе представлены детские игрушки'>
+						<fontstyle family="TYPEWRITER" style="BOLDITALIC" size="1" justify="MIDDLE"></fontstyle>
+					</Text>
+				</Shape>
+			</Transform>
+		</Scene>
+	</X3D>
+</body>
 </html>
