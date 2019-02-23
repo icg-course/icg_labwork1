@@ -1,13 +1,172 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
+<html>
+<head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <title>Graph_project</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet'  href='https://www.x3dom.org/download/x3dom.css'/>
+</head>
+
+<body>
+
+<h1>Лабораторная работа №1</h1>
+
+<p>
+Сцена с оленями. 
+</p>
+
+<X3D  width="500px" height="500px">
+	<scene>
+			<Background backurl='starsbg.png'> </Background>
+			<Shape>
+				  <Appearance>
+					<Material diffuseColor='orange'></Material>
+				  </Appearance>
+				  <Box size="2.3 .3 1.9"></Box>
+			</Shape>
+			<transform translation='-0.9 -0.4 -0.5'> 
+				<Shape>
+					  <Appearance>
+						<Material diffuseColor='orange'></Material>
+					  </Appearance>
+					  <Box size="0.2 1 0.2"></Box>
+				</Shape>
+				<transform translation='0 0 1'> 
+					<Shape>
+						  <Appearance>
+							<Material diffuseColor='orange'></Material>
+						  </Appearance>
+						  <Box size="0.2 1 0.2"></Box>
+					</Shape>
+					<transform translation='1.8 0 0' > 
+						<Shape>
+							  <Appearance>
+								<Material diffuseColor='orange'></Material>
+							  </Appearance>
+							  <Box size="0.2 1 0.2"></Box>
+						</Shape>
+						<transform translation='0 0 -1'> 
+							<Shape>
+								  <Appearance>
+									<Material diffuseColor='orange'></Material>
+								  </Appearance>
+								  <Box size="0.2 1 0.2"></Box>
+							</Shape>
+							<transform translation='-0.9 0.5 -0.2' > 
+								<inline  url="Deer.x3d"> </inline>
+							</transform>
+						</transform>
+					</transform>
+				</transform>
+				<transform translation='0 -1 0'> 
+					<Shape>
+						  <Appearance>
+							<Material diffuseColor='green'></Material>
+						  </Appearance>
+						  <Box size="15 0.3 15"></Box>
+					</Shape>
+					<transform rotation = "0 1 0 3.2"
+						<Group>			
+							<transform translation='0 0 1.5' > 
+									<inline  url="Deer.x3d"> </inline>
+								<transform translation='0 0 2.5' > 
+										<inline  url="Deer.x3d"> </inline>
+									<transform translation='2 0 0' > 
+											<inline  url="Deer.x3d"> </inline>
+										<transform translation='2 0 0' > 
+												<inline  url="Deer.x3d"> </inline>
+											<transform translation='0 0 -2.5' > 
+													<inline  url="Deer.x3d"> </inline>
+												<transform translation='-2 0 0' > 
+														<inline  url="Deer.x3d"> </inline>
+													<transform translation='-4 0 0' > 
+															<inline  url="Deer.x3d"> </inline>
+														<transform translation='-2 0 0' > 
+																<inline  url="Deer.x3d"> </inline>
+															<transform translation='0 0 2.5' > 
+																	<inline  url="Deer.x3d"> </inline>
+																<transform translation='2 0 0' > 
+																	<inline  url="Deer.x3d"> </inline>
+																</transform>
+															</transform>
+														</transform>
+													</transform>
+												</transform>
+											</transform>
+										</transform>
+									</transform>
+								</transform>
+							</transform>
+						</Group>
+					</transform>
+				</transform>
+				<transform translation='0 3 4' >
+					<Shape>
+					  <Appearance>
+						<ImageTexture url="moon.jpg"></ImageTexture>
+					  </Appearance>
+					  <Sphere radius="1.1"></Sphere>
+					</Shape>
+					<transform translation='4 -3.65 0' scale="0.3 0.3 0.3" rotation="1 0 0 1.6">
+							<Shape>
+							  <Appearance>
+								<Material diffuseColor='brown'></Material>
+							  </Appearance>
+							  <Cylinder radius="0.7" height="4.3"></Cylinder>
+							</Shape>
+							<transform rotation="0 0 1 1.6">
+								<Shape>
+								  <Appearance>
+									<Material diffuseColor='brown'></Material>
+								  </Appearance>
+								  <Cylinder radius="0.7" height="4.3"></Cylinder>
+								</Shape>
+								<transform rotation="0 0 1 0.65">
+									<Shape>
+									  <Appearance>
+										<Material diffuseColor='brown'></Material>
+									  </Appearance>
+									  <Cylinder radius="0.7" height="4.3"></Cylinder>
+									</Shape>
+								</transform>
+							</transform>
+							<transform rotation="1 0 0 -1.5" scale="0.5 0.5 0.5" translation="0 0 -1">
+								<Shape>
+								  <Appearance>
+									<Material diffuseColor='red'></Material>
+								  </Appearance>
+								  <Cone height="4" bottomRadius="3" topRadius="1"></Cone>
+								</Shape>
+							</transform>	
+					</transform>
+				</transform>
+			</transform>
+			<transform translation='0 -1 0'> 
+						<Shape>
+							  <Appearance>
+								<Material diffuseColor='orange'></Material>
+							  </Appearance>
+							  <Box size="5 0.5 2"></Box>
+						</Shape>
+			</transform>
+			<transform translation='0 1 -6'>
+				<Shape>			
+					<Appearance>
+						<Material diffuseColor='red'></Material>
+					</Appearance>
+					<Text string='"deers fly to the moon"' solid='false'>
+					</Text>
+				</Shape>
+			</transform>
+			<transform translation='-4 -1 4' rotation="1 0 0 1.55">
+				<Shape>
+				  <Torus innerRadius="0.3" outerRadius="1.0"></Torus>
+				  <Appearance>
+					<Material diffuseColor="blue"></Material>
+				  </Appearance>
+				</Shape>
+			</transform>
+	</scene>
+</X3D>
+</body>
 </html>
