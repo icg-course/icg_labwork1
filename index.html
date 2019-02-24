@@ -7,7 +7,10 @@
     <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
   </head>
   <body>
-    <h1>Лабораторная работа №1</h1>
+    <article>
+      <h1>Лабораторная работа №1</h1>
+      <p>Павлов Михаил, гр. 4642</p>
+    </article>
     <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" style="width:85%; height:85%; border:none;">      
       <Scene>
         <transform translation="0 2 0" scale="0.8 0.8 0.8">
@@ -260,7 +263,8 @@
           <transform translation="0 -5 0">
             <Shape>
               <Appearance>
-               <Material diffuseColor="orange"></Material>
+                <ImageTexture url="https://raw.githubusercontent.com/mihalichpalich/icg_labwork1/gh-pages/parket.jpg"></ImageTexture>
+                <TextureTransform  scale="10 10" rotation="0.78"></TextureTransform>
               </Appearance>
               <Box size="14 0.01 12"></Box>
             </Shape>
