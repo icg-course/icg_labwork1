@@ -1,13 +1,263 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <title>Лабораторная работа №1</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Лабораторная работа №1</h1>
+    <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" style="width:85%; height:85%; border:none;">      
+      <Scene>
+        <transform translation="0 2 0" scale="0.8 0.8 0.8">
+
+          <!-- стол -->
+          <transform rotation="1 0 0 -1.57">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='orange'></Material>
+              </Appearance>
+              <Box size="9 4 0.3"></Box>
+            </Shape>
+          </transform>
+          <transform rotation="1 0 0 -1.57" translation="-4 -2.5 1.5">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='orange'></Material>
+              </Appearance>
+              <Box size="0.5 0.5 5"></Box>
+            </Shape>
+          </transform>
+          <transform rotation="1 0 0 -1.57" translation="4 -2.5 1.5">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='orange'></Material>
+              </Appearance>
+              <Box size="0.5 0.5 5"></Box>
+            </Shape>
+          </transform>
+          <transform rotation="1 0 0 -1.57" translation="4 -2.5 -1.5">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='orange'></Material>
+              </Appearance>
+              <Box size="0.5 0.5 5"></Box>
+            </Shape>
+          </transform>
+          <transform rotation="1 0 0 -1.57" translation="-4 -2.5 -1.5">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='orange'></Material>
+              </Appearance>
+              <Box size="0.5 0.5 5"></Box>
+            </Shape>
+          </transform>
+
+          <!-- бутылка -->
+          <transform translation="-0.7 0 0.3">
+            <transform translation="0 0.6 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='#722f37'></Material>
+                </Appearance>
+                <cylinder radius="0.15" height="1.2" solid="false"></cylinder>
+              </Shape>
+            </transform>
+            <transform translation="0 1.4 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='#722f37'></Material>
+                </Appearance>
+                <cylinder radius="0.08" height="0.4" top="false" solid="false"></cylinder>
+              </Shape>
+            </transform>
+            <transform translation="0 1.65 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='#DEB887'></Material>
+                </Appearance>
+                <cylinder radius="0.08" height="0.1" solid="false"></cylinder>
+              </Shape>
+            </transform>
+          </transform>
+          
+          <!-- свечи -->
+          <transform translation="-0.5 0.4 -0.4">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='red'></Material>
+              </Appearance>
+              <cylinder radius="0.07" height="0.6" solid="false"></cylinder>
+            </Shape>
+            <transform translation="0 0.4 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='yellow' specularColor="#ffb300"></Material>
+                </Appearance>
+                <cone bottomRadius="0.07" height="0.2"></cone>
+              </Shape>
+            </transform>
+          </transform>
+          <transform translation="-0.3 0.4 -0.4">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='red'></Material>
+              </Appearance>
+              <cylinder radius="0.07" height="0.8" solid="false"></cylinder>
+            </Shape>
+            <transform translation="0 0.5 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='yellow' specularColor="#ffb300"></Material>
+                </Appearance>
+                <cone bottomRadius="0.07" height="0.2"></cone>
+              </Shape>
+            </transform>
+          </transform>
+          <transform translation="-0.1 0.4 -0.4">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='red'></Material>
+              </Appearance>
+              <cylinder radius="0.07" height="0.6" solid="false"></cylinder>
+            </Shape>
+            <transform translation="0 0.4 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='yellow' specularColor="#ffb300"></Material>
+                </Appearance>
+                <cone bottomRadius="0.07" height="0.2"></cone>
+              </Shape>
+            </transform>
+          </transform>
+
+          <!-- бокалы -->
+          <transform translation="0.7 0.8 0.3">
+            <transform rotation="1 0 0 -3.14">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#afdafc"></Material>
+                </Appearance>
+                <Dish diameter="0.3" radius="0.4" bottom="false" solid="false"></Dish> 
+              </Shape>
+            </transform>
+            <transform translation="0 -0.525 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='#afdafc'></Material>
+                </Appearance>
+                <cylinder radius="0.025" height="0.25" solid="false"></cylinder>
+              </Shape>
+            </transform>
+            <transform translation="0 -0.645 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#afdafc"></Material>
+                </Appearance>
+                <Dish diameter="0.3" radius="0.05" solid="false"></Dish> 
+              </Shape>
+            </transform>
+          </transform>
+          <transform translation="1.1 0.8 0.3">
+            <transform rotation="1 0 0 -3.14">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#afdafc"></Material>
+                </Appearance>
+                <Dish diameter="0.3" radius="0.4" bottom="false" solid="false"></Dish> 
+              </Shape>
+            </transform>
+            <transform translation="0 -0.525 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='#afdafc'></Material>
+                </Appearance>
+                <cylinder radius="0.025" height="0.25" solid="false"></cylinder>
+              </Shape>
+            </transform>
+            <transform translation="0 -0.645 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#afdafc"></Material>
+                </Appearance>
+                <Dish diameter="0.3" radius="0.05" solid="false"></Dish> 
+              </Shape>
+            </transform>
+          </transform>
+
+          <!-- тарелка с фруктами -->
+          <transform translation="-1.9 0.35 0.3">
+            <transform rotation="1 0 0 -3.14">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="white"></Material>
+                </Appearance>
+                <Dish diameter="1.5" radius="0.2" bottom="false" solid="false"></Dish> 
+              </Shape>
+            </transform>
+            <transform translation="-0.3 0 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#ff8000"></Material>
+                </Appearance>
+                <Sphere radius="0.15"></Sphere> 
+              </Shape>
+            </transform>
+            <transform translation="-0.2 0 0.3">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#ff8000"></Material>
+                </Appearance>
+                <Sphere radius="0.15"></Sphere> 
+              </Shape>
+            </transform>
+            <transform translation="-0.2 0 -0.3">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#ff8000"></Material>
+                </Appearance>
+                <Sphere radius="0.15"></Sphere> 
+              </Shape>
+            </transform>
+            <transform translation="0 0 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#ff8000"></Material>
+                </Appearance>
+                <Sphere radius="0.15"></Sphere> 
+              </Shape>
+            </transform>
+            <transform translation="0.2 0 0.3" rotation="1 0 0 -1.57">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="yellow"></Material>
+                </Appearance>
+                <Torus innerRadius="0.12" outerRadius="0.1"></Torus> 
+              </Shape>
+            </transform>
+            <transform translation="0.2 0 -0.3" rotation="1 0 0 -1.57">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="yellow"></Material>
+                </Appearance>
+                <Torus innerRadius="0.12" outerRadius="0.1"></Torus> 
+              </Shape>
+            </transform>
+          </transform>
+
+          <transform translation="0 0 -6">
+            <Shape>
+              <Appearance>
+                <ImageTexture url="kamin.jpg" repeatT="false"></ImageTexture>
+              </Appearance>
+              <Box size="12 9.5 0.01"></Box>
+            </Shape>
+          </transform>
+
+        </transform>
+      </Scene>
+    </X3D>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
 </html>
