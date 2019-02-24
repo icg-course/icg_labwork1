@@ -246,12 +246,23 @@
             </transform>
           </transform>
 
-          <transform translation="0 0 -6">
+          <!-- камин -->
+          <transform translation="0 0.75 -6">
             <Shape>
               <Appearance>
-                <ImageTexture url="kamin.jpg" repeatT="false"></ImageTexture>
+                <ImageTexture url="https://raw.githubusercontent.com/mihalichpalich/icg_labwork1/gh-pages/kamin.jpg" repeatT="false"></ImageTexture>
               </Appearance>
-              <Box size="12 9.5 0.01"></Box>
+              <Box size="14 11.5 0.01"></Box>
+            </Shape>
+          </transform>
+
+          <!-- пол -->
+          <transform translation="0 -5 0">
+            <Shape>
+              <Appearance>
+               <Material diffuseColor="orange"></Material>
+              </Appearance>
+              <Box size="14 0.01 12"></Box>
             </Shape>
           </transform>
 
