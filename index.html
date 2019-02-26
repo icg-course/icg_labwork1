@@ -2,16 +2,14 @@
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 2</title>
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
     <h1>Дук laba2</h1>
-    <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom", width = "1024", height = "768">
-      <scene>
-        
+    <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" width = "1000" height = "1000">
+      <Scene>
         <transform translation="-0.2 -1.5 0.5">
 
         <transform translation="0 -1 0">
@@ -22,8 +20,6 @@
             <sphere radius="1"></sphere>
           </shape>
         </transform>
-
-        
 
         <transform translation="0 -2.9 0" rotation="0 0 1 3.15">
           <shape>
@@ -60,7 +56,6 @@
               <material diffuseColor="0 0 0"></material>
             </appearance>
             <text string="look at my horse" solid="false">
-              <FontStyle style="ITALIC"></FontStyle>
             </text>
           </shape>
         </transform>
@@ -75,8 +70,6 @@
           </shape>
         </transform>
 
-        
-
         <transform translation="0 0.8 0">
           <shape>
             <appearance>
@@ -85,7 +78,6 @@
             <torus innerRadius="0.2" outerRadius="3.5"></torus>
           </shape>
         </transform>
-        
         <!--a little secret -->
         <transform translation="0 -10 0" >
           <shape>
@@ -105,7 +97,7 @@
           </shape>
         </transform>
 
-      </scene>
+      </Scene>
     </X3D>
   </body> 
 </html>
