@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 1</title>
@@ -8,6 +8,93 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Лабораторная работа №1. Твардовский ГВ. группа 4643</h1>
+    <X3D width='1900px' height='850px'>
+      <Scene>
+        <Transform scale = "1.2 1.2 1.2">
+
+          <Transform>
+            <Shape>
+              <Appearance>
+                <Material diffuseColor="0.26, 0.81, 0.87"></Material>
+              </Appearance>
+              <Box size="2 2 2" solid="false"></Box>
+            </Shape>
+          </Transform>
+
+          <Transform translation="0 1.4 0.6" rotation="0 1 0 1.5708">
+            <Transform rotation="0 1 0 1.5708">
+              <Transform rotation="1 0 0 0.3">
+                <Inline url="Deer.x3d"></Inline>
+              </Transform>
+            </Transform>
+          </Transform>
+
+          <Transform translation="0 -1.1 4" rotation="1 0 0 0.1 ">
+            <Inline url="Deer.x3d"></Inline>
+            <Transform translation="1.5 0 0">
+              <Inline url="Deer.x3d"></Inline>
+            </Transform>
+            <Transform translation="-1.5 0 0">
+              <Inline url="Deer.x3d"></Inline>
+            </Transform>
+          </Transform>
+
+          <Transform translation="0 -40.8 0" rotation="0 0 1 0.5">
+            <Shape>
+              <Appearance>
+                <Material></Material>
+                <ImageTexture url="moon.jpg"></ImageTexture>
+                <TextureTransform scale="2 2"></TextureTransform>
+              </Appearance>
+              <Sphere radius="40" solid="false"></Sphere>
+            </Shape>
+          </Transform>
+
+          <Transform translation="0 6 -8" scale="5 5 5">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor="0.96, 0.0, 0.0"></Material>
+              </Appearance>
+              <Text string="Разделяй и властвуй!" solid="false"></Sphere>
+            </Shape>
+          </Transform>
+
+          <Transform translation="0 3.2 1" rotation="1 0 0 1.5708">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor="1.0, 1.0, 1.0"></Material>
+              </Appearance>
+              <Torus innerRadius="0.03" outerRadius="0.2"></Torus>
+            </Shape>
+          </Transform>
+
+          <Transform translation="-1 5 1"->
+            <Shape>
+              <Appearance>
+                <Material></Material>
+                <ImageTexture url="color.jpg"></ImageTexture>
+              </Appearance>
+              <Cone height="2" bottomRadius="3" solid="false" bottom="false"></Cone>
+            </Shape>
+          </Transform>
+
+          <Transform translation="-1 2 1"->
+            <Shape>
+              <Appearance>
+                <Material diffuseColor="0.27, 0.48, 0.97"></Material>
+              </Appearance>
+              <Cylinder height="6.2" Radius="0.05" solid="false" bottom="false"></Cylinder>
+            </Shape>
+          </Transform>
+
+
+
+
+
+
+        </Transform>
+      </Scene>
+    </X3D>
+  </body>
 </html>
