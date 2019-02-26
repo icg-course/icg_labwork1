@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+  <meta charset="utf-8" />
+  <title>Lambada2</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+  <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+</head>
+<body>
+  <h1>Мустафин Т.Р. 4642</h1>
+  <h2>Лабораторная работа 1</h2>
+  <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" width='1000px' height='700px'>
+
+    <Scene>
+
+      <transform translation='0 -4 0'>
+        <shape>
+          <appearance> 
+            <material diffuseColor='#808080'></material>
+          </appearance>
+          <box size = "1 8 1"></box>
+        </shape>
+      </transform>
+
+
+      <transform translation='0 -1 0'>
+        <shape>
+          <appearance> 
+            <imagetexture url="https://st2.depositphotos.com/1216158/12257/v/950/depositphotos_122575374-stock-illustration-grating-pattern-with-grid-circles.jpg"></imagetexture>
+            <texturetransform scale="7 7"></texturetransform>
+          </appearance>
+          <sphere radius = "2"></sphere>
+        </shape>
+      </transform>
+
+      <transform translation='0 -2 0'>
+        <shape>
+          <appearance> 
+            <imagetexture url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rossiya-1_Logo.svg/1280px-Rossiya-1_Logo.svg.png"></imagetexture>
+          </appearance>
+          <cylinder radius = "2", height = "2"></cylinder>
+        </shape>
+      </transform>
+
+      <transform translation='0 -3.8 0' rotation='1 0 0 -3.15'>
+        <shape>
+          <appearance> 
+            <material diffuseColor='#808080'></material>
+          </appearance>
+          <cone bottomRadius = "2", height = "2"></cone>
+        </shape>
+      </transform>
+
+      <transform translation='0 -5 0.5'>
+        <shape>
+          <appearance> 
+            <material diffuseColor='#000000'></material>
+          </appearance>
+          <torus innerradius = "0.1", outerradius= "0.3"></torus>
+        </shape>
+      </transform>
+
+      <transform translation='0 4 0'>
+        <Shape>
+          <Text string="Здесь могла быть ваша реклама." solid='false'>
+            <FontStyle family="TYPEWRITER" size='0.6'  language='ru'></FontStyle>
+          </Text>
+          <Appearance>
+            <Material diffuseColor='1 .1 .9'></Material>
+          </Appearance>
+        </Shape>
+      </transform>
+
+    </Scene>
+  </X3D>
+</body>
 </html>
+
