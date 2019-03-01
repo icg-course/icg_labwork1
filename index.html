@@ -1,13 +1,130 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+  <meta charset="utf-8" /> 
+  <title>Telephone</title> 
+  <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" /> 
+  <script src="https://www.x3dom.org/download/dev/x3dom.js"></script> 
+</head> 
+<body> 
+  <h1>Risunok iz 3d</h1> 
+  <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" width = "1000" height = "700"> 
+
+    <Scene> 
+       <!-- Панель экрана -->
+      <transform translation="0 0 0"> 
+        <shape> 
+          <appearance> 
+            <material diffuseColor='black'></material> 
+          </appearance> 
+          <box size = "3 2.6 0.35"></box> 
+        </shape> 
+      </transform> 
+        <!-- Логотип -->
+      <transform translation="0 0 -0.1"> 
+        <shape> 
+          <appearance> 
+            <ImageTexture url="https://pp.userapi.com/c852128/v852128182/c95ec/K7DUJVDkmnY.jpg" repeatT="false"></ImageTexture> 
+          </appearance> 
+          <box size = "2.9 2.5 0.2"></box> 
+        </shape> 
+      </transform> 
+        <!-- Корпус камеры -->
+      <transform translation="2.1 0 1"> 
+        <shape> 
+          <appearance> 
+            <material diffuseColor="black"></material> 
+          </appearance> 
+          <box size = "1 2.8 4.5"></box> 
+        </shape> 
+      </transform> 
+        <!-- Лампочка съемки -->
+      <transform translation="2.1 0.3 -1.2"> 
+        <shape> 
+          <appearance> 
+            <material diffuseColor="red"></material> 
+          </appearance> 
+          <sphere radius = "0.1"></sphere> 
+        </shape> 
+      </transform> 
+         <!-- Объектив -->
+      <transform translation="2.1 0.9 -1.3"> 
+        <shape> 
+          <appearance> 
+            <material diffuseColor="blue" specularColor="#00fa9a"></material>
+          </appearance> 
+          <sphere radius = "0.4"></sphere> 
+        </shape> 
+      </transform> 
+          <!-- Указатель режима -->
+      <transform translation="2.1 1.4 2.7" rotation="1 0 0 1.57">
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="yellow"></Material>
+            </Appearance>
+           <cone bottomRadius="0.07" height="0.2"></cone>
+        </Shape>
+      </transform>
+           <!-- 2 часть объектива -->
+      <transform translation="2.1 0.9 -1.2" rotation="1 0 0 1.57"> 
+        <shape> 
+          <appearance> 
+            <material diffuseColor="green"></material> 
+          </appearance> 
+          <cylinder radius="0.42" height="1" solid="false" bottom="false"></cylinder> 
+        </shape> 
+      </transform> 
+           <!-- Шарнир -->
+      <transform translation="1.5 0 0"> 
+        <shape> 
+          <appearance> 
+            <material diffuseColor="green"></material> 
+          </appearance> 
+          <cylinder radius="0.25" height="2.6" solid="false"></cylinder> 
+        </shape> 
+      </transform>   
+           <!-- Кнопка включения -->
+      <transform translation="2.1 1.4 3" rotation="1 0 0 -1.57">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="green"></Material>
+          </Appearance>
+          <Torus innerRadius="0.1" outerRadius="0.1"></Torus> 
+        </Shape>
+      </transform>
+            <!-- Колесо режимов -->
+      <transform translation="2.1 1.4 -0.5" rotation="1 0 0 -1.57">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="red"></Material>
+          </Appearance>
+          <Torus innerRadius="0.1" outerRadius="0.05"></Torus> 
+        </Shape>
+      </transform>
+           <!-- Дисплей -->
+      <transform translation="0 0 0.15">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://pp.userapi.com/c845522/v845522290/1b7d22/OMDGrj666og.jpg" repeatT="false"></ImageTexture>
+          </Appearance>
+          <Box size="2.5 2 0.2"></Box>
+        </Shape>
+      </transform>
+                
+      <transform translation="0 3 0"> 
+        <Shape> 
+          <Text string="Заснимем ваши лекции и корпоративы." 
+                solid="false"> 
+            <FontStyle family="TYPEWRITER" size="0.5" language="ru"></FontStyle> 
+          </Text> 
+          <Appearance> 
+            <Material diffuseColor="green"></Material> 
+          </Appearance> 
+        </Shape> 
+      </transform> 
+
+    </Scene> 
+  </X3D> 
+</body> 
 </html>
+
