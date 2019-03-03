@@ -1,13 +1,181 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<!DOCTYPEhtml>
+<htmllang="ru">
+<head>
+	<metacharset="utf-8" />
+	<title>Лаб2
+	</title>
+	<link rel="stylesheet" type="text/css" href="x3d/x3dom.css" />
+	<script type="text/javascript" src="x3d/x3dom.js"></script>
+</script>
+</head>
+<body>
+	<h1 align="center">Sergolab</h1>
+	<X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
+		<Scene>
+
+
+<transform rotation="0 0 1 -1.57">
+				<!--Cylinder-->
+			<transform rotation="0 0 1 -1.57">
+			<Shape>
+				<Appearance>
+					<imagetexture url="iron_texture4699.jpg" > </imagetexture>
+					<texturetransform scale="1 1"></texturetransform>	
+				</Appearance>
+				<cylinder height="4" bottom="true" radius="1">
+			</cylinder>
+			</Shape>
+			</transform >
+			<!--Cone-->
+			<transform rotation="0 0 1 1.57" translation="-2.5 0 0">
+			<Shape>
+				<Appearance>
+					<imagetexture url="iron_texture4699.jpg" > </imagetexture>
+					<texturetransform scale="4 4"></texturetransform>	
+				</Appearance>
+				<cone bottomradius="1" bottom="false" height="1">
+			</cone>
+			</Shape>
+			</transform >
+			<!--Cone-->
+			<transform rotation="0 0 1 -1.57" translation="2.5 0 0">
+			<Shape>
+				<Appearance>
+					<imagetexture url="iron_texture4699.jpg" > </imagetexture>
+					<texturetransform scale="4 4"></texturetransform>	
+				</Appearance>
+				<cone bottomradius="1" bottom="false" height="1">
+			</cone>
+			</Shape>
+			</transform >
+				<!--Cylinder-->
+			<transform translation="0 -3 0">
+			<Shape>
+				<Appearance>
+					<imagetexture url="wood_texture3833.jpg" repeats="true" repeatt="true"></imagetexture>	
+					 <texturetransform scale="4 4"></texturetransform>
+				</Appearance>
+				<cylinder height="8" bottom="true" radius="0.25">
+			</cylinder>
+			</Shape>
+				</transform>
+
+</transform>
+<transform translation="0 0 6.5">
+         <!--Main Torus-->
+<transform translation="-10 0 0 " rotation="0 1 0 -1.57">
+	<shape>
+		<appearance>
+			<material diffuseColor="0.5 0.5 0.5"></material>
+		</appearance>
+		<torus innerRadius="0.5" outerRadius="5">
+		</torus>
+	</shape>
+	</transform>
+	         <!--Torus-->
+<transform translation="-10 0 -6.5 " rotation="0 1 0 -1.57">
+	<shape>
+		<appearance>
+			<material diffuseColor="1 0 1" emissiveColor="1 0 0"></material>
+		</appearance>
+		<torus innerRadius="0.1" outerRadius="1">
+		</torus>
+	</shape>
+	</transform>
+	<!--Torus-->
+<transform translation="-9 0 -6.5 " rotation="0 1 0 -1.57">
+	<shape>
+		<appearance>
+			<material diffuseColor="1 0 1" emissiveColor="1 0 0"></material>
+		</appearance>
+		<torus innerRadius="0.1" outerRadius="1">
+		</torus>
+	</shape>
+	</transform>
+		<!--Torus-->
+<transform translation="-8 0 -6.5 " rotation="0 1 0 -1.57">
+	<shape>
+		<appearance>
+			<material diffuseColor="1 0 1" emissiveColor="1 0 0"></material>
+		</appearance>
+		<torus innerRadius="0.1" outerRadius="1">
+		</torus>
+	</shape>
+	</transform>
+			<!--Torus-->
+<transform translation="-7 0 -6.5 " rotation="0 1 0 -1.57">
+	<shape>
+		<appearance>
+			<material diffuseColor="1 0 1" emissiveColor="1 0 0"></material>
+		</appearance>
+		<torus innerRadius="0.1" outerRadius="1">
+		</torus>
+	</shape>
+	</transform>
+				<!--Torus-->
+<transform translation="-6 0 -6.5 " rotation="0 1 0 -1.57">
+	<shape>
+		<appearance>
+			<material diffuseColor="1 0 1" emissiveColor="1 0 0"></material>
+		</appearance>
+		<torus innerRadius="0.1" outerRadius="1">
+		</torus>
+	</shape>
+	</transform>
+</transform>
+	   <!--Text-->
+	<transform translation="0 5 0">
+			 	      <shape>
+       <appearance>
+          <material diffuseColor="0 0 0"></material>
+       </appearance>
+       <text string="Torus's HAMMER" length="10">
+        <fontstyle family="SANS" size="1" justify="MIDDLE"></fontstyle>
+       </text>
+      </shape>
+     </transform>
+     <!--Foot-->
+     <!--LeftBox-->
+     <transform translation="-10 -7 4"  scale="1 1 1">
+	<shape>
+	 <appearance >
+	  <material diffuseColor="1 0.5 0"></material>
+	 </appearance>
+	 <box></box>
+       </shape>
+     </transform>
+     <!--LeftSphere-->
+     <transform translation="-10 -6 4">
+      <shape>
+       <appearance>						
+       <material diffuseColor="1 1 0"></material>
+       </appearance>
+       <sphere></sphere>
+      </shape>
+     </transform>
+     <!--RightBox-->
+      <transform translation="-10 -7 9"  scale="1 1 1">
+	<shape>
+	 <appearance >
+	  <material diffuseColor="1 0.5 0"></material>
+	 </appearance>
+	 <box></box>
+       </shape>
+     </transform>
+     <!--Sphere-->
+     <transform translation="-10 -6 9">
+      <shape>
+       <appearance>						
+       <material diffuseColor="1 1 0"></material>
+       </appearance>
+       <sphere></sphere>
+      </shape>
+     </transform>
+
+
+
+	</Scene>
+
+	</X3D>
+</body>
 </html>
