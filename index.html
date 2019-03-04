@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,194 +9,188 @@
   <title>Лаба 1</title>
   <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
   <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+  <link rel="stylesheet" href="../css/custom.css" />
+  <script src="../js/custom.js"></script>
 </head>
 <body>
   <h1>Дрыц тыц холодильник</h1>
   <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" width="1200px" height = "600px">      
+   
     <Scene>
       <!--Стенки холоднька-->
       <Shape>
         <Appearance>
-          <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
+
+          <Material diffuseColor='gray'></Material>
         </Appearance>
+        <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
         <Box size="3 6 0.1"></Box>
       </Shape>
       <Transform translation='-1.5 0 0.96'>
         <Shape>
           <Appearance>
-            <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
-          </Appearance>
-          <Box size="0.1 6 2"></Box>
-        </Shape>
-      </Transform>
-      <Transform translation='1.5 0 0.96'>
+           <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
+           <Material diffuseColor='gray'></Material>
+         </Appearance>
+         <Box size="0.1 6 2"></Box>
+       </Shape>
+       <Transform translation='3 0 0'>
         <Shape>
           <Appearance>
-            <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
-            <Material diffuseColor='gray'></Material>
-          </Appearance>
-          <Box size="0.1 6 2"></Box>
-        </Shape>
-      </Transform>
-      <!--Полки холодильника-->
-      <Transform translation='0 -1.6 0.96'>
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='white'></Material>
-          </Appearance>
-          <Box size="3 0.1 2"></Box>
-        </Shape>
-      </Transform>
-      <Transform translation='0 -2.95 0.96'>
-        <Shape>
-          <Appearance>
-            <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
-            <Material diffuseColor='gray'></Material>
-          </Appearance>
-          <Box size="3 0.1 2"></Box>
-        </Shape>
-      </Transform>
-      <Transform translation='0 0 0.96'>
+           <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
+           <Material diffuseColor='gray'></Material>
+         </Appearance>
+         <Box size="0.1 6 2"></Box>
+       </Shape>
+       <!--Полки холодильника-->
+       <Transform translation='-1.5 -1.5 0'>
         <Shape>
           <Appearance>
             <Material diffuseColor='white'></Material>
           </Appearance>
           <Box size="3 0.1 2"></Box>
         </Shape>
-      </Transform>
-      <Transform translation='0 1.5 0.96'>
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='white'></Material>
-          </Appearance>
-          <Box size="3 0.1 2"></Box>
-        </Shape>
-      </Transform>
-      <Transform translation='0 2.95 0.96'>
-        <Shape>
-          <Appearance>
-            <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
-            <Material diffuseColor='gray'></Material>
-          </Appearance>
-          <Box size="3 0.1 2"></Box>
-        </Shape>
-      </Transform>
-      <!--Задняя часть холодильника-->
-      <Transform translation='0 0 -0.2'>
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='black'></Material>
-          </Appearance>
-          <Box size="3 5.5 0.3"></Box>
-        </Shape>
-      </Transform>
-      <!--Дверца холодильника-->
-      <Transform translation='0.9 0 3.35' rotation='0 1 0 -0.5'>
-        <Shape>
-          <Appearance>
-            <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
-            <TextureTransform  translation="0.3 0" rotate="180" ></TextureTransform>
-            <Material diffuseColor='gray'></Material>
-          </Appearance>
-          <Box size="0.3 5.8 3"></Box>
-        </Shape>
-        </Transform>
-        <!--Ручка дверцы-->
-      <Transform translation='0.2 2.6 1.2' rotation='0 0 0 -0.5' >
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='0.86 0.86 0.86'></Material>
-          </Appearance>
-          <Box size="0.1 0.2 0.1"></Box>
-        </Shape>
-        <Transform translation='0 0 -0.6' >
-          <Transform translation='0.08 0 0.3' rotation='0 1 0 1.57' >
-            <Shape>
-              <Text string='"Саратов"' solid='false'>
-                <FontStyle family="TYPEWRITER" size='0.2' language='ru'></FontStyle>
-              </Text>
-              <Appearance>
-                <Material diffuseColor='0 0 0'></Material>
-              </Appearance>
-            </Shape>
-          </Transform>
+        <Transform translation='0 -1.45 0'>
           <Shape>
             <Appearance>
-              <Material diffuseColor='0.86 0.86 0.86'></Material>
+             <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
+             <Material diffuseColor='gray'></Material>
+           </Appearance>
+           <Box size="3 0.1 2"></Box>
+         </Shape>
+         <Transform translation='0 3 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='white'></Material>
             </Appearance>
-            <Box size="0.1 0.2 0.1"></Box>
+            <Box size="3 0.1 2"></Box>
           </Shape>
-          <Transform translation='0 0 0.3' >
+          <Transform translation='0 1.5 0'>
             <Shape>
               <Appearance>
-                <Material diffuseColor='0.86 0.86 0.86'></Material>
+                <Material diffuseColor='white'></Material>
               </Appearance>
-              <Box size="0.1 0.15 0.6"></Box>
+              <Box size="3 0.1 2"></Box>
             </Shape>
-          </Transform>
-        </Transform>
-      </Transform> 
-      <!--Помидоры-->
-      <Transform translation='-0.3 0.18 0.5' >
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='red'></Material>
-          </Appearance>
-          <Sphere radius="0.15"></Sphere>
-        </Shape>
-      </Transform>
-      <Transform translation='-0.6 0.18 0.5' >
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='red'></Material>
-          </Appearance>
-          <Sphere radius="0.15"></Sphere>
-        </Shape>
-      </Transform>
-      <Transform translation='0.16 0.18 0.7' >
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='red'></Material>
-          </Appearance>
-          <Sphere radius="0.15"></Sphere>
-        </Shape>
-      </Transform>
-      <!--Колбаса-->
-      <Transform translation='0.8 -1.36 0.8' rotation='1 0 1 -1.57' >
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='pink'></Material>
-          </Appearance>
-          <Cylinder radius="0.20" height="0.8"></Cylinder>
-        </Shape>
-      </Transform>
-      <!--Йогурт-->
-      <Transform translation='1 1.65 0.4' rotation='1 0 0 3.14' > 
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='0.1 0.7 0.6'></Material>
-          </Appearance>
-          <Cone height="0.4" bottomRadius="0.3" topRadius="0.1"></Cone>
-        </Shape>
-      </Transform>
-      <!--Бублики-->
-      <Transform translation='-0.2 1.58 0.45' rotation='1 0 0 1.707' >  
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='0.95 0.64 0.37'></Material>
-          </Appearance>
-          <Torus innerRadius="0.03" outerRadius=".1"></Torus>
-        </Shape>
-      </Transform>
-      <Transform translation='0.07 1.58 0.37' rotation='1 0 0 1.707'  > 
-        <Shape>
-          <Appearance>
-            <Material diffuseColor='0.95 0.64 0.37'></Material>
-          </Appearance>
-          <Torus innerRadius="0.03" outerRadius=".1"></Torus>
-        </Shape>
-      </Transform>
-  </Scene>
-</X3D>
-</body>
-</html>
+            <Transform translation='0 1.4 0'>
+              <Shape>
+                <Appearance>
+                 <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
+                 <Material diffuseColor='gray'></Material>
+               </Appearance>
+               <Box size="3 0.1 2"></Box>
+             </Shape>
+             <!--Задняя часть холодильника-->
+             <Transform translation='0 -2.8 -1.15'>
+               <Shape>
+                <Appearance>
+                  <Material diffuseColor='black'></Material>
+                </Appearance>
+                <Box size="3 5.5 0.3"></Box>
+              </Shape>
+              <Transform translation='1 -0.2 3.4' rotation='0 1 0 -0.5'>
+               <Shape>
+                <Appearance>
+                 <ImageTexture url="https://thumbs.dreamstime.com/t/поверхность-текстуры-вери-хо-о-и-ьника-96973646.jpg"></ImageTexture>
+                 <TextureTransform  translation="0.3 0" rotate="180" ></TextureTransform>
+                 <Material diffuseColor='gray'></Material>
+               </Appearance>
+               <Box size="0.3 5.8 3"></Box>
+             </Shape>
+           </Transform > 
+           <!--Помидоры-->
+           <Transform translation='-0.3 0.09 0.5' >
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='red'></Material>
+              </Appearance>
+              <Sphere radius="0.15"></Sphere>
+            </Shape>
+            <Transform translation='-0.15 0 0.2' >
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor='red'></Material>
+                </Appearance>
+                <Sphere radius="0.15"></Sphere>
+              </Shape>
+              <Transform translation='-0.4 0 -0.2' >
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor='red'></Material>
+                  </Appearance>
+                  <Sphere radius="0.15"></Sphere>
+                </Shape>
+              </Transform >
+              <!--Колбаса-->
+              <Transform translation='-0.3 -1.5 0.5' rotation='1 0 1 -1.57' >
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor='pink'></Material>
+                  </Appearance>
+                  <Cylinder radius="0.20" height="0.8"></Cylinder>
+                </Shape>
+              </Transform>
+              <!--Йогурт-->
+              <Transform translation='1 1.5 0.5' rotation='1 0 0 3.14' >  
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor='0.1 0.7 0.6'></Material>
+                  </Appearance>
+                  <Cone height="0.4" bottomRadius="0.3" topRadius="0.1"></Cone>
+                </Shape>
+              </Transform>
+              <!--Бублики-->
+              <Transform translation='0 1.39 0.5' rotation='1 0 0 1.707' >  
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor='0.95 0.64 0.37'></Material>
+                  </Appearance>
+                  <Torus innerRadius="0.03" outerRadius=".1"></Torus>
+                </Shape>
+              </Transform>
+              <Transform translation='0.07 1.39 0' rotation='1 0 0 1.707'  > 
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor='0.95 0.64 0.37'></Material>
+                  </Appearance>
+                  <Torus innerRadius="0.03" outerRadius=".1"></Torus>
+                </Shape>
+              </Transform>
+              <!--Ручка дверцы-->
+              <Transform translation='0.95 2.2 4' rotation='0 1 0 -0.5' >
+               <Shape>
+                <Appearance>
+                  <Material diffuseColor='0.86 0.86 0.86'></Material>
+                </Appearance>
+                <Box size="0.1 0.2 0.1"></Box>
+              </Shape>
+              <Transform translation='0 0 -0.6' >
+               <Shape>
+                <Appearance>
+                  <Material diffuseColor='0.86 0.86 0.86'></Material>
+                </Appearance>
+                <Box size="0.1 0.2 0.1"></Box>
+              </Shape>
+
+              <Transform translation='0 0 0.3' >
+               <Shape>
+                <Appearance>
+                  <Material diffuseColor='0.86 0.86 0.86'></Material>
+                </Appearance>
+                <Box size="0.1 0.15 0.6"></Box>
+              </Shape>
+              <!--Текст-->
+              <Transform translation='0.1 0 0' rotation='0 1 0 1.707' >
+                <Shape>
+                  <Text string='"Саратов"' solid='false'>
+                    <FontStyle family="TYPEWRITER" size='0.2' language='ru'></FontStyle>
+                  </Text>
+                  <Appearance>
+                    <Material diffuseColor='0 0 0'></Material>
+                  </Appearance>
+                </Shape>
+              </Transform>
+            </Scene>
+          </X3D>
+        </body>
+        </html>
