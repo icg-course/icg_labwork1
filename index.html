@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>  
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <title>Лабораторная работа 1</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+  </head>
+  <body>
+    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+  </body> 
+</html>
 <!DOCTYPE html> 
 <html lang="ru"> 
 <head> 
@@ -12,109 +25,116 @@
 
     <Scene> 
 
-      <Transform translation='0 0 0'> 
-        <Shape> 
-          <Appearance> 
+      <transform translation='0 0 0'> 
+        <shape> 
+          <appearance> 
             <material diffuseColor='black'></material> 
-          </Appearance> 
+          </appearance> 
           <box size = "2.6 5 0.35"></box> 
-        </Shape> 
-      </Transform> 
+        </shape> 
+      </transform> 
 
-      <Transform translation='0.4 2.35 0.13' rotation='1 0 0 1.6'> 
-      <Shape> 
-        <Appearance> 
-          <material diffuseColor='white'></Material> 
-        </Appearance> 
-          <cylinder radius="0.04" height="0.2"></Cylinder> 
-        </Transform>
-      </Shape>
+      <transform translation='0 0 0.1'> 
+              <shape> 
+                <appearance> 
+                  <material diffuseColor='white'></material> 
+                </appearance> 
+                <box size = "2 4 0.2"></box> 
+              </shape> 
+            </transform>
 
-      <Transform translation='0 2.35 0.18'> 
-        <Shape> 
-          <Appearance> 
+      <transform translation='0.4 2.35 0.13' rotation='1 0 0 1.6'> 
+        <shape> 
+          <appearance> 
+            <material diffuseColor='white'></material> 
+         </appearance> 
+            <cylinder radius="0.04" height="0.2"></cylinder> 
+       </shape> 
+      </transform>
+
+      <transform translation='0 2.35 0.18'> 
+        <shape> 
+          <appearance> 
             <material diffuseColor='gray'></material> 
-          </Appearance> 
+          </appearance> 
           <box size = "0.45 0.1 0.11"></box> 
-        </Shape> 
-      </Transform> 
+        </shape> 
+      </transform> 
 
-      <Transform translation='1.3 0.9 0'> 
-        <Shape> 
-          <Appearance> 
+      <transform translation='1.3 0.9 0'> 
+        <shape> 
+          <appearance> 
             <material diffuseColor='gray'></material> 
-          </Appearance> 
+          </appearance> 
           <box size = "0.1 0.5 0.1"></box> 
-        </Shape> 
-      </Transform> 
+        </shape> 
+      </transform> 
 
-      <Transform translation='-1.3 0.9 0'> 
-        <Shape> 
-          <Appearance> 
+      <transform translation='-1.3 0.9 0'> 
+        <shape> 
+          <appearance> 
             <material diffuseColor='gray'></material> 
-          </Appearance> 
+          </appearance> 
           <box size = "0.1 1 0.1"></box> 
-        </Shape> 
-      </Transform> 
+        </shape> 
+      </transform> 
 
-      <Transform translation="0 0 0.15">
+      <transform translation="0 0 0.15">
         <Shape>
           <Appearance>
             <ImageTexture url="https://raw.githubusercontent.com/LookAtMePls/icg_labwork1/gh-pages/play_market-1.png" repeatT="false"></ImageTexture>
           </Appearance>
           <Box size="2.5 4.9 0.111"></Box>
         </Shape>
-      </Transform>
+      </transform>
 
-      <Transform translation='0 -2.465 0'> 
-        <Shape> 
-          <Appearance> 
+<transform translation='0 -2.465 0'> 
+        <shape> 
+          <appearance> 
             <material diffuseColor='gray'></material> 
-          </Appearance> 
+          </appearance> 
           <box size = "0.45 0.1 0.1"></box> 
-        </Shape> 
-      </Transform> 
-
-            <Transform translation='0 -2.481 0'> 
-        <Shape> 
-          <Appearance> 
+        </shape> 
+      </transform> 
+            <transform translation='0 -2.481 0'> 
+        <shape> 
+          <appearance> 
             <material diffuseColor='black'></material> 
-          </Appearance> 
+          </appearance> 
           <box size = "0.3 0.07 0.07"></box> 
-        </Shape> 
-      </Transform>
+        </shape> 
+      </transform>
 
-          <Transform translation='0 2.35 0.16'> 
-        <Shape> 
-          <Appearance> 
+            <transform translation='0 2.35 0.16'> 
+        <shape> 
+          <appearance> 
             <material diffuseColor='black'></material> 
-          </Appearance> 
+          </appearance> 
           <box size = "1 0.2 0.109"></box> 
-        </Shape> 
-      </Transform> 
+        </shape> 
+      </transform> 
 
-      <Transform translation='-0.4 2.35 0.125' rotation='1 0 0 1.6'> 
-      <Shape> 
-        <Appearance> 
-          <Material diffuseColor='white'></Material> 
-        </Appearance> 
-          <Cylinder radius="0.06" height="0.2"></Cylinder> 
-          </Shape>
-        </Transform>
+      <transform translation='-0.4 2.35 0.125' rotation='1 0 0 1.6'> <shape> 
+        <appearance> 
+          <material diffuseColor='white'></material> 
+        </appearance> 
+          <cylinder radius="0.06" height="0.2"></cylinder> 
+          </shape>
+        </transform>
       
 
-      <Transform translation='0 3 0'> 
+      <transform translation='0 3 0'> 
         <Shape> 
-          <Text string="Тут могла быть ваша реклама." solid='false'> 
+          <Text string="Тут могла быть ваша реклама. Это была моя идея" solid='false'> 
             <FontStyle family="TYPEWRITER" size='0.5' language='ru'></FontStyle> 
           </Text> 
           <Appearance> 
             <Material diffuseColor='red'></Material> 
           </Appearance> 
         </Shape> 
-      </Transform> 
+      </transform> 
 
     </Scene> 
   </X3D> 
 </body> 
-</html>
+</html> 
