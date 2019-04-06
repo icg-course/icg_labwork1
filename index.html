@@ -57,6 +57,59 @@
               </Shape>
           </Transform>
           <!--</ДОРОГА>-->
+          <!--<КОРОБКА ДОМА>-->
+          <Transform translation='0 -1.5 -15'>
+              <!--<КРЫША>-->
+              <Transform translation='0 3.7 2.5'>
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="pr15.jpg"></ImageTexture>
+                          <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+                      </Appearance>
+                      <Pyramid height="2.5" xbottom="10.5" ybottom="6" xtop="4" ytop="2"></Pyramid>
+                  </Shape>
+              </Transform>
+              <!--</КРЫША>-->
+              <Shape>
+                  <Appearance>
+                      <ImageTexture url="d57cf545c55633dd5be4be2d9b9fc97e.png"></ImageTexture>
+                      <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+                  </Appearance>
+                  <Box size="10 5 0.2"></Box>
+              </Shape>
+              <Transform rotation='0 1 0 1.57' , translation='5 0 2.5'>
+                  <Shape DEF='BOX'>
+                      <Appearance>
+                          <ImageTexture url="d57cf545c55633dd5be4be2d9b9fc97e.png"></ImageTexture>
+                          <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+                      </Appearance>
+                      <Box size="5 5 0.2"></Box>
+                  </Shape>
+              </Transform>
+              <Transform rotation='0 1 0 1.57' , translation='-5 0 2.5'>
+                  <Shape USE='BOX'>
+                  </Shape>
+              </Transform>
+              <Transform translation='-3.5 0 5'>
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="d57cf545c55633dd5be4be2d9b9fc97e.png"></ImageTexture>
+                          <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+                      </Appearance>
+                      <Box size="3 5 0.2"></Box>
+                  </Shape>
+              </Transform>
+              <Transform translation='3 0 5'>
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="d57cf545c55633dd5be4be2d9b9fc97e.png"></ImageTexture>
+                          <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+                      </Appearance>
+                      <Box size="4 5 0.2"></Box>
+                  </Shape>
+              </Transform>
+          </Transform>
+          <!--</КОРОБКА ДОМА>-->
         </Scene>
     </X3D>
   </body>
