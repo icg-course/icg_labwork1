@@ -9,5 +9,52 @@
   </head>
   <body>
     <h1>Лабораторная работа</h1>
+    <X3D hight="500" , width="1000" , id="x3d" xmlns="https://www.x3dom.org/x3dom">
+        <Scene>
+          <!--<ПОЛЕ>-->
+          <Transform translation='0 -4 -10'>
+              <Shape>
+                  <Appearance>
+                      <ImageTexture url="58d4cc26e7417.jpg"></ImageTexture>
+                      <Texturetransform repeatS="True" repeatT="True" scale="3 3"></Texturetransform>
+                  </Appearance>
+                  <Box size="25 .1 11"></Box>
+              </Shape>
+              <Transform translation='0 0 13'>
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="58d4cc26e7417.jpg"></ImageTexture>
+                          <Texturetransform repeatS="True" repeatT="True" scale="3 3"></Texturetransform>
+                      </Appearance>
+                      <Box size="25 .1 5"></Box>
+                  </Shape>
+              </Transform>
+          </Transform>
+          <!--</ПОЛЕ>-->
+          <!--<ДОРОГА>-->
+          <Transform translation='0 -4 -2'>
+              <!--<РАЗМЕТКА>-->
+              <Transform rotation='1 0 0 -1.57' , translation='0 0.1 -0.2'>
+                  <Shape>
+                      <Text string='- - - - - - - - - - - - - -'>
+                          <FontStyle size='3' language='ru'></FontStyle>
+                      </Text>
+                      <Appearance>
+                          <Material diffuseColor='#ffffff'></Material>
+                      </Appearance>
+                  </Shape>
+              </Transform>
+              <!--<АСФАЛЬТ>-->
+              <Shape>
+                  <Appearance>
+                      <ImageTexture url="mac_wallpaper_1920x1080_00211-1024x576.jpg"></ImageTexture>
+                      <Texturetransform repeatS="True" repeatT="True" scale="3 1.5"></Texturetransform>
+                  </Appearance>
+                  <Box size="25 .1 5"></Box>
+              </Shape>
+          </Transform>
+          <!--</ДОРОГА>-->
+        </Scene>
+    </X3D>
   </body>
 </html>
