@@ -110,6 +110,44 @@
               </Transform>
           </Transform>
           <!--</КОРОБКА ДОМА>-->
+          <!--<ФОНАРЬ>-->
+              <Transform translation='-6 -1.5 -5'>
+                  <Group DEF="FONAR">
+                      <Shape>
+                          <Appearance>
+                              <Material diffuseColor='#d9d9d9' specularColor="#dbdbdb" shininess="1"></Material>
+                          </Appearance>
+                          <Cylinder radius="0.2" height="5"></Cylinder>
+                      </Shape>
+                      <Transform rotation='0 0 1 1.57' , translation='0 2 0'>
+                          <Shape>
+                              <Appearance>
+                                  <Material diffuseColor='#d9d9d9' specularColor="#dbdbdb" shininess="1"></Material>
+                              </Appearance>
+                              <Cylinder radius="0.1" height="2.8"></Cylinder>
+                          </Shape>
+                      </Transform>
+                      <Transform translation='1 1.55 0'>
+                          <Shape DEF='SVET'>
+                              <Appearance>
+                                  <Material diffuseColor='#d9d9d9' specularColor="#dbdbdb" shininess="1"></Material>
+                              </Appearance>
+                              <Cone height="0.7" bottomRadius="0.6" topRadius="0.3"></Cone>
+                          </Shape>
+                      </Transform>
+                      <Transform translation='-1 1.55 0'>
+                          <Shape USE='SVET'>
+                          </Shape>
+                      </Transform>
+                  </Group>
+              </Transform>
+          <!--</ФОНАРЬ>-->
+          <!--<ФОНАРЬ1>-->
+          <Transform translation='6 -1.5 -5'>
+              <Group USE="FONAR">
+               </Group>
+          </Transform>
+          <!--</ФОНАРЬ1>-->
         </Scene>
     </X3D>
   </body>
