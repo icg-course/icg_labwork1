@@ -17,7 +17,7 @@
       <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom">
           <Scene>
 <!--Платформа-->
-            <Transform translation="0 0 -27", rotation="0 1 0 1.57">
+          <Transform translation="0 0 -27", rotation="0 1 0 1.57">
               <Shape>
                 <Appearance>
                   <!--<ImageTexture url="lol.jpg"></ImageTexture>
@@ -45,6 +45,35 @@
               </Transform>
             </Group>
           </Transform>
+<!--Цилиндр-->
+          <Group def="Pillar">
+              <Transform translation="-9 6.25 15">
+                  <Shape>
+                      <Appearance>
+                          <ImageTexture url="Nero-Potoro.jpg"></ImageTexture>
+                          <Texturetransform repeatS="True" repeatT="True" scale="7 7"></Texturetransform>
+                      </Appearance>
+                      <Cylinder radius="0.75" height="10"></Cylinder>
+                  </Shape>
+              </Transform>-->
+<!--Сопло-->
+              <Transform translation="-9 2 15" , rotation="1 0 0 3.14">
+                  <Shape>
+                      <Appearance>
+                          <Material diffuseColor='#663300'></Material>
+                      </Appearance>
+                      <Nozzle outerRadius="0.8" innerRadius="0.75" nozzleRadius="1" nozzleHeight="0.75" height="1.5"></Nozzle>
+                  </Shape>
+                  <Transform translation="0 -8.5 0" , rotation="1 0 0 3.14">
+                      <Shape>
+                          <Appearance>
+                              <Material diffuseColor='#663300'></Material>
+                          </Appearance>
+                          <Nozzle outerRadius="0.8" innerRadius="0.75" nozzleRadius="1" nozzleHeight="0.75" height="1.5"></Nozzle>
+                      </Shape>
+                  </Transform>
+              </Transform>
+            </Group>
           </Scene>
         </X3D>
   </body>
