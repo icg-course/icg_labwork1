@@ -16,8 +16,9 @@
       <h1>lr1</h1>
       <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom">
           <Scene>
+          <Viewpoint orientation="-1 0 0 0.35" position="20 50 200"></Viewpoint>
 <!--Платформа-->
-          <Transform translation="0 0 -27", rotation="0 1 0 1.57">
+          <Transform translation="0 0 -27" rotation="0 1 0 1.57">
               <Shape>
                 <Appearance>
                   <!--<ImageTexture url="lol.jpg"></ImageTexture>
@@ -57,14 +58,14 @@
                   </Shape>
               </Transform>-->
 <!--Сопло-->
-              <Transform translation="-9 2 15" , rotation="1 0 0 3.14">
+              <Transform translation="-9 2 15" rotation="1 0 0 3.14">
                   <Shape>
                       <Appearance>
                           <Material diffuseColor='#663300'></Material>
                       </Appearance>
                       <Nozzle outerRadius="0.8" innerRadius="0.75" nozzleRadius="1" nozzleHeight="0.75" height="1.5"></Nozzle>
                   </Shape>
-                  <Transform translation="0 -8.5 0" , rotation="1 0 0 3.14">
+                  <Transform translation="0 -8.5 0" rotation="1 0 0 3.14">
                       <Shape>
                           <Appearance>
                               <Material diffuseColor='#663300'></Material>
@@ -74,6 +75,69 @@
                   </Transform>
               </Transform>
             </Group>
+<!--Копии-->
+             <Group def="Row">
+             		     <Transform translation="0 0 0", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -5", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -10", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -15", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -20", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -25", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -30", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -35", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -40", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -45", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -50", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -55", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -60", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -65", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -70", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -75", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -80", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+                     <Transform translation="0 0 -85", >
+                       <Group use="Pillar"></Group>
+                     </Transform>
+              </Group>
+                 <Transform translation="18 0 0", >
+                   <Group use="Row"></Group>
+                 </Transform>
+                 <Transform translation="0 10.5 -27", rotation="0 1 0 1.57">
+                   <Group use="Plane"></Group>
+                 </Transform>
           </Scene>
         </X3D>
   </body>
