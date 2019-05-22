@@ -7,7 +7,283 @@
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
+    <x3d style="left:0px; top:0px; width:80%; height:90%; border:none;">
+          <scene>
+            <transform translation="0 0 2" rotation = "1 1 0 0.52">
+			   <!-- Остров -->
+               <transform translation="0 -5 0" rotation = "1 0 0 1.57">
+                   <shape>
+                        <appearance>
+                            <TextureTransform scale="10 10"></TextureTransform>
+                            <ImageTexture url ="grass.png" repeatS="True" repeatT="True"></ImageTexture>
+                        </appearance>
+                        <box size="10 10 10"></box>
+                    </shape>
+               </transform>
+			   
+			    <!-- Океан -->
+				<transform translation="0 -0.5 0">
+					<shape>
+						<appearance>
+							<TextureTransform scale="1 1"></TextureTransform>
+							<ImageTexture url ="water.jpg" repeatS="True" repeatT="True"></ImageTexture>
+						</appearance>
+					<cylinder height="0" radius="25" ></cylinder>
+					</shape>
+				</transform>
+                  
+                <!----создание елки 1 - начало ----->
+                <transform translation="-3.5 0.5 -1.5">
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="2 5"></TextureTransform>
+						<ImageTexture url ="sprucetree.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cylinder height="1.5" radius="0.06" ></cylinder>
+                    </shape>
+                </transform>
+				
+				<transform translation="-3.5 0.8 -1.5" >
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="5 5"></TextureTransform>
+                        <ImageTexture url ="leaves.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cone bottom="True" bottomRadius="0.8" height="1"></cone>
+                    </shape>
+                </transform>
+                
+                <transform translation="-3.5 1 -1.5" >
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="5 5"></TextureTransform>
+                        <ImageTexture url ="leaves.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cone bottom="True" bottomRadius="0.7" height="1"></cone>
+                    </shape>
+                </transform>
+
+                <transform translation="-3.5 1.3 -1.5">
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="5 5"></TextureTransform>
+                        <ImageTexture url ="leaves.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cone bottom="True" bottomRadius="0.6" height="1"></cone>
+                    </shape>
+                </transform>
+
+                <transform translation="-3.5 1.6 -1.5">
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="5 5"></TextureTransform>
+                        <ImageTexture url ="leaves.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cone bottom="True" bottomRadius="0.5" height="0.75"></cone>
+                    </shape>
+                </transform>                
+                <!----создание елки 1- конец ----->
+
+                <!----создание елки 2 - начало ----->
+                <transform translation="-2.5 0.1 -2.5">
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="2 5"></TextureTransform>
+						<ImageTexture url ="sprucetree.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cylinder height="1" radius="0.08" ></cylinder>
+                    </shape>
+                </transform>
+				
+				<transform translation="-2.5 1 -2.5" >
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="5 5"></TextureTransform>
+                        <ImageTexture url ="leaves.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cone bottom="True" bottomRadius="0.5" height="1"></cone>
+                    </shape>
+                </transform>
+                
+                <transform translation="-2.5 1.4 -2.5" >
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="5 5"></TextureTransform>
+                        <ImageTexture url ="leaves.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cone bottom="True" bottomRadius="0.4" height="1"></cone>
+                    </shape>
+                </transform>
+
+                <transform translation="-2.5 1.6 -2.5">
+                    <shape>
+                    <appearance>
+                        <TextureTransform scale="5 5"></TextureTransform>
+                        <ImageTexture url ="leaves.png" repeatS="True" repeatT="True"></ImageTexture>
+                    </appearance>
+                    <cone bottom="True" bottomRadius="0.3" height="1"></cone>
+                    </shape>
+					<!-- Игрушки -->
+					<transform translation="0.1 0 -0.15">
+						<shape>
+							<appearance>
+								<material diffuseColor="2.25 2 0.6"></material>
+							</appearance>
+							<sphere radius = "0.05"></sphere>
+						</shape>
+					</transform>
+						<transform translation="-0.1 -0.2 0.2">
+						<shape>
+							<appearance>
+								<material diffuseColor="2.25 0.2 0.6"></material>
+							</appearance>
+							<sphere radius = "0.05"></sphere>
+						</shape>
+					</transform>
+					<transform translation="0.15 -0.55 0.35">
+						<shape>
+							<appearance>
+								<material diffuseColor="2 0.1 0.1"></material>
+							</appearance>
+							<sphere radius = "0.05"></sphere>
+						</shape>
+					</transform>
+						<transform translation="-0.1 -0.75 -0.4">
+						<shape>
+							<appearance>
+								<material diffuseColor="0.1 1.2 2"></material>
+							</appearance>
+							<sphere radius = "0.05"></sphere>
+						</shape>
+					</transform>
+                </transform>
+				
+                <!----создание елки 2 - конец ----->
+
+
+                <!----создание лиственницы 1- начало ----->
+                <transform translation="2.6 0.2 -2.5">
+                    <shape>
+                    <appearance>
+                        <material diffuseColor="0.59 0.26 0.19"></material>
+                    </appearance>
+                    <cylinder height="0.5" radius="0.06" ></cylinder>
+                    </shape>
+                </transform>
+
+                 <transform translation="2.6 1 -2.5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1.9 0.59 0.25"></material>
+                        </appearance>
+                        <sphere radius = "0.7"></sphere>
+                    </shape>
+                </transform>
+                <!----создание лиственницы 1- конец ----->
+
+                <!----создание лиственницы 2- начало ----->
+                <transform translation="1.5 0.2 -2.8">
+                    <shape>
+                    <appearance>
+                        <material diffuseColor="0.59 0.26 0.19"></material>
+                    </appearance>
+                    <cylinder height="0.3" radius="0.06" ></cylinder>
+                    </shape>
+                </transform>
+
+                 <transform translation="1.5 0.6 -2.8">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="2.25 2 0.6"></material>
+                        </appearance>
+                        <sphere radius = "0.4"></sphere>
+                    </shape>
+                </transform>
+                <!----создание лиственницы 2- конец ----->
+
+                <!----создание лиственницы 3- начало ----->
+                <transform translation="3 0.2 -1.6">
+                    <shape>
+                    <appearance>
+                        <material diffuseColor="0.59 0.26 0.19"></material>
+                    </appearance>
+                    <cylinder height="0.3" radius="0.06" ></cylinder>
+                    </shape>
+                </transform>
+
+                 <transform translation="3 0.6 -1.6">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0 1 0.5"></material>
+                        </appearance>
+                        <sphere radius = "0.4"></sphere>
+                    </shape>
+                </transform>
+                <!----создание лиственницы 3- конец ----->
+
+                <transform translation="-3.5 0.3 3">
+                    <shape>
+                    <appearance>
+                        <material diffuseColor="0 0 0"></material>
+                    </appearance>
+                    <cylinder height="0.5" radius="0.02" ></cylinder>
+                    </shape>
+                </transform>
+
+                <transform translation="-3.5 0.5 3" rotation = "0 0 0 0">
+                   <shape>
+                        <appearance>
+                            <material diffuseColor="2.42 2.23 1.16"></material>
+                        </appearance>
+                        <box size="0.8 0.4 0.09"></box>
+                    </shape>
+               </transform>
+
+                <transform translation="-3.5 0.5 3.07" >
+                    <shape>
+                    <appearance>
+                        <material diffuseColor="0 0 0"></material>
+                    </appearance>
+                    <text string="Avalon" solid="false" >
+                        <fontstyle size = "0.2"></fontstyle>
+                    </text>
+                   </shape>
+               </transform>
+
+				<!----создание пруда ----->
+				<transform translation="0 0.11 0" rotation = "1 0 0 1.57"> 
+					<shape> 
+						<appearance> 
+							 <material diffuseColor="0.88 0.87 0.77"></material>
+						</appearance> 
+					<torus innerRadius="0.1" outerRadius="1.5"></torus> 
+					</shape> 
+					
+					<!-- Камень -->
+				    <transform translation="0 0 0.3">
+                    <shape>
+                        <appearance>
+							<TextureTransform scale="5 5"></TextureTransform>
+							<ImageTexture url ="stone.png" repeatS="True" repeatT="True"></ImageTexture>
+                        </appearance>
+                        <sphere radius = "0.7"></sphere>
+                    </shape>
+					</transform>
+				</transform>
+
+				<transform translation="0 0.11 0">
+                    <shape>
+                        <appearance>
+                            <TextureTransform scale="1 1"></TextureTransform>
+                            <ImageTexture url ="water.jpg" repeatS="True" repeatT="True"></ImageTexture>
+                        </appearance>
+                    <cylinder height="0" radius="1.5" ></cylinder>
+                    </shape>
+                </transform>
+
+              </transform>
+          </scene>
+    </x3d>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
   </body> 
 </html>
