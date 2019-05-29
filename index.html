@@ -8,6 +8,741 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>Футбольчик</h1>
+
+  <X3D style="width:1024px; height:720px">
+      <Scene>
+        <Viewpoint  position='0,6,20' orientation='1,1,0,0'> </Viewpoint>
+        <PointLight location="-12 6 4" color="0 0 1" intensity="2" shadowIntensity="0.5" shadowMapSize="512"></PointLight>
+        <Background groundAngle='0.9 1.5 1.57' groundColor='0.6 0.3 0.1 0.2 0.1 0.2 0.1 0.6 0.1 0 0.3 0.1' skyAngle='0.9 1.5 1.57' skyColor='0.28 0.18 0.36 0.2 0.44 0.85 0.51 0.81 0.95 0.47 0.8 0.2'>
+        </Background>
+        <transform translation='9 1.5 2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Cylinder height='3' radius='0.08'> </Cylinder>  
+        </Shape>
+        </transform>
+        <transform translation='9 1.5 -2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Cylinder height='3' radius='0.08'> </Cylinder>  
+        </Shape>
+      </transform>
+      <transform translation='9 3 0' rotation='2 0 0 33'>
+       <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Cylinder height='4.1' radius='0.08'> </Cylinder>  
+        </Shape>
+        </transform>
+
+        <Shape>
+          <Appearance>
+          <ImageTexture url="grass.jpg"> </ImageTexture>
+            <Material ></Material>
+          </Appearance>
+          <Box size="20 0.2 10"></Box>
+        </Shape>
+
+
+        <transform translation='-9 1.5 2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Cylinder height='3' radius='0.08'> </Cylinder>  
+        </Shape>
+        </transform>
+        <transform translation='-9 1.5 -2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Cylinder height='3' radius='0.08'> </Cylinder>  
+        </Shape>
+      </transform>
+      <transform translation='-9 3 0' rotation='2 0 0 33'>
+       <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Cylinder height='4.1' radius='0.08'> </Cylinder>  
+        </Shape>
+        </transform>
+         <transform translation='0 0 4.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='18 0.22 0.05' > </Box>  
+        </Shape>
+        </transform>
+        <transform translation='0 0 -4.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='18 0.22 0.05' > </Box>  
+        </Shape>
+        </transform>
+         <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='0.05 0.22 9' > </Box>  
+        </Shape>
+        <transform translation='9 0 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='0.05 0.22 9' > </Box>  
+        </Shape>
+      </transform>
+      <transform translation='-9 0 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='0.05 0.22 9' > </Box>  
+        </Shape>
+      </transform>
+      <transform translation='0 0.26 0'>
+      <Shape>
+            <Appearance>
+              <ImageTexture url="ball.jpg"> </ImageTexture>
+              <Material></Material>
+              </Appearance>
+              <Sphere radius='0.15' > </Sphere>  
+        </Shape>
+        </transform>
+        <transform translation='8 0 2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='2 0.22 0.05' > </Box>  
+        </Shape>
+      </transform>
+      <transform translation='8 0 -2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='2 0.22 0.05' > </Box>  
+        </Shape>
+      </transform>
+      </Shape>
+        <transform translation='7 0 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='0.05 0.22 4' > </Box>  
+        </Shape>
+      </transform>
+
+<transform translation='-8 0 2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='2 0.22 0.05' > </Box>  
+        </Shape>
+      </transform>
+      <transform translation='-8 0 -2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='2 0.22 0.05' > </Box>  
+        </Shape>
+      </transform>
+      </Shape>
+        <transform translation='-7 0 0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size='0.05 0.22 4' > </Box>  
+        </Shape>
+      </transform>
+       <transform translation='0 0.1 0' rotation='2 0 0 33'>
+       <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Torus outerRadius='1.2' innerRadius='0.02' > </Torus>  
+        </Shape>
+        </transform>
+
+
+
+
+        <!--скамейка1-->
+        <transform translation='-2 0.25 6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='2 0.25 6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='2 0.25 6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-2 0.25 6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='0 0.5 6.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+      <!--скамейка2-->
+        <transform translation='4 0.25 6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='8 0.25 6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='8 0.25 6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='4 0.25 6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='6 0.5 6.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+<!--скамейка3-->
+        <transform translation='-8 0.25 6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='-4 0.25 6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-4 0.25 6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-8 0.25 6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-6 0.5 6.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+
+      <!--Ground-->
+      </transform>
+       <transform translation='0 0 6'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="brown"></Material>
+              </Appearance>
+              <Box size="20 0.2 2"> </Box>  
+        </Shape>
+      </transform>
+      </transform>
+       <transform translation='0 0.2 8'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="brown"></Material>
+              </Appearance>
+              <Box size="20 0.6 2"> </Box>  
+        </Shape>
+      </transform>
+
+
+<!--скамейка3-->
+        <transform translation='-8 0.65 8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='-4 0.65 8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-4 0.65 8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-8 0.65 8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-6 0.9 8.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+
+      <!--скамейка2-->
+        <transform translation='4 0.65 8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='8 0.65 8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='8 0.65 8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='4 0.65 8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='6 0.9 8.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+
+      <!--скамейка1-->
+        <transform translation='-2 0.65 8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='2 0.65 8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='2 0.65 8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-2 0.65 8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='0 0.9 8.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+       <!--Ground-->
+      </transform>
+       <transform translation='0 0 -6'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="brown"></Material>
+              </Appearance>
+              <Box size="20 0.2 2"> </Box>  
+        </Shape>
+      </transform>
+      </transform>
+       <transform translation='0 0.2 -8'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="brown"></Material>
+              </Appearance>
+              <Box size="20 0.6 2"> </Box>  
+        </Shape>
+      </transform>
+
+
+
+ <!--скамейка1-->
+        <transform translation='-2 0.65 -8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='2 0.65 -8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='2 0.65 -8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-2 0.65 -8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='0 0.9 -8.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+      <!--скамейка3-->
+        <transform translation='-8 0.65 -8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='-4 0.65 -8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-4 0.65 -8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-8 0.65 -8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-6 0.9 -8.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+
+      <!--скамейка2-->
+        <transform translation='4 0.65 -8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='8 0.65 -8.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='8 0.65 -8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='4 0.65 -8.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='6 0.9 -8.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+
+
+
+
+              <!--скамейка1-->
+        <transform translation='-2 0.25 -6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='2 0.25 -6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='2 0.25 -6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-2 0.25 -6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='0 0.5 -6.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+      <!--скамейка2-->
+        <transform translation='4 0.25 -6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='8 0.25 -6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='8 0.25 -6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='4 0.25 -6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='6 0.5 -6.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="red"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+
+<!--скамейка3-->
+        <transform translation='-8 0.25 -6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+      <transform translation='-4 0.25 -6.2'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-4 0.25 -6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-8 0.25 -6.5'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="0.05 0.5 0.05"> </Box>  
+        </Shape>
+      </transform>
+       <transform translation='-6 0.5 -6.3'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="white"></Material>
+              </Appearance>
+              <Box size="5 0.05 0.5"> </Box>  
+        </Shape>
+      </transform>
+         <sound>
+        <AudioClip url="Feduk.mp3" loop='true' enabled='true'/>
+      </sound>
+      </Scene>
+    </X3D>
+
   </body> 
 </html>
