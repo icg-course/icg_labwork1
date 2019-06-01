@@ -1,13 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <title>STEPANOV</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+    <link rel="stylesheet" href="../css/custom.css" />
+    <script src="../js/custom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Степанов С.С. ИКГ Лаб.1</h1>
+    <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom" width='1600px' height='800px'>
+      <Scene>
+        <!--<Background backUrl="https://handoff-cdn.appadvice.com/wp-content/appadvice-v2-media/2017/12/reversible-emoji_bc0b09f63f4f3d3116c3bb7b1e8a1915-xl.jpg" >
+
+        </Background>-->
+        <!-- *** ЗВЕЗДА лев -->
+        <transform translation='-6 0 -6'> 
+        <Shape def="conus">
+          <Appearance>
+            <ImageTexture url="https://avatanplus.com/files/resources/small/597b0d939d72415d88ad08bd.jpg">
+            </ImageTexture>
+            <Material diffuseColor='red' 
+            ></Material>
+          </Appearance>
+          <cone></cone>
+        </Shape>
+        </transform>
+        <transform translation='-7 -1 -6' rotation='0 0 1 1.57'> 
+    <shape use= "conus"> 
+  
+    </shape> 
+    </transform> 
+     <transform translation='-5 -1 -6' rotation='0 0 1 -1.57'> 
+    <shape use= "conus"> 
+    </shape> 
+    </transform> 
+         <transform translation='-6 -2 -6' rotation='1 0 0 -3.14'> 
+    <shape use= "conus"> 
+    </shape> 
+    </transform> 
+           
+           <!-- *** ЗВЕЗДА прав -->
+           <transform translation='6 0 -6'> 
+            <Shape use= "conus">
+        </Shape>
+        </transform> 
+        <transform translation='5 -1 -6' rotation='0 0 1 1.57'> 
+    <shape use= "conus"> 
+    </shape> 
+    </transform> 
+     <transform translation='7 -1 -6' rotation='0 0 1 -1.57'> 
+    <shape use= "conus"> 
+    </shape> 
+    </transform> 
+         <transform translation='6 -2 -6' rotation='1 0 0 -3.14'> 
+    <shape use= "conus">  
+    </shape> 
+    </transform> 
+
+           <!-- *** ЗВЕЗДА центр -->
+           <transform translation='0 0 -6'> 
+            <Shape use= "conus">
+        </Shape>
+        </transform> 
+        <transform translation='-1 -1 -6' rotation='0 0 1 1.57'> 
+    <shape use= "conus"> 
+    </shape> 
+    </transform> 
+     <transform translation='1 -1 -6' rotation='0 0 1 -1.57'> 
+    <shape use= "conus">  
+    </shape> 
+    </transform> 
+         <transform translation='0 -2 -6' rotation='1 0 0 -3.14'> 
+    <shape use= "conus"> 
+        <appearance> 
+           <ImageTexture url="https://avatanplus.com/files/resources/small/597b0d939d72415d88ad08bd.jpg">
+            </ImageTexture>
+        <material diffuseColor='blue'></material> 
+        </appearance> 
+        <cone></cone> 
+    </shape> 
+    </transform> 
+
+               <!-- *** ЗВЕЗДА верх -->
+           <transform translation='0 6 -6'> 
+            <Shape use= "conus">
+          <Appearance>
+             <ImageTexture url="https://avatanplus.com/files/resources/small/597b0d939d72415d88ad08bd.jpg">
+            </ImageTexture>
+            <Material diffuseColor='blue' emissiveColor 0.52
+            ></Material>
+          </Appearance>
+          <cone></cone>
+        </Shape>
+        </transform> 
+        <transform translation='-1 5 -6' rotation='0 0 1 1.57'> 
+    <shape use= "conus"> 
+        <appearance> 
+           <ImageTexture url="https://avatanplus.com/files/resources/small/597b0d939d72415d88ad08bd.jpg">
+            </ImageTexture>
+        <material diffuseColor='blue'></material> 
+        </appearance> 
+        <cone></cone> 
+    </shape> 
+    </transform> 
+     <transform translation='1 5 -6' rotation='0 0 1 -1.57'> 
+    <shape use= "conus"> 
+        <appearance> 
+           <ImageTexture url="https://avatanplus.com/files/resources/small/597b0d939d72415d88ad08bd.jpg">
+            </ImageTexture>
+        <material diffuseColor='blue'></material> 
+        </appearance> 
+        <cone></cone> 
+    </shape> 
+    </transform> 
+         <transform translation='0 4 -6' rotation='1 0 0 -3.14'> 
+    <shape use= "conus">  
+    </shape> 
+    </transform> 
+
+               <!-- *** ЗВЕЗДА низ -->
+           <transform translation='0 -6 -6'> 
+            <Shape use= "conus">
+        </Shape>
+        </transform> 
+        <transform translation='-1 -7 -6' rotation='0 0 1 1.57'> 
+    <shape use= "conus"> 
+
+    </shape> 
+    </transform> 
+     <transform translation='1 -7 -6' rotation='0 0 1 -1.57'> 
+    <shape use= "conus"> 
+ 
+    </shape> 
+    </transform> 
+         <transform translation='0 -8 -6' rotation='1 0 0 -3.14'> 
+    <shape use= "conus">  
+    </shape> 
+    </transform> 
+
+        <!-- *** ТЕКСТ -->
+          <transform translation='10 8 -12'>
+          <Shape>
+        <Text string='"SUAI" ' solid='false'>
+          <FontStyle family="TYPEWRITER" size='2' spacing='0.9' language='en'></FontStyle>
+        </Text>
+        <Appearance>
+          <Material diffuseColor='255 0 255'></Material>
+        </Appearance>
+      </Shape>
+      </transform> 
+</transform> 
+        
+
+             
+         <transform translation='0 -3 -1' > 
+    <shape> 
+        <appearance> 
+           <ImageTexture url="https://avatanplus.com/files/resources/small/597b0d939d72415d88ad08bd.jpg">
+            </ImageTexture>
+            <TextureTransform scale="3 3" rotation="0.78">
+            </TextureTransform>
+        <material diffuseColor='blue'></material> 
+        </appearance> 
+        <box></box> 
+    </shape> 
+    </transform> 
+
+
+
+      </Scene>
+    </X3D>
+  </body>
 </html>
+
