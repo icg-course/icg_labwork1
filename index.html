@@ -1,13 +1,338 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Simberg 1st Lab</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+</head>
+<body>
+<p>
+   Simberg Dmitry. Group 4643
+</p>
+<x3d width='1280px' height='720px'>
+    <scene >
+        <transform >                                                               <!---car body--->
+        <shape>
+            <appearance>
+                <material diffuseColor='#600000'></material>
+            </appearance>
+            <box size = '3 1.1 7'></box>
+        </shape>
+          
+            <transform translation='1.4 -0.2 2.4' rotation='0 0 1 1.57'>          <!---front left wheel--->
+                <shape >
+                    <appearance>
+                        <material diffuseColor='#000000'></material>
+                    </appearance>
+                    <cylinder height='0.4' radius='0.6'></cylinder>
+                </shape>
+                <transform>
+                    <shape >
+                    <appearance>
+                        <material diffuseColor='#707070'></material>
+                    </appearance>
+                    <cylinder height='0.41' radius='0.45'></cylinder>
+                </shape>
+                </transform>
+              
+                <transform translation ='0 2.8 0'>                               <!---front right wheel--->
+                    <shape >
+                        <appearance>
+                            <material diffuseColor='#000000'></material>
+                        </appearance>
+                        <cylinder height='0.4' radius='0.6'></cylinder>
+                    </shape>
+                     <transform>
+                    <shape >
+                    <appearance>
+                        <material diffuseColor='#707070'></material>
+                    </appearance>
+                    <cylinder height='0.41' radius='0.45'></cylinder>
+                </shape>
+                </transform>
+                </transform>
+             </transform>
+            
+
+             <transform translation='1.4 -0.2 -2.5' rotation='0 0 1 1.57'>        <!---rear left wheel--->    
+                <shape >
+                    <appearance>
+                        <material diffuseColor='#000000'></material>
+                    </appearance>
+                    <cylinder height='0.4' radius='0.6'></cylinder>
+                </shape>
+                 <transform>
+                    <shape >
+                    <appearance>
+                        <material diffuseColor='#707070'></material>
+                    </appearance>
+                    <cylinder height='0.41' radius='0.45'></cylinder>
+                </shape>
+                </transform>
+             
+              <transform translation ='0 2.8 0'>                               <!---rear right wheel--->
+                    <shape >
+                        <appearance>
+                            <material diffuseColor='#000000'></material>
+                        </appearance>
+                        <cylinder height='0.4' radius='0.6'></cylinder>
+                    </shape>
+                     <transform>
+                    <shape >
+                    <appearance>
+                        <material diffuseColor='#707070'></material>
+                    </appearance>
+                    <cylinder height='0.41' radius='0.45'></cylinder>
+                </shape>
+                </transform>
+                </transform>  
+             </transform>
+
+             <transform translation='0 0.95 -0.7'>                             <!---roof--->
+                <shape>
+                    <appearance>
+                        <material diffuseColor='#600000'></material>
+                    </appearance>
+                    <box size='2.85 0.9 2.01'></box>
+                </shape> 
+
+                <transform translation=' 0 -0.15 -0.01'>                 <!---sidewindows--->
+                    <shape>
+                    <appearance>
+                        <material diffuseColor='#c0f5ff'></material>
+                    </appearance>
+                    <box size='2.86 0.9 1.8'></box>
+                </shape> 
+                </transform>
+
+                <!---thing on a hood--->
+
+                <transform translation='0 -0.37 4.1'>
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='#600000'></material>
+                        </appearance>
+                        <cone bottomRadius='0.05' height='0.07' topRadius='0.01' ></cone>
+                    </shape>
+
+                    <transform translation='0 0.03 0'>
+                        <shape>
+                            <appearance>
+                                <material diffuseColor='#600000'></material>
+                            </appearance>
+                            <sphere radius='0.03'></sphere>
+                        </shape>
+                    </transform>
+                </transform>
+
+                <!---windshield--->
+
+                <transform translation='0 -0.41 1.45' rotation='1 0 0 0.61'>    
+                    <shape>
+                     <appearance>
+                        <material diffuseColor='#600000'></material>
+                    </appearance>
+                    <box size='2.85 0.9 1.71'></box>
+                </shape>
+                </transform>   
+
+                <transform translation='0 -0.4 1.45' rotation='1 0 0 0.61'>    <!---window--->
+                    <shape>
+                     <appearance>
+                        <material diffuseColor='#c0f5ff'></material>
+                    </appearance>
+                    <box size='2.65 0.9 1.5'></box>
+                </shape>
+                </transform> 
+
+                 <transform translation='0 -0.5 1.25' rotation='1 0 0 0.61'>    <!---sidewindows--->
+                    <shape>
+                     <appearance>
+                        <material diffuseColor='#c0f5ff'></material>
+                    </appearance>
+                    <box size='2.86 0.9 1.5'></box>
+                </shape>
+                </transform>
+
+                <!---rear window--->
+
+                 <transform translation='0 -0.45 -1.37' rotation='1 0 0 -0.7'>  
+                    <shape>
+                     <appearance>
+                        <material diffuseColor='#600000'></material>
+                    </appearance>
+                    <box size='2.85 0.9 1.71'></box>
+                </shape>
+                </transform>   
+
+                <transform translation='0 -0.45 -1.38' rotation='1 0 0 -0.7'>  <!---window--->
+                    <shape>
+                     <appearance>
+                        <material diffuseColor='#c0f5ff'></material>
+                    </appearance>
+                    <box size='2.65 0.9 1.5'></box>
+                </shape>
+                </transform> 
+
+                <transform translation='0 -0.52 -1.2' rotation='1 0 0 -0.7'>  <!---sidewindows--->
+                    <shape>
+                     <appearance>
+                        <material diffuseColor='#c0f5ff'></material>
+                    </appearance>
+                    <box size='2.86 0.9 1.5'></box>
+                </shape>
+                </transform> 
+
+             </transform>
+
+             <!---mirrors--->
+
+             <transform translation='0 0.59 1.15'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='#600000'></material>
+                    </appearance>
+                    <box size='3.55 0.2 0.2'></box>
+                </shape>
+             </transform>
+
+             <!---headlights--->
+
+             <transform translation ='1 0.25 3.5'>              <!---_left--->
+                 <shape>
+                     <appearance>
+                         <material diffuseColor='#f3ff20' emissiveColor='#ffff90'></material>
+                     </appearance>
+                     <box size='0.6 0.3 0.1'></box>>
+                 </shape>
+             </transform>
+             <transform translation ='-1 0.25 3.5'>             <!---_right--->
+                 <shape>
+                     <appearance>
+                         <material diffuseColor='#f3ff20' emissiveColor='#ffff90'></material>
+                     </appearance>
+                     <box size='0.6 0.3 0.1'></box>
+                 </shape>
+             </transform>
+
+             <!---_grill--->
+
+             <transform translation ='0 0.22 3.5'>             
+                 <shape>
+                     <appearance>
+                         <material diffuseColor='#505050' ></material>
+                     </appearance>
+                     <box size='1.3 0.4 0.1'></box>
+                 </shape>
+                 
+             </transform>
+
+             <!---stoplights--->
+
+                <transform translation ='1 0.25 -3.5'>              <!---_left--->
+                 <shape>
+                     <appearance>
+                         <material diffuseColor='#e81700'></material>
+                     </appearance>
+                     <box size='0.6 0.3 0.1'></box>>
+                 </shape>
+             </transform>
+             <transform translation ='-1 0.25 -3.5'>                <!---_right--->
+                 <shape>
+                     <appearance>
+                         <material diffuseColor='#e81700'></material>
+                     </appearance>
+                     <box size='0.6 0.3 0.1'></box>
+                 </shape>
+             </transform>
+
+             <!--bumpers--->
+
+            <transform translation='0 -0.3 3.4'>          <!---front--->
+                <shape>
+                    <appearance>
+                        <material diffuseColor='#303030'></material>
+                    </appearance>
+                    <box size='3.2 0.3 0.5'></box>
+                </shape>
+            </transform>
+
+             <transform translation='0 -0.3 -3.4'>          <!---rear--->
+                <shape>
+                    <appearance>
+                        <material diffuseColor='#303030'></material>
+                    </appearance>
+                    <box size='3.2 0.3 0.5'></box>
+                </shape>
+            </transform>
+        </transform>
+
+        <!---credits--->
+
+        <transform translation='-8 2 -5'>                           <!---shield--->
+             <shape>
+                 <appearance>
+                    <material diffuseColor='#777777'></material>
+                 </appearance>
+                  <box size='0.2 4 6'></box>
+            </shape>
+            
+            <transform translation='-0.11 -1 0'>                     <!---pole--->
+             <shape>
+                 <appearance>
+                    <material diffuseColor='#777777'></material>
+                 </appearance>
+                  <cylinder height='3.5' radius='0.2'></cylinder>
+            </shape>
+            </transform>
+
+            <transform translation='0.11 1 0' rotation='0 1 0 1.57'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='#ffffff'></material>
+                    </appearance>
+                    <text string='ИКГ' solid='false'>
+                      <fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
+                     </text>
+                </shape>
+
+                <transform translation='0 -0.4 0'>
+                    <shape>
+                    <appearance>
+                        <material diffuseColor='#ffffff'></material>
+                    </appearance>
+                    <text string='Лабораторная работа №1' solid='false'>
+                      <fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
+                     </text>
+                </shape>
+                </transform>
+
+                <transform translation='-1 -1.6 0'>
+                    <shape>
+                    <appearance>
+                        <material diffuseColor='#ffffff'></material>
+                    </appearance>
+                    <text string='Автор: Симберг Дмитрий' solid='false'>
+                      <fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
+                     </text>
+                </shape>  
+                </transform>
+
+                <transform translation='-1.5 -2 0'>
+                    <shape>
+                    <appearance>
+                        <material diffuseColor='#000088'></material>
+                    </appearance>
+                    <text string='Группа:        4643' solid='false'>
+                      <fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
+                     </text>
+                </shape>                
+                </transform>
+
+            </transform>
+        </transform>
+
+    </scene>
+</x3d>
+</body>
 </html>
