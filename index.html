@@ -1,13 +1,343 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
+
+<html> 
+   <head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+     <title>labr</title> 
+     <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
+    <link rel="stylesheet" href="../css/custom.css" />
+    <script src="../js/custom.js"></script>
+   </head> 
+   <body> 
+     <h1>IKG LR3</h1> 
+     <p> 
+       x3d scene - "podobie tanka"
+     </p> 
+	 <x3d width='1000px' height='600px'> 
+	 
+	   <scene> 
+
+
+			<viewpoint position='0 3 25'></viewpoint>
+
+			<transform  rotation="0 0 1 -1.570" translation="3 3.4 0">
+		  <shape> 
+			 <appearance> 
+					<material diffuseColor='#3F5040'></material>
+			   
+			 </appearance> 
+			<RectangularTorus innerradius="0.3" outerradius="0.5" height="18"></RectangularTorus> 
+		  </shape> 
+		</transform> 
+
+		<transform translation="-2 3 0">
+		  <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 1'></material>
+			   
+			 </appearance> 
+			<Cylinder radius="5" height="3"></Cylinder> 
+		  </shape> 
+		</transform> 
+
+			<transform translation="-2 5 2">
+		  <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material>
+			  
+			 </appearance> 
+			<Cylinder radius="1" height="1"></Cylinder> 
+		  </shape> 
+		</transform> 
+
+		<transform translation='0 1.6 0'> 
+		  <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material> 
+			  
+			 </appearance> 
+			 <box size="15 1 10"></box> 
+		  </shape> 
+		</transform>
+
+
+		<transform translation="0 0 0" >
+		 <Shape>
+          <Appearance>
+            <Material diffuseColor="1 0 1"></Material>
+            
+          </Appearance>
+          <Pyramid height="2.5" xbottom="20" ybottom="15" xtop="18" ytop="13" xoff="0" yoff="0"></Pyramid> 
+        </Shape>
+		</transform> 
+
+		<transform  translation="0 -2 0" >
+		 <shape> 
+			 <appearance> 
+			   <Material diffuseColor="linen"></material>
+			  
+			 </appearance> 
+			 <box size="19.3 2 12"></box> 
+		  </shape> 
+		</transform> 
+
+	 <Group DEF="Gus1"> 
+			<transform translation="-5 -2.9 6" rotation="1 0 0 -1.570" >
+		  <shape DEF="koleso"> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material> 
+			   
+			 </appearance> 
+			<Cylinder radius="0.9" height="1.2"></Cylinder> 
+		  </shape> 
+		</transform> 
+
+		<transform translation="-7.5 -2.9 6" rotation="1 0 0 -1.570" >
+		<shape USE="koleso"> 
+		  </shape> 
+		  </transform> 
+
+		<transform translation="-2.5 -2.9 6" rotation="1 0 0 -1.570" >
+		<shape USE="koleso"> 
+		  </shape> 
+		  </transform> 
+
+		<transform translation="0 -2.9 6" rotation="1 0 0 -1.570" >
+		<shape USE="koleso"> 
+		  </shape> 
+		  </transform> 
+
+		<transform translation="2.5 -2.9 6" rotation="1 0 0 -1.570" >
+		<shape USE="koleso"> 
+		  </shape> 
+		  </transform> 
+
+		<transform translation="5 -2.9 6" rotation="1 0 0 -1.570" >
+		<shape USE="koleso"> 
+		  </shape> 
+		  </transform> 
+
+		<transform translation="7.5 -2.9 6" rotation="1 0 0 -1.570" >
+		<shape USE="koleso"> 
+		  </shape> 
+		  </transform>
+	 </Group>
+
+		<transform translation="0 0 -12">
+		<shape USE="Gus1"> 
+		  </shape> 
+		  </transform> 
+    
+		  <!--наполнение гусениц -->
+
+		  <transform translation="-1.4 -4.5 6.7"> <!-- koordinati gusenicy sverhu -->
+
+		  	<Group DEF="Gus11">
+		  	<transform  translation="1.6 2.75 0" >
+		 <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material> 
+			   
+			 </appearance> 
+			 <box size="18.5 0.5 1"></box> 
+		  </shape> 
+		</transform> 
+
+		<transform  translation="1.6 0.73 0" >
+		 <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material>
+			   
+			 </appearance> 
+			 <box size="18.5 0.5 1"></box> 
+		  </shape> 
+		</transform> 
+
+		<transform rotation="0 0 1 -0.78"  translation="-8.1 1.28 0" >
+		 <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material> 
+			  
+			 </appearance> 
+			 <box size="1.8 0.5 1"></box> 
+		  </shape> 
+		</transform> 
+
+		<transform rotation="0 0 1 0.78"  translation="-8.1 2.2 0" >
+		 <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material>
+			   
+			 </appearance> 
+			 <box size="1.8 0.5 1"></box> 
+		  </shape> 
+		</transform> 
+
+
+
+		<transform rotation="0 0 1 0.78"  translation="11.3 1.28 0" >
+		 <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material>
+			   
+			 </appearance> 
+			 <box size="1.8 0.5 1"></box> 
+		  </shape> 
+		</transform> 
+
+		<transform rotation="0 0 1 -0.78"  translation="11.3 2.2 0" >
+		 <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 1 0'></material>
+			   
+			 </appearance> 
+			 <box size="1.8 0.5 1"></box> 
+		  </shape> 
+		</transform> 
+			
+			<!-- зубцы гусениц -->	
+			<Group DEF="zubci">
+				<transform translation="-5.54 0.48 0" >
+		 <shape DEF="treug"> 
+			 <appearance> 
+			   <material diffuseColor='0 1 1'></material>
+			   
+			   
+			 </appearance> 
+			 <box size="0.25 0.05 1"></box> 
+		  </shape> 
+		  </transform> 
+
+		  
+		  <transform   translation="-5.84 0.48 0" >
+		 <shape USE="treug"> 
+		  </shape> 
+		  </transform> 
+		  <transform   translation="-6.14 0.48 0" >
+		 <shape USE="treug"> 
+		  </shape> 
+		  </transform> 
+		  
+		  <transform   translation="-6.44 0.48 0" >
+		 <shape USE="treug"> 
+		  </shape> 
+		  </transform> 
+		  <transform   translation="-6.74 0.48 0" >
+		 <shape USE="treug"> 
+		  </shape> 
+		  </transform> 
+		  <transform   translation="-7.04 0.48 0" >
+		 <shape USE="treug"> 
+		  </shape> 
+		  </transform> 
+		  <transform   translation="-7.34 0.48 0" >
+		 <shape USE="treug"> 
+		  </shape> 
+		  </transform> 
+		  <transform   translation="-7.64 0.48 0" >
+		 <shape USE="treug"> 
+		  </shape> 
+		  </transform> 
+		</Group>
+		<transform translation="2.44 0 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="4.94 0 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="7.44 0 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform>
+		  <transform translation="9.94 0 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="12.44 0 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform>
+		  <transform translation="14.94 0 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="16.19 0 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="2.44 2.55 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="4.94 2.55 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="7.44 2.55 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform>
+		  <transform translation="9.94 2.55 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="12.44 2.55 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform>
+		  <transform translation="14.94 2.55 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		  <transform translation="16.19 2.55 0">
+		<shape USE="zubci"> 
+		  </shape> 
+		  </transform> 
+		</transform>
+	</group>
+	
+	
+	<transform translation="-1.4 -4.5 -6.7">
+		<shape USE="Gus11"> 
+		  </shape> 
+		  </transform> 
+		</transform>
+
+
+		<!-- zvezda-->
+		
+			<!-- setka-->
+
+			<Transform rotation="0 1 0 1.57" translation="-30 -4.1 30" scale="1 1.5 0.7 " >
+				<Shape>
+							<ElevationGrid xDimension="10" zDimension="6" xSpacing="10.0" zSpacing="30.0" solid="false"
+															height=
+																			"0,0,0,0,0,0,0,0,0,0,
+																			0,0,0,0,0,0,0,0,0,0,
+																			0,0,0,0,0,0,0,0,0,0,
+																		 0,0,0,0,0,0,0,0,0,0,
+																			0,0,0,0,0,0,0,0,0,0,
+																			0,0,0,0,0,0,0,0,0,0,">
+							</ElevationGrid>
+							<Appearance>
+								<Material diffuseColor='#BDB76B'></Material>
+								<ImageTexture url="https://pp.userapi.com/c851532/v851532697/f9f5f/BgS5yMcqQzw.jpg"></ImageTexture> 
+							</Appearance>
+						</Shape>
+								</Transform>
+
+</Transform >
+
+
+
+
+
+
+				
+	   </scene> 
+	</x3d> 
+   </body> 
 </html>
