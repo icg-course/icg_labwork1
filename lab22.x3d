@@ -1,0 +1,166 @@
+<X3D>   
+   <Scene>
+	<!--НОГИ-->
+   
+   <transform rotation="2 2 2 2" translation="0.38 1.27 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="leg.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Sphere radius="0.2"></Sphere>
+     </Shape>
+   </transform>
+   
+   <transform rotation="0 0 0 0" translation="0.38 0.7 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="leg.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Cylinder height="1" radius="0.2"></Cylinder>
+     </Shape>
+   </transform>
+   
+   <transform rotation="0 0 0 0" translation="0.38 0.2 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="snekers.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Box size="0.4 0.2 0.8"></Box>
+     </Shape>
+   </transform>
+   
+   
+   <transform rotation="2 2 2 2" translation="-0.38 1.27 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="leg.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Sphere radius="0.2"></Sphere>
+     </Shape>
+   </transform>
+   
+   <transform rotation="0 0 0 0" translation="-0.38 0.7 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="leg.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Cylinder height="1" radius="0.2"></Cylinder>
+     </Shape>
+   </transform>
+   
+   <transform rotation="0 0 0 0" translation="-0.38 0.2 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="snekers.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Box size="0.4 0.2 0.8"></Box>
+     </Shape>
+   </transform>
+
+<!--ТУЛОВИЩЕ-->
+
+	<transform rotation="0 0 0 0" translation="0 2 0">
+     <Shape>
+		  <Appearance>
+		  <TextureTransform center="0.5 0.7" rotation="1" scale="1 1" translation="0.2 0.1"></TextureTransform>
+		  <ImageTexture url="rubashka.jpg"></ImageTexture>
+		  </Appearance>
+		  <Cylinder height="2" radius="0.5"></Cylinder>
+     </Shape>
+   </transform>
+   
+<!--ГОЛОВА-->   
+
+	<transform rotation="0 0 0 0" translation="0 3.6 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="face1.png"></ImageTexture>
+		  <Material emissiveColor="0 0 0"></Material>
+		  </Appearance>
+		  <Sphere radius="0.6"></Sphere>
+     </Shape>
+	</transform>
+	
+	<transform rotation="0 0 0 0" translation="0 4.1 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="colpack.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Cone bottomRadius="0.6" height="3" bottom="false"></Cone>
+     </Shape>
+	</transform>
+
+<!--РУКИ-->
+
+	<transform rotation="0 0 0 0" translation="0.5 2.9 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="hand.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Sphere radius="0.25"></Sphere>
+     </Shape>
+	</transform>
+	
+	<transform rotation="1 0 0 2" translation="0.6 2.7 0.5">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="hand.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Cylinder height="1" radius="0.2"></Cylinder>
+     </Shape>
+    </transform>
+   
+   <transform rotation="0 0 0 0" translation="0.6 2.47 1">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="hand.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Sphere radius="0.2"></Sphere>
+     </Shape>
+	</transform>
+	
+
+
+	<transform rotation="0 0 0 0" translation="-0.5 2.9 0">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="hand.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Sphere radius="0.25"></Sphere>
+     </Shape>
+	</transform>
+	
+	<transform rotation="1 0 0 2" translation="-0.6 2.7 0.5">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="hand.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Cylinder height="1" radius="0.2"></Cylinder>
+     </Shape>
+    </transform>
+   
+   <transform rotation="0 0 0 0" translation="-0.6 2.47 1">
+     <Shape>
+		  <Appearance>
+		  <ImageTexture url="hand.jpg"></ImageTexture>
+		  <Material></Material>
+		  </Appearance>
+		  <Sphere radius="0.2"></Sphere>
+     </Shape>
+	</transform>
+	
+  
+   </Scene>
+</X3D>

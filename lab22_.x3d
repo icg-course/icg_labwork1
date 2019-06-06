@@ -1,0 +1,6 @@
+    <Scene>
+      <Shape>
+       <Box size="10 10 10"></Box>
+      </Shape>
+
+   </Scene>
