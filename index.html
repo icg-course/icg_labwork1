@@ -9,15 +9,78 @@
   </head>
   <body>
     <X3D>
-      <Scene>
+      <Scene> <!--сцена беседка в поле-->
+        
+        <!--беседка-->
+        <Transform translation='0 -1.5 -15'>
+          <Transform translation = "0 11 0"><!--крыша-->
+            <Shape>
+              <Appesrence>
+
+              </Appesrence>
+              <Cone bottomRadius = "7", height = "2", side = "true", bottom = "true"></Cone>
+            </Shape>
+          </Transform>
+
+          <Transform translation='-4.5 5 4.5'><!--опора крыши_1-->
+            <Shape>
+              <Appesrence>
+
+              </Appesrence>
+              <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
+            </Shape>
+          </Transform>
+
+          <Transform translation='4.5 5 4.5'><!--опора крыши_2-->
+            <Shape>
+              <Appesrence>
+
+              </Appesrence>
+              <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
+            </Shape>
+          </Transform>
+
+          <Transform translation='4.5 5 -4.5'><!--опора крыши_3-->
+            <Shape>
+              <Appesrence>
+
+              </Appesrence>
+              <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
+            </Shape>
+          </Transform>
+
+          <Transform translation='-4.5 5 -4.5'><!--опора крыши_4-->
+            <Shape>
+              <Appesrence>
+
+              </Appesrence>
+              <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
+            </Shape>
+          </Transform>
+          
+          <Transform><!--фундамент-->
+            <Shape>
+              <Appesrence>
+
+              </Appesrence>
+              <Box size ="10 1 10"></Box>
+            </Shape>
+          </Transform>
+      </Transform>
+      
+      <!--ступенька-->
+      <Transform>
         <Shape>
-          <Appesrance>
-            <Material color=red></Material>
-          </Appesrance>
-          <Box size="1 2 3">
-            <Material color=red></Material>
-          </Box>
+          <Appesrence>
+
+          </Appesrence>
+          
         </Shape>
+      </Transform>
+
+
+
+
       </Scene>
     </X3D>
   </body> 
