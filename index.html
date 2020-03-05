@@ -1,13 +1,131 @@
 <!DOCTYPE html>
+
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+	<head>
+		<meta charset="utf-8">
+		<title>lab1</title>
+		<link rel="stylesheet" href="http://x3dom.org/release/x3dom.css">
+		<script src="http://x3dom.org/release/x3dom-full.js"></script>
+	</head>
+	<body>
+		<x3d>
+			<scene>
+				<transform translation="3 3 -2">
+					<shape DEF="R2D2">
+						<appearance>
+							<material diffusecolor="gray"></material>
+						</appearance>
+						<text string="R2D2"></text>
+					</shape>
+				</transform>
+				
+				<transform DEF="bodyaxis" translation="0 0 0" rotation="1 0 0 -0.3">
+					<shape DEF="body">
+						<appearance>
+							<ImageTexture url="https://sun9-56.userapi.com/c206628/v206628465/95ca1/eD-eHtJ3RpM.jpg"></ImageTexture>
+						</appearance>
+						<cylinder height="2.4"></cylinder>
+					</shape>
+					
+					<transform translation="0 1.2 0">
+						<shape DEF="head">
+							<appearance>
+								<ImageTexture url="https://sun9-42.userapi.com/c206628/v206628886/94a30/x0TAQFBd2K0.jpg"></ImageTexture>
+							</appearance>
+							<sphere radius="0.99"></sphere>
+						</shape>
+					</transform>
+					
+					<transform translation="0 -1.2 0" rotation="1 0 0 3.1415">
+						<shape DEF="bodybottom">
+							<appearance>
+								<material diffusecolor="gray"></material>
+							</appearance>
+							<cone height="0.5" bottomradius="0.95" topradius="0.75" radius="0.9"></cone>
+						</shape>
+					</transform>
+					
+					<transform DEF="shoulder_axis" translation="0 0.7 0">
+						<transform rotation="0 0 1 1.57">
+							<shape>
+								<appearance>
+									<material diffusecolor="#181818"></material>
+								</appearance>
+								<cylinder height="2.5" radius="0.3"></cylinder>
+							</shape>
+							
+							<transform translation="0 -1.2 0">
+								<shape DEF="shoulder">
+									<appearance>
+										<material diffusecolor="gray"></material>
+									</appearance>
+									<cylinder height="0.4" radius="0.35"></cylinder>
+								</shape>
+							</transform>
+							
+							<transform translation="0 1.2 0">
+								<shape USE="shoulder"></shape>
+							</transform>
+						</transform>
+						
+						<transform DEF="arm_rotation" rotation="1 0 0 0.7">
+							<transform translation="-1.2 -1 0">
+								<shape DEF="arm">
+									<appearance>
+										<material diffusecolor="#404040"></material>
+									</appearance>
+									<box size="0.3 2.3 0.5"></box>
+								</shape>
+							</transform>
+							
+							<transform translation="1.2 -1 0">
+								<shape USE="arm"></shape>
+							</transform>
+							
+							<transform DEF="left_foot" translation="-1.2 -2.15 0" rotation="1 0 0 -0.4">
+								<group DEF="full_foot">
+									<transform rotation="0 0 1 1.57">
+										<shape DEF="roller">
+											<appearance>
+												<material diffusecolor="gray"></material>
+											</appearance>
+											<cylinder height="0.32" radius="0.25"></cylinder>
+										</shape>
+									</transform>
+									
+									<transform translation="0 -0.3 0">
+										<shape DEF="foot_holder">
+											<appearance>
+												<material diffusecolor="#000010"></material>
+											</appearance>
+											<box size="0.3 0.3 0.3"></box>
+										</shape>
+									</transform>
+									
+									<transform translation="0 -0.5 0">
+										<shape DEF="foot">
+											<appearance>
+												<material diffusecolor="#181818"></material>
+											</appearance>
+											<pyramid height="0.4" xbottom="0.8" ybottom="1" xtop="0.4" ytop="0.5" xoff="0" yoff="0"></pyramid>
+										</shape>
+									</transform>
+								</group>
+							</transform>
+							
+							<transform DEF="right_foot" translation="1.2 -2.15 0" rotation="1 0 0 -0.4">
+								<group USE="full_foot"></group>
+							</transform>
+							
+						</transform>
+					</transform>
+					
+					<transform DEF="center_foot" translation="0 -1.4 0" rotation="1 0 0 0.3">
+						<group USE="full_foot"></group>
+					</transform>
+					
+				</transform> 				
+			</scene>
+		</x3d>
+	</body>
 </html>
