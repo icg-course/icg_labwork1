@@ -8,86 +8,162 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
+    <h1>Беседка в поле</h1>
     <X3D>
       <Scene> <!--сцена беседка в поле-->
-        
-        <!--беседка-->
-        <Transform translation='0 -5 -15'>
+        <Transform translation='0 -5 -15', rotation = "0 1 0 -0.57"><!--для поворота всей сцены-->
+          <!--беседка-->
+        <Transform translation='0 .5 0'>
           <Transform translation = "0 11 0"><!--крыша-->
             <Shape>
-              <Appesrence>
+              <Appearance>
                 <ImageTexture url="tree_texture.jpg"></ImageTexture>
                 <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
-              </Appesrence>
+              </Appearance>
               <Cone bottomRadius = "7", height = "2", side = "true", bottom = "true"></Cone>
             </Shape>
           </Transform>
 
           <Transform translation='-4.5 5 4.5'><!--опора крыши_1-->
             <Shape>
-              <Appesrence>
+              <Appearance>
                 <ImageTexture url="tree_texture.jpg"></ImageTexture>
                 <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
-              </Appesrence>
+              </Appearance>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
             </Shape>
           </Transform>
 
           <Transform translation='4.5 5 4.5'><!--опора крыши_2-->
             <Shape>
-              <Appesrence>
+              <Appearance>
                 <ImageTexture url="tree_texture.jpg"></ImageTexture>
                 <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
-              </Appesrence>
+              </Appearance>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
             </Shape>
           </Transform>
 
           <Transform translation='4.5 5 -4.5'><!--опора крыши_3-->
             <Shape>
-              <Appesrence>
+              <Appearance>
                 <ImageTexture url="tree_texture.jpg"></ImageTexture>
                 <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
-              </Appesrence>
+              </Appearance>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
             </Shape>
           </Transform>
 
           <Transform translation='-4.5 5 -4.5'><!--опора крыши_4-->
             <Shape>
-              <Appesrence>
+              <Appearance>
                 <ImageTexture url="tree_texture.jpg"></ImageTexture>
                 <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
-              </Appesrence>
+              </Appearance>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
+            </Shape>
+          </Transform>
+
+          <Transform translation='0 1.5 -5.2'><!--стенка_1-->
+            <Shape>
+              <Appearance>
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+              </Appearance>
+              <Box size = "10 3 .3"></Box>
+            </Shape>
+          </Transform>
+
+          <Transform translation='-5.2 1.5 0'><!--стенка_2-->
+            <Shape>
+              <Appearance>
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+              </Appearance>
+              <Box size = ".3 3 10"></Box>
+            </Shape>
+          </Transform>
+
+          <Transform translation='5.2 1.5 0'><!--стенка_3-->
+            <Shape>
+              <Appearance>
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+              </Appearance>
+              <Box size = ".3 3 10"></Box>
             </Shape>
           </Transform>
           
           <Transform><!--фундамент-->
             <Shape>
-              <Appesrence>
+              <Appearance>
                 <ImageTexture url="tree_texture.jpg"></ImageTexture>
                 <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
-              </Appesrence>
+              </Appearance>
               <Box size ="10 1 10"></Box>
             </Shape>
           </Transform>
           
-      <Transform translation='0 0 5.5'> <!--ступенька-->
-        <Shape>
-          <Appesrence>
-
-          </Appesrence>
-          <Box size ="6 .5 1"></Box>
-        </Shape>
-      </Transform>
+          <Transform translation='0 -0.2 5.5'> <!--ступенька-->
+            <Shape>
+              <Appearance>
+                <Material diffuseColor='#ffffff'></Material>
+              </Appearance>
+              <Box size ="6 .5 1"></Box>
+            </Shape>
+          </Transform>     
       </Transform>
       
+      <!--земля-->
+      <Transform translation = "0 0 0">
+        <Transform><!--трава_поле-->
+          <Shape>
+            <Appearance>
+              <ImageTexture url="grass.jpg"></ImageTexture>
+              <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+            </Appearance>
+            <Box size = "50 0 50"></Box>
+          </Shape>
+        </Transform>
+
+        <Transform translation = "0 .1 15", rotation = "0 1 0 1.57"><!--тропинка до беседки-->
+          <Shape>
+            <Appearance>
+              <ImageTexture url="sand.jpg"></ImageTexture>
+              <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+            </Appearance>
+            <Box size = "20 0 5"></Box>
+          </Shape>
+        </Transform>
+      </Transform>
       
-
-
-
-
+      <!--таблика с текстом-->
+      <Transform translation = "4 1.5 10", rotation = "0 1 0 -0.57">
+        <Transform><!--нога-->
+          <Shape>
+            <Appearance>
+              <ImageTexture url="tree_texture.jpg"></ImageTexture>
+              <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+            </Appearance>
+            <Cylinder radius = ".5", height = "3", side = "true", top = "true", bottom = "false"></Cylinder>
+          </Shape>
+        </Transform>
+        <Transform translation = "0 1 0.5"><!--сама таблица-->
+          <Shape>
+            <Appearance>
+              <ImageTexture url="tree_texture.jpg"></ImageTexture>
+              <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
+            </Appearance>
+            <Box size = "3 2 .3"></Box>
+          </Shape>
+        </Transform>
+        <Transform translation = "0 1 0.8"><!--текст-->
+          <Shape>
+            <Text string = "Welcome!", maxExtent = "3"></Text>
+          </Shape>
+        </Transform>
+      </Transform>
+        </Transform>
       </Scene>
     </X3D>
   </body> 
