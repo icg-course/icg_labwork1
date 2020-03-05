@@ -1,13 +1,145 @@
 <!DOCTYPE html>
+
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+	<head>
+		<meta charset="utf-8">
+		<title>lab1</title>
+		<link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css">
+		<script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+	</head>
+	<body>
+		<x3d>
+			<scene>
+                <background frontUrl = "cosmos.jpg"></background>
+
+                <Group DEF="Sputnic">
+                        <Anchor url = "https://ru.wikipedia.org/wiki/Марс-2">
+                        <transform translation="3 3 -2">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="gray">
+                                    </material>
+                                </appearance>
+                            </shape>
+                        </transform>
+
+
+                        <transform translation="0 -2 0">
+                            <shape>
+                                <appearance>
+                                    <ImageTexture  url="cosmo1.jpg"></ImageTexture>
+                                </appearance>
+                                <cylinder radius = 1.2>
+                                </cylinder>
+                            </shape>
+                        </transform>
+
+                        <transform translation="1 0 0" rotation="0 0 1 1.57">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="gray">
+                                    </material>
+                                </appearance>
+                                <cylinder radius = 0.1 height = 0.5>
+                                </cylinder>
+                            </shape>
+                        </transform>
+
+                        <transform translation="-1 0 0" rotation="0 0 1 -1.57">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="gray">
+                                    </material>
+                                </appearance>
+                                <cylinder radius = 0.1 height = 0.5>
+                                </cylinder>
+                            </shape>
+                        </transform>
+
+                        <transform translation="0 0 0">
+                            <shape>
+                                <appearance>
+                                    <ImageTexture  url="cosmo2.jpg"></ImageTexture>
+                                </appearance>
+                                <cone bottomRadius = 1.2 height = 2>
+                                </cone>
+                            </shape>
+                        </transform>
+
+                        <transform translation="-3.6 0 0" rotation="1 0 0 -0.5">
+                            <shape>
+                                <appearance>
+                                    <ImageTexture  url="solar_panel.jpg"></ImageTexture>
+                                </appearance>
+                                <box size = "5 1.7 0.1">
+                                </box>
+                            </shape>
+                        </transform>
+
+                        <transform translation="3.6 0 0" rotation="1 0 0 -0.5">
+                            <shape>
+                                <appearance>
+                                    <ImageTexture  url="solar_panel.jpg"></ImageTexture>
+                                </appearance>
+                                <box size = "5 1.7 0.1">
+                                </box>
+                            </shape>
+                        </transform>
+
+                        <transform translation="0 0 0">
+                            <shape>
+                                <appearance>
+                                    <ImageTexture  url="cosmo1.jpg"></ImageTexture>
+                                </appearance>
+                                <sphere radius = 1.1>
+                                </sphere>
+                            </shape>
+                        </transform>
+
+                        <transform translation="0 0.5 0">
+                            <shape>
+                                <appearance>
+                                    <ImageTexture  url="cosmo1.jpg"></ImageTexture>
+                                </appearance>
+                                <sphere radius = 1.1>
+                                </sphere>
+                            </shape>
+                        </transform>
+                    
+                        <transform translation="0 -2.4 1.2" rotation="0 0 1 1.57">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="red"></material>
+                                </appearance>
+                                <text string = "Mars-2">
+                                    <fontstyle size = 0.3 family = "SERIF"></fontstyle>
+                                </text>
+                            </shape>                       
+                        </transform>
+                    
+                        <transform translation="0 0 0">
+                            <shape>
+                                <appearance>
+                                    <ImageTexture  url="cosmo1.jpg"></ImageTexture>
+                                </appearance>
+                                <cylinder>
+                                </cylinder>
+                            </shape>                       
+                        </transform>
+                    </Anchor>
+            </Group>
+                <Group DEF = "Mars">
+                    <transform translation="0 0 -200">
+                        <shape>
+                            <appearance>
+                                <ImageTexture  url="mars.jpg"></ImageTexture>
+                            </appearance>
+                            <sphere radius = 100>
+                            </sphere>
+                        </shape>
+                    </transform>
+                </Group>
+			</scene>
+		</x3d>
+	</body>
 </html>
