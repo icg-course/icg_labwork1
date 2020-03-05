@@ -1,13 +1,345 @@
 <!DOCTYPE html>
+
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+	<head>
+		<meta charset="utf-8">
+		<title>lab1</title>
+		<link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css">
+		<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=I9q3G20KhEhRECWTJG1StUGWGGcK7S5EO-8XFRI42aFtbjLYh3Gs0hFhbMB7l9bnD7EMgvT64zJ4S5CCT8OWVA4iYhEaUdzKzHZn6FJnA_T-Fr9CZ7oNuV2_xLFxpbcIyl1R9Smfnsgw_vg8NmoBCQ" charset="UTF-8"></script><script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+	</head>
+	<body>
+		<x3d>
+			<scene>
+				<transform translation="3 0 -4">
+					<transform translation="0 2.97 0">
+						<shape>
+							<appearance>
+								<material diffusecolor="white">
+								</material>
+							</appearance>
+							<text string="My">
+							</text>
+							
+						</shape>
+					</transform> <! -- My -->
+
+					<transform translation="0 2.2 0">
+						<shape>
+							<appearance>
+								<material diffusecolor="blue">
+								</material>
+							</appearance>
+							<text string="Lovely">
+							</text>
+							
+						</shape>
+					</transform> <! -- Lovely -->
+					
+					<transform translation="0 1.45 0">
+						<shape>
+							<appearance>
+								<material diffusecolor="red">
+								</material>
+							</appearance>
+							<text string="Russia">
+							</text>
+							
+						</shape>
+					</transform> <! -- Russia -->
+				</transform> 
+				
+				<transform>
+					<shape>
+						<appearance>
+							<material diffusecolor="red">
+							</material>
+						</appearance>
+						<box size="3 .7 1">
+						</box>
+					</shape>
+				</transform> <! -- Рама трактора -->
+				
+				<transform translation=".75 .6 0">
+					<shape>
+						<appearance>
+							<material diffusecolor="red">
+							</material>
+						</appearance>
+						<box size="1.5 .5 1">
+						</box>
+					</shape>
+				</transform> <! -- Моторный отсек -->
+				
+				<transform translation="0 .25 .5">
+					<shape DEF="side">
+						<appearance>
+							<material diffusecolor="red">
+							</material>
+						</appearance>
+						<box size="3 1.2 .02">
+						</box>
+					</shape>
+				</transform> <! -- Боковой щит 1-->
+				
+				<transform translation="0 .25 -0.5">
+					<shape USE="side"></shape>
+				</transform> <! -- Боковой щит 2-->
+				
+				<transform translation="-1.5 0.25 0">
+					<shape>
+						<appearance>
+							<material diffusecolor="red">
+							</material>
+						</appearance>
+						<box size=".02 1.2 1">
+						</box>
+					</shape>
+				</transform> <! -- Задний щит-->
+				
+				<transform translation="-1 -.25 0">
+					<group DEF="rear_wheel">
+						<transform translation="0 0 0.85">
+							<shape>
+								<appearance>
+									<material diffusecolor="#181818">
+									</material>
+								</appearance>
+								<torus outerRadius=".5" innerRadius=".3">
+								</torus>
+							</shape>
+						</transform> <! -- Шина заднего колеса -->
+						
+						<transform translation="0 0 .99" rotation="1 0 0 1.570796326794897"> 			
+							<shape>
+								<appearance>
+									<material diffusecolor="gray">
+									</material>
+								</appearance>
+								<cylinder radius=".5" height=".3">
+								</cylinder>
+							</shape>
+						</transform> <! -- Диск заднего колеса -->
+						
+						<transform translation="0 0 .8" rotation="1 0 0 1.570796326794897">			
+							<shape>
+								<appearance>
+									<material diffusecolor="black">
+									</material>
+								</appearance>
+								<cylinder radius=".3" height=".3">
+								</cylinder>
+							</shape>
+						</transform> <! -- Ступица -->
+						
+						<transform translation="0 -.05 -0.027">
+							<group DEF="bolts">
+								<transform translation="0 .35 1.145" rotation="1 0 0 1.570796326794897">			
+									<shape DEF="bolt">
+										<appearance>
+											<material diffusecolor="white">
+											</material>
+										</appearance>
+										<cylinder radius=".07" height=".05">
+										</cylinder>
+									</shape>
+								</transform> <! -- Болт 1 -->
+									
+								<transform translation="-.315 .1225 1.145" rotation="1 0 0 1.570796326794897">			
+									<shape USE="bolt"></shape>
+								</transform> <! -- Болт 2 -->
+								
+								<transform translation=".315 .1225 1.145" rotation="1 0 0 1.570796326794897">			
+									<shape USE="bolt"></shape>
+								</transform> <! -- Болт 3 -->			
+
+								<transform translation="-.1575 -.245 1.145" rotation="1 0 0 1.570796326794897">			
+									<shape USE="bolt"></shape>
+								</transform> <! -- Болт 4 -->
+						
+								<transform translation=".1575 -.245 1.145" rotation="1 0 0 1.570796326794897">			
+									<shape USE="bolt"></shape>
+								</transform> <! -- Болт 5 -->
+							</group>
+						</transform> <! -- Болты -->
+					</group>
+					
+					<transform rotation="1 0 0 3.1415926535">
+						<group USE="rear_wheel">
+					</transform>
+					
+					<transform rotation="1 0 0 1.570796326794897"> 			
+						<shape>
+							<appearance>
+								<material diffusecolor="black">
+								</material>
+							</appearance>
+							<cylinder radius=".13" height="2.29">
+							</cylinder>
+						</shape>
+					</transform> <! -- Задний мост -->
+					
+				</transform> <! -- Задняя подвеска -->
+				
+				<transform translation="2.28 -.1 0">
+				
+					<transform translation="-1 -.25 0" rotation="1 0 0 1.570796326794897">			
+						<shape>
+							<appearance>
+								<material diffusecolor="black">
+								</material>
+							</appearance>
+							<cylinder radius=".13" height="1.7">
+							</cylinder>
+						</shape>
+					</transform> <! -- Передняя ось -->
+				
+					<transform translation="-1 -.32 -.8" rotation="1 0 0 1.570796326794897">		
+						<shape DEF="reductor">
+							<appearance>
+								<material diffusecolor="black">
+								</material>
+							</appearance>
+							<cylinder radius=".2" height=".3">
+							</cylinder>
+						</shape>
+					</transform> <! -- Редуктор 1 -->	
+				
+					<transform translation="-1 -.32 .8" rotation="1 0 0 1.570796326794897">			
+						<shape USE="reductor"></shape>
+					</transform>  <! -- Редуктор 2 -->
+				
+				</transform> <! -- Передний мост -->	
+				
+				<transform translation="1.28 -.41 0">
+					<group DEF="front_wheel">
+						<transform translation="0 0 .99" rotation="1 0 0 1.570796326794897">			
+							<shape>
+								<appearance>
+									<material diffusecolor="gray">
+									</material>
+								</appearance>
+								<cylinder radius=".4" height=".25">
+								</cylinder>
+							</shape>
+						</transform> <! -- Диск -->	
+						
+						<transform translation="0 0 .99" rotation="1 0 0 1.570796326794897">			
+							<shape>
+								<appearance>
+									<material diffusecolor="black">
+									</material>
+								</appearance>
+								<cylinder radius=".13" height=".26">
+								</cylinder>
+							</shape>
+						</transform> <! -- Центральный колпак -->
+					
+						<transform translation="0 0 .94">
+							<shape>
+								<appearance>
+									<material diffusecolor="#181818">
+									</material>
+								</appearance>
+								<torus outerRadius=".33" innerRadius=".2">
+								</torus>
+							</shape>
+						</transform>  <! -- Шина переднего колеса -->	
+					</group>
+					
+					<transform rotation="1 0 0 3.1415926535">
+						<group USE="front_wheel"></group>
+					</transform>
+				</transform> <! -- Передняя подвеска -->	
+				
+				<transform translation="1.1 1.1 0" rotation="1 0 0 0">			
+					<shape>
+						<appearance>
+							<material diffusecolor="red">
+							</material>
+						</appearance>
+						<cylinder radius=".1322" height="1">
+						</cylinder>
+					</shape>
+				</transform> <! -- Тело трубы -->
+					
+				<transform translation="1.1 1.7 0" rotation="1 0 0 0">			
+					<shape>
+						<appearance>
+							<material diffusecolor="red">
+							</material>
+						</appearance>
+						<cylinder radius=".199" height="0.3">
+						</cylinder>
+					</shape>
+				</transform> <! -- Наконечник трубы -->
+					
+				<transform translation="-0.2 1 0" rotation="0 0 1 0.7853981633974485">
+					<transform translation="0 0 0" rotation="1 0 0 1.570796326794897">
+						<shape>
+							<appearance>
+								<material diffusecolor="#181818">
+								</material>
+							</appearance>
+							<torus outerRadius=".337" innerRadius=".07">
+							</torus>
+						</shape>
+					</transform> <! -- Руль -->
+					
+					<transform translation="0 -0.5 0" rotation="1 0 0 0">			
+						<shape>
+							<appearance>
+								<material diffusecolor="black">
+								</material>
+							</appearance>
+							<cylinder radius=".1" height="0.95">
+							</cylinder>
+						</shape>
+					</transform> <! -- Рулевая колонка -->
+				
+					<transform translation="0 0 0" rotation="1 0 0 0">			
+						<shape>
+							<appearance>
+								<material diffusecolor="black">
+								</material>
+							</appearance>
+							<cylinder radius=".179" height="0.17">
+							</cylinder>							
+						</shape>
+						<transform translation="0 0 0" rotation="1 0 0 1.570796326794897">	
+							<shape>
+								<appearance>
+									<material diffusecolor="black">
+									</material>
+								</appearance>
+								<cylinder radius=".05" height=".674">
+								</cylinder>							
+							</shape>
+						</transform> <! -- Перегородка руля -->	
+					</transform> <! -- Подушка безопасности -->
+				</transform> <! -- Рулевой механизм -->
+				
+				<transform translation="-1.4 .75 0" rotation="0 0 -1 -0.39269908169"> 
+					<shape>
+						<appearance>
+							<material diffusecolor="#181818">
+							</material>
+						</appearance>
+						<box size=".02 1.2 1">
+						</box>
+					</shape>
+				</transform> <! -- Спинка -->
+                
+				<transform translation="-1.14 .5 0" rotation="0 0 -1 -1.570796326794897"> <! -- Сидалище -->
+					<shape>
+						<appearance>
+							<material diffusecolor="#181818">
+							</material>
+						</appearance>
+						<box size=".02 0.73 1">
+						</box>
+					</shape>
+				</transform> <! -- Сидалище -->				
+			</scene>
+		</x3d>
+	</body>
 </html>
