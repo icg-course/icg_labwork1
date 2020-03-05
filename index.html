@@ -12,11 +12,12 @@
       <Scene> <!--сцена беседка в поле-->
         
         <!--беседка-->
-        <Transform translation='0 -1.5 -15'>
+        <Transform translation='0 -5 -15'>
           <Transform translation = "0 11 0"><!--крыша-->
             <Shape>
               <Appesrence>
-
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
               </Appesrence>
               <Cone bottomRadius = "7", height = "2", side = "true", bottom = "true"></Cone>
             </Shape>
@@ -25,7 +26,8 @@
           <Transform translation='-4.5 5 4.5'><!--опора крыши_1-->
             <Shape>
               <Appesrence>
-
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
               </Appesrence>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
             </Shape>
@@ -34,7 +36,8 @@
           <Transform translation='4.5 5 4.5'><!--опора крыши_2-->
             <Shape>
               <Appesrence>
-
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
               </Appesrence>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
             </Shape>
@@ -43,7 +46,8 @@
           <Transform translation='4.5 5 -4.5'><!--опора крыши_3-->
             <Shape>
               <Appesrence>
-
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
               </Appesrence>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
             </Shape>
@@ -52,7 +56,8 @@
           <Transform translation='-4.5 5 -4.5'><!--опора крыши_4-->
             <Shape>
               <Appesrence>
-
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
               </Appesrence>
               <Cylinder radius = ".5", height = "10", side = "true", top = "true", bottom = "false"></Cylinder>
             </Shape>
@@ -61,22 +66,24 @@
           <Transform><!--фундамент-->
             <Shape>
               <Appesrence>
-
+                <ImageTexture url="tree_texture.jpg"></ImageTexture>
+                <Texturetransform repeatS="True" repeatT="True" scale="1 1"></Texturetransform>
               </Appesrence>
               <Box size ="10 1 10"></Box>
             </Shape>
           </Transform>
-      </Transform>
-      
-      <!--ступенька-->
-      <Transform>
+          
+      <Transform translation='0 0 5.5'> <!--ступенька-->
         <Shape>
           <Appesrence>
 
           </Appesrence>
-          
+          <Box size ="6 .5 1"></Box>
         </Shape>
       </Transform>
+      </Transform>
+      
+      
 
 
 
