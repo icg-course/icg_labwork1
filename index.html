@@ -1,13 +1,198 @@
-<!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <title>Space Y</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Heavy broiler</h1>
+    <X3D style="width:720px; height:720px">
+      <Scene>
+        <Viewpoint  position='0,10,50' orientation='1,1,0,0'> </Viewpoint>
+        <PointLight location="-12 6 4" color="0 0 1" intensity="2" shadowIntensity="0.5" shadowMapSize="512"></PointLight>
+        <Background groundAngle='0.9 1.5 1.57' groundColor='1 0.3 0.1 0.2 0.1 0.2 0.1 0.6 0.1 0 0.3 0.1' skyAngle='0.9 1.5 1.57' skyColor='0.28 0.18 0.36 0.2 0.44 0.85 0.51 0.81 0.95 0.47 0.8 0.2'>
+        </Background>
+
+	<!--стартовая площадка-->
+ 	
+	<transform translation='0 1 0'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="green"></Material>
+              </Appearance>
+              <Box size='50 1 50' > </Box>  
+        </Shape>
+        </transform>
+
+	<transform translation='0 2 0'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="brown"></Material>
+              </Appearance>
+              <Box size='20 2.25 10' > </Box>  
+        </Shape>
+        </transform>
+        
+	<transform translation='6 12 0'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="brown"></Material>
+              </Appearance>
+              <Box size='3 20 3' > </Box>  
+        </Shape>
+        </transform>
+
+	<!--Основа ракеты-->
+
+	<transform translation='5 20 1.75'>
+        <Shape>
+          <Text string='747' horizontal='false' ></Text>
+        </Shape>
+	</transform>
+
+	<transform translation='0 22 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="white"></Material>
+          </Appearance>
+          <Cone size="20 40"></Cone>
+        </Shape>
+	</transform>
+
+	<transform translation='0 12.5 0'>
+        <Shape>
+          <Appearance>
+	      <ImageTexture url="spaceshiptext.png"> </ImageTexture>
+          </Appearance>
+          <Cylinder height='17' radius='1'> </Cylinder>
+        </Shape>
+	</transform>
+
+	<transform translation='0 4 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="black"></Material>
+          </Appearance>
+          <Cone size="20 40"></Cone>
+        </Shape>
+	</transform>
+
+	<transform translation='0 18 0' rotation='1 0 0 -1.414'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="black"></Material>
+              </Appearance>
+              <Torus innerradius='0.5' outerradius='0.6'> </torus>  
+        </Shape>
+      </transform>
+
+	<transform translation='0 10 0' rotation='1 0 0 -1.414'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="black"></Material>
+              </Appearance>
+              <Torus innerradius='0.5' outerradius='0.6'> </torus>  
+        </Shape>
+      </transform>
+
+         <transform translation='0 19 0'>
+        <Shape>
+            <Appearance>
+              <Material diffuseColor="yellow"></Material>
+              </Appearance>
+              <Box size='4 0.2 0.05' > </Box>  
+        </Shape>
+        </transform>
+
+	<!--1 ускоритель-->
+
+	<transform translation='-1 15 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="white"></Material>
+          </Appearance>
+          <Cylinder height='5' radius='0.2'> </Cylinder>
+        </Shape>
+	</transform>
+ 
+	<transform translation='-1.5 17.5 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="white"></Material>
+          </Appearance>
+          <Cone height='2' bottomradius='0.5'></Cone>
+        </Shape>
+	</transform>
+
+	<transform translation='-1.5 10 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="white"></Material>
+          </Appearance>
+          <Cylinder height='13' radius='0.5'> </Cylinder>
+        </Shape>
+	</transform>
+	
+	<transform translation='-1.5 4 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="black"></Material>
+          </Appearance>
+          <Cone height='2' bottomradius='0.5'></Cone>
+        </Shape>
+	</transform>
+
+	<!--2 ускоритель-->
+
+	<transform translation='1 15 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="white"></Material>
+          </Appearance>
+          <Cylinder height='5' radius='0.2'> </Cylinder>
+        </Shape>
+	</transform>  
+
+	<transform translation='1.5 17.5 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="white"></Material>
+          </Appearance>
+          <Cone height='2' bottomradius='0.5'></Cone>
+        </Shape>
+	</transform>
+
+	<transform translation='1.5 10 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="white"></Material>
+          </Appearance>
+          <Cylinder height='13' radius='0.5'> </Cylinder>
+        </Shape>
+	</transform>
+
+	<transform translation='1.5 4 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="black"></Material>
+          </Appearance>
+          <Cone height='2' bottomradius='0.5'></Cone>
+        </Shape>
+	</transform>
+
+	<!--луна(спрятана)-->
+
+	<transform translation='0 500 200'>
+      	<Shape>
+            <Appearance>
+              <Material diffuseColor="blue"></Material>
+              </Appearance>
+              <Sphere radius='20' > </Sphere>  
+        </Shape>
+        </transform>
+
+      </Scene>
+    </X3D>
+  </body>
 </html>
