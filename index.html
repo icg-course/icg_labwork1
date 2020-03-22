@@ -11,13 +11,14 @@
   <head>  
     <meta charset="utf-8" />
     <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
   </head>
   <body>
     <h1>Новосвит Андрей Группа 4741. Лабораторная №1</h1>
     <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom">
 		<Scene>
+			<!--Black Wall-->
 				<Transform translation="0 -0.665 0">
 				<Shape>
 				  <Appearance>
@@ -26,6 +27,7 @@
 				  <RectangularTorus height="1.337" innerRadius="8.5" outerRadius="8" ></RectangularTorus> 
 				</Shape>
 				</Transform>
+			<!--Arrow-->
 				<Transform translation="0 0 0" rotation = "0 0 1 -1.57">	
 					<Shape>
 					  <Appearance>
@@ -34,6 +36,7 @@
 					  <Dish radius="8" height="8" diameter="0.25"></Dish> 
 					</Shape>
 				</Transform>
+			<!--Center-->
 				<Transform translation="0 1 0" rotation = "0 0 0 0">	
 					<Shape>
 					  <Appearance>
@@ -58,6 +61,7 @@
 					  <Dish radius="1" height="3" diameter="4"></Dish> 
 					</Shape>
 				</Transform>
+			<!--Center2-->
 				<Transform translation="0 2 0" rotation = "0 0 1 -3.14">	
 					<Shape>
 					  <Appearance>
@@ -74,6 +78,7 @@
 					  <Dish radius="1" height="3" diameter="4"></Dish> 
 					</Shape>
 				</Transform>
+			<!--Whell-->
 				<Transform translation="0 0 0" rotation = "0 0 0 0">	
 				    <Shape>
 						<Appearance>
@@ -90,6 +95,7 @@
 						<Cylinder radius="8" height="0.1"></Cylinder>
 					</Shape>
 				</Transform>
+			<!--Block Sticks-->
 				<Transform translation="0 -0.9 0" rotation = "0 1 0 0.17">
 					<Shape>
 					  <Box size="16 0.1 0.25 "></Box>
@@ -234,6 +240,7 @@
 						  </Appearance>
 					</Shape>
 				</Transform>
+			<!--Numbers Box between 0 and 35 -->
 				<Transform translation="7.464233732069999 -0.7 0.65576626793" rotation = "0 1 0 -0.17">
 					<Shape>
 					  <Box size="0.5 0.1 0.5 "></Box>
