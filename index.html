@@ -8,6 +8,79 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+   
+<p align="center">
+Лабораторная работа №1 Брылев Евгений </p> 
+
+
+<X3D id="x3d" xmlns="https://www.x3dom.org/x3dom">
+
+<scene>
+
+
+  <!-- Земля -->
+<transform translation="-5,-5"> 
+	<Shape> 
+		<Appearance> 
+			<ImageTexture url='https://lh5.googleusercontent.com/-Ochc8HOY8uE/URDsSk9NZ9I/AAAAAAAAA0E/eoV5-EU7Xuk/s1024/earthmap1k.jpg'> </ImageTexture>
+				<TextureProperties>
+				</TextureProperties> 
+		</Appearance> 
+					<Sphere radius="10"></Sphere> 
+	</Shape>
+</transform> 
+<!-- Луна -->
+<transform translation="25,15"> 
+	<shape> 
+		<Appearance> 
+			<ImageTexture url='https://st2.depositphotos.com/2800301/6522/i/950/depositphotos_65228683-stock-photo-moon.jpg'> </ImageTexture>
+				<TextureProperties></TextureProperties> 
+		</Appearance> 
+					<Sphere radius="2"></Sphere> 
+	</shape>
+</transform> 
+   <!-- Ракета нос-->
+<transform translation="5,13.75"> 
+	<shape> 
+		<Appearance> 
+			<ImageTexture url='https://avatars.mds.yandex.net/get-pdb/1782154/bf2538f5-abb4-44b8-a1c6-752d2bc5832d/s375'> </ImageTexture>
+				<TextureProperties></TextureProperties> 
+		</Appearance> 
+					<Cone height="0.5" bottomRadius="0.1"></Cone> 
+	</shape>
+</transform> 
+   <!-- Ракета тело -->
+<transform translation="5,13"> 
+	<shape> 
+		<Appearance> 
+			<ImageTexture url='https://avatars.mds.yandex.net/get-pdb/1782154/bf2538f5-abb4-44b8-a1c6-752d2bc5832d/s375'> </ImageTexture>
+				<TextureProperties></TextureProperties> 
+		</Appearance> 
+					<Cylinder height="1" radius="0.1"></Cylinder> 
+	</shape>
+</transform> 
+   <!-- зад -->
+<transform translation="5,12.8"> 
+	<shape> 
+		<Appearance> 
+			<ImageTexture url='https://avatars.mds.yandex.net/get-pdb/1782154/bf2538f5-abb4-44b8-a1c6-752d2bc5832d/s375'> </ImageTexture>
+				<TextureProperties></TextureProperties> 
+		</Appearance> 
+					<Cone height="1"  bottomRadius="0.1"></Cone> 
+	</shape>
+</transform> 
+   <!-- огонёк -->
+<transform rotation="1 0 0" translation="5,12.8"> 
+	<shape> 
+		<Appearance> 
+			<Material diffuseColor="orange"></Material> 
+		</Appearance> 
+					<Cone height="2"  bottomRadius="0.05"></Cone> 
+	</shape>
+</transform> 
+
+
+</scene>
+</X3D>  
+</body> 
 </html>
