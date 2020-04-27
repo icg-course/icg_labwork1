@@ -1,13 +1,286 @@
-<!DOCTYPE html>
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>Бойков Олег Группа 4741. Лабораторная №1</h1>
+    <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom">
+		<Scene>
+			<!--Body-->
+			<Transform translation="0 0 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="2.5" radius="0.6" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Legs-->
+			<!--Leg1-->
+			<Transform translation="0.35 -2.2 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="1.9" radius="0.25" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Leg2-->
+			<Transform translation="-0.35 -2.2 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="1.9" radius="0.25" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Knee1-->
+			<Transform translation="0.35 -2 0" rotation ="30, 1, 1, 1.5">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Torus innerradius="0.25" outerradius="0.07" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Knee2-->
+			<Transform translation="-0.35 -2 0" rotation ="30, 1, 1, 1.5">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Torus innerradius="0.25" outerradius="0.07" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Feet-->
+			<!--Ankle1-->
+			<Transform translation="0.35 -3.2 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Box size="0.5, 0.6, 0.6" ></Box> 
+				</Shape>
+			</Transform>
+			<!--Foot1-->
+			<Transform translation="0.35 -3.3 0.6">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Box size="0.5, 0.4, 0.6" ></Box> 
+				</Shape>
+			</Transform>
+			<!--Ankle2-->
+			<Transform translation="-0.35 -3.2 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Box size="0.5, 0.6, 0.6" ></Box> 
+				</Shape>
+			</Transform>
+			<!--Foot2-->
+			<Transform translation="-0.35 -3.3 0.6">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Box size="0.5, 0.4, 0.6" ></Box> 
+				</Shape>
+			</Transform>
+			<!--Arms-->
+			<!--Shoulder1-->
+			<Transform translation="0.6 1.05 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.25" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Shoulder2-->
+			<Transform translation="-0.6 1.05 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.25" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Arm1-->
+			<Transform translation="1 0.8 0" rotation = "0, 0, 1, 45">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="0.8" radius="0.2" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Arm2-->
+			<Transform translation="-1 0.8 0" rotation = "0, 0, 1, -45">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="0.8" radius="0.2" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Elbow1-->
+			<Transform translation="1.4 0.5 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.25" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Elbow2-->
+			<Transform translation="-1.4 0.5 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.25" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Forearm1-->
+			<Transform translation="1.5 0 0" rotation = "0, 0, 1, 41">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="0.8" radius="0.2" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Forearm2-->
+			<Transform translation="-1.5 0 0" rotation = "0, 0, 1, -41">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="0.8" radius="0.2" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Hand1-->
+			<Transform translation="1.57 -0.5 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.25" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Hand2-->
+			<Transform translation="-1.57 -0.5 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.25" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Neck-->
+			<Transform translation="0 1.4 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="0.4" radius="0.25" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Head-->
+			<Transform translation="0 1.9 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Cylinder height="0.8" radius="0.5" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Hat-->
+			<Transform translation="0 2.6 0">
+				<Shape>
+				  <Appearance>
+				  	<TextureTransform rotation='45' scale='0.3,0.3'></TextureTransform>
+					<ImageTexture url='https://static8.depositphotos.com/1000111/1002/i/450/depositphotos_10021934-stock-photo-luxury-golden-texture.jpg'> </ImageTexture>
+					<TextureProperties></TextureProperties> 
+				  </Appearance>
+				  <Cone height="0.6" bottomradius="0.55" topradius ="0.05" ></Cone> 
+				</Shape>
+			</Transform>
+			<!--HatTip-->
+			<Transform translation="0 3 0">
+				<Shape>
+				  <Appearance>
+					<ImageTexture url='https://static8.depositphotos.com/1000111/1002/i/450/depositphotos_10021934-stock-photo-luxury-golden-texture.jpg'> </ImageTexture>
+					<TextureProperties></TextureProperties> 
+				  </Appearance>
+				  <Cylinder height="0.3" radius="0.05" ></Cylinder> 
+				</Shape>
+			</Transform>
+			<!--Eye1-->
+			<Transform translation="0.22 2 0.43">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='black'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.07" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Eye2-->
+			<Transform translation="-0.22 2 0.43">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='black'></Material>
+				  </Appearance>
+				  <Sphere radius = "0.07" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--Nose-->
+			<Transform translation="0 1.85 0.5">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='gray'></Material>
+				  </Appearance>
+				  <Sphere radius ="0.07" ></Sphere> 
+				</Shape>
+			</Transform>
+			<!--AxeHandle-->
+			<Transform translation="1.57 -0.5 0.3" rotation = "30, 1, 1, 1.5">
+				<Shape>
+				  <Appearance>
+				  	<TextureTransform rotation='45' scale='0.1,0.1'></TextureTransform>
+					<ImageTexture url='https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg'> </ImageTexture>
+					<TextureProperties></TextureProperties> 
+				  </Appearance>
+				  <Cone height="1.5" bottomradius="0.1" topradius ="0.08" ></Cone> 
+				</Shape>
+			</Transform>
+			<!--AxeHead-->
+			<Transform translation="1.57 -0.6 0.8" >
+				<Shape>
+				  <Appearance>
+				  	<TextureTransform rotation='45' scale='0.2,0.2'></TextureTransform>
+					<ImageTexture url='https://st.depositphotos.com/1014680/2359/i/450/depositphotos_23597573-stock-photo-metal-texture.jpg'> </ImageTexture>
+					<TextureProperties></TextureProperties> 
+				  </Appearance>
+				  <Pyramid height="0.55" xbottom="0.08" xtop ="0.21" xoff="0" ybottom ="0.5" ytop="0.4" yoff="0" ></Pyramid> 
+				</Shape>
+			</Transform>
+			<!--Text-->
+			<Transform translation="-5 4 0">
+				<Shape>
+				  <Appearance>
+					<Material diffuseColor='cyan'></Material>
+				  </Appearance>
+				  <Text string = "Железный дровосек" ></Text> 
+				</Shape>
+			</Transform>
+		</Scene>
+    </X3D>    
   </body> 
 </html>
