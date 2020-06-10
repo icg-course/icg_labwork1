@@ -1,13 +1,409 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <title>Лаба 1</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+    <link rel="stylesheet" href="../css/custom.css" />
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Джерри (лаба №1)</h1>
+    <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom">      
+      <Scene>  
+ <Viewpoint position='0 0 30'></Viewpoint>
+ 
+      <shape> 
+        <! -- голова-->
+           <Appearance>
+           <Material diffuseColor="#8B4513"></Material>  
+          </Appearance>
+          <Sphere radius="3"></Sphere>
+        </shape>
+
+<transform translation="0 -1.9 0" scale='1.6 1 1.5'>
+         <shape> 
+        <! -- голова низ-->
+           <Appearance>
+           <Material diffuseColor="#8B4513"></Material>  
+          </Appearance>
+          <Sphere radius="1.9"></Sphere>
+        </shape>
+      </transform>
+
+      <transform translation="-3 1 0.26" scale='1.7 1.7 0.3' rotation="0 1 1 -0.75 ">
+         <shape> 
+        <! -- ухо лево-->
+           <Appearance>
+           <Material diffuseColor="#8B4513"></Material>  
+          </Appearance>
+          <Sphere radius="1.75"></Sphere>
+        </shape>
+      </transform>
+
+       <transform translation="-3 1 0.49" scale='1.7 1.7 0.3' rotation="0 1 1 -0.75 ">
+         <shape> 
+        <! -- ухо лево внутреннее-->
+           <Appearance>
+           <Material diffuseColor="#FFB6C1"></Material>  
+          </Appearance>
+          <Sphere radius="1.6"></Sphere>
+        </shape>
+      </transform>
+
+       <transform translation="3 1 0.26" scale='1.7 1.7 0.3' rotation="0 1 1 0.75 ">
+         <shape> 
+        <! -- ухо право-->
+           <Appearance>
+           <Material diffuseColor="#8B4513"></Material>  
+          </Appearance>
+          <Sphere radius="1.75"></Sphere>
+        </shape>
+      </transform>
+
+      <transform translation="3 1 0.49" scale='1.7 1.7 0.3' rotation="0 1 1 0.75 ">
+         <shape> 
+        <! -- ухо право внутреннее-->
+           <Appearance>
+           <Material diffuseColor="#FFB6C1"></Material>  
+          </Appearance>
+          <Sphere radius="1.6"></Sphere>
+        </shape>
+      </transform>
+
+      <transform translation="0 -1.9 2.1" scale='1.2 1.2 1'>
+         <shape> 
+        <! -- мордочка-->
+           <Appearance>
+           <Material diffuseColor="white"></Material>  
+          </Appearance>
+          <Sphere radius="1"></Sphere>
+        </shape>
+      </transform>
+
+       <transform translation="-0.4 -1.8 2.6" scale='1.6 1 1'>
+         <shape> 
+        <! -- мордочка мини лево-->
+           <Appearance>
+           <Material diffuseColor="white"></Material>  
+          </Appearance>
+          <Sphere radius="0.6"></Sphere>
+        </shape>
+      </transform>
+
+       <transform translation="0.4 -1.8 2.6" scale='1.6 1 1'>
+         <shape> 
+        <! -- мордочка мини право-->
+           <Appearance>
+           <Material diffuseColor="white"></Material>  
+          </Appearance>
+          <Sphere radius="0.6"></Sphere>
+        </shape>
+      </transform>
+
+      <transform translation="-0.5 -1.4 3" scale='1.6 1 1'rotation="0 0 1 1.2">
+         <shape DEF='us'> 
+        <! -- ус 1 лево-->
+           <Appearance>
+           <Material diffuseColor="black"></Material>  
+          </Appearance>
+          <Cylinder radius="0.01" height='3'></Cylinder>
+        </shape>
+      </transform>
+
+       <transform translation="-0.65 -1.4 3" scale='1.6 1 1'rotation="0 0 1 1.5">
+         <shape USE='us'> 
+        <! -- ус 2 лево-->
+        </shape>
+      </transform>
+
+       <transform translation="0.65 -1.4 3" scale='1.6 1 1'rotation="0 0 1 -1.5">
+         <shape USE='us'> 
+        <! -- ус 1 право-->
+        </shape>
+      </transform>
+
+          <transform translation="0.65 -1.4 3" scale='1.6 1 1'rotation="0 0 1 -1.2">
+         <shape USE='us'> 
+        <! -- ус 2 право-->
+        </shape>
+      </transform>
+
+       <transform translation="0 -1.31 3" scale='1.4 1 1'>
+         <shape> 
+        <! -- нос-->
+           <Appearance>
+           <Material diffuseColor="black"></Material>  
+          </Appearance>
+          <Sphere radius="0.2"></Sphere>
+        </shape>
+      </transform>
+
+
+
+<transform translation="0 -6 0" scale='1 1.5 1'>
+         <shape> 
+        <! -- тело-->
+           <Appearance>
+           <Material diffuseColor="#8B4513"></Material>  
+          </Appearance>
+          <Sphere radius="2.2"></Sphere>
+        </shape>
+      </transform>
+
+<transform translation="0 -7 -0.4" scale='1 1 1'>
+         <shape> 
+        <! -- тело 2-->
+           <Appearance>
+           <Material diffuseColor="#8B4513"></Material>  
+          </Appearance>
+          <Sphere radius="2.2"></Sphere>
+        </shape>
+      </transform>
+
+      <transform translation="0 -5.8 -3.5" scale='1 1 1' rotation="1 1 0 -0.9">
+         <shape> 
+        <! -- хвост-->
+           <Appearance>
+           <Material diffuseColor="#8B4513"></Material>  
+          </Appearance>
+         <Cone height="6.5" bottomRadius="0.15"></Cone>
+        </shape>
+      </transform>
+
+<transform translation="0.6,0,1.7" scale= "0.9 1.2 1">
+          <shape>
+            <! -- глаз1-->
+          <Appearance>
+           <Material diffuseColor="white"></Material>  
+         </Appearance>
+            <Sphere radius="1.35" ></Sphere>
+            </shape>
+          </transform>
+
+            <Transform translation="-1.2 1 2.5" scale="1 1 1" rotation="0 0 1 0.7" >     <!--Ресница 1 левый глаз-->  
+        <Shape DEF='resnitsa'>
+          <Appearance>
+            <Material diffuseColor='#000000'></Material>
+          </Appearance>
+          <Cylinder radius="0.02" height="2"></Cylinder>
+        </Shape>
+        </Transform>
+
+ <Transform translation="-1 1 2.5" scale="1 1 1" rotation="0 0 1 0.5" >     <!--Ресница 2 левый глаз-->  
+        <Shape USE='resnitsa'>
+        </Shape>
+        </Transform>
+
+    <Transform translation="1 1 2.5" scale="1 1 1" rotation="0 0 1 -0.5" >     
+      <!--Ресница 1 правый глаз-->  
+        <Shape USE='resnitsa'>
+        </Shape>
+        </Transform>
+
+        <Transform translation="1.2 1 2.5" scale="1 1 1" rotation="0 0 1 -0.7" >     
+          <!--Ресница 2 правый глаз-->  
+        <Shape USE='resnitsa'>
+        </Shape>
+        </Transform>
+       
+        
+<transform translation="-0.6,0,1.7" scale= "0.9 1.2 1">
+            <shape> 
+            <! -- глаз2-->
+          <Appearance>
+           <Material diffuseColor="white"> </Material>  
+         </Appearance>
+          <Sphere radius="1.35" ></Sphere>
+        </shape>
+          </transform>
+
+
+
+<transform translation="0.8 -0.5 2.7"  scale= "1 1.9 1">          
+            <shape> 
+            <! -- зрачок1-->
+          <Appearance>
+            <Material diffuseColor="black"></Material>  
+         </Appearance>
+           <Sphere radius="0.3" ></Sphere>
+         </shape>
+          </transform>
+
+<transform translation="-0.8 -0.5 2.7"  scale= "1 1.9 1">          
+            <shape> 
+            <! -- зрачок2-->
+          <Appearance>
+           <Material diffuseColor="black"></Material>  
+         </Appearance>
+           <Sphere radius="0.3" ></Sphere>
+         </shape>
+          </transform>
+
+<transform translation="-1.1 1 2.3" rotation="1 0 1 0.3 ">
+  <shape> 
+            <! -- бровь1-->
+          <Appearance>
+           <Material diffuseColor="black"></Material>  
+         </Appearance>
+           <Torus innerRadius="0.05" outerRadius="0.4" ></Torus>
+</shape>
+</transform>
+
+<transform translation="1.1 1 2.3" rotation="1 0 1 0.3">
+  <shape> 
+            <! -- бровь2-->
+          <Appearance>
+           <Material diffuseColor="black"></Material>  
+         </Appearance>
+           <Torus innerRadius="0.05" outerRadius="0.4" ></Torus>
+</shape>
+</transform>
+
+<transform translation="0 -1.55 2.8" rotation="1,0,0 -0.52 ">
+  <shape> 
+            <! -- рот-->
+          <Appearance>
+           <Material diffuseColor="black"></Material>  
+         </Appearance>
+           <Torus innerRadius="0.05" outerRadius="0.7" ></Torus>
+</shape>
+</transform>
+
+           <Transform  translation="-4 -6.3 0.3" scale= "1.5 1.3 1.3">    
+            <!--Левая ручка нижняя часть -->  
+        <Shape DEF='ruka'>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Sphere radius="0.54"></Sphere>
+        </Shape>
+        </Transform>
+
+         <Transform translation="-4.8 -6.2 0.3" scale= "2.9 1 1" rotation="0 0 1 0.5">  
+            <!--палец 1 лево -->  
+        <Shape DEF='palets'>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Sphere radius="0.2"></Sphere>
+        </Shape>
+        </Transform>
+
+         <Transform translation="-4.7 -6.5 0.3" scale= "2.9 1 1" rotation="0 0 1 0.5">  
+            <!--палец 2 лево -->  
+        <Shape USE='palets'>
+        </Shape>
+        </Transform>
+
+           <Transform translation="-4.54 -6.8 0.3" scale= "2.9 1 1" rotation="0 0 1 0.5">
+            <!--палец 3 лево -->  
+        <Shape USE='palets'>
+        </Shape>
+        </Transform>
+
+         <Transform translation="-4.1 -6.9 0.3" scale= "2.9 1 1" rotation="0 0 1 0.8">
+            <!--палец 4 лево -->  
+        <Shape USE='palets'>
+        </Shape>
+        </Transform>
+
+
+         <Transform translation="4 -6.3 -0.3" scale= "1.5 1.3 1.3">
+            <!--рука нижняя право -->  
+        <Shape USE='ruka'>
+        </Shape>
+        </Transform>
+   
+       <Transform translation="4.1 -6.9 -0.3" scale= "2.9 1 1" rotation="0 0 1 -0.8">
+            <!--палец 1 право -->  
+        <Shape USE='palets'>
+        </Shape>
+        </Transform>
+        
+          <Transform translation="4.7 -6.5 -0.3" scale= "2.9 1 1" rotation="0 0 1 -0.5">
+            <!--палец 2 право -->  
+        <Shape USE='palets'>
+        </Shape>
+        </Transform>
+
+         <Transform translation="4.54 -6.8 -0.3" scale= "2.9 1 1" rotation="0 0 1 -0.5">
+            <!--палец 3 право -->  
+        <Shape USE='palets'>
+        </Shape>
+        </Transform>
+
+         <Transform translation="4.8 -6.2 -0.3" scale= "2.9 1 1" rotation="0 0 1 -0.5">
+            <!--палец 4 право -->  
+        <Shape USE='palets'>
+        </Shape>
+        </Transform>
+
+          <Transform translation="-1 -3.9 0.3" rotation="0 0 1 -0.9" scale="1.2 0.7 1.5">     <!--Левая рука верхняя часть-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Cone Bottomradius="0.55" height="10"></Cone>
+        </Shape>
+        </Transform>
+
+         <Transform translation="1 -3.9 -0.3" rotation="0 0 1 0.9" scale="1.2 0.7 1.5">     <!--Правая рука верхняя часть-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Cone Bottomradius="0.55" height="10"></Cone>
+        </Shape>
+        </Transform>
+
+
+
+         <Transform translation="0.7 -10 -0.2" >     <!--Ножка длинная правая-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Cylinder radius="0.6" height="2.7"></Cylinder>
+        </Shape>
+        </Transform>
+
+        
+
+  <Transform translation="-0.7 -10 -0.2" >     <!--Ножка длинная левая-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Cylinder radius="0.6" height="2.7"></Cylinder>
+        </Shape>
+        </Transform>
+
+  
+ 
+ <Transform translation="1.4 -11 0.2" scale="2.5 1 1.5" rotation="0 1 0 -0.707">     <!--Лапка стопа правый-->  
+        <Shape>
+
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Sphere radius="0.6"></Sphere>
+        </Shape>
+        </Transform>
+
+
+<Transform translation="-1.4 -11 0.2" scale="2.5 1 1.5" rotation="0 1 0 0.707">     <!--Лапка стопа левый-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Sphere radius="0.6"></Sphere>
+        </Shape>
+        </Transform>
+
+
+    </Scene>
+  </X3D>
+</body>
+
 </html>
