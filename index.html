@@ -7,7 +7,65 @@
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+  <body> 
+            <h1>Hello</h1> 
+            <p> 
+                This is my first html page with some 3d objects. 
+            </p>
+			<x3d width='1280px' height='720px'> 
+			<scene> 
+			<shape> 
+				<Appearance>
+					<Material diffuseColor = "0.78 0.58 0.58"></Material>
+					<ImageTexture  url="https://img1.goodfon.ru/original/1280x1024/c/a9/texture-tekstura-romby.jpg"></ImageTexture/>
+					<TextureTransform scale = "2 2" rotation="0.78"></TextureTransform>
+				</Appearance>
+				<box size = " 10 1 7"></box> 
+			</shape> 
+			<transform translation='0 6 0'> 
+				<shape> 
+					<appearance> 
+						<material diffuseColor='0 1 0'></material> 
+					</appearance> 
+					<cone height = "3"></cone> 
+				</shape> 
+			</transform> 
+			<transform translation='0 7.7 0' scale='0.3 0.3 0.3'> 
+				<shape> 
+					<appearance> 
+						<material diffuseColor='0 0 1'></material> 
+					</appearance> 
+					<sphere radius = "1"></sphere> 
+				</shape> 
+			</transform> 
+			<transform translation='0 2 0' scale='1.6 1 1.6'> 
+				<shape> 
+					<appearance> 
+						<material diffuseColor='0.22 0.11 0.65'></material> 
+						<ImageTexture  url="https://yt3.ggpht.com/a/AGF-l7_p9DORq1F2sFOEHMYoEAvzQorejOZPyBRUpw=s900-c-k-c0xffffffff-no-rj-mo"></ImageTexture>
+						<TextureTransform scale = "3 2""></TextureTransform>
+					</appearance> 
+					<Cylinder radius = "1" height="3"></Cylinder> 
+				</shape> 
+			</transform> 
+			<transform translation='0 4 0' rotation="1 0 0 -1.57"> 
+				<shape> 
+					<appearance> 
+						<material diffuseColor='0.23 0.46 0.25'></material> 
+					</appearance> 
+					<Torus></Torus> 
+				</shape> 
+			</transform>
+			<transform translation='0 0 3.51'> 
+				<shape> 
+					<appearance> 
+						<material diffuseColor='0 0 0'></material> 
+					</appearance> 
+					<Text string = "This is box"></Text> 
+				</shape> 
+			</transform> 
+			</scene> 
+			</x3d> 
+        </body> 
+
 </html>
