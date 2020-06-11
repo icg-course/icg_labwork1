@@ -2,12 +2,89 @@
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>Лабораторная работа №1</h1>
+    <X3D>
+      <Scene>
+        <Transform translation= "0 -2 -2">
+          <Shape>
+            <Appearance>
+              <ImageTexture url='https://img.freepik.com/free-photo/old-cement-wall-texture_1149-1280.jpg?size=626&ext=jpg'></ImageTexture> 
+            </Appearance>
+            <Box size="10 0.1 10"></Box>
+          </Shape>
+        </Transform>  
+        <Transform translation= "2 -1.5 2.7">
+          <Transform translation= "-0.5 0.3 0.26">
+            <Shape>
+              <Text string='Button' solid='false'>
+                <FontStyle family="TYPEWRITER" size='0.25' spacing='0.1' language='en'></FontStyle>
+              </Text>
+              <Appearance>
+                <Material diffuseColor='red'></Material>
+              </Appearance>
+            </Shape>
+          </Transform>  
+          <Shape>
+            <Appearance>
+              <Material diffuseColor=".3 .3 .3" emissiveColor=".1 .1 .1"></Material>
+            </Appearance>
+            <Box size="1 1 0.5"></Box>
+          </Shape>
+        </Transform>
+        <Transform translation= "0 0 -2">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="white"emissiveColor=".1 .1 .1"></Material>
+            </Appearance>
+            <Cylinder radius="0.2" height="2"></Cylinder>
+          </Shape>
+          <Transform translation= "0 1 0">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor="1 1 1"></Material>
+              </Appearance>
+              <Dish radius="25" height="0.5"></Dish> 
+            </Shape>
+          </Transform>
+          <Transform translation= "0 -1.3 0">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor=".2 .3 .4"></Material>  
+              </Appearance>
+              <Dish radius="30" height="0.3"></Dish> 
+            </Shape>
+          </Transform>
+          <Transform translation= "0 -1 0" rotation="0 0 3.14159 3.14159 ">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor=".2 .3 .4"></Material>  
+              </Appearance>
+              <Nozzle outerRadius="0.05" innerRadius="0.02" nozzleRadius="0.08" nozzleHeight="0.05" height="0.2"></Nozzle> 
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform translation= "2 -0.95 2.75">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='black'></Material>
+            </Appearance>
+            <Nozzle outerRadius="0.05" innerRadius="0.02" nozzleRadius="0.08" nozzleHeight="0.05" height="0.15"></Nozzle> 
+          </Shape>
+          <Transform translation= "0 0.075  0">
+              <Shape> 
+                <Appearance>
+                  <Material diffuseColor='red'></Material>
+                </Appearance>
+                <Dish radius="18" height="0.06"></Dish> 
+              </Shape>
+          </Transform>
+        </Transform>
+      </Scene>
+    </X3D>
   </body> 
 </html>
