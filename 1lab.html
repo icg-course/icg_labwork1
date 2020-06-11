@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>  
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <title>X3DOM PAGE</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+  </head>
+  <body>
+	<h1 align="center"><font  color="pink" face="Lucida Sans Unicode">There are just some 3D objects bruh</font></h1>
+	<x3d width='1500px' height='720px'> 
+		<scene> 
+			<shape> 
+				<Appearance>
+					<Material diffuseColor = "0.3 0.7 0.3"></Material>
+					<ImageTexture  url="https://img4.goodfon.ru/wallpaper/nbig/b/72/tekstura-besshovnyi-fon-tsvety.jpg"></ImageTexture/>
+					<TextureTransform scale = "2 2" rotation="0.5"></TextureTransform>
+				</Appearance>
+				<box size = " 9 1 8"></box> 
+			</shape>
+			<transform translation='-3 1.5 2.5'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0 0.8 0.3'></material>
+					<ImageTexture  url="https://media.istockphoto.com/vectors/art-science-seamless-background-vector-id518951310"></ImageTexture>					
+				</appearance> 
+				<sphere radius = "1"></sphere> 
+			</shape> 
+			</transform>
+			<transform translation='-3.5 -3 3.5'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0.5 0.5 0.5'></material> 
+				</appearance> 
+				<Cylinder radius = "0.2" height="5"></Cylinder> 
+			</shape> 
+			</transform>
+			<transform translation='-3.5 -3 -3.5'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0.5 0.5 0.5'></material> 
+				</appearance> 
+				<Cylinder radius = "0.2" height="5"></Cylinder> 
+			</shape> 
+			</transform>
+			<transform translation='3.5 -3 -3.5'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0.5 0.5 0.5'></material> 
+				</appearance> 
+				<Cylinder radius = "0.2" height="5"></Cylinder> 
+			</shape> 
+			</transform>
+			<transform translation='3.5 -3 3.5'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0.5 0.5 0.5'></material> 
+				</appearance> 
+				<Cylinder radius = "0.2" height="5"></Cylinder> 
+			</shape> 
+			</transform>
+			<transform translation='3 2 2' scale='1 1 1.7'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0.2 0 0.2'></material>
+										
+				</appearance> 
+				<cone height = "3"></cone> 
+			</shape>
+			</transform>
+			<transform translation="0 1.99 -2" rotation='0 1 0 0.707'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0.2 0 0.7'></material>
+					<ImageTexture  url="https://media.istockphoto.com/vectors/light-blue-swirls-damask-seamless-pattern-background-vector-id490522941"></ImageTexture>
+				</appearance> 
+				<Torus></Torus> 
+			</shape> 			
+			</transform>
+			<transform translation='0 0 4.01'> 
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0 0 1'></material> 
+				</appearance> 
+				<Text string = "№1, Горев" solid="false"></Text> 
+			</shape> 
+			</transform> 
+		</scene> 
+	</x3d> 
+  </body> 
+</html>
