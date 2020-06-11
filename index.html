@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+
+
+
+<head>
+  <meta charset="utf-8" />
+  <title>1 лаба</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css"/>
+  <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
+</head>
+<!---------------------lab1---------------------------->
+
+ 
+<body>
+  <h1> 3 лаба</h1>
+  <X3D>
+    <Scene>
+  <Group DEF="snowman">
+    <transform>
+      <Shape>
+        <Appearance>
+          <ImageTexture url='body.png'>
+            <TextureProperties></TextureProperties>
+            <Material diffuseColor= 'blue'></Material>>
+        </Appearance>
+        <Box size="1.5 1.5 1.5"></Box>
+      </Shape>
+    </transform>
+      
+
+ 
+<!---------------- ногi--------------------------->
+
+       <transform translation="0, -1.7, 0">
+        <shape>
+          <Appearance>
+            <ImageTexture url='body.png'>
+              <TextureProperties></TextureProperties>
+              <Material diffuseColor= 'blue'></Material>>
+          </Appearance>
+          <Box size="2 2 2"></Box>
+        </shape>
+      </transform>
+
+
+	
+      
+<!------------------рука 1 ---------------------->
+       <transform translation="0, -0.3,-1.2">
+        <transform rotation='0.707 0 0 0.707'>
+          <shape>
+            <Appearance>
+              <ImageTexture url='leg.png'>
+                <TextureProperties></TextureProperties>
+            </Appearance>
+            <Box size="0.2 2 0.2"></Box>
+          </shape>
+        </transform>
+      </transform>
+
+ <!---------------- рука 2---------------------->
+      <transform translation="0, -0.3,1.2">
+        <transform rotation='-0.707 0 0 0.707'>
+          <shape>
+            <Appearance>
+              <ImageTexture url='leg.png'>
+                <TextureProperties></TextureProperties>
+            </Appearance>
+            <Box size="0.2 2 0.2"></Box>
+          </shape>
+        </transform>
+      </transform>
+
+
+<!------------------голова --------------------->
+<transform translation="0, 1.6, 0">
+        <transform rotation='0.0 0 0 0'>
+          <shape>
+            <Appearance>
+              <ImageTexture url='head2.png'>
+                <TextureProperties></TextureProperties>
+            </Appearance>
+            <Box size="1.7 1.7 1.7"></Box>
+          </shape>
+        </transform>
+      </transform>
+ </Group>
+
+<!---------------------lab2---------------------------->
+<Group DEF="environment">
+  <Group DEF="Lab2">     
+<!--Terrain-->
+    <Transform translation="-15 -3 -10">
+      <Shape>
+        <Appearance>
+        <ImageTexture url='grass.png'> </ImageTexture>
+        </Appearance>
+        <ElevationGrid xDimension="6" zDimension="6"
+          height="1.5, 1, 0.5, 1, 3, 1.5,1, 
+              0.5, 0.25, 0.5, 1,0, 0.5, 
+              0.25, 0, 0.25, 0.5,1,0.5, 
+              0.25, 0, 0, 0.5, 0,1, 
+              0.5, 0.25, 0.25, 0.5, 0,
+              1.5, 0.5, 0.5, 1, 1.5,0"
+        xSpacing="7.0" zSpacing="7.0" solid="false">
+        </ElevationGrid>
+      </Shape>
+    </Transform>
+
+<!--Babochka---------------------------------->
+<Anchor url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" parameter="target='_self'">
+  <Transform translation="-4 2.05 -6">
+    <transform rotation= " 1 1 1 1" >
+    <Shape>
+    <Appearance>
+    <Material diffuseColor='purple'></Material>
+    </Appearance>
+    <IndexedTriangleSet 
+    index="0 1 2 3 4 2" solid="false">
+    <Coordinate point="0 0 0, 0 0.25 0, 0.25 0.125 0, 0.5 0.25 0, 0.5 0 0"></Coordinate>
+    <ColorRGBA color="7.2 0.2 2.2 1, 0.2 0.2 7.2 1, 0.2 0.2 0.2 1, 3.2 0.2 0.2 1, 6.2 0.2 4.2 1"></ColorRGBA>
+    </IndexedTriangleSet>	
+    </Shape>
+    </Transform>
+  </Transform>
+</Anchor>
+
+<!--gryaz-->
+<Transform translation="2.25 -3.5 5.6">
+  <Shape>
+    <Appearance>
+      <ImageTexture url='dirt.png'> </ImageTexture>
+    </Appearance>
+    <Extrusion crossSection="-3.5 -1 -2.1 2.9 2.2 2.9 3.6 -1 0 -3.5 -3.5 -1"            
+      scale="0.1 0.5 0.1 0.3 0.2 1.0" 
+      spine="0 0.4 0 0 1 0 0 0.6 0.9"> </Extrusion> 
+  </Shape>
+    </Transform>
+
+    <!--Buttons-->
+<Transform translation="0.8 0.4 -0.6">
+  <Shape>
+  <PointSet>
+  <Color color="0 0 0, 0 0 0, 0 0 0"></Color>
+  <Coordinate point="0 -1 0.6, 0 -0.5 0.6, 0 0 0.6 "></Coordinate>
+  </PointSet>
+  </Shape>
+  </Transform>
+
+  <!--kyst-->
+  <Anchor url="https://www.youtube.com/watch?v=blPFDWEMRDU" parameter="target='_self'">
+  <Transform translation="-4 -2.5 -6">
+  
+    <Shape>
+    <Appearance>
+    </Appearance>
+    <IndexedTriangleStripSet index=' 0 1 4 0 2 3 0 2 5 0 6 7 2 6 8 6 1 9 ' solid='false'>
+    <Coordinate point=
+    '0 0 0, 
+     0.1 0 0
+    -0.2 0 0
+    0 1 1
+    0.5 3 0.3
+    -0.2 2 -0.7
+    0 0 0.3
+    -0.3 0 0
+    0.8 1.5 -0.3
+    -0.6 1.1 -0.1 
+
+     '>	
+    </Coordinate>
+    <ColorRGBA color='0 1 0 1, 0 1 0 1, 0 1 0 1, 0 1 0 1, 0 1 0 1, 0 1 0 1, 0 1 0 1, 0 1 0 1, 
+    0 1 0 1, 0 1 0 1, 0 1 0 1, 0 1 0 1, 0 1 0 1, 1 1 0 1, '></ColorRGBA>
+    </IndexedTriangleStripSet>
+    </Shape>
+    </Transform>
+  </transform>
+</Anchor>
+</Group>
+<!---------------------lab3---------------------------->
+<Group DEF="Lab3">
+  <Fog fogType="EXPONENTIAL" color="#FFFAFA" visibilityRange='110'></Fog>
+    <Background 
+      backUrl = "back.png" ,
+      bottomUrl= "W:\1yceba\big hentai collection (6 sem)\графика рафика\лаб3\bottom.png" , 
+      frontUrl= "W:\1yceba\big hentai collection (6 sem)\графика рафика\лаб3\front.png",
+      leftUrl= "W:\1yceba\big hentai collection (6 sem)\графика рафика\лаб3\left.png", 
+      rightUrl= "W:\1yceba\big hentai collection (6 sem)\графика рафика\лаб3\right.png", 
+      topUrl= "W:\1yceba\big hentai collection (6 sem)\графика рафика\лаб3\top.png" >
+    </Background>
+
+    <Spotlight color='red' location='5 3 4' direction='0 0 0'></Spotlight>
+    <PointLight color='violet' location='2 2 2' ></PointLight>
+
+   
+<Viewpoint 	position="-5 1.2 -1" orientation="0.7 -1 -0.2"></Viewpoint>
+<Viewpoint 	position="-9 1 19" orientation="0 .2 0 -.4"></Viewpoint>
+  </Group>
+</Group>
+    </Scene>
+  </X3D>
+</body>
+
+</html>
