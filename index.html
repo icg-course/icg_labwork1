@@ -1,13 +1,249 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>  
+  <meta charset="utf-8" />
+  <title>LesnoyLab1</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+  <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
+  <link rel="stylesheet" href="../css/custom.css" />
+  <script src="../js/custom.js"></script>
+</head>
+<body>
+  <X3D id="x3d" xmlns="https://www.x3dom.org/x3dom">
+    <scene >
+      <Transform translation="0 0 0" >     <!--Тело -->  
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://lh3.googleusercontent.com/HUlj1PBI0tiE9_XQyhpLuQmJ67NKrRLR6R4vEbSjxVuQJIo4_eFPwHZ-b-OPZSgdAeq0HzfsQ_6vVayappEB7g=s400"></ImageTexture>
+            <Material diffuseColor='#FFFFFF'></Material>
+          </Appearance>
+          <Box size="5 3 3"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="2.5 1.5 0" >    <!--Голова -->  
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://lh3.googleusercontent.com/HUlj1PBI0tiE9_XQyhpLuQmJ67NKrRLR6R4vEbSjxVuQJIo4_eFPwHZ-b-OPZSgdAeq0HzfsQ_6vVayappEB7g=s400"></ImageTexture>
+            <Material diffuseColor='#FFFFFF'></Material>
+          </Appearance>
+          <Box size="2 2 2"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="2.9 1.5 0" >    <!--Лицо -->  
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://lh3.googleusercontent.com/HUlj1PBI0tiE9_XQyhpLuQmJ67NKrRLR6R4vEbSjxVuQJIo4_eFPwHZ-b-OPZSgdAeq0HzfsQ_6vVayappEB7g=s400"></ImageTexture>
+            <Material diffuseColor='#FFFFFF'></Material>
+          </Appearance>
+          <Box size="1.8 1.8 1.8"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="2.91 1.5 0"  >  <!--Верхнее пятно на лице-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+           <Box size="1.79 1 1.79"></Box>
+        </Shape>
+        </Transform>
+
+
+        <Transform translation="2.91 1.11 0"  >  <!--Нижнее пятно-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+           <Box size="1.79 1 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.7 1.5 0.749"  >  <!--Глаз левый черный-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#000000'></Material>
+          </Appearance>
+           <Box size="0.3 0.3 0.3"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.7 1.5 0.449"  >  <!--Глаз левый белый-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#FFFFFF'></Material>
+          </Appearance>
+           <Box size="0.3 0.3 0.3"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.7 1.5 -0.749">  <!--Глаз правый черный-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#000000'></Material>
+          </Appearance>
+           <Box size="0.3 0.3 0.3"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.7 1.5 -0.449"  >  <!--Глаз правый белый-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#FFFFFF'></Material>
+          </Appearance>
+           <Box size="0.3 0.3 0.3"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.8 1.051 0"  >  <!--Рот верх-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#DB7093'></Material>
+          </Appearance>
+           <Box size="0.3 0.3 0.6"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.8 0.751 0"  >  <!--Рот низ-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#FFB6C1'></Material>
+          </Appearance>
+           <Box size="0.3 0.3 0.6"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.55 1.7 0.87"  >  <!--Левое ухо-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+           <Box size="0.1 0.6 0.1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="3.55 1.7 -0.87"  >  <!--Правое ухо-->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+           <Box size="0.1 0.6 0.1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="1.6 -2.1 0.7" >     <!--Нога передняя левая ч1 -->  
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://lh3.googleusercontent.com/HUlj1PBI0tiE9_XQyhpLuQmJ67NKrRLR6R4vEbSjxVuQJIo4_eFPwHZ-b-OPZSgdAeq0HzfsQ_6vVayappEB7g=s400"></ImageTexture>
+            <Material diffuseColor='#bddefc'></Material>
+          </Appearance>
+          <Box size="1.2 1.2 1.2"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="1.6 -3.3 0.7" >     <!--Нога передняя левая ч2 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Box size="1 1.3 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="1.6 -4.1 0.7" >     <!--Нога передняя левая ч3 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#000000'></Material>
+          </Appearance>
+          <Box size="1 0.3 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="1.6 -2.1 -0.7" >     <!--Нога передняя правая ч1 -->  
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://lh3.googleusercontent.com/HUlj1PBI0tiE9_XQyhpLuQmJ67NKrRLR6R4vEbSjxVuQJIo4_eFPwHZ-b-OPZSgdAeq0HzfsQ_6vVayappEB7g=s400"></ImageTexture>
+            <Material diffuseColor='#bddefc'></Material>
+          </Appearance>
+          <Box size="1.2 1.2 1.2"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="1.6 -3.3 -0.7" >     <!--Нога передняя правая ч2 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Box size="1 1.3 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="1.6 -4.1 -0.7" >     <!--Нога передняя правая ч3 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#000000'></Material>
+          </Appearance>
+          <Box size="1 0.3 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="-1.6 -2.1 0.7" >     <!--Нога задняя левая ч1 -->  
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://lh3.googleusercontent.com/HUlj1PBI0tiE9_XQyhpLuQmJ67NKrRLR6R4vEbSjxVuQJIo4_eFPwHZ-b-OPZSgdAeq0HzfsQ_6vVayappEB7g=s400"></ImageTexture>
+            <Material diffuseColor='#bddefc'></Material>
+          </Appearance>
+          <Box size="1.2 1.2 1.2"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="-1.6 -3.3 0.7" >     <!--Нога задняя левая ч2 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Box size="1 1.3 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="-1.6 -4.1 0.7" >     <!--Нога задняя левая ч3 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#000000'></Material>
+          </Appearance>
+          <Box size="1 0.3 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="-1.6 -2.1 -0.7" >     <!--Нога задняя левая ч1 -->  
+        <Shape>
+          <Appearance>
+            <ImageTexture url="https://lh3.googleusercontent.com/HUlj1PBI0tiE9_XQyhpLuQmJ67NKrRLR6R4vEbSjxVuQJIo4_eFPwHZ-b-OPZSgdAeq0HzfsQ_6vVayappEB7g=s400"></ImageTexture>
+            <Material diffuseColor='#bddefc'></Material>
+          </Appearance>
+          <Box size="1.2 1.2 1.2"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="-1.6 -3.3 -0.7" >     <!--Нога задняя левая ч2 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#8B4513'></Material>
+          </Appearance>
+          <Box size="1 1.3 1"></Box>
+        </Shape>
+        </Transform>
+
+        <Transform translation="-1.6 -4.1 -0.7" >     <!--Нога задняя левая ч3 -->  
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#000000'></Material>
+          </Appearance>
+          <Box size="1 0.3 1"></Box>
+        </Shape>
+        </Transform>
+    </scene>
+  </X3D>
+</body>
 </html>
