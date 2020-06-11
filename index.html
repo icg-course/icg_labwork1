@@ -18,208 +18,211 @@
 						<ImageTexture 
 						url="https://2.bp.blogspot.com/-wbMKGGOgO3Y/XAFWLtRdmLI/AAAAAAAALi8/3HD7Hr3PRXwu3yFnx8M4IdkvEembSDrJACLcBGAs/s640/metall_setka_treschiny_carapiny_chb_tekstura_1920x1200.jpg" repeatS="true" repeatT="true"></ImageTexture>
 						<TextureTransform rotation="1.5708" scale="1 1" translation="0.33 0.5"></TextureTransform>
+					</appearance>
+					<cylinder radius = "1" height = "4.3" ></cylinder>
+				</shape>
+				<transform translation='-1.2 0.87 0' rotation='1 0 0 0'> <!--train platform--->
+					<shape >
+						<appearance>
+							<material diffuseColor='#000000'></material>
 						</appearance>
-						<cylinder radius = "1" height = "4.3" ></cylinder>
+						<box size="0.5 6 2"></box>
 					</shape>
-					<transform translation='-1.2 0.87 0' rotation='1 0 0 0'> <!--train platform--->
+					<transform translation='1.5 2 0' rotation='1 0 0 0'> <!--cabin--->
 						<shape >
 							<appearance>
-								<material diffuseColor='#000000'></material>
+								<material diffuseColor='#800000'></material>
 							</appearance>
-							<box size="0.5 6 2"></box>
+							<box size="2.5 2 2"></box>
 						</shape>
-						<transform translation='1.5 2 0' rotation='1 0 0 0'> <!--cabin--->
-							<shape >
+						<transform translation='1.1 -4 0' rotation='0 0 1 7.9'> <!--funnel--->
+							<shape>
 								<appearance>
-									<material diffuseColor='#800000'></material>
+									<material diffuseColor='#600000'></material>
 								</appearance>
-								<box size="2.5 2 2"></box>
+								<cone bottomRadius='0.4' height='0.9' topRadius='0.1' ></cone>
 							</shape>
-							<transform translation='1.1 -4 0' rotation='0 0 1 7.9'> <!--funnel--->
+							<transform translation='-0.50 3 0' rotation='0 0.75 0 -2.4'> <!--track cleaner-->
 								<shape>
 									<appearance>
-										<material diffuseColor='#600000'></material>
+										<material diffuseColor='#008000'></material>
 									</appearance>
-									<cone bottomRadius='0.4' height='0.9' topRadius='0.1' ></cone>
+									<snout dbottom='0.5' dtop='2.5' height='1.2' xoff='1' yoff='1'></snout>
 								</shape>
-								<transform translation='-0.50 3 0' rotation='0 0.75 0 -2.4'> <!--track cleaner-->
-									<shape>
-										<appearance>
-											<material diffuseColor='#008000'></material>
-										</appearance>
-										<snout dbottom='0.5' dtop='2.5' height='1.2' xoff='1' yoff='1'></snout>
-									</shape>
-								</transform>
 							</transform>
 						</transform>
 					</transform>
-					<transform translation='0 -1.5 0' rotation='0 0.75 0 -2.4'> <!--front part-->
+				</transform>
+				<transform translation='0 -1.5 0' rotation='0 0.75 0 -2.4'> <!--front part-->
+					<shape>
+						<appearance>
+							<material diffuseColor='#708090'></material>
+						</appearance>
+						<sphere radius="1"></sphere>
+					</shape>
+				</transform>
+				<transform translation='-1.7 2.5 1' rotation='1.5 -2 2 4'> <!--right back wheel-->
+					<shape>
+						<appearance>
+							<material diffuseColor='#708090'></material>
+						</appearance>
+						<cylinder radius = "0.6" height ="0.2" ></cylinder>
+					</shape>
+					<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
 						<shape>
 							<appearance>
-								<material diffuseColor='#708090'></material>
+								<material diffuseColor='#FFFF00'></material>
 							</appearance>
-							<sphere radius="1"></sphere>
+							<torus innerRadius="0.1" outerRadius="0.63"></torus>
 						</shape>
 					</transform>
-					<transform translation='-1.7 2.5 1' rotation='1.5 -2 2 4'> <!--right back wheel-->
+				</transform>
+				<transform translation='-1.7 0.80 1' rotation='1.5 -2 2 4'> <!--right middle wheel-->
+					<shape>
+						<appearance>
+							<material diffuseColor='#708090'></material>
+						</appearance>
+						<cylinder radius = "0.6" height ="0.2" ></cylinder>
+					</shape>
+					<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
 						<shape>
 							<appearance>
-								<material diffuseColor='#708090'></material>
+								<material diffuseColor='#FFFF00'></material>
 							</appearance>
-							<cylinder radius = "0.6" height ="0.2" ></cylinder>
+							<torus innerRadius="0.1" outerRadius="0.63"></torus>
 						</shape>
-						<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
-							<shape>
-								<appearance>
-									<material diffuseColor='#FFFF00'></material>
-								</appearance>
-								<torus innerRadius="0.1" outerRadius="0.63"></torus>
-							</shape>
-						</transform>
 					</transform>
-					<transform translation='-1.7 0.80 1' rotation='1.5 -2 2 4'> <!--right middle wheel-->
+				</transform>
+				<transform translation='-1.7 -0.90 1' rotation='1.5 -2 2 4'> <!--right front wheel-->
+					<shape>
+						<appearance>
+							<material diffuseColor='#708090'></material>
+						</appearance>
+						<cylinder radius = "0.6" height ="0.2" ></cylinder>
+					</shape>
+					<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
 						<shape>
 							<appearance>
-								<material diffuseColor='#708090'></material>
+								<material diffuseColor='#FFFF00'></material>
 							</appearance>
-							<cylinder radius = "0.6" height ="0.2" ></cylinder>
+							<torus innerRadius="0.1" outerRadius="0.63"></torus>
 						</shape>
-						<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
-							<shape>
-								<appearance>
-									<material diffuseColor='#FFFF00'></material>
-								</appearance>
-								<torus innerRadius="0.1" outerRadius="0.63"></torus>
-							</shape>
-						</transform>
 					</transform>
-					<transform translation='-1.7 -0.90 1' rotation='1.5 -2 2 4'> <!--right front wheel-->
+				</transform>
+				<transform translation='-1.7 2.5 -1' rotation='1.5 -2 2 4'> <!--left back wheel-->
+					<shape>
+						<appearance>
+							<material diffuseColor='#708090'></material>
+						</appearance>
+						<cylinder radius = "0.6" height ="0.2" ></cylinder>
+					</shape>
+					<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
 						<shape>
 							<appearance>
-								<material diffuseColor='#708090'></material>
+								<material diffuseColor='#FFFF00'></material>
 							</appearance>
-							<cylinder radius = "0.6" height ="0.2" ></cylinder>
+							<torus innerRadius="0.1" outerRadius="0.63"></torus>
 						</shape>
-						<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
-							<shape>
-								<appearance>
-									<material diffuseColor='#FFFF00'></material>
-								</appearance>
-								<torus innerRadius="0.1" outerRadius="0.63"></torus>
-							</shape>
-						</transform>
 					</transform>
-					<transform translation='-1.7 2.5 -1' rotation='1.5 -2 2 4'> <!--left back wheel-->
+				</transform>
+				<transform translation='-1.7 0.80 -1' rotation='1.5 -2 2 4'> <!--left middle wheel-->
+					<shape>
+						<appearance>
+							<material diffuseColor='#708090'></material>
+						</appearance>
+						<cylinder radius = "0.6" height ="0.2" ></cylinder>
+					</shape>
+					<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
 						<shape>
 							<appearance>
-								<material diffuseColor='#708090'></material>
+								<material diffuseColor='#FFFF00'></material>
 							</appearance>
-							<cylinder radius = "0.6" height ="0.2" ></cylinder>
+							<torus innerRadius="0.1" outerRadius="0.63"></torus>
 						</shape>
-						<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
-							<shape>
-								<appearance>
-									<material diffuseColor='#FFFF00'></material>
-								</appearance>
-								<torus innerRadius="0.1" outerRadius="0.63"></torus>
-							</shape>
-						</transform>
 					</transform>
-					<transform translation='-1.7 0.80 -1' rotation='1.5 -2 2 4'> <!--left middle wheel-->
+				</transform>
+				<transform translation='-1.7 -0.90 -1' rotation='1.5 -2 2 4'> <!--right front wheel-->
+					<shape>
+						<appearance>
+							<material diffuseColor='#708090'></material>
+						</appearance>
+						<cylinder radius = "0.6" height ="0.2" ></cylinder>
+					</shape>
+					<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
 						<shape>
 							<appearance>
-								<material diffuseColor='#708090'></material>
+								<material diffuseColor='#FFFF00'></material>
 							</appearance>
-							<cylinder radius = "0.6" height ="0.2" ></cylinder>
+							<torus innerRadius="0.1" outerRadius="0.63"></torus>
 						</shape>
-						<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
-							<shape>
-								<appearance>
-									<material diffuseColor='#FFFF00'></material>
-								</appearance>
-								<torus innerRadius="0.1" outerRadius="0.63"></torus>
-							</shape>
-						</transform>
 					</transform>
-					<transform translation='-1.7 -0.90 -1' rotation='1.5 -2 2 4'> <!--right front wheel-->
+				</transform>
+				<transform translation='0.45 2.9 -0.91' rotation='1 0 0 0'> <!--left window--->
+					<shape >
+						<appearance>
+							<material diffuseColor='#00FFFF'></material>
+						</appearance>
+						<box size="1.7 1.5 0.2"></box>
+					</shape>
+				</transform>
+				<transform translation='0.45 2.9 0.91' rotation='1 0 0 0'> <!--right window--->
+					<shape >
+						<appearance>
+							<material diffuseColor='#00FFFF'></material>
+						</appearance>
+						<box size="1.7 1.5 0.2"></box>
+					</shape>
+				</transform>
+				<transform translation='0 -2 -8' rotation='5 0 1 0'> <!---shield--->
+					<shape>
+						<appearance>
+							<material diffuseColor='#D3C436'></material>
+						</appearance>
+						<box size='4 5 0.2'></box>
+					</shape>
+					<transform translation='1.5 0 0.11' rotation='0 0 1.5 4.7'>
 						<shape>
 							<appearance>
-								<material diffuseColor='#708090'></material>
+								<material diffuseColor='#23200B'></material>
 							</appearance>
-							<cylinder radius = "0.6" height ="0.2" ></cylinder>
+							<text string='ИКГ' solid='false'>
+								<fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
+							</text>
 						</shape>
-						<transform translation='-0.01 -0.011 0' rotation='0.3 -3 3 3'> <!--tyre-->
-							<shape>
-								<appearance>
-									<material diffuseColor='#FFFF00'></material>
-								</appearance>
-								<torus innerRadius="0.1" outerRadius="0.63"></torus>
-							</shape>
-						</transform>
-					</transform>
-					<transform translation='0.45 2.9 -0.91' rotation='1 0 0 0'> <!--left window--->
-						<shape >
-							<appearance>
-								<material diffuseColor='#00FFFF'></material>
-							</appearance>
-							<box size="1.7 1.5 0.2"></box>
-						</shape>
-					</transform>
-					<transform translation='0.45 2.9 0.91' rotation='1 0 0 0'> <!--right window--->
-						<shape >
-							<appearance>
-								<material diffuseColor='#00FFFF'></material>
-							</appearance>
-							<box size="1.7 1.5 0.2"></box>
-						</shape>
-					</transform>
-					<transform translation='0 -2 -8' rotation='5 0 1 0'> <!---shield--->
-						<shape>
-							<appearance>
-								<material diffuseColor='#D3C436'></material>
-							</appearance>
-							<box size='4 5 0.2'></box>
-						</shape>
-						<transform translation='1.5 0 0.11' rotation='0 0 1.5 4.7'>
+						<transform translation='-2 -0.4 0'>
 							<shape>
 								<appearance>
 									<material diffuseColor='#23200B'></material>
 								</appearance>
-								<text string='ИКГ' solid='false'>
+								<text string='Лабораторная работа №1' solid='false'>
 									<fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
 								</text>
 							</shape>
-							<transform translation='-2 -0.4 0'>
-								<shape>
-									<appearance>
-										<material diffuseColor='#23200B'></material>
-									</appearance>
-									<text string='Лабораторная работа №1' solid='false'>
-										<fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
-									</text>
-								</shape>
-							</transform>
-							<transform translation='-2 -1.6 0'>
-								<shape>
-									<appearance>
-										<material diffuseColor='#23200B'></material>
-									</appearance>
-									<text string='Автор: Олег Лесной' solid='false'>
-										<fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
-									</text>
-								</shape>
-							</transform>
-							<transform translation='-1.5 -2 0'>
-								<shape>
-									<appearance>
-										<material diffuseColor='#991A5E'></material>
-									</appearance>
-									<text string='Группа: 4742' solid='false'>
-										<fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
-									</text>
-								</shape>
-							</transform>
-						</scene>
-					</x3d>
-				</body>
-				</html>
+						</transform>
+						<transform translation='-2 -1.6 0'>
+							<shape>
+								<appearance>
+									<material diffuseColor='#23200B'></material>
+								</appearance>
+								<text string='Автор: Олег Лесной' solid='false'>
+									<fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
+								</text>
+							</shape>
+						</transform>
+						<transform translation='-1.5 -2 0'>
+							<shape>
+								<appearance>
+									<material diffuseColor='#991A5E'></material>
+								</appearance>
+								<text string='Группа: 4742' solid='false'>
+									<fontstyle family="'Times' 'Orbitron'" size="0.3"></fontstyle>
+								</text>
+							</shape>
+						</transform>
+					</transform>
+				</transform>
+			</transform>
+		</scene>
+	</x3d>
+</body>
+</html>
