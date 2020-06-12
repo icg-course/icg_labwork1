@@ -1,13 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+<meta charset="utf-8" />
+<title>Лабораторная работа 1</title>
+<link rel="stylesheet" href="https://www.x3dom.org/release/x3dom.css" />
+<script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
+</head>
+<body>
+    <h1>Аверьянов Евгений 4743</h1>
+<X3D width="800px" height="800px">
+    <Scene>
+        <transform translation='0.5 1 1'>
+            <Shape>
+                <Appearance>
+                    <Material></Material>
+                    <imagetexture URL="steklo.jpg"></imagetexture>
+                </Appearance>
+                <Box size="1 1 1"></Box>
+            </Shape>
+        </transform>
+        <transform translation='1 1 1'>
+            <Shape>
+                <Appearance>
+                    <Material></Material>
+                    <imagetexture URL="zhelezo.jpg"></imagetexture>
+                </Appearance>
+                <Cylinder radius='1' height='2'></Cylinder>
+            </Shape>
+        </transform>
+        <transform translation='1 -1 1'>
+            <Shape>
+                <Appearance>
+                    <Material></Material>
+                    <imagetexture URL="zhelezo.jpg"></imagetexture>
+                </Appearance>
+                <Cylinder radius='1' height='2'></Cylinder>
+            </Shape>
+        </transform>
+        <transform translation='0.5 -1 1'>
+            <Shape>
+                <Appearance>
+                    <Material></Material>
+                    <imagetexture URL="steklo.jpg"></imagetexture>
+                </Appearance>
+                <Box size="1 1 1"></Box>
+            </Shape>
+        </transform>
+        <transform translation='1 3 1'>
+            <Shape>
+                <Appearance>
+                    <Material></Material>
+                    <imagetexture URL="kirpich.jpg"></imagetexture>
+                </Appearance>
+                <Cone bottomradius='1' height='2'></Cone>
+            </Shape>
+        </transform>
+        <transform translation='1 -2 1' rotation='1 0 0 1.57'>
+            <Shape>
+                <Appearance>
+                    <Material></Material>
+                    <imagetexture URL="asfalt.jpg"></imagetexture>
+                </Appearance>
+                <Plane size='5 5' solid='false'></Plane>
+            </Shape>
+        </transform>
+        <transform translation="0 -3.5 0" rotation='0 -1 0 1.57'>
+            <Shape>
+            <!--Текст-->
+                <Appearance>
+                    <Material diffusecolor="1 0 1"></Material> </Appearance>
+                     <text length="10" maxExtent="10" string="Лабораторная работа 1" solid='false'>
+                    <FontStyle family="Times New Roman" horizontal="true" justify="MIDDLE" langu
+                    age="ru"
+                    leftToRight="true" size="0.5" spacing="1" style="ITALIC" topBotto
+                    m="true">
+                    </text>
+             </Shape>
+         </transform>
+        </Scene>
+</X3D>
+</body>
 </html>
