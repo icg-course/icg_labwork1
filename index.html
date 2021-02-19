@@ -1,13 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+
+<head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <title>Project by kayran</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+    <link rel="stylesheet" href="../../css/custom.css" />
+    <script src="../../js/custom.js"></script>
+</head>
+
+<body>
+    <h1>Laboratoranya Rabota #1</h1>
+    <X3D width='1024px' height='800px'>
+        <Scene>
+            <viewpoint position="0 0 2.5"> </viewpoint>
+            <group def="Table">
+                <transform rotation="1 0 0 1.57" translation="0 0 0">
+                    <shape def="TableBody">
+                        <appearance>
+                            <material diffusecolor="black">
+                            </material>
+                        </appearance>
+                        <box size="1.5 0.75 0.1"> </box>
+                    </shape>
+                </transform>
+                <transform translation="0.68 -0.38 0.305">
+                    <shape def="tableLeg">
+                        <appearance>
+                            <material diffusecolor="0 0 0">
+                            </material>
+                        </appearance>
+                        <cylinder height="0.75" radius="0.04">
+                        </cylinder>
+                    </shape>
+                </transform>
+                <transform translation="-0.68 -0.38 0.305">
+                    <shape use="tableLeg">
+                    </shape>
+                </transform>
+                <transform translation="-0.68 -0.38 -0.305">
+                    <shape use="tableLeg">
+                    </shape>
+                </transform>
+                <transform translation="0.68 -0.38 -0.305">
+                    <shape use="tableLeg">
+                    </shape>
+                </transform>
+            </group>
+            <group def="flowerLikeConstruction">
+                <transform translation="0.6 0.15 -0.2">
+                    <shape def="BodyCone">
+                        <appearance>
+                            <material diffusecolor="0.3 0.5 0.1">
+                            </material>
+                        </appearance>
+                        <cone bottomRadius="0.06" height="0.2" topRadius="0.08"></cone>
+                    </shape>
+                </transform>
+                <transform translation="0.6 0.35 -0.2">
+                    <shape def="LampCylinder">
+                        <appearance>
+                            <material diffusecolor="orange" shininess="0.5">
+                            </material>
+                        </appearance>
+                        <cylinder height="0.2" radius="0.08"> </cylinder>
+                    </shape>
+                </transform>
+                <transform rotation="1 0 0 1.57" translation=" 0.6 0.07 -0.2">
+                    <shape def="TorusType1 ">
+                        <appearance>
+                            <material diffusecolor="red">
+                            </material>
+                        </appearance>
+                        <torus innerRadius="0.02" outerRadius="0.08"></torus>
+                    </shape>
+                </transform>
+            </group>
+            <group def="redATomatoOnTable">
+                <transform translation="-0.6 0.0975 -0.2">
+                    <shape def="redTomato">
+                        <appearance>
+                            <material diffusecolor="red">
+                            </material>
+                        </appearance>
+                        <sphere radius="0.05"></sphere>
+                    </shape>
+                </transform>
+                <transform rotation="0 0 1 0.25" translation="-0.6 0.15 -0.2">
+                    <shape def="greenLeaf">
+                        <appearance>
+                            <material diffusecolor="green">
+                            </material>
+                        </appearance>
+                        <cone bottomRadius="0.005" height="0.02" topRadius="0.015"></cone>
+                    </shape>
+                </transform>
+            </group>
+            <group def="Monitor">
+                <transform translation="0 0.3 -0.3">
+                    <shape def="Monitor">
+                        <appearance>
+                            <material diffusecolor="black">
+                            </material>
+                        </appearance>
+                        <box size="0.7 0.4 0.04"></box>
+                    </shape>
+                </transform>
+                <transform translation="0 0.3 -0.2825">
+                    <shape def="Screen">
+                        <appearance>
+                            <ImageTexture url="gingerBreadPicture.jpg"></ImageTexture>
+                            <material diffusecolor="blue"></material>
+                        </appearance>
+                        <box size="0.64 0.36 0.01"></box>
+                    </shape>
+                </transform>
+                <transform translation="0 0.1 -0.31">
+                    <shape def="MonitorLeg">
+                        <appearance>
+                            <material diffusecolor="white">
+                            </material>
+                        </appearance>
+                        <cone bottomRadius="0.04" height="0.1" topRadius="0.02"></cone>
+                    </shape>
+                </transform>
+                <transform scale="0.025 0.025 0.025" translation="-0.03275 0.1 -0.2795">
+                    <shape def="asusLabel">
+                        <appearance>
+                            <material ambientIntensity='0.0933' diffusecolor="white" shininess='0.51'></material>
+                        </appearance>
+                        <text string="ASUS"></text>
+                    </shape>
+                </transform>
+            </group>
+        </Scene>
+    </X3D>
+</body>
+
 </html>
