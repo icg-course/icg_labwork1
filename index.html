@@ -8,6 +8,50 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>Здесь только я. А должна быть бутылка мартины</h1>
+      <X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
+        <Scene>
+          <Transform rotation = "1 0 0 3.14"> 
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cone bottom = "false" bottomRadius = "4" height = "4" solid = "false"></Cone>
+            </Shape>
+          </Transform>
+ 
+          <Transform rotation = "1 0 0 3.14"> 
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="1 1 1" transparency = "0.1" specularColor = "1 1 1"  ></Material>
+              </Appearance>
+              <Cone bottomRadius = "3.3" height = "3" solid = "false"></Cone>
+            </Shape>
+          </Transform>
+          
+
+          <Transform translation = "0 -4.15 0">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cylinder height = "5.3" radius = "0.5"></Cylinder>
+            </Shape>
+          </Transform>
+        
+
+          <Transform translation = "0 -7 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cone bottom = "false" bottomRadius = "2.5" height = "1" solid = "false"></Cone>
+            </Shape>
+          </Transform>
+          
+
+         </Scene>
+      </X3D>
+
   </body> 
 </html>
