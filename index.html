@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     
    
+    <script type='text/javascript' src='https://www.x3dom.org/download/dev/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
 
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
    
@@ -434,7 +434,7 @@
       <!-- конец стулья -->
       
       <!-- буквы-->
-      <Transform translation = "-40 -5 0 ">
+      <Transform translation = "-60 -5 0 ">
         <Shape>
           <Appearance>
             <Material diffuseColor ="0.29 0 0.51" transparency = "0.1" specularColor = "0.29 0 0.51"  ></Material> 
@@ -446,16 +446,20 @@
       </Transform>
       <!-- конец буквы-->
       <Transform translation = "-38 0 -60">
-        <Transform scale = "1.5 1 1.5">
+        <Transform scale = "1.5 1.5 1.5">
       <!-- человек-->
       <!-- тело-->
       <Transform translation = "40 -7.5 25 ">
-        <Shape>
+        <Transform translation = "0 2.6 0">
+            <Shape>
           <Appearance>
-            <Material diffuseColor ="1 1 1" specularColor = "1 1 1"  ></Material>
+            <TextureTransform scale = "1 1"></TextureTransform>
+            <ImageTexture url = "dd.jpg"></ImageTexture>
           </Appearance>
-          <box size = "7 20 3.5"></box>
+          <box size = "7 15 3.5"></box>
         </Shape>
+        </Transform>
+      
         <!-- голова-->
         <Transform translation = "0 13.5 0 ">
           <Shape>
@@ -496,7 +500,7 @@
                 <TextureTransform scale = "1 1"></TextureTransform>
                 <ImageTexture url = "kk.jpg"></ImageTexture>
               </Appearance>
-              <box size = "2.9 40 2.9"></box>
+              <box size = "2.9 16 2.9"></box>
             </Shape>
             </Transform>
 
@@ -507,7 +511,7 @@
                 <TextureTransform scale = "1 1"></TextureTransform>
                 <ImageTexture url = "kk.jpg"></ImageTexture>
               </Appearance>
-              <box size = "2.9 40 2.9"></box>
+              <box size = "2.9 17 2.9"></box>
             </Shape>
             </Transform>
           
@@ -516,6 +520,7 @@
 
       </Transform>
     </Transform>
+  </Transform>
     
     <!-- конец человека -->
 >   <Sound>
