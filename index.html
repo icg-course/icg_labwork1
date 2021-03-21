@@ -179,65 +179,7 @@
         </Transform>
           <!-- конец второго бокала-->
           <!-- ----------------------------------------------------------->
-          <p> <!-- бутылка-->
-                    <!-- основание бутылки-->  
-          <Transform translation = "-15 -0.5 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.6" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cylinder top = "false" height = "9" radius = "2.5"></Cylinder>
-            </Shape>
-          </Transform>
-
-                   <!-- сужение к горлышку-->      
-          <Transform translation = "-15 5.5 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.6" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cone top = "false" topRadius = "0.7" bottom = "false"   bottomRadius = "2.5" height = "3"></Cone>
-            </Shape>
-          </Transform>
-                   <!-- горлышко-->
-          <Transform translation = "-15 8 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.69, 0.87, 0.82" transparency = "0.6" specularColor = "0.69, 0.87, 0.82"  ></Material>
-              </Appearance>
-              <Cylinder top = "false" bottom = "false" height = "2" radius = "0.7"></Cylinder>
-            </Shape>
-          </Transform>
-                   <!-- пробка-->
-          <Transform translation = "-15 9 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.05, 0.10, 0.26"  specularColor = "0.05, 0.10, 0.26"  ></Material>
-              </Appearance>
-              <Cylinder height = "1" radius = "0.75"></Cylinder>
-            </Shape>
-          </Transform>
-                <!--мартина в бутылке-->
-          <Transform translation = "-15 -1.2 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.58 0.87 0.85" transparency = "0.6" specularColor = "0.58 0.87 0.85"  ></Material>
-              </Appearance>
-              <Cylinder  height = "7" radius = "2.35"></Cylinder>
-            </Shape>
-          </Transform>
-          <!--этикетка-->
-          <Transform translation = "-15 -0.5 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "x1.png"></ImageTexture>
-              </Appearance>
-              <Cylinder bottom = "false" top = "false" height = "6" radius = "2.51"></Cylinder>
-            </Shape>
-          </Transform></p> 
-          <Transform translation = "0 -0.49 0">
-          <!-- бутылка закончилась((9(((((99 -->
-          
+                    
           <!-- столешница -->
           <Transform translation = "0 -8.5 0">
            <Shape>
@@ -495,58 +437,85 @@
       <Transform translation = "-40 -6 0 ">
         <Shape>
           <Appearance>
-            <Material diffuseColor ="1 0 0" transparency = "0.1" specularColor = "0 0 0"  ></Material> 
+            <Material diffuseColor ="0.29 0 0.51" transparency = "0.1" specularColor = "0.29 0 0.51"  ></Material> 
           </Appearance>
           <Text string = "Вика из 4841" solid = "false" >
-            <FontStyle size = "6" style = "BOLD"> </FontStyle>
+            <FontStyle size = "7" style = "BOLD" family = "Helvetica"> </FontStyle>
           </Text>
         </Shape>
       </Transform>
       <!-- конец буквы-->
-
+      <Transform translation = "-38 0 -60">
+        <Transform scale = "1.5 1.5 1.5">
       <!-- человек-->
       <!-- тело-->
       <Transform translation = "40 -7.5 25 ">
         <Shape>
           <Appearance>
-            <Material diffuseColor ="0 0 0" specularColor = "0 0 0"  ></Material> 
+            <TextureTransform scale = "1 1"></TextureTransform>
+            <ImageTexture url = "kk.jpg"></ImageTexture>
           </Appearance>
           <box size = "7 20 3"></box>
         </Shape>
         <!-- голова-->
-        <Transform translation = "0 14 0 ">
+        <Transform translation = "0 13.5 0 ">
           <Shape>
             <Appearance>
-              <Material diffuseColor ="0 0 0"  specularColor = "0 0 0"  ></Material> 
+              <TextureTransform scale = "1 1"></TextureTransform>
+              <ImageTexture url = "gg2.png"></ImageTexture>
             </Appearance>
-            <Sphere radius = "4" ></Sphere>
+            <Sphere radius = "3.5" ></Sphere>
           </Shape>
            <!-- рука-->
           <Transform translation = "4.5 -9 0 ">
             <Transform rotation = "0 0 1 0.5">
             <Shape>
               <Appearance>
-                <Material diffuseColor ="0 0 0" specularColor = "0 0 0"  ></Material> 
+                <TextureTransform scale = "1 1"></TextureTransform>
+                <ImageTexture url = "kk.jpg"></ImageTexture>
               </Appearance>
               <box size = "2 10.4 2"></box>
              </Shape>
             </Transform>
+              <!-- рука-->
             <Transform translation = "-9 0 0 " rotation = "0 0 1 -0.5">
               <Shape>
                 <Appearance>
-                  <Material diffuseColor ="0 0 0" specularColor = "0 0 0"  ></Material> 
+                  <TextureTransform scale = "1 1"></TextureTransform>
+                  <ImageTexture url = "kk.jpg"></ImageTexture>
                 </Appearance>
                 <box size = "2 10.4 2"></box>
               </Shape>
               </Transform>
           </Transform>
+          <!-- нога-->
+          <Transform translation = "-2 -24 0 " >
+            <Shape>
+              <Appearance>
+                <TextureTransform scale = "1 1"></TextureTransform>
+                <ImageTexture url = "kk.jpg"></ImageTexture>
+              </Appearance>
+              <box size = "2.9 40 2.9"></box>
+            </Shape>
+            </Transform>
+
+            <!-- нога2-->
+          <Transform translation = "3 -24 0 " >
+            <Shape>
+              <Appearance>
+                <TextureTransform scale = "1 1"></TextureTransform>
+                <ImageTexture url = "kk.jpg"></ImageTexture>
+              </Appearance>
+              <box size = "2.9 40 2.9"></box>
+            </Shape>
+            </Transform>
           
         </Transform>
 
 
       </Transform>
-      
-    
+    </Transform>
+    </Transform>
     <!-- конец человека -->
   </Scene>
       </X3D>
