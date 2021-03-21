@@ -3,14 +3,14 @@
   <head>  
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
+    
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
     <h1>Здесь только я. А должна быть бутылка мартины</h1>
 
-    <body style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(rgb(71, 78, 121) 0%, White 100%);'></body>
+    <body style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(rgb(11, 12, 19) 0%, rgb(48, 55, 75) 100%);'></body>
       <X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
 
         <Scene>
@@ -179,7 +179,7 @@
         </Transform>
           <!-- конец второго бокала-->
           <!-- ----------------------------------------------------------->
-          <!-- бутылка-->
+          <p> <!-- бутылка-->
                     <!-- основание бутылки-->  
           <Transform translation = "-15 -0.5 0" rotation = "0 1 0 3.14">
             <Shape>
@@ -234,22 +234,34 @@
               </Appearance>
               <Cylinder bottom = "false" top = "false" height = "6" radius = "2.51"></Cylinder>
             </Shape>
-          </Transform>
+          </Transform></p>
           <Transform translation = "0 -0.49 0">
           <!-- бутылка закончилась((9(((((99 -->
+          
           <!-- столешница -->
           <Transform translation = "0 -8.5 0">
            <Shape>
               <Appearance>
-                <ImageTexture url = "derevo.jpg"></ImageTexture>
+                <TextureTransform scale = "2 1"></TextureTransform>
+                <ImageTexture url = "b1.jpg"></ImageTexture>
               </Appearance>
-              <box size = "40 2 28" ></box>
+              <box size = "150 2 28" ></box>
             </Shape>
+            <Transform translation = "0 -15 0">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale = "4 2"></TextureTransform>
+                <ImageTexture url = "k1.jpg"></ImageTexture>
+              </Appearance>
+              <box size = "150 30 23" ></box>
+            </Shape>
+          </Transform>
           </Transform>
           
            <!-- конец столешницы -->
-           <!-- кружочек подноса -->
-           <Transform rotation = "1 0 0 -1.54"> 
+          
+            <!-- кружочек подноса -->
+           <Transform rotation = "1 0 0 -1.57"> 
            <Transform translation = "3 0 -7">
             <Shape>
               <Appearance>
@@ -273,12 +285,61 @@
            </Transform>
           </Transform>
         </Transform>
-         
-            
-            
-  
- 
-      </X3D>
+         <!-- конец подноса подноса -->
+      
+          <!-- стена бар -->
+      <Transform translation = "0 0 -40">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale = "1 1" translation = "0 0.90"></TextureTransform>
+            <ImageTexture url = "bar.jpg"></ImageTexture>
+          </Appearance>
+          <box size = "150 80 2" ></box>
+        </Shape>
+         <!-- конец стена бар -->
 
+          <!-- потолок  бар -->
+     <Transform rotation = "1 0 0 -1.57">
+        <!-- потолок  бар -->
+       <Transform translation = "0 -75 40">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale = "5 5" ></TextureTransform>
+            <ImageTexture url = "pl.jpg"></ImageTexture>
+          </Appearance>
+          <box size = "150 150 2" ></box>
+        </Shape>
+      </Transform> 
+       <!-- конец потолок  бар --> 
+        <!-- пол бар -->
+      <Transform translation = "0 -75 -40">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale = "5 4"></TextureTransform>
+            <ImageTexture url = "np.jpg"></ImageTexture>
+          </Appearance>
+          <box size = "150 150 2" ></box>
+        </Shape>
+      </Transform> 
+       <!-- конец пол бар -->
+      </Transform>
+      <!-- стена -->
+      <Transform rotation = "0 1 0 -1.57">
+        <Transform translation = "75 0 75">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale = "1 1"></TextureTransform>
+              <ImageTexture url = "ns.jpg"></ImageTexture>
+            </Appearance>
+            <box size = "150 80 2" ></box>
+          </Shape>
+           </Transform> 
+        </Transform> 
+         <!-- конец стены -->
+
+      </Transform>
+      <Transform>
+      </X3D>
+    
   </body> 
 </html>
