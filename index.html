@@ -2,20 +2,20 @@
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     
+   
+
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть бутылка мартины</h1>
+   
 
     <body style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(rgb(11, 12, 19) 0%, rgb(48, 55, 75) 100%);'></body>
       <X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
-
+        
         <Scene>
-
-         <!-- бокальчик-->
+        <!-- бокальчик-->
           <!-- сам бокал-->
           <Transform rotation = "1 0 0 3.14"> 
             <Shape>
@@ -181,7 +181,7 @@
           <!-- ----------------------------------------------------------->
                     
           <!-- столешница -->
-          <Transform translation = "0 -8.5 0">
+          <Transform translation = "0 -9 0">
            <Shape>
               <Appearance>
                 <TextureTransform scale = "2 1"></TextureTransform>
@@ -204,7 +204,7 @@
           
             <!-- кружочек подноса -->
            <Transform rotation = "1 0 0 -1.57"> 
-           <Transform translation = "3 0 -7">
+           <Transform translation = "3 0 -7.8">
             <Shape>
               <Appearance>
                 <TextureTransform scale = "2 1"></TextureTransform>
@@ -225,7 +225,7 @@
             </Transform>
             </Transform>
            </Transform>
-          </Transform>
+         
         
          <!-- конец подноса подноса -->
       
@@ -434,7 +434,7 @@
       <!-- конец стулья -->
       
       <!-- буквы-->
-      <Transform translation = "-40 -6 0 ">
+      <Transform translation = "-40 -5 0 ">
         <Shape>
           <Appearance>
             <Material diffuseColor ="0.29 0 0.51" transparency = "0.1" specularColor = "0.29 0 0.51"  ></Material> 
@@ -446,16 +446,15 @@
       </Transform>
       <!-- конец буквы-->
       <Transform translation = "-38 0 -60">
-        <Transform scale = "1.5 1.5 1.5">
+        <Transform scale = "1.5 1 1.5">
       <!-- человек-->
       <!-- тело-->
       <Transform translation = "40 -7.5 25 ">
         <Shape>
           <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "kk.jpg"></ImageTexture>
+            <Material diffuseColor ="1 1 1" specularColor = "1 1 1"  ></Material>
           </Appearance>
-          <box size = "7 20 3"></box>
+          <box size = "7 20 3.5"></box>
         </Shape>
         <!-- голова-->
         <Transform translation = "0 13.5 0 ">
@@ -472,7 +471,8 @@
             <Shape>
               <Appearance>
                 <TextureTransform scale = "1 1"></TextureTransform>
-                <ImageTexture url = "kk.jpg"></ImageTexture>
+                <ImageTexture url = "SJ.jpg"></ImageTexture> 
+              
               </Appearance>
               <box size = "2 10.4 2"></box>
              </Shape>
@@ -482,14 +482,15 @@
               <Shape>
                 <Appearance>
                   <TextureTransform scale = "1 1"></TextureTransform>
-                  <ImageTexture url = "kk.jpg"></ImageTexture>
+                  <ImageTexture url = "SJ.jpg"></ImageTexture> 
+                
                 </Appearance>
                 <box size = "2 10.4 2"></box>
               </Shape>
               </Transform>
           </Transform>
           <!-- нога-->
-          <Transform translation = "-2 -24 0 " >
+          <Transform translation = "-2 -25 0 " >
             <Shape>
               <Appearance>
                 <TextureTransform scale = "1 1"></TextureTransform>
@@ -500,7 +501,7 @@
             </Transform>
 
             <!-- нога2-->
-          <Transform translation = "3 -24 0 " >
+          <Transform translation = "2 -24 0 " >
             <Shape>
               <Appearance>
                 <TextureTransform scale = "1 1"></TextureTransform>
@@ -515,8 +516,12 @@
 
       </Transform>
     </Transform>
-    </Transform>
+    
     <!-- конец человека -->
+>   <Sound>
+      <AudioClip loop='true' enabled="true" url="sj.mp3"/>
+    </Sound>
+
   </Scene>
       </X3D>
     
