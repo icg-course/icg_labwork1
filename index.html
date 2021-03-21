@@ -9,48 +9,275 @@
   </head>
   <body>
     <h1>Здесь только я. А должна быть бутылка мартины</h1>
+
+    <body style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(rgb(71, 78, 121) 0%, White 100%);'></body>
       <X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
+
         <Scene>
+
+         <!-- бокальчик-->
+          <!-- сам бокал-->
           <Transform rotation = "1 0 0 3.14"> 
             <Shape>
               <Appearance>
                 <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
               </Appearance>
-              <Cone bottom = "false" bottomRadius = "4" height = "4" solid = "false"></Cone>
+              <Cone top = "false"   topRadius = "0.35" bottom = "false" bottomRadius = "4" height = "4" solid = "false"></Cone>
             </Shape>
           </Transform>
- 
+        <!-- мартина в бокальчике-->
           <Transform rotation = "1 0 0 3.14"> 
             <Shape>
               <Appearance>
-                <Material diffuseColor ="1 1 1" transparency = "0.1" specularColor = "1 1 1"  ></Material>
+                <Material diffuseColor ="0.58 0.87 0.85" transparency = "0.1" specularColor = "0.58 0.87 0.85"  ></Material>
               </Appearance>
-              <Cone bottomRadius = "3.3" height = "3" solid = "false"></Cone>
+              <Cone bottomRadius = "3.3" height = "3.5" ></Cone>
             </Shape>
           </Transform>
           
-
-          <Transform translation = "0 -4.15 0">
+        <!-- палка от ножки-->
+          <Transform translation = "0 -4.4 0">
             <Shape>
               <Appearance>
                 <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
               </Appearance>
-              <Cylinder height = "5.3" radius = "0.5"></Cylinder>
+              <Cylinder solid = "false" height = "4.8" radius = "0.35"></Cylinder>
             </Shape>
           </Transform>
-        
 
+        <!--основание ножки -->
           <Transform translation = "0 -7 0" rotation = "0 1 0 3.14">
             <Shape>
               <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.1" specularColor = "0.87843 1 1"  ></Material>
               </Appearance>
               <Cone bottom = "false" bottomRadius = "2.5" height = "1" solid = "false"></Cone>
             </Shape>
           </Transform>
-          
+          <!-- бокальчик закончился -->
+        
+          <!-- оливки-->
+          <Transform translation = "1 0.4 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "olivka.jpg" ></ImageTexture>
+                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Sphere radius = "0.7" ></Cone>
+            </Shape>
+          </Transform>
+          <Transform translation = "2.1 1.5 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "olivka.jpg" ></ImageTexture>
+                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Sphere radius = "0.7" ></Cone>
+            </Shape>
+          </Transform>
+          <Transform translation = "3.18 2.4 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "olivka.jpg" ></ImageTexture>
+                <Material transparency = "0.9" diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Sphere radius = "0.7" ></Cone>
+            </Shape>
+          </Transform>
+            <!-- зубочистка-->
+          <Transform translation = "2.4 1.5 0" rotation = "0 0 1 -0.78">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "derevo.jpg" ></ImageTexture>
+                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cylinder height = "5" radius = "0.05" ></Cone>
+            </Shape>
+          </Transform>
+          <!-- оливок больше нет-->
 
-         </Scene>
+          <!-- Одного бокала было мало-->
+          <!-- сам бокал-->
+          <Transform translation = "9 0 2">
+          <Transform rotation = "1 0 0 3.14"> 
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cone top = "false"   topRadius = "0.35" bottom = "false" bottomRadius = "4" height = "4" solid = "false"></Cone>
+            </Shape>
+          </Transform>
+        <!-- мартина в бокальчике-->
+          <Transform rotation = "1 0 0 3.14"> 
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.58 0.87 0.85" transparency = "0.1" specularColor = "0.58 0.87 0.85"  ></Material>
+              </Appearance>
+              <Cone bottomRadius = "3.3" height = "3.5" ></Cone>
+            </Shape>
+          </Transform>
+          
+        <!-- палка от ножки-->
+          <Transform translation = "0 -4.4 0">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cylinder solid = "false" height = "4.8" radius = "0.35"></Cylinder>
+            </Shape>
+          </Transform>
+
+        <!--основание ножки -->
+          <Transform translation = "0 -7 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cone bottom = "false" bottomRadius = "2.5" height = "1" solid = "false"></Cone>
+            </Shape>
+          </Transform>
+                  
+          <!-- оливки-->
+          <Transform translation = "1 0.4 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "olivka.jpg" ></ImageTexture>
+                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Sphere radius = "0.7" ></Cone>
+            </Shape>
+          </Transform>
+          <Transform translation = "2.1 1.5 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "olivka.jpg" ></ImageTexture>
+                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Sphere radius = "0.7" ></Cone>
+            </Shape>
+          </Transform>
+          <Transform translation = "3.18 2.4 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "olivka.jpg" ></ImageTexture>
+                <Material transparency = "0.9" diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Sphere radius = "0.7" ></Cone>
+            </Shape>
+          </Transform>
+            <!-- зубочистка-->
+          <Transform translation = "2.4 1.5 0" rotation = "0 0 1 -0.78">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "derevo.jpg" ></ImageTexture>
+                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cylinder height = "5" radius = "0.05" ></Cone>
+            </Shape>
+          </Transform>
+          <!-- оливок больше нет-->
+        </Transform>
+          <!-- конец второго бокала-->
+          <!-- ----------------------------------------------------------->
+          <!-- бутылка-->
+                    <!-- основание бутылки-->  
+          <Transform translation = "-15 -0.5 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.6" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cylinder top = "false" height = "9" radius = "2.5"></Cylinder>
+            </Shape>
+          </Transform>
+
+                   <!-- сужение к горлышку-->      
+          <Transform translation = "-15 5.5 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.87843 1 1" transparency = "0.6" specularColor = "0.87843 1 1"  ></Material>
+              </Appearance>
+              <Cone top = "false" topRadius = "0.7" bottom = "false"   bottomRadius = "2.5" height = "3"></Cone>
+            </Shape>
+          </Transform>
+                   <!-- горлышко-->
+          <Transform translation = "-15 8 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.69, 0.87, 0.82" transparency = "0.6" specularColor = "0.69, 0.87, 0.82"  ></Material>
+              </Appearance>
+              <Cylinder top = "false" bottom = "false" height = "2" radius = "0.7"></Cylinder>
+            </Shape>
+          </Transform>
+                   <!-- пробка-->
+          <Transform translation = "-15 9 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.05, 0.10, 0.26"  specularColor = "0.05, 0.10, 0.26"  ></Material>
+              </Appearance>
+              <Cylinder height = "1" radius = "0.75"></Cylinder>
+            </Shape>
+          </Transform>
+                <!--мартина в бутылке-->
+          <Transform translation = "-15 -1.2 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor ="0.58 0.87 0.85" transparency = "0.6" specularColor = "0.58 0.87 0.85"  ></Material>
+              </Appearance>
+              <Cylinder  height = "7" radius = "2.35"></Cylinder>
+            </Shape>
+          </Transform>
+          <!--этикетка-->
+          <Transform translation = "-15 -0.5 0" rotation = "0 1 0 3.14">
+            <Shape>
+              <Appearance>
+                <ImageTexture url = "x1.png"></ImageTexture>
+              </Appearance>
+              <Cylinder bottom = "false" top = "false" height = "6" radius = "2.51"></Cylinder>
+            </Shape>
+          </Transform>
+          <Transform translation = "0 -0.49 0">
+          <!-- бутылка закончилась((9(((((99 -->
+          <!-- столешница -->
+          <Transform translation = "0 -8.5 0">
+           <Shape>
+              <Appearance>
+                <ImageTexture url = "derevo.jpg"></ImageTexture>
+              </Appearance>
+              <box size = "40 2 28" ></box>
+            </Shape>
+          </Transform>
+          
+           <!-- конец столешницы -->
+           <!-- кружочек подноса -->
+           <Transform rotation = "1 0 0 -1.54"> 
+           <Transform translation = "3 0 -7">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale = "2 1"></TextureTransform>
+                <ImageTexture url = "z.jpg"></ImageTexture>
+              </Appearance>
+               <torus innerRadius = "0.6" outerRadius = "10" ></torus>
+             </Shape>
+             
+             <Transform translation = "3 0 0"></Transform>
+             <Transform rotation = "1 0 0 -1.57">
+             <Shape>
+                <Appearance>
+                  <TextureTransform scale = "2 2"></TextureTransform>
+                  <ImageTexture url = "z.jpg"></ImageTexture>
+                </Appearance>
+                <Cylinder height = "0.4" radius = "9.6"></Cylinder>
+              </Shape>
+            </Transform>
+            </Transform>
+           </Transform>
+          </Transform>
+        </Transform>
+         
+            
+            
+  
+ 
       </X3D>
 
   </body> 
