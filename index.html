@@ -1,13 +1,235 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ЛР#1</title>
+    <script src='//www.x3dom.org/download/x3dom.js'></script> 
+    <link rel='stylesheet' href='//www.x3dom.org/download/x3dom.css'></link> 
+</head>
+<body>
+    <x3d width="100vw" height="100vh">
+        <scene>
+			<!-- cube кабины -->
+			<transform translation="2.75 1 0">
+				<shape>
+					<appearance>
+						<imagetexture url="./recycled-paper.jpg"></imagetexture>
+						<texturetransform scale=".2 .2"></texturetransform>
+						<material diffuseColor="#457b9d"></material>
+					</appearance>
+					<box size="2.5 3 2.8"></box>
+				</shape>
+				
+				<!-- cube крыши -->
+				<transform translation="0 1.6 0" scale="1.2 1 1.2">
+					<shape>
+						<appearance>
+							<imagetexture url="./brown-paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#1d3557"></material>
+						</appearance>
+						<box size="2.5 .3 2.8"></box>
+					</shape>
+				</transform>
+			</transform>
+
+			<!-- цилиндр -->
+			<transform translation="0 1 0" rotation="0 0 1 1.5708">
+				<shape>
+					<appearance>
+						<imagetexture url="./recycled-paper.jpg"></imagetexture>
+						<texturetransform scale=".2 .2"></texturetransform>
+						<material diffuseColor="#a8dadc" specularColor="#f1faee"></material>
+					</appearance>
+					<cylinder height="3"></cylinder>
+				</shape>
+			</transform>
+
+			<!-- torus -->
+			<transform translation="-1.5 1 0" rotation="0 1 0 1.5708">
+				<shape>
+					<appearance>
+						<imagetexture url="./brown-paper.jpg"></imagetexture>
+						<texturetransform scale="1 1"></texturetransform>
+						<material diffuseColor="#1d3557"></material>
+					</appearance>
+					<torus outerRadius=".4" innerRadius=".125"></torus>
+				</shape>
+			</transform>
+
+			<!-- torus -->
+			<transform translation="-1.5 1 0" rotation="0 1 0 1.5708">
+				<shape>
+					<appearance>
+						<imagetexture url="./brown-paper.jpg"></imagetexture>
+						<texturetransform scale=".5 .5"></texturetransform>
+						<material diffuseColor="#1d3557"></material>
+					</appearance>
+					<torus outerRadius="1" innerRadius=".125"></torus>
+				</shape>
+			</transform>
+
+			<!-- sphere -->
+			<transform translation="-1.5 1 0">
+				<shape>
+					<appearance>
+						<material diffuseColor="#e63946" emissiveColor="#e63946"></material>
+					</appearance>
+					<sphere radius='.4'></sphere>
+				</shape>
+			</transform>
+			
+			<!-- cube под цилиндром -->
+			<transform translation="0 0 0">
+				<shape>
+					<appearance>
+						<imagetexture url="./recycled-paper.jpg"></imagetexture>
+						<texturetransform scale=".2 .2"></texturetransform>
+						<material diffuseColor="#457b9d"></material>
+					</appearance>
+					<box size="3.5 .75 2"></box>
+				</shape>
+			</transform>
+
+			<!-- труба большая -->
+			<transform translation="-.7 1.5 0">
+				<shape>
+					<appearance>
+						<imagetexture url="./brown-paper.jpg"></imagetexture>
+						<texturetransform scale=".5 .5"></texturetransform>
+						<material diffuseColor="#1d3557"></material>
+					</appearance>
+					<cylinder radius=".5"></cylinder>
+				</shape>
+			</transform>
+
+			<!-- труба маленькая -->
+			<transform translation=".25 1.25 0">
+				<shape>
+					<appearance>
+						<imagetexture url="./brown-paper.jpg"></imagetexture>
+						<texturetransform scale=".5 .5"></texturetransform>
+						<material diffuseColor="#1d3557"></material>
+					</appearance>
+					<cylinder radius=".25"></cylinder>
+				</shape>
+			</transform>
+
+			<!-- cones -->
+			<transform translation="1.35 2.25 0" scale='.3 .3 .3' rotation='0 0 1 -1.5708'>
+				<transform translation="0 0 -3">
+					<shape>
+						<appearance>
+							<imagetexture url="./brown-paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#1d3557"></material>
+						</appearance>
+						<cone radius=".25"></cone>
+					</shape>
+				</transform>
+				<transform translation="0 0 3">
+					<shape>
+						<appearance>
+							<imagetexture url="./brown-paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#1d3557"></material>
+						</appearance>
+						<cone radius=".25"></cone>
+					</shape>
+				</transform>
+			</transform>
+
+			<!-- передние колеса -->
+			<transform translation="-.75 -.4 0" rotation="1 0 0 -1.5708">
+				<!-- колесо -->
+				<transform translation="0 -1.125 0">
+					<shape>
+						<appearance>
+							<imagetexture url="./brown-paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#a8dadc" specularColor="#f1faee"></material>
+						</appearance>
+						<cylinder radius=".7" height=".25"></cylinder>
+					</shape>
+				</transform>
+				<!-- колесо -->
+				<transform translation="0 1.125 0">
+					<shape>
+						<appearance>
+							<imagetexture url="./brown-paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#a8dadc" specularColor="#f1faee"></material>
+						</appearance>
+						<cylinder radius=".7" height=".25"></cylinder>
+					</shape>
+				</transform>
+				<!-- ось -->
+				<transform>
+					<shape>
+						<appearance>
+							<imagetexture url="./paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#1d3557"></material>
+						</appearance>
+						<cylinder radius=".4" height="2.7"></cylinder>
+					</shape>
+				</transform>
+			</transform>
+
+			<!-- задние колеса -->
+			<transform translation="2.8 -.4 0" rotation="1 0 0 -1.5708">
+				<!-- колесо -->
+				<transform translation="0 -1.125 0">
+					<shape>
+						<appearance>
+							<imagetexture url="./brown-paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#a8dadc" specularColor="#f1faee"></material>
+						</appearance>
+						<cylinder radius=".7" height=".25"></cylinder>
+					</shape>
+				</transform>
+				<!-- колесо -->
+				<transform translation="0 1.125 0">
+					<shape>
+						<appearance>
+							<imagetexture url="./brown-paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#a8dadc" specularColor="#f1faee"></material>
+						</appearance>
+						<cylinder radius=".7" height=".25"></cylinder>
+					</shape>
+				</transform>
+				<!-- ось -->
+				<transform>
+					<shape>
+						<appearance>
+							<imagetexture url="./paper.jpg"></imagetexture>
+							<texturetransform scale=".5 .5"></texturetransform>
+							<material diffuseColor="#1d3557"></material>
+						</appearance>
+						<cylinder radius=".4" height="2.7"></cylinder>
+					</shape>
+				</transform>
+			</transform>
+			
+			<!-- текст -->
+			<transform translation="3 3 -3">
+				<shape>
+					<appearance>
+						<material diffuseColor="#e63946"></material>
+					</appearance>
+					<text string="стране нужны паровозы">
+						<fontstyle family="Helvetica sans-serif" style="bold"></fontstyle>	
+					</text>
+				</shape>
+			</transform>
+
+			<!-- расположение камеры -->
+			<Viewpoint position="-6.06334 4.20531 6.74917" orientation="-0.51196 -0.84732 -0.14121 0.83887" 
+	zNear="5.16810" zFar="17.34724" centerOfRotation="0.00000 0.00000 0.00000" fieldOfView="0.78540" description="defaultX3DViewpointNode"></Viewpoint>
+
+        </scene>
+    </x3d>
+</body>
 </html>
