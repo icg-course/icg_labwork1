@@ -9,5 +9,186 @@
   </head>
   <body>
     <h1>Здесь нет ничего, а должна быть моя лаба</h1>
-  </body> 
+    <body style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(rgb(255, 191, 215) 0%, rgb(255, 234, 237) 100%);'></body> 
+      <X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
+        <Scene>
+          <!-- цилиндр-->
+          <Transform translation = "-3 0 0">
+          <Shape>
+            <Appearance>
+                <material diffuseColor='0.84 0.6 0.73'>
+                </material>
+            </Appearance>
+            <Cylinder top = "true" bottom = "true" height = "3" radius = "1" solid = "true" side = "true">
+            </cylinder>
+        </Shape>
+      </Transform>
+
+       <!-- параллелепипед-->
+       <Transform translation = "-3 0 0">
+        <Shape>
+          <Appearance>
+              <material diffuseColor='0.8 0.34 0.59'>
+              </material>
+          </Appearance>
+          <Box size = "2 2 2" solid = "true">
+          </Box>
+      </Shape>
+    </Transform>
+
+     <!-- конус-->
+     <Transform translation = "-3 0 0">
+      <Shape>
+        <Appearance>
+          <ImageTexture url = "1.jpg" ></ImageTexture>
+            <material diffuseColor='0.8 0.34 0.59'>
+            </material>
+        </Appearance>
+        <Cone bottom = "true" bottomRadius = "3" height = "6" solid = "true" side = "true">
+        </Cone>
+    </Shape>
+  </Transform>
+
+       <!-- сфера-->
+       <Transform translation = "-3 3.2 0">
+        <Shape>
+          <Appearance>
+              <material diffuseColor='0.5 0.31 0.49' transparency = "0.2" specularColor = "0.58 0.87 0.85">
+              </material>
+          </Appearance>
+          <Sphere radius = "0.3" solid = "true">
+          </Sphere>
+      </Shape>
+    </Transform>
+
+
+<!-- тест? голова-->
+    <Transform translation="4 0 0" scale="1.5 1.3 0.8">    
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='#FFFAE8'></Material>
+        </Appearance>
+        <Sphere radius="1"></Sphere>
+      </Shape>
+      </Transform>
+
+      <!-- тест? уши-->
+       <!-- тест? уши1левое-->
+    <Transform translation="2.8 1.2 0" scale="1.5 1.3 0.8">    
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='#FFFAE8'></Material>
+        </Appearance>
+        <Sphere radius="0.4"></Sphere>
+      </Shape>
+      </Transform>
+
+ 
+  <!-- тест? уши2правое-->
+<Transform translation="5.1 1.2 0" scale="1.5 1.3 0.8">    
+  <Shape>
+    <Appearance>
+      <Material diffuseColor='#FFFAE8'></Material>
+    </Appearance>
+    <Sphere radius="0.4"></Sphere>
+  </Shape>
+  </Transform>
+
+   <!-- тест? глаза-->
+  <!-- тест? глазправое-->
+  <Transform translation="4.5 0.01 0.8" scale= "1.8 1.8 0.8">      
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#543d2c'></Material>
+      </Appearance>
+      <Sphere radius="0.1"></Sphere>
+    </Shape>
+    </Transform>
+
+
+  <!-- тест? глазалевое-->
+  <Transform translation="3.4 0.01 0.8" scale= "1.8 1.8 0.8">    
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#543d2c'></Material>
+      </Appearance>
+      <Sphere radius="0.1"></Sphere>
+    </Shape>
+    </Transform>
+
+    <!-- тест? мордочка-->
+    <Transform translation="4 -0.3 0.8" scale="1.6 1.3 0.8">    
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='#FFFAE8'></Material>
+        </Appearance>
+        <Sphere radius="0.23"></Sphere>
+      </Shape>
+      </Transform>
+
+      
+  <!-- носик-->
+  <Transform translation="4 -0.2 1" scale= "1.8 1.8 0.8">     
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#543d2c'></Material>
+      </Appearance>
+      <Sphere radius="0.06"></Sphere>
+    </Shape>
+  </Transform>
+
+
+ <!-- туловище-->
+  <Transform translation="4.2 -2.6 -0.25" scale="2 2.4 1.6">     
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#FFFAE8'></Material>
+      </Appearance>
+      <Sphere radius="0.7"></Sphere>
+    </Shape>
+    </Transform>
+
+     <!-- рука правая-->
+  <Transform translation="5.5 -2.6 -0.25" scale="1 2.3 1.3">     
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#FFFAE8'></Material>
+      </Appearance>
+      <Sphere radius="0.4"></Sphere>
+    </Shape>
+    </Transform>
+
+     <!-- рука левая-->
+  <Transform translation="3 -2.6 -0.25" scale="1 2.3 1.3">    
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#FFFAE8'></Material>
+      </Appearance>
+      <Sphere radius="0.4"></Sphere>
+    </Shape>
+    </Transform>
+
+         <!-- нога левая-->
+  <Transform translation="3.8 -4 -0.1" scale="1 2 1.3">    
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#FFFAE8'></Material>
+      </Appearance>
+      <Cylinder top = "true" bottom = "true" height = "0.4" radius = "0.4" solid = "true" side = "true">
+      </cylinder>
+    </Shape>
+    </Transform>
+
+             <!-- нога правая-->
+  <Transform translation="4.7 -4 -0.1" scale="1 2 1.3">    
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='#FFFAE8'></Material>
+      </Appearance>
+      <Cylinder top = "true" bottom = "true" height = "0.4" radius = "0.4" solid = "true" side = "true">
+      </cylinder>
+    </Shape>
+    </Transform>
+
+        </Scene>
 </html>
