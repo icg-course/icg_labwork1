@@ -1,530 +1,534 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    
-   
-    <script type='text/javascript' src='https://www.x3dom.org/download/dev/x3dom.js'> </script>
-    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
 
-  </head>
-  <body style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(rgb(11, 12, 19) 0%, rgb(48, 55, 75) 100%);'>
-   
+<head>
+  <meta charset="utf-8" />
 
-    
-      <X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
-        
-        <Scene>
-        <!-- бокальчик-->
-          <!-- сам бокал-->
-          <Transform rotation = "1 0 0 3.14"> 
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cone top = "false"   topRadius = "0.35" bottom = "false" bottomRadius = "4" height = "4" solid = "false"></Cone>
-            </Shape>
-          </Transform>
-        <!-- мартина в бокальчике-->
-          <Transform rotation = "1 0 0 3.14"> 
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.58 0.87 0.85" transparency = "0.1" specularColor = "0.58 0.87 0.85"  ></Material>
-              </Appearance>
-              <Cone bottomRadius = "3.3" height = "3.5" ></Cone>
-            </Shape>
-          </Transform>
-          
-        <!-- палка от ножки-->
-          <Transform translation = "0 -4.4 0">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cylinder solid = "false" height = "4.8" radius = "0.35"></Cylinder>
-            </Shape>
-          </Transform>
 
-        <!--основание ножки -->
-          <Transform translation = "0 -7 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.1" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cone bottom = "false" bottomRadius = "2.5" height = "1" solid = "false"></Cone>
-            </Shape>
-          </Transform>
-          <!-- бокальчик закончился -->
-        
-          <!-- оливки-->
-          <Transform translation = "1 0.4 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "olivka.jpg" ></ImageTexture>
-              </Appearance>
-              <Sphere radius = "0.7" ></Sphere>
-            </Shape>
-          </Transform>
-          <Transform translation = "2.1 1.5 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "olivka.jpg" ></ImageTexture>
-              </Appearance>
-              <Sphere radius = "0.7" ></Sphere>
-            </Shape>
-          </Transform>
-          <Transform translation = "3.18 2.4 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "olivka.jpg" ></ImageTexture>
-              </Appearance>
-              <Sphere radius = "0.7" ></Sphere>
-            </Shape>
-          </Transform>
-            <!-- зубочистка-->
-          <Transform translation = "2.4 1.5 0" rotation = "0 0 1 -0.78">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "derevo.jpg" ></ImageTexture>
-              </Appearance>
-              <Cylinder height = "5" radius = "0.05" ></Cylinder>
-            </Shape>
-          </Transform>
-          <!-- оливок больше нет-->
+  <script type='text/javascript' src='https://www.x3dom.org/download/dev/x3dom.js'> </script>
+  <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css' />
 
-          <!-- Одного бокала было мало-->
-          <!-- сам бокал-->
-          <Transform translation = "9 0 2">
-          <Transform rotation = "1 0 0 3.14"> 
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cone top = "false"   topRadius = "0.35" bottom = "false" bottomRadius = "4" height = "4" solid = "false"></Cone>
-            </Shape>
-          </Transform>
-        <!-- мартина в бокальчике-->
-          <Transform rotation = "1 0 0 3.14"> 
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.58 0.87 0.85" transparency = "0.1" specularColor = "0.58 0.87 0.85"  ></Material>
-              </Appearance>
-              <Cone bottomRadius = "3.3" height = "3.5" ></Cone>
-            </Shape>
-          </Transform>
-          
-        <!-- палка от ножки-->
-          <Transform translation = "0 -4.4 0">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.3" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cylinder solid = "false" height = "4.8" radius = "0.35"></Cylinder>
-            </Shape>
-          </Transform>
+</head>
 
-        <!--основание ножки -->
-          <Transform translation = "0 -7 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <Material diffuseColor ="0.87843 1 1" transparency = "0.1" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cone bottom = "false" bottomRadius = "2.5" height = "1" solid = "false"></Cone>
-            </Shape>
-          </Transform>
-                  
-          <!-- оливки-->
-          <Transform translation = "1 0.4 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "olivka.jpg" ></ImageTexture>
-                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Sphere radius = "0.7" ></Sphere>
-            </Shape>
-          </Transform>
-          <Transform translation = "2.1 1.5 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "olivka.jpg" ></ImageTexture>
-                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Sphere radius = "0.7" ></Sphere>
-            </Shape>
-          </Transform>
-          <Transform translation = "3.18 2.4 0" rotation = "0 1 0 3.14">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "olivka.jpg" ></ImageTexture>
-                <Material transparency = "0.9" diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Sphere radius = "0.7" ></Sphere>
-            </Shape>
-          </Transform>
-            <!-- зубочистка-->
-          <Transform translation = "2.4 1.5 0" rotation = "0 0 1 -0.78">
-            <Shape>
-              <Appearance>
-                <ImageTexture url = "derevo.jpg" ></ImageTexture>
-                <Material diffuseColor ="0.87843 1 1" specularColor = "0.87843 1 1"  ></Material>
-              </Appearance>
-              <Cylinder height = "5" radius = "0.05" ></Cylinder>
-            </Shape>
-          </Transform>
-          <!-- оливок больше нет-->
+<body
+  style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(rgb(11, 12, 19) 0%, rgb(48, 55, 75) 100%);'>
+
+
+
+  <X3D width="100vw" height="100vh">
+
+    <Scene>
+      <!-- бокальчик-->
+      <!-- сам бокал-->
+      <Transform rotation="1 0 0 3.14">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.87843 1 1" transparency="0.3" specularColor="0.87843 1 1"></Material>
+          </Appearance>
+          <Cone top="false" topRadius="0.35" bottom="false" bottomRadius="4" height="4" solid="false"></Cone>
+        </Shape>
+      </Transform>
+      <!-- мартина в бокальчике-->
+      <Transform rotation="1 0 0 3.14">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.58 0.87 0.85" transparency="0.1" specularColor="0.58 0.87 0.85"></Material>
+          </Appearance>
+          <Cone bottomRadius="3.3" height="3.5"></Cone>
+        </Shape>
+      </Transform>
+
+      <!-- палка от ножки-->
+      <Transform translation="0 -4.4 0">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.87843 1 1" transparency="0.3" specularColor="0.87843 1 1"></Material>
+          </Appearance>
+          <Cylinder solid="false" height="4.8" radius="0.35"></Cylinder>
+        </Shape>
+      </Transform>
+
+      <!--основание ножки -->
+      <Transform translation="0 -7 0" rotation="0 1 0 3.14">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.87843 1 1" transparency="0.1" specularColor="0.87843 1 1"></Material>
+          </Appearance>
+          <Cone bottom="false" bottomRadius="2.5" height="1" solid="false"></Cone>
+        </Shape>
+      </Transform>
+      <!-- бокальчик закончился -->
+
+      <!-- оливки-->
+      <Transform translation="1 0.4 0" rotation="0 1 0 3.14">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="olivka.jpg"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.7"></Sphere>
+        </Shape>
+      </Transform>
+      <Transform translation="2.1 1.5 0" rotation="0 1 0 3.14">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="olivka.jpg"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.7"></Sphere>
+        </Shape>
+      </Transform>
+      <Transform translation="3.18 2.4 0" rotation="0 1 0 3.14">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="olivka.jpg"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.7"></Sphere>
+        </Shape>
+      </Transform>
+      <!-- зубочистка-->
+      <Transform translation="2.4 1.5 0" rotation="0 0 1 -0.78">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="derevo.jpg"></ImageTexture>
+          </Appearance>
+          <Cylinder height="5" radius="0.05"></Cylinder>
+        </Shape>
+      </Transform>
+      <!-- оливок больше нет-->
+
+      <!-- Одного бокала было мало-->
+      <!-- сам бокал-->
+      <Transform translation="9 0 2">
+        <Transform rotation="1 0 0 3.14">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0.87843 1 1" transparency="0.3" specularColor="0.87843 1 1"></Material>
+            </Appearance>
+            <Cone top="false" topRadius="0.35" bottom="false" bottomRadius="4" height="4" solid="false"></Cone>
+          </Shape>
         </Transform>
-          <!-- конец второго бокала-->
-          <!-- ----------------------------------------------------------->
-                    
-          <!-- столешница -->
-          <Transform translation = "0 -9 0">
-           <Shape>
-              <Appearance>
-                <TextureTransform scale = "2 1"></TextureTransform>
-                <ImageTexture url = "b1.jpg"></ImageTexture>
-              </Appearance>
-              <box size = "150 2 28" ></box>
-            </Shape>
-            <Transform translation = "0 -15 0">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale = "4 2"></TextureTransform>
-                <ImageTexture url = "k1.jpg"></ImageTexture>
-              </Appearance>
-              <box size = "150 30 23" ></box>
-            </Shape>
-          </Transform>
-          </Transform>
-          
-           <!-- конец столешницы -->
-          
-            <!-- кружочек подноса -->
-           <Transform rotation = "1 0 0 -1.57"> 
-           <Transform translation = "3 0 -7.8">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale = "2 1"></TextureTransform>
-                <ImageTexture url = "z.jpg"></ImageTexture>
-              </Appearance>
-               <torus innerRadius = "0.6" outerRadius = "10" ></torus>
-             </Shape>
-             
-             <Transform translation = "3 0 0"></Transform>
-             <Transform rotation = "1 0 0 -1.57">
-             <Shape>
-                <Appearance>
-                  <TextureTransform scale = "2 2"></TextureTransform>
-                  <ImageTexture url = "z.jpg"></ImageTexture>
-                </Appearance>
-                <Cylinder height = "0.4" radius = "9.6"></Cylinder>
-              </Shape>
-            </Transform>
-            </Transform>
-           </Transform>
-         
-        
-         <!-- конец подноса подноса -->
-      
-          <!-- стена бар -->
-      <Transform translation = "0 0 -40">
+        <!-- мартина в бокальчике-->
+        <Transform rotation="1 0 0 3.14">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0.58 0.87 0.85" transparency="0.1" specularColor="0.58 0.87 0.85"></Material>
+            </Appearance>
+            <Cone bottomRadius="3.3" height="3.5"></Cone>
+          </Shape>
+        </Transform>
+
+        <!-- палка от ножки-->
+        <Transform translation="0 -4.4 0">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0.87843 1 1" transparency="0.3" specularColor="0.87843 1 1"></Material>
+            </Appearance>
+            <Cylinder solid="false" height="4.8" radius="0.35"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!--основание ножки -->
+        <Transform translation="0 -7 0" rotation="0 1 0 3.14">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0.87843 1 1" transparency="0.1" specularColor="0.87843 1 1"></Material>
+            </Appearance>
+            <Cone bottom="false" bottomRadius="2.5" height="1" solid="false"></Cone>
+          </Shape>
+        </Transform>
+
+        <!-- оливки-->
+        <Transform translation="1 0.4 0" rotation="0 1 0 3.14">
+          <Shape>
+            <Appearance>
+              <ImageTexture url="olivka.jpg"></ImageTexture>
+              <Material diffuseColor="0.87843 1 1" specularColor="0.87843 1 1"></Material>
+            </Appearance>
+            <Sphere radius="0.7"></Sphere>
+          </Shape>
+        </Transform>
+        <Transform translation="2.1 1.5 0" rotation="0 1 0 3.14">
+          <Shape>
+            <Appearance>
+              <ImageTexture url="olivka.jpg"></ImageTexture>
+              <Material diffuseColor="0.87843 1 1" specularColor="0.87843 1 1"></Material>
+            </Appearance>
+            <Sphere radius="0.7"></Sphere>
+          </Shape>
+        </Transform>
+        <Transform translation="3.18 2.4 0" rotation="0 1 0 3.14">
+          <Shape>
+            <Appearance>
+              <ImageTexture url="olivka.jpg"></ImageTexture>
+              <Material transparency="0.9" diffuseColor="0.87843 1 1" specularColor="0.87843 1 1"></Material>
+            </Appearance>
+            <Sphere radius="0.7"></Sphere>
+          </Shape>
+        </Transform>
+        <!-- зубочистка-->
+        <Transform translation="2.4 1.5 0" rotation="0 0 1 -0.78">
+          <Shape>
+            <Appearance>
+              <ImageTexture url="derevo.jpg"></ImageTexture>
+              <Material diffuseColor="0.87843 1 1" specularColor="0.87843 1 1"></Material>
+            </Appearance>
+            <Cylinder height="5" radius="0.05"></Cylinder>
+          </Shape>
+        </Transform>
+        <!-- оливок больше нет-->
+      </Transform>
+      <!-- конец второго бокала-->
+      <!-- ----------------------------------------------------------->
+
+      <!-- столешница -->
+      <Transform translation="0 -9 0">
         <Shape>
           <Appearance>
-            <TextureTransform scale = "1 1" translation = "0 0.90"></TextureTransform>
-            <ImageTexture url = "bar.jpg"></ImageTexture>
+            <TextureTransform scale="2 1"></TextureTransform>
+            <ImageTexture url="b1.jpg"></ImageTexture>
           </Appearance>
-          <box size = "150 80 2" ></box>
+          <box size="150 2 28"></box>
         </Shape>
-         <!-- конец стена бар -->
+        <Transform translation="0 -15 0">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="4 2"></TextureTransform>
+              <ImageTexture url="k1.jpg"></ImageTexture>
+            </Appearance>
+            <box size="150 30 23"></box>
+          </Shape>
+        </Transform>
+      </Transform>
 
-          <!-- потолок  бар -->
-     <Transform rotation = "1 0 0 -1.57">
+      <!-- конец столешницы -->
+
+      <!-- кружочек подноса -->
+      <Transform rotation="1 0 0 -1.57">
+        <Transform translation="3 0 -7.8">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="2 1"></TextureTransform>
+              <ImageTexture url="z.jpg"></ImageTexture>
+            </Appearance>
+            <torus innerRadius="0.6" outerRadius="10"></torus>
+          </Shape>
+
+          <Transform translation="3 0 0"></Transform>
+          <Transform rotation="1 0 0 -1.57">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="2 2"></TextureTransform>
+                <ImageTexture url="z.jpg"></ImageTexture>
+              </Appearance>
+              <Cylinder height="0.4" radius="9.6"></Cylinder>
+            </Shape>
+          </Transform>
+        </Transform>
+      </Transform>
+
+
+      <!-- конец подноса подноса -->
+
+      <!-- стена бар -->
+      <Transform translation="0 0 -40">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1" translation="0 0.90"></TextureTransform>
+            <ImageTexture url="bar.jpg"></ImageTexture>
+          </Appearance>
+          <box size="150 80 2"></box>
+        </Shape>
+        <!-- конец стена бар -->
+
         <!-- потолок  бар -->
-       <Transform translation = "0 -75 40">
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "5 5" ></TextureTransform>
-            <ImageTexture url = "pl.jpg"></ImageTexture>
-          </Appearance>
-          <box size = "150 150 2" ></box>
-        </Shape>
-      </Transform> 
-       <!-- конец потолок  бар --> 
-        <!-- пол бар -->
-      <Transform translation = "0 -75 -40">
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "5 4"></TextureTransform>
-            <ImageTexture url = "np.jpg"></ImageTexture>
-          </Appearance>
-          <box size = "150 150 2" ></box>
-        </Shape>
-      </Transform> 
-       <!-- конец пол бар -->
+        <Transform rotation="1 0 0 -1.57">
+          <!-- потолок  бар -->
+          <Transform translation="0 -75 40">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="5 5"></TextureTransform>
+                <ImageTexture url="pl.jpg"></ImageTexture>
+              </Appearance>
+              <box size="150 150 2"></box>
+            </Shape>
+          </Transform>
+          <!-- конец потолок  бар -->
+          <!-- пол бар -->
+          <Transform translation="0 -75 -40">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="5 4"></TextureTransform>
+                <ImageTexture url="np.jpg"></ImageTexture>
+              </Appearance>
+              <box size="150 150 2"></box>
+            </Shape>
+          </Transform>
+          <!-- конец пол бар -->
+        </Transform>
+
+        <Transform rotation="0 1 0 -1.57">
+          <!-- стена левая -->
+          <Transform translation="75 0 75">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="ns.jpg"></ImageTexture>
+              </Appearance>
+              <box size="150 80 2"></box>
+            </Shape>
+          </Transform>
+          <!-- конец левой стены -->
+
+          <!-- стена -->
+          <Transform translation="75 0 -75">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="vv.jpg"></ImageTexture>
+              </Appearance>
+              <box size="150 80 2"></box>
+            </Shape>
+          </Transform>
+          <!-- конец стены -->
+
+        </Transform>
+
+
       </Transform>
-      
-      <Transform rotation = "0 1 0 -1.57">
-        <!-- стена левая -->
-        <Transform translation = "75 0 75">
-          <Shape>
-            <Appearance>
-              <TextureTransform scale = "1 1"></TextureTransform>
-              <ImageTexture url = "ns.jpg"></ImageTexture>
-            </Appearance>
-            <box size = "150 80 2" ></box>
-          </Shape>
-           </Transform> 
-            <!-- конец левой стены -->
+      <!-- стулья -->
 
-              <!-- стена -->
-        <Transform translation = "75 0 -75">
-          <Shape>
-            <Appearance>
-              <TextureTransform scale = "1 1"></TextureTransform>
-              <ImageTexture url = "vv.jpg"></ImageTexture>
-            </Appearance>
-            <box size = "150 80 2" ></box>
-          </Shape>
-           </Transform> 
-            <!-- конец стены -->
-
-        </Transform> 
-        
-
-      </Transform>
-       <!-- стулья -->
-      
-      <Transform translation = "10 -28.5 25 "> 
+      <Transform translation="10 -28.5 25 ">
         <!-- стул -->
         <!-- стул ножка-->
         <Shape>
           <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="hh.jpg"></ImageTexture>
           </Appearance>
-          <Cylinder solid = "false" height = "25" radius = "1.5"></Cylinder>
+          <Cylinder solid="false" height="25" radius="1.5"></Cylinder>
         </Shape>
         <!-- стул сиденье-->
-        <Transform translation = "0 12.5 0 ">
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "kk.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "3" radius = "6"></Cylinder>
-        </Shape>
-      </Transform>
-      <Transform translation = "0 -11 0 ">
-        <!-- стул низ ножки-->
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "2" radius = "4"></Cylinder>
-        </Shape>
-      </Transform>
-      <!-- конец стул -->
-      <Transform translation = "30 0 0 ">
-        <!-- стул2 -->
-        <!-- стул ножка-->
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "25" radius = "1.5"></Cylinder>
-        </Shape>
-        <!-- стул сиденье-->
-        <Transform translation = "0 12.5 0 ">
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "kk.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "3" radius = "6"></Cylinder>
-        </Shape>
-      </Transform>
-      <Transform translation = "0 -11 0 ">
-        <!-- стул низ ножки-->
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "2" radius = "4"></Cylinder>
-        </Shape>
-      </Transform>
-      <!-- конец стул2 -->
+        <Transform translation="0 12.5 0 ">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kk.jpg"></ImageTexture>
+            </Appearance>
+            <Cylinder solid="false" height="3" radius="6"></Cylinder>
+          </Shape>
+        </Transform>
+        <Transform translation="0 -11 0 ">
+          <!-- стул низ ножки-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="hh.jpg"></ImageTexture>
+            </Appearance>
+            <Cylinder solid="false" height="2" radius="4"></Cylinder>
+          </Shape>
+        </Transform>
+        <!-- конец стул -->
+        <Transform translation="30 0 0 ">
+          <!-- стул2 -->
+          <!-- стул ножка-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="hh.jpg"></ImageTexture>
+            </Appearance>
+            <Cylinder solid="false" height="25" radius="1.5"></Cylinder>
+          </Shape>
+          <!-- стул сиденье-->
+          <Transform translation="0 12.5 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="kk.jpg"></ImageTexture>
+              </Appearance>
+              <Cylinder solid="false" height="3" radius="6"></Cylinder>
+            </Shape>
+          </Transform>
+          <Transform translation="0 -11 0 ">
+            <!-- стул низ ножки-->
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="hh.jpg"></ImageTexture>
+              </Appearance>
+              <Cylinder solid="false" height="2" radius="4"></Cylinder>
+            </Shape>
+          </Transform>
+          <!-- конец стул2 -->
 
-      </Transform>
+        </Transform>
 
-      <Transform translation = "-30 0 0 ">
-        <!-- стул3 -->
-        <!-- стул ножка-->
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "25" radius = "1.5"></Cylinder>
-        </Shape>
-        <!-- стул сиденье-->
-        <Transform translation = "0 12.5 0 ">
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "kk.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "3" radius = "6"></Cylinder>
-        </Shape>
-      </Transform>
-      <Transform translation = "0 -11 0 ">
-        <!-- стул низ ножки-->
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "2" radius = "4"></Cylinder>
-        </Shape>
-      </Transform>
-      <!-- конец стул3 -->
+        <Transform translation="-30 0 0 ">
+          <!-- стул3 -->
+          <!-- стул ножка-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="hh.jpg"></ImageTexture>
+            </Appearance>
+            <Cylinder solid="false" height="25" radius="1.5"></Cylinder>
+          </Shape>
+          <!-- стул сиденье-->
+          <Transform translation="0 12.5 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="kk.jpg"></ImageTexture>
+              </Appearance>
+              <Cylinder solid="false" height="3" radius="6"></Cylinder>
+            </Shape>
+          </Transform>
+          <Transform translation="0 -11 0 ">
+            <!-- стул низ ножки-->
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="hh.jpg"></ImageTexture>
+              </Appearance>
+              <Cylinder solid="false" height="2" radius="4"></Cylinder>
+            </Shape>
+          </Transform>
+          <!-- конец стул3 -->
 
-      </Transform>
+        </Transform>
 
-      <Transform translation = "-60 0 0 ">
-        <!-- стул4 -->
-        <!-- стул ножка-->
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "25" radius = "1.5"></Cylinder>
-        </Shape>
-        <!-- стул сиденье-->
-        <Transform translation = "0 12.5 0 ">
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "kk.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "3" radius = "6"></Cylinder>
-        </Shape>
-      </Transform>
-      <Transform translation = "0 -11 0 ">
-        <!-- стул низ ножки-->
-        <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "hh.jpg"></ImageTexture>
-          </Appearance>
-          <Cylinder solid = "false" height = "2" radius = "4"></Cylinder>
-        </Shape>
-      </Transform>
-      <!-- конец стул4 -->
+        <Transform translation="-60 0 0 ">
+          <!-- стул4 -->
+          <!-- стул ножка-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="hh.jpg"></ImageTexture>
+            </Appearance>
+            <Cylinder solid="false" height="25" radius="1.5"></Cylinder>
+          </Shape>
+          <!-- стул сиденье-->
+          <Transform translation="0 12.5 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="kk.jpg"></ImageTexture>
+              </Appearance>
+              <Cylinder solid="false" height="3" radius="6"></Cylinder>
+            </Shape>
+          </Transform>
+          <Transform translation="0 -11 0 ">
+            <!-- стул низ ножки-->
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="hh.jpg"></ImageTexture>
+              </Appearance>
+              <Cylinder solid="false" height="2" radius="4"></Cylinder>
+            </Shape>
+          </Transform>
+          <!-- конец стул4 -->
 
-      </Transform>
+        </Transform>
 
       </Transform>
       <!-- конец стулья -->
-      
+
       <!-- буквы-->
-      <Transform translation = "-60 -5 0 ">
+      <Transform translation="-60 -5 0 ">
         <Shape>
           <Appearance>
-            <Material diffuseColor ="0.29 0 0.51" transparency = "0.1" specularColor = "0.29 0 0.51"  ></Material> 
+            <Material diffuseColor="0.29 0 0.51" transparency="0.1" specularColor="0.29 0 0.51"></Material>
           </Appearance>
-          <Text string = "Вика из 4841" solid = "false" >
-            <FontStyle size = "7" style = "BOLD" family = "Helvetica"> </FontStyle>
+          <Text string="Вика из 4841" solid="false">
+            <FontStyle size="7" style="BOLD" family="Helvetica"> </FontStyle>
           </Text>
         </Shape>
       </Transform>
       <!-- конец буквы-->
-      <Transform translation = "-38 0 -60">
-        <Transform scale = "1.5 1.5 1.5">
-      <!-- человек-->
-      <!-- тело-->
-      <Transform translation = "40 -7.5 25 ">
-        <Transform translation = "0 2.6 0">
-            <Shape>
-          <Appearance>
-            <TextureTransform scale = "1 1"></TextureTransform>
-            <ImageTexture url = "dd.jpg"></ImageTexture>
-          </Appearance>
-          <box size = "7 15 3.5"></box>
-        </Shape>
-        </Transform>
-      
-        <!-- голова-->
-        <Transform translation = "0 13.5 0 ">
-          <Shape>
-            <Appearance>
-              <TextureTransform scale = "1 1"></TextureTransform>
-              <ImageTexture url = "gg2.png"></ImageTexture>
-            </Appearance>
-            <Sphere radius = "3.5" ></Sphere>
-          </Shape>
-           <!-- рука-->
-          <Transform translation = "4.5 -9 0 ">
-            <Transform rotation = "0 0 1 0.5">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale = "1 1"></TextureTransform>
-                <ImageTexture url = "sj.jpg"></ImageTexture> 
-              
-              </Appearance>
-              <box size = "2 10.4 2"></box>
-             </Shape>
-            </Transform>
-              <!-- рука-->
-            <Transform translation = "-9 0 0 " rotation = "0 0 1 -0.5">
+      <Transform translation="-38 0 -60">
+        <Transform scale="1.5 1.5 1.5">
+          <!-- человек-->
+          <!-- тело-->
+          <Transform translation="40 -7.5 25 ">
+            <Transform translation="0 2.6 0">
               <Shape>
                 <Appearance>
-                  <TextureTransform scale = "1 1"></TextureTransform>
-                  <ImageTexture url = "sj.jpg"></ImageTexture> 
-                
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="dd.jpg"></ImageTexture>
                 </Appearance>
-                <box size = "2 10.4 2"></box>
+                <box size="7 15 3.5"></box>
               </Shape>
+            </Transform>
+
+            <!-- голова-->
+            <Transform translation="0 13.5 0 ">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="gg2.png"></ImageTexture>
+                </Appearance>
+                <Sphere radius="3.5"></Sphere>
+              </Shape>
+              <!-- рука-->
+              <Transform translation="4.5 -9 0 ">
+                <Transform rotation="0 0 1 0.5">
+                  <Shape>
+                    <Appearance>
+                      <TextureTransform scale="1 1"></TextureTransform>
+                      <ImageTexture url="sj.jpg"></ImageTexture>
+
+                    </Appearance>
+                    <box size="2 10.4 2"></box>
+                  </Shape>
+                </Transform>
+                <!-- рука-->
+                <Transform translation="-9 0 0 " rotation="0 0 1 -0.5">
+                  <Shape>
+                    <Appearance>
+                      <TextureTransform scale="1 1"></TextureTransform>
+                      <ImageTexture url="sj.jpg"></ImageTexture>
+
+                    </Appearance>
+                    <box size="2 10.4 2"></box>
+                  </Shape>
+                </Transform>
               </Transform>
+              <!-- нога-->
+              <Transform translation="-2 -25 0 ">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="kk.jpg"></ImageTexture>
+                  </Appearance>
+                  <box size="2.9 16 2.9"></box>
+                </Shape>
+              </Transform>
+
+              <!-- нога2-->
+              <Transform translation="2 -24 0 ">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="kk.jpg"></ImageTexture>
+                  </Appearance>
+                  <box size="2.9 17 2.9"></box>
+                </Shape>
+              </Transform>
+
+            </Transform>
+
+
           </Transform>
-          <!-- нога-->
-          <Transform translation = "-2 -25 0 " >
-            <Shape>
-              <Appearance>
-                <TextureTransform scale = "1 1"></TextureTransform>
-                <ImageTexture url = "kk.jpg"></ImageTexture>
-              </Appearance>
-              <box size = "2.9 16 2.9"></box>
-            </Shape>
-            </Transform>
-
-            <!-- нога2-->
-          <Transform translation = "2 -24 0 " >
-            <Shape>
-              <Appearance>
-                <TextureTransform scale = "1 1"></TextureTransform>
-                <ImageTexture url = "kk.jpg"></ImageTexture>
-              </Appearance>
-              <box size = "2.9 17 2.9"></box>
-            </Shape>
-            </Transform>
-          
         </Transform>
-
-
       </Transform>
-    </Transform>
-  </Transform>
-    
-    <!-- конец человека -->
->   <Sound>
-      <AudioClip loop='true' enabled="true" url="sj.mp3"/>
-    </Sound>
 
-  </Scene>
-      </X3D>
-    
-  </body> 
+      <!-- конец человека -->
+      > <Sound>
+        <AudioClip loop='true' enabled="true" url="sj.mp3" />
+      </Sound>
+
+    </Scene>
+  </X3D>
+
+</body>
+
 </html>
