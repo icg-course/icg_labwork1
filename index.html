@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset='utf-8' />
   <title>Пример 1</title>
-  <link rel="stylesheet" href="x3dom.css" />
-  <script src="x3dom.js"></script>
+  <link rel='stylesheet' href='x3dom.css' />
+  <script src='x3dom.js'></script>
 </head>
 
 <body>
   <h1>ЛР 1, Иванов А.С., гр. 4842</h1>
-  <X3D style="left: 0px; top: 0px; width: 100%; height: 100%; border: none;">
+  <X3D style='left: 0px; top: 0px; width: 100%; height: 100%; border: none;'>
     <Scene>
 
-      <background skyAngle="1.5708" skyColor="0.6 0.75 1">
+      <background skyAngle='1.5708' skyColor='0.6 0.75 1'>
       </background>
 
       <!-- Ground -->
@@ -21,33 +21,33 @@
         <Shape>
           <Appearance>
             <ImageTexture url='tex/photo-1494344670326-077cb5f4d3e5.jpg' repeatT='true' repeatS='true'></ImageTexture>
-            <TextureTransform translation="1 1" scale='1 1'></TextureTransform>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
           </Appearance>
 
-          <box size="20000 1 20000" />
+          <box size='20000 1 20000' />
         </Shape>
       </Transform>
 
       <!-- Fuselage -->
-      <Transform rotation="0 0 -1 1.57" translation='-100 0 0'>
+      <Transform rotation='0 0 -1 1.57' translation='-100 0 0'>
         <Shape>
           <Appearance>
             <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
-            <TextureTransform translation="1 1" scale='1 1'></TextureTransform>
-            <TwoSidedMaterial solid="false" diffuseColor=#be9759 />
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
+            <TwoSidedMaterial solid='false' diffuseColor='#be9759' ></TwoSidedMaterial>
           </Appearance>
 
-          <Cylinder radius="10" height="200" side="true" bottom="false" top="true" />
+          <Cylinder radius='10' height='200' side='true' bottom='false' top='true' />
         </Shape>
       </Transform>
 
       <!-- NoseCone -->
-      <Transform rotation="0 0 1 1.57" translation="-205 0 0">
+      <Transform rotation='0 0 1 1.57' translation='-205 0 0'>
         <Shape>
           <Appearance>
-            <Material diffuseColor=#45823e />
+            <Material diffuseColor='#45823e' />
           </Appearance>
-          <Cone bottomRadius="9.9" height="28" side="true" bottom="true" />
+          <Cone bottomRadius='9.9' height='28' side='true' bottom='true' />
         </Shape>
       </Transform>
 
@@ -56,7 +56,7 @@
         <shape>
           <appearance>
             <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
-            <TextureTransform translation="1 1" scale='1 1'></TextureTransform>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
           </appearance>
           <indexedFaceSet DEF='Wing-FACES'
             coordIndex='0 2 3 -1 3 1 0 -1 4 5 7 -1 7 6 4 -1 0 1 5 -1 5 4 0 -1 8 9 11 -1 11 10 8 -1 3 2 6 -1 6 7 3 -1 2 0 4 -1 4 6 2 -1 1 3 9 -1 9 8 1 -1 7 5 10 -1 10 11 7 -1 5 1 8 -1 8 10 5 -1 3 7 11 -1 11 9 3 -1'>
@@ -88,7 +88,7 @@
         <shape>
           <appearance>
             <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
-            <TextureTransform translation="1 1" scale='1 1'></TextureTransform>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
             <material diffuseColor='#3a6534'></material>
           </appearance>
           <indexedFaceSet DEF='HorizontalStabRight-FACES'
@@ -105,7 +105,7 @@
         <shape>
           <appearance>
             <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
-            <TextureTransform translation="1 1" scale='1 1'></TextureTransform>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
             <material diffuseColor='#3a6534'></material>
           </appearance>
           <indexedFaceSet USE='HorizontalStabRight-FACES'></indexedFaceSet>
@@ -142,6 +142,7 @@
           </indexedFaceSet>
         </shape>
       </transform>
+      <!-- Imported -->
     </Scene>
   </X3D>
 </body>
