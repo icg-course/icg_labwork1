@@ -1,0 +1,77 @@
+<html>
+<head>
+ <title>My first X3DOM page</title>
+ <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+ <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<x3d width='500px' height='400px' id="abc">
+ <scene>
+ <transform scale="1 1 1" translation="0 0.5 0">
+ <shape>
+ <appearance>
+ <Material ambientIntensity='0' diffuseColor='1,1,1' emissiveColor='0,0,0'
+metadata='X3DMetadataObject' shininess='0.2' specularColor='0,0,0' transparency='0' ></Material>
+ </appearance>
+ <IndexedTriangleStripSet index='0 1 2 3 0' solid='false'>
+ <Coordinate point='-12 0 -10, 12 0 -10, 12 0 10 -12 0 10'></Coordinate>
+ </IndexedTriangleStripSet>
+ </shape>
+ </transform>
+ <transform scale="1 1 1" translation="-1 0 0">
+ <shape>
+ <IndexedLineSet coordIndex="0 1 2 3" colorIndex="0 1 2 0" colorPerVertex='true'>
+ <Coordinate point="0 0 0, 0 2 0, 2 2 0, 2 0 0"></Coordinate>
+ </IndexedLineSet>
+ </shape>
+ </transform>
+ <transform scale="1 1 1" translation="-1 0 2">
+ <shape>
+ <IndexedLineSet coordIndex="0 1 2 3" colorIndex="0 1 2 0" colorPerVertex='true'>
+ <Coordinate point="0 0 0, 0 2 0, 2 2 0, 2 0 0"></Coordinate>
+ </IndexedLineSet>
+ </shape>
+ </transform>
+ <transform scale="1 1 1" translation="-1 2 2" rotation="0 1 0 1.57">
+ <shape>
+ <IndexedLineSet coordIndex="0 1 2 3" colorIndex="0 1 2 3" colorPerVertex='true'>
+ <Coordinate point="0 0 0, 2 0 0, 2 0 2, 0 0 2"></Coordinate>
+ </IndexedLineSet>
+ </shape>
+ </transform>
+ <transform scale="1 1 1" translation="-1 2 0">
+ <shape>
+ <IndexedLineSet coordIndex="0 1 2 3" colorIndex="0 1 2 0" colorPerVertex='true'>
+ <Coordinate point="0 0 0, 0 2 0, 2 2 0, 2 0 0"></Coordinate>
+ </IndexedLineSet>
+ </shape>
+ </transform>
+ <shape>
+ <PointSet>
+ <Color color="1 0 0, 0 1 0, 0 0 1, 0.8 0.8 0.8"></Color>
+ <Coordinate point="–2 0 0, 0 0 0, 0 0 2, 0 0 4"></Coordinate>
+ </PointSet>
+ </shape>
+ <transform scale="5 5 5">
+ <Shape>
+ <IndexedFaceSet ccw="true" colorPerVertex="true" convex="true"
+ creaseAngle="0" normalPerVertex="true" solid="false"
+ coordIndex="0 4 7 3 -1 5 6 2 1 -1 4 5 6 7 -1 6 7 3 2 -1"
+ colorIndex="0 1 2 3 -1 4 5 6 0 -1 1 2 3 4 -1 5 6 0 1 -1">
+ <Coordinate point="-2 0 2, 2 0 2, 2 0 -2, -2 0 -2,
+-2 4 2, 2 4 2, 2 4 -2, -2 4 -2"></Coordinate>
+ <Color color="0 0 1, 0 1 0, 0 1 1, 1 0 0, 1 0 1, 1 1 0, 1 1 1"></Color>
+ </IndexedFaceSet>
+ <Appearance>
+ <Material></Material>
+ </Appearance>
+ </Shape>
+ </transform>
+ </scene>
+</x3d>
+<script>
+ var app = new Vue("#abc")
+</script>
+</body>
+</html>
