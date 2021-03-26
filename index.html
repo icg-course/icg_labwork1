@@ -1,13 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+
+<head>
+  <meta charset="utf-8" />
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+  <title>Лабораторная работа 1</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+  <script src="https://www.x3dom.org/download/x3dom.js"></script>
+</head>
+
+<body
+  style='width:100%; height:100%; border:0; margin:0; padding:0; background: url("1.jpg"); background-position: center;'>
+  <X3D width="100vw" height="100vh">
+    <Scene>
+      <!--Табличка-->
+      <Transform translation="-5 0 -5">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="#FF69B4"></Material>
+          </Appearance>
+          <Box Size="5 2 0.01"></Box>
+        </Shape>
+        <Transform translation="0 0 0.2">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#FF1493"></Material>
+            </Appearance>
+            <Text maxExtent="4" string="ИКГ ЛР№1 Мороженка" solid="false">
+              <FontStyle size="1" style="BOLD" family="Helvetica"> </FontStyle>
+            </Text>
+          </Shape>
+        </Transform>
+      </Transform>
+      <!--Конец табличка-->
+      <!--Трубочка-->
+      <Transform translation="0 0 0" rotation=" 1 0 0 3.14">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="2.jpg"></ImageTexture>
+          </Appearance>
+          <Cone bottomRadius="1" height="3" solid="false"></Cone>
+        </Shape>
+      </Transform>
+      <Transform translation="0 1.5 0" rotation="1 0 0 1.57">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 1"></TextureTransform>
+            <ImageTexture url="2.jpg"></ImageTexture>
+          </Appearance>
+          <torus innerRadius="0.15" outerRadius="1"></torus>
+        </Shape>
+      </Transform>
+      <Transform translation="0 1.75 0">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="3 1"></TextureTransform>
+            <ImageTexture url="2.jpg"></ImageTexture>
+          </Appearance>
+          <Cylinder radius="1.15" height="0.4" solid="false"></Cylinder>
+        </Shape>
+      </Transform>
+      <Transform translation="0 2 0" rotation="1 0 0 1.57">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 1"></TextureTransform>
+            <ImageTexture url="2.jpg"></ImageTexture>
+          </Appearance>
+          <torus innerRadius="0.15" outerRadius="1.1"></torus>
+        </Shape>
+      </Transform>
+      <!--Конец Трубочка-->
+      <!--Шарики-->
+      <Transform translation="-0.36 2.1 0">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="3 3"></TextureTransform>
+            <ImageTexture url="6.jpg"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.8"></Sphere>
+        </Shape>
+      </Transform>
+      <Transform translation="0.36 2.3 0">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="5.jpg"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.85"></Sphere>
+        </Shape>
+      </Transform>
+      <Transform translation="0 2.4 0.42">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="4.jpg"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.75"></Sphere>
+        </Shape>
+      </Transform>
+      <Transform translation="0 2.4 -0.42">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="7.jpg"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.75"></Sphere>
+        </Shape>
+      </Transform>
+      <!--Конец Шарики-->
+      <!--Вишенка-->
+      <Transform translation="0.42 3.2 0.42">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="#8B0000"></Material>
+          </Appearance>
+          <Sphere radius="0.3"></Sphere>
+        </Shape>
+        <Transform translation="0 0 0" rotation="0 0 1 -0.57">
+          <Transform translation="0 0 0" rotation=" 1 0 0 3.14">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor="#006400"></Material>
+              </Appearance>
+              <Cone bottomRadius="0.025" height="2" solid="false"></Cone>
+            </Shape>
+          </Transform>
+        </Transform>
+      </Transform>
+      <!--Конец Вишенка-->
+    </Scene>
+  </X3D>
+</body>
+
 </html>
