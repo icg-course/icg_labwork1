@@ -1,13 +1,161 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+	<head>
+		<meta charset="utf-8" />
+		<title>ЛР 1</title> 			
+        <script src="https://www.x3dom.org/download/x3dom.js"> </script> 
+        <link rel='stylesheet' href="https://www.x3dom.org/download/x3dom.css"/>
+	</head>
+	<body>
+		<h1>ЛР 1</h1>
+		<X3D style="left:0px; top:0px; width:100%; height:100%; border:none;">
+		<Scene>
+			<Transform translation="0 0 0">
+				<Shape>
+					<Appearance>
+						<ImageTexture url="grass.jpg"></ImageTexture>
+						<TextureTransform scale="10 10"/>
+					</Appearance>
+					<Box size="15 0.01 15"></Box>
+				</Shape>
+			</Transform>
+			
+			<!-- фюзеляж-->
+			<Transform translation='0 7 0'>
+				<Shape>
+					<Appearance>
+						<ImageTexture url="skin.png"></ImageTexture>
+					</Appearance>
+					<Cylinder radius='1' height='6'/>
+				</Shape>
+			</Transform>
+			<Transform translation='0 10 0' rotation='1 0 0 1.57'>
+				<Shape>
+					 <Appearance>
+						<Material diffuseColor='0.4 0.4 0.4'/>
+					 </Appearance>
+					 <Sphere radius='0.99'/>
+					 
+				</Shape>
+			</Transform>
+			<Transform translation='0 3 0' rotation='1 0 0 3.1415'>
+				<Shape>
+					<Appearance>
+						<ImageTexture url="skin1.png"></ImageTexture>
+					</Appearance>
+					<Cone bottomradius='1' height='2'/>
+				</Shape>
+			</Transform>
+			
+			<!-- двигатели-->
+			<Transform translation='-0.05 -16.1 0.1' scale='1.8 10 1.8'>
+				<Transform translation='0.6 1.86 0' rotation='1 0 0 1.571'>
+					<Shape>
+						<Appearance>
+							<ImageTexture url="skin2.png"></ImageTexture>
+							<TextureTransform scale="3.8 7.6"></TextureTransform>
+						</Appearance>
+						<Torus innerradius='0.15' outerRadius='0.35'/>
+					</Shape>
+				</Transform>
+				<Transform translation='-0.32 1.86 0.33' rotation='1 0 0 1.571'>
+					<Shape>
+						<Appearance>
+							<ImageTexture url="skin2.png"></ImageTexture>
+							<TextureTransform scale="3.5 9"></TextureTransform>
+						</Appearance>
+						<Torus innerradius='0.15' outerRadius='0.35'/>
+					</Shape>
+				</Transform>
+				<Transform translation='-0.16 1.86 -0.63' rotation='1 0 0 1.571'>
+					<Shape>
+						<Appearance>
+							<ImageTexture url="skin2.png"></ImageTexture>
+							<TextureTransform scale="4 8"></TextureTransform>
+						</Appearance>
+						<Torus innerradius='0.15' outerRadius='0.35'/>
+					</Shape>
+				</Transform>
+			</Transform>
+			<Transform translation='0 1 0'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='0.05 0.05 0.05'/>
+					</Appearance>
+					<Cone bottomradius='1.5' height='2'/>
+				</Shape>
+			</Transform>
+			
+			<!-- стабилизаторы-->
+			<Transform translation="0 -1 -0.73" rotation='0 1 0 0.2'>
+				<Transform translation="0 3 1.5" rotation='1 0 0 0.5236'>
+					<Shape>
+						<Appearance>
+							<Material diffuseColor='0.4 0.4 0.4'/>
+						</Appearance>
+						<Box size="0.007 3 2"></Box>
+					</Shape>
+				</Transform>
+				<Transform translation="0 5.8925 1.421" rotation='1 0 0 -0.3'>
+					<Shape>
+						<Appearance>
+							<Material diffuseColor='0.4 0.4 0.4'/>
+						</Appearance>
+						<Box size="0.01 5 2"></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+			
+			<Transform translation="0 -1 0" rotation='0 1 0 2.5'>
+				<Transform translation="0 3 0.8" rotation='1 0 0 0.5236'>
+					<Shape>
+						<Appearance>
+							<Material diffuseColor='0.4 0.4 0.4'/>
+						</Appearance>
+						<Box size="0.007 3 2"></Box>
+					</Shape>
+				</Transform>
+				<Transform translation="0 5.8925 0.721" rotation='1 0 0 -0.3'>
+					<Shape>
+						<Appearance>
+							<Material diffuseColor='0.4 0.4 0.4'/>
+						</Appearance>
+						<Box size="0.01 5 2"></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+			<Transform translation="0 -1 0" rotation='0 1 0 -1.85'>
+				<Transform translation="0 3 0.8" rotation='1 0 0 0.5236'>
+					<Shape>
+						<Appearance>
+							<Material diffuseColor='0.4 0.4 0.4'/>
+						</Appearance>
+						<Box size="0.007 3 2"></Box>
+					</Shape>
+				</Transform>
+				<Transform translation="0 5.8925 0.721" rotation='1 0 0 -0.3'>
+					<Shape>
+						<Appearance>
+							<Material diffuseColor='0.4 0.4 0.4'/>
+						</Appearance>
+						<Box size="0.01 5 2"></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+			
+			<Transform rotation='0 1 0 -0.4'>
+				<Transform translation='0 6 1'  rotation='0 0 1 1.4'>
+				<Shape>
+					 <Appearance>
+						<Material diffuseColor='1 0 0'/>
+					 </Appearance>
+					 <Text string='«Ядрёная Бомба»'>
+						<FontStyle size='0.3' style="BOLDITALIC"/>
+					 </Text>
+				</Shape>
+				</Transform>
+			</Transform>
+		</Scene>
+		</X3D>
+	</body>
 </html>
