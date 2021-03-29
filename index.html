@@ -1,13 +1,232 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1> А должна быть твоя лаба!</h1>
-  </body> 
+
+<head>
+  <meta charset="utf-8" />
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+  <title>Лабораторная работа 1</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+  <script src="https://www.x3dom.org/download/x3dom.js"></script>
+</head>
+
+<body>
+  <x3D width="100vw" height="100vh">
+    <Scene>
+      <Transform scale="2 2 2" translation = "-100 25 0">
+      <Transform translation="0 0 0"> <!--Дом-->
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="5 5"></TextureTransform>
+            <ImageTexture url="dom.jpg"></ImageTexture>
+          </Appearance>
+          <box size="50 50 50"></box>
+        </Shape>
+      </Transform>
+
+      <Transform translation="0 32 -20" rotation="1 0 0 0.8"><!--Крыша-->
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="krisha.jpg"></ImageTexture>
+          </Appearance>
+          <box size="50 55 5"></box>
+        </Shape>
+      </Transform> 
+
+      <Transform translation="0 32 20" rotation="1 0 0 -0.8"><!--Крыша-->
+
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="krisha.jpg"></ImageTexture>
+            </Appearance>
+            <box size="50 55 5"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="25 -10 0"> <!--Дверь-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="dver.jpg"></ImageTexture>
+            </Appearance>
+            <box size="1 30 15"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="25 -5 -15"> <!--Окно-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="okno.jpg"></ImageTexture>
+            </Appearance>
+            <box size="1 14 14"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="25 -5 15"> <!--Окно-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="okno.jpg"></ImageTexture>
+            </Appearance>
+            <box size="1 14 14"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="0 20 0" rotation="1 0 0 0.8"> <!--Часть крыши-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="5 5"></TextureTransform>
+              <ImageTexture url="dom.jpg"></ImageTexture>
+            </Appearance>
+            <box size="40 40 47"></box>
+          </Shape>
+        </Transform>
+      </Transform>
+
+        <!-- Николай-->
+          <!-- тело-->
+          <Transform translation="1 3 -130" scale="1.3 1.3 1.3">
+          <Transform translation="40 -7.5 25 ">
+            <Transform translation="0 2.6 0">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="kurt.png"></ImageTexture>
+                </Appearance>
+                <box size="7 15 3.5"></box>
+              </Shape>
+            </Transform>
+
+            <!-- голова-->
+            <Transform translation="0 13.5 0 ">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="Niko.png"></ImageTexture>
+                </Appearance>
+                <Sphere radius="3.5"></Sphere>
+              </Shape>
+              <!-- рука-->
+              <Transform translation="4.5 -9 0 ">
+                <Transform rotation="0 0 1 0.5">
+                  <Shape>
+                    <Appearance>
+                      <TextureTransform scale="1 1"></TextureTransform>
+                      <ImageTexture url="kurt.png"></ImageTexture>
+
+                    </Appearance>
+                    <box size="2 10.4 2"></box>
+                  </Shape>
+                </Transform>
+                <!-- рука-->
+                <Transform translation="-9 0 0 " rotation="0 0 1 -0.5">
+                  <Shape>
+                    <Appearance>
+                      <TextureTransform scale="1 1"></TextureTransform>
+                      <ImageTexture url="kurt.png"></ImageTexture>
+
+                    </Appearance>
+                    <box size="2 10.4 2"></box>
+                  </Shape>
+                </Transform>
+              </Transform>
+              <!-- нога-->
+              <Transform translation="-2 -20 0 ">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="shtani.png"></ImageTexture>
+                  </Appearance>
+                  <box size="2.9 16 2.9"></box>
+                </Shape>
+              </Transform>
+
+              <!-- нога2-->
+              <Transform translation="2 -20 0 ">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="shtani.png"></ImageTexture>
+                  </Appearance>
+                  <box size="2.9 17 2.9"></box>
+                </Shape>
+              </Transform>
+
+            </Transform>
+
+
+          </Transform>
+        </Transform>
+      </Transform>
+    </Transform>
+
+      <!-- конец Николая -->
+
+      <Transform translation="0 -25.5 0"> <!--Дом-->
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.87843 1 1" transparency="0.3" specularColor="0.87843 1 1"></Material>
+          </Appearance>
+          <box size="400 0.5 400"></box>
+        </Shape>
+      </Transform>
+
+<!--БАНЯs-->
+    <Transform translation="140 1 -130" scale="1.5 1 1">
+      <Transform translation="0 0 0"> <!--Дом-->
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="5 5"></TextureTransform>
+            <ImageTexture url="banya.jpg"></ImageTexture>
+          </Appearance>
+          <box size="50 50 50"></box>
+        </Shape>
+      </Transform>
+
+      <Transform translation="0 32 -20" rotation="1 0 0 0.8"><!--Крыша-->
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="krisha.jpg"></ImageTexture>
+          </Appearance>
+          <box size="50 55 5"></box>
+        </Shape>
+      </Transform> 
+
+      <Transform translation="0 32 20" rotation="1 0 0 -0.8"><!--Крыша-->
+
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="2 2"></TextureTransform>
+            <ImageTexture url="krisha.jpg"></ImageTexture>
+            </Appearance>
+            <box size="50 55 5"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="-25 -10 0"> <!--Дверь-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="dverBanya.jpg"></ImageTexture>
+            </Appearance>
+            <box size="1 30 15"></box>
+          </Shape>
+        </Transform>
+        <Transform translation="0 20 0" rotation="1 0 0 0.8"> <!--Часть крыши-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="5 5"></TextureTransform>
+              <ImageTexture url="banya.jpg"></ImageTexture>
+            </Appearance>
+            <box size="40 40 47"></box>
+          </Shape>
+        </Transform>
+    </Transform>
+
+    </Scene>
+      </x3D>
+</body>
 </html>
