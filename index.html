@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+
+<head>
+  <meta charset="utf-8" />
+
+
+  <script type='text/javascript' src='https://www.x3dom.org/download/dev/x3dom.js'> </script>
+  <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css' />
+
+</head>
+
+<body style='width:100%; height:100%; border:0; margin:0; padding:0'>
+
+
+
+  <X3D width="100vw" height="100vh">
+
+    <Scene>
+      <Transform translation="0 -0.5 0">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="5 4"></TextureTransform>
+            <ImageTexture url="np.jpg"></ImageTexture>
+          </Appearance>
+          <box size="150 1 150"></box>
+        </Shape>
+      </Transform>
+    </Scene>
+
+  </X3D>
+
+</body>
+
 </html>
