@@ -9,7 +9,10 @@
   <script src="https://www.x3dom.org/download/x3dom.js"></script>
 </head>
 
-<body>
+<body
+
+  style='width:100%; height:100%; border:0; margin:0; padding:0; background: url("fonn.jpg") no-repeat fixed; background-size: cover; background-position: center;'>
+
   <x3D width="100vw" height="100vh">
     <Scene>
       <Transform scale="2 2 2" translation = "-100 25 0">
@@ -54,7 +57,7 @@
           </Shape>
         </Transform>
 
-        <Transform translation="25 -5 -15"> <!--Окно-->
+        <Transform translation="25 -5 -15"> <!--Левое окно-->
           <Shape>
             <Appearance>
               <TextureTransform scale="1 1"></TextureTransform>
@@ -64,13 +67,23 @@
           </Shape>
         </Transform>
 
-        <Transform translation="25 -5 15"> <!--Окно-->
+        <Transform translation="25 -5 15"> <!--Правое окно-->
           <Shape>
             <Appearance>
               <TextureTransform scale="1 1"></TextureTransform>
             <ImageTexture url="okno.jpg"></ImageTexture>
             </Appearance>
             <box size="1 14 14"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="20 33 0"> <!--Верхнее окно-->
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="okno.jpg"></ImageTexture>
+            </Appearance>
+            <box size="1 10 10"></box>
           </Shape>
         </Transform>
 
@@ -104,7 +117,7 @@
               <Shape>
                 <Appearance>
                   <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="Niko.png"></ImageTexture>
+                  <ImageTexture url="kol.jpg"></ImageTexture>
                 </Appearance>
                 <Sphere radius="3.5"></Sphere>
               </Shape>
@@ -164,10 +177,11 @@
 
       <!-- конец Николая -->
 
-      <Transform translation="0 -25.5 0"> <!--Дом-->
+      <Transform translation="0 -25.5 0"> <!--Пол--->
         <Shape>
           <Appearance>
-            <Material diffuseColor="0.87843 1 1" transparency="0.3" specularColor="0.87843 1 1"></Material>
+            <TextureTransform scale="5 5"></TextureTransform>
+            <ImageTexture url="trava.jpg"></ImageTexture>
           </Appearance>
           <box size="400 0.5 400"></box>
         </Shape>
@@ -189,7 +203,7 @@
         <Shape>
           <Appearance>
             <TextureTransform scale="2 2"></TextureTransform>
-            <ImageTexture url="krisha.jpg"></ImageTexture>
+            <ImageTexture url="krishaBanya.png"></ImageTexture>
           </Appearance>
           <box size="50 55 5"></box>
         </Shape>
@@ -200,7 +214,7 @@
           <Shape>
             <Appearance>
               <TextureTransform scale="2 2"></TextureTransform>
-            <ImageTexture url="krisha.jpg"></ImageTexture>
+            <ImageTexture url="krishaBanya.png"></ImageTexture>
             </Appearance>
             <box size="50 55 5"></box>
           </Shape>
@@ -215,6 +229,7 @@
             <box size="1 30 15"></box>
           </Shape>
         </Transform>
+
         <Transform translation="0 20 0" rotation="1 0 0 0.8"> <!--Часть крыши-->
           <Shape>
             <Appearance>
@@ -225,6 +240,74 @@
           </Shape>
         </Transform>
     </Transform>
+
+
+   
+
+
+    <Transform translation="0 -15 0 ">
+      <Shape>
+        <Appearance>
+          <TextureTransform scale="1 1"></TextureTransform>
+          <ImageTexture url="fire.jpg"></ImageTexture>
+        </Appearance>
+        <Cylinder solid="false" height="20" radius="6"></Cylinder>
+      </Shape>
+    </Transform>
+
+
+
+    <Transform translation="0 0 200"> <!--Забор 1-->
+      <Shape>
+        <Appearance>
+          <TextureTransform scale="8 1"></TextureTransform>
+          <ImageTexture url="zabor.jpg"></ImageTexture>
+        </Appearance>
+        <box size="400 50 5"></box>
+      </Shape>
+    </Transform>
+
+
+    <Transform translation="0 0 -200"> <!--Забор 2-->
+      <Shape>
+        <Appearance>
+          <TextureTransform scale="8 1"></TextureTransform>
+          <ImageTexture url="zabor.jpg"></ImageTexture>
+        </Appearance>
+        <box size="400 50 5"></box>
+      </Shape>
+    </Transform>
+
+    <Transform translation="200 0 0"> <!--Забор 3-->
+      <Shape>
+        <Appearance>
+          <TextureTransform scale="8 1"></TextureTransform>
+          <ImageTexture url="zabor.jpg"></ImageTexture>
+        </Appearance>
+        <box size="5 50 400"></box>
+      </Shape>
+    </Transform>
+
+    <Transform translation="-200 0 0"> <!--Забор 4-->
+      <Shape>
+        <Appearance>
+          <TextureTransform scale="8 1"></TextureTransform>
+          <ImageTexture url="zabor.jpg"></ImageTexture>
+        </Appearance>
+        <box size="5 50 400"></box>
+      </Shape>
+    </Transform>
+
+    <Transform translation="-60 -5 -197 ">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="#ADFF2F" transparency="0.1" specularColor="0.29 0 0.51"></Material>
+          </Appearance>
+          <Text string="Работу выполнил Бугаенко Данил. Группа №4841" solid="false">
+            <FontStyle size="7" style="BOLD" family="Helvetica"> </FontStyle>
+          </Text>
+        </Shape>
+      </Transform>
 
     </Scene>
       </x3D>
