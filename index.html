@@ -8,6 +8,182 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>111</h1>
+	<X3D>
+
+	<Scene>
+
+    <!--Стол-->
+    <!--Крышка стола-->
+    <Shape>
+      <Appearance>
+        <ImageTexture url="stol.jpg"></ImageTexture>
+      </Appearance>
+      <Box size="3 0.1 3"></Box>
+    </Shape>
+
+    <!--Ножки стола-->
+    <Transform translation="1 -0.8 1">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 1 1"></Material>
+        </Appearance>
+        <Cylinder radius="0.1" height="1.5"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <Transform translation="-1 -0.8 1">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 1 1"></Material>
+        </Appearance>
+        <Cylinder radius="0.1" height="1.5"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <Transform translation="1 -0.8 -1">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 1 1"></Material>
+        </Appearance>
+        <Cylinder radius="0.1" height="1.5"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <Transform translation="-1 -0.8 -1">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 1 1"></Material>
+        </Appearance>
+        <Cylinder radius="0.1" height="1.5"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <!--Пончик-->
+    <Transform translation="1 0.15 0.3" rotation="1 0 0 1.57">
+      <Shape>
+        <Appearance> 
+          <ImageTexture url="donut.jpg"></ImageTexture>
+          <TextureTransform scale="2 1"></TextureTransform>
+        </Appearance>
+        <Torus innerRadius ="0.1" outerRadius="0.2"></Torus>
+      </Shape>
+    </Transform>
+
+    <!--Бочка нефти-->
+    <Transform translation="-0.8 0 -0.5">
+      <Transform translation="0 0.63 0">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.1 0.1 0.1" specularColor="0.2"></Material>
+          </Appearance>
+          <Cylinder radius="0.5" height="1.2"></Cylinder>
+        </Shape>
+      </Transform>
+
+      <Transform translation="0 0.41 0" rotation="1 0 0 1.57">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.3 0.3 0.3"></Material>
+          </Appearance>
+          <Torus innerRadius ="0.01" outerRadius="0.5"></Torus>
+        </Shape>
+      </Transform>
+
+      <Transform translation="0 0.82 0" rotation="1 0 0 1.57">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.3 0.3 0.3"></Material>
+          </Appearance>
+          <Torus innerRadius ="0.01" outerRadius="0.5"></Torus>
+        </Shape>
+      </Transform>
+
+      <Transform translation="0 1.23 0" rotation="1 0 0 1.57">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.3 0.3 0.3"></Material>
+          </Appearance>
+          <Torus innerRadius ="0.01" outerRadius="0.5"></Torus>
+        </Shape>
+      </Transform>
+    </Transform>
+
+    <Transform translation="-1.15 1.23 -0.5" rotation="1 0 0 1.57">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.3 0.3 0.3"></Material>
+        </Appearance>
+        <Torus innerRadius ="0.01" outerRadius="0.05"></Torus>
+      </Shape>
+    </Transform>
+
+    <!--Текст-->
+    <Transform translation="-0.8 1.5 -0.5">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.5 0.9 0.5"></Material>
+        </Appearance>
+        <Text string="Ганиев 4841" solid="false">
+          <FontStyle size="0.3" family="SANS" style="BOLD"></FontStyle>
+        </Text>
+      </Shape>
+    </Transform>
+    
+    <!--Бокал-->
+    <!--Основание-->
+    <Transform translation="0.3 0 0.8">
+      <Transform translation="0 0.05 0">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.7 0.9 0.9"></Material>
+          </Appearance>
+          <Cylinder radius="0.05" height="0.03"></Cylinder>
+        </Shape>
+      </Transform>
+
+      <!--Ножка-->
+      <Transform translation="0 0.1 0">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.7 0.9 0.9"></Material>
+          </Appearance>
+          <Cylinder radius="0.01" height="0.1"></Cylinder>
+        </Shape>
+      </Transform>
+
+      <!--Чаша-->
+      <Transform translation="0 0.18 0" rotation="1 0 0 3.14">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0.7 0.9 0.9"></Material>
+          </Appearance>
+          <Cone bottom="false" bottomRadius="0.08" height="0.1" solid="false"></Cone>
+        </Shape>
+      </Transform>
+
+      <!--Спиртное-->
+      <Transform translation="0 0.18 0" rotation="1 0 0 3.14">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="1 0.8 0.1"></Material>
+          </Appearance>
+          <Cone bottomRadius="0.07" height="0.08"></Cone>
+        </Shape>
+      </Transform>
+    </Transform>
+    
+    <!--Think head-->
+    <Transform translation="-0.6 0.35 0.8">
+      <Shape>
+        <Appearance>
+          <ImageTexture url="think.png"></ImageTexture>
+        </Appearance>
+        <Sphere radius="0.3"></Sphere>
+      </Shape>
+    </Transform>
+
+  </Scene>
+  </X3D>
   </body> 
 </html>
