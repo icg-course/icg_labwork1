@@ -1,1 +1,1 @@
-https://Ganiev_4841.github.io/icg_labwork1
+https://ваше_имя.github.io/icg_labwork1
