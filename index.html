@@ -1,13 +1,126 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР#1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'>
+    </link>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <x3d style="width: 100vw; height: 100vh;">
+        <scene>
+            <!-- голова -->
+            <transform translation="0 0 0">
+                <shape>
+                    <appearance>
+                        <imagetexture url="./skin.jpg"></imagetexture>
+                        <texturetransform scale="0.5 0.5"></texturetransform>
+                        <material diffuseColor="#1d3557"></material>
+                    </appearance>
+                    <sphere radius='1'></sphere>
+                </shape>
+            </transform>
+
+            <!-- шея -->
+            <transform translation="0 -1.2 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="#e63946" emissiveColor="#e63946"></material>
+                    </appearance>
+                    <box size='0.2 0.5 0.2'></box>
+                </shape>
+            </transform>
+
+            <!-- глаза -->
+            <transform translation="0 0.2 0.85">
+                <transform translation="-0.5 0 0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="white" emissiveColor="white"></material>
+                        </appearance>
+                        <sphere radius='0.1'></sphere>
+                    </shape>
+                </transform>
+
+                <transform translation="0.5 0 0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="white" emissiveColor="white"></material>
+                        </appearance>
+                        <sphere radius='0.1'></sphere>
+                    </shape>
+                </transform>
+            </transform>
+
+            <!-- шляпа -->
+            <transform translation="0 1.5 0">
+                <shape>
+                    <appearance>
+                        <imagetexture url="./cone.jpg"></imagetexture>
+                        <texturetransform scale=".5 .5"></texturetransform>
+                        <material diffuseColor="#1d3557"></material>
+                    </appearance>
+                    <cone radius=".25"></cone>
+                </shape>
+            </transform>
+
+            <!-- губы -->
+            <transform translation="0 -0.4 0.9" rotation="1 0 0 0.42">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="red" emissiveColor="red"></material>
+                    </appearance>
+                    <torus outerRadius=".25" innerRadius=".1"></torus>
+                </shape>
+            </transform>
+
+            <!-- уши -->
+            <transform translation="0 0.2 0">
+                <transform translation="-0.98 0 0" rotation="0 0 1 1.50">
+                    <shape>
+                        <appearance>
+                            <imagetexture url="./wood.jpg"></imagetexture>
+                            <texturetransform scale=".5 .5"></texturetransform>
+                            <material diffuseColor="#1d3557"></material>
+                        </appearance>
+                        <cylinder radius=".2" height="0.15"></cylinder>
+                    </shape>
+                </transform>
+
+                <transform translation="0.98 0 0" rotation="0 0 1 1.62">
+                    <shape>
+                        <appearance>
+                            <imagetexture url="./wood.jpg"></imagetexture>
+                            <texturetransform scale="1 1"></texturetransform>
+                            <material diffuseColor="#1d3557"></material>
+                        </appearance>
+                        <cylinder radius=".2" height="0.1"></cylinder>
+                    </shape>
+                </transform>
+            </transform>
+
+            <!-- текст -->
+            <transform translation="0 5 -7">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="green"></material>
+                    </appearance>
+                    <text string="Привет!">
+                        <fontstyle family="Helvetica sans-serif" style="bold"></fontstyle>
+                    </text>
+                </shape>
+            </transform>
+
+            <!-- расположение камеры -->
+            <Viewpoint id="front" position="0 0 10" description="camera"></Viewpoint>
+
+        </scene>
+    </x3d>
+</body>
+
 </html>
