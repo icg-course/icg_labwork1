@@ -1,13 +1,274 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+
+<head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <title>1lab</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+    <script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
+</head>
+<body>
+    <h1>Tesla's spule</h1>
+    <X3D width='1024px' height='800px'>
+        <scene>
+
+
+<!------------------Точка обзора----------------------->
+        	<viewpoint position="0.0 8.0 35.0"></viewpoint>
+
+<!------------------STRING----------------------->
+				<transform def="string" translation="-15 9 0" rotation="0 1 0 0.785398">
+      			  <shape>
+          			  <appearance>
+             		   <material diffuseColor="Red"></material>
+           			 </appearance>
+           		  <text string='"Катушка Теслы"' solid='false'>
+         		  <fontStyle family="TYPEWRITER" size='1.5' spacing='0.1' language='ru'>		</fontStyle>
+       			 </text>
+      			  </shape>
+    			</transform>
+
+<!---------------------Катушка------------------------->
+           <group def="Spule">
+               <group def="Foundation">
+                   <!-----------------------Основание--------------------->
+                   <transform translation="0.0 -0.28 0.0">
+                       <shape def="base">
+                           <appearance>
+                               <material diffusecolor="brown">
+                               </material>
+                               <imagetexture repeatS="false" repeatT="false" scale="true" url="iron.jpg"></imagetexture>
+                           </appearance>
+                           <Cylinder radius="6" height="0.6"></Cylinder>
+                       </shape>
+                   </transform>
+                   <transform translation="0.0 -1 0.0">
+                       <shape def="base">
+                           <appearance>
+                               <material diffusecolor="brown">
+                               </material>
+                               <imagetexture repeatS="false" repeatT="false" scale="true" url="iron.jpg"></imagetexture>
+                           </appearance>
+                           <Cylinder radius="7" height="0.8"></Cylinder>
+                       </shape>
+                   </transform>
+               </group>
+<!--------------------Перегородки----------------------->
+            <group def="Walls">
+                <transform translation ="4.5 1.8 4.0" rotation="0 1 0 0.785398">
+                	<transform center="0 1 0" rotation="1 0 0 0.2269">
+                	<shape def="wall">
+                		<appearance>
+                			<material diffusecolor="brown">
+                            </material>
+                            <imagetexture repeatS="false" repeatT="false" scale="true" url="iron.jpg"></imagetexture>
+                        </appearance>
+                        <Box size="2.2 3.6 0.3"></Box>
+                	</shape>
+                </transform>
+            </transform>
+            <transform translation="-4.5 1.8 -4.0" rotation="0 1 0 0.785398" >
+                <transform center="0 1 0" rotation="1 0 0 -0.2269">
+                    <shape use="wall">
+                    </shape>
+                </transform>
+            </transform>
+            <transform translation="-4.5 1.8 4.0" rotation="0 1 0 -0.785398">
+                <transform center="0 1 0" rotation="1 0 0 0.2269">
+                    <shape use="wall">
+                    </shape>
+                </transform>
+                </transform>
+            <transform translation="4.5 1.8 -4.0" rotation="0 1 0 -0.785398">
+                <transform center="0 1 0" rotation="1 0 0 -0.2269">
+                    <shape use="wall">
+                    </shape>
+                </transform>
+            </transform>
+            </group>
+<!----------------Соединительные тьюбы---------------------->  
+            <group def="tubes">
+           	    <transform translation="0.0 1.5 -3.4" >
+            		<shape def="tube">
+            			<appearance>
+                      		 <material diffusecolor="brown"></material>
+                      		 <imagetexture repeatS="true" repeatT="true" scale="true" url="cooper.jpg"></imagetexture>
+             		   </appearance>
+                	   <Cylinder radius="0.36" height ="3"></Cylinder>
+                	</shape>
+                </transform>
+            	<transform translation="0.0 1.5 3.4">
+                    <shape use="tube">
+                    </shape>
+                </transform>
+                <transform translation="-3.4 1.5 0" rotation="0 1 0 1.57">
+                    <shape use="tube">
+                    </shape>
+                </transform>
+                <transform translation="3.4 1.5 0" rotation="0 1 0 1.57">
+                    <shape use="tube">
+                    </shape>
+                </transform>
+                <transform translation="1.6 3.48 0" rotation="0 0 1 1.57">
+                    <shape use="tube">
+                    </shape>
+                </transform>
+                 <transform translation="-1.5 3.48 0" rotation="0 0 1 1.57">
+                    <shape use="tube">
+                    </shape>
+                </transform>
+                 <transform translation="0.0 3.48 1.65" rotation="1 0 0 1.57">
+                    <shape use="tube">
+                    </shape>
+                </transform>
+                 <transform translation="0.0 3.48 -1.65" rotation="1 0 0 1.57">
+                    <shape use="tube">
+                    </shape>
+                </transform>
+            </group>  
+            <group def="connectors">
+<!--------------Соединительные сферы--------------------> 
+            	<transform translation="0 3.24 3.2" scale="0.68 1 1">
+            		<shape def="connector">
+            			<appearance>
+                      		 <material diffusecolor="brown"></material>
+                      		 <imagetexture repeatS="true" repeatT="true" scale="true" url="iron.jpg"></imagetexture>
+             		   </appearance>
+            			<Sphere radius="0.6"></Sphere>
+            		</shape>
+            	</transform>
+            	<transform translation="0.0 3.24 -3.2" scale="0.68 1 1">
+                    <shape use="connector">
+                    </shape>
+                </transform>
+                <transform translation="3.2 3.24 0.0" scale="1 1 0.68">
+                    <shape use="connector">
+                    </shape>
+                </transform>
+                <transform translation="-3.2 3.24 0.0" scale="1 1 0.68"	>
+                    <shape use="connector">
+                    </shape>
+                </transform>
+                </group>
+<!----------------------Опроы тьюбов-----------------------------> 
+                <group def="bot_conectors">
+                <transform translation="0.0 0.2 3.4">
+                	<shape def="bot_connector">
+                		<appearance>
+                      		 <material diffusecolor="brown"></material>
+                      		  <imagetexture repeatS="true" repeatT="true" scale="true" url="iron.jpg"></imagetexture>
+             		    </appearance>
+                		<Cone height="0.55" bottomRadius="1" topRadius="0.2"></Cone>
+                	</shape>
+                </transform>
+                <transform translation="0.0 0.2 -3.4">
+                    <shape use="bot_connector">
+                    </shape>
+                </transform>
+                <transform translation="3.4 0.2 0.0">
+                    <shape use="bot_connector">
+                    </shape>
+                </transform>
+                <transform translation="-3.4 0.2 0.0">
+                    <shape use="bot_connector">
+                    </shape>
+                </transform>
+                <!--Опора стержня-->
+                <transform translation="0.0 0.4 0.0" scale="1.8 1.8 1.8">
+                    <shape use="bot_connector">
+                    </shape>
+                </transform>
+            </group>
+
+<!-------------------Стержень------------------------->  
+            <group def="RodStructure">
+                <transform translation="0.0 5 0.0">
+            		<shape def="Rod">
+            			<appearance>
+                      		 <material diffusecolor="brown"></material>
+                      		 <imagetexture repeatS="true" repeatT="true" scale="true" url="cooper.jpg"></imagetexture>
+             		   </appearance>
+                	   <Cylinder radius="0.6" height ="10"></Cylinder>
+                	</shape>
+                </transform>
+<!---------------------Обмотки----------------------->  
+                <transform translation="0.0 6.2 0.0" rotation="1 0 0 1.57">
+            		<shape def="Disk">
+            			<appearance>
+                      		 <material diffusecolor="brown"></material>
+                      		 <imagetexture repeatS="true" repeatT="true" scale="true" url="cooper.jpg"></imagetexture>
+             		   </appearance>
+                	   <Torus innerRadius="0.3" outerRadius="1.3"></Torus>
+                	</shape>
+                </transform>
+                <transform translation="0.0 7.4 0" scale = "0.8 0.8 1" rotation="1 0 0 1.57">
+                    <shape use="Disk">
+                    </shape>
+                </transform>
+                <transform translation="0.0 8.6 0" scale = "0.6 0.6 1" rotation="1 0 0 1.57">
+                    <shape use="Disk">
+                    </shape>
+                </transform>
+                <transform translation="0.0 9.8 0" scale = "0.5 0.5 1" rotation="1 0 0 1.57">
+                    <shape use="Disk">
+                    </shape>
+                </transform>
+                <transform translation="0.0 5.0 0" scale = "1.1 1.1 1" rotation="1 0 0 1.57">
+                    <shape use="Disk">
+                    </shape>
+                </transform>
+<!---------------Соединители обмоток и стержня------------------>  
+                 <transform translation="0.0 7.4 0">
+            		<shape def="rec_connector">
+            			<appearance>
+                      		 <material diffusecolor="#eb9b34">
+                      		 </material>
+                      		 <imagetexture repeatS="false" repeatT="false" scale="true" url="iron.jpg"></imagetexture>
+             		   </appearance>
+                	   <Box size="1.65 0.25 0.3"></Box>
+                	</shape>
+                </transform>
+                <transform translation="0.0 6.2 0" scale = "1.2 1 1">
+                    <shape use="rec_connector">
+                    </shape>
+                </transform>
+                <transform translation="0.0 5.0 0" scale = "1.5 1 1">
+                    <shape use="rec_connector">
+                    </shape>
+                </transform>
+                <transform translation="0.0 7.4 0.0" rotation="0 1 0 1.57">
+                    <shape use="rec_connector">
+                    </shape>
+                </transform>
+                <transform translation="0.0 6.2 0" scale = "1.2 1 1" rotation="0 1 0 1.57">
+                    <shape use="rec_connector">
+                    </shape>
+                </transform>
+                <transform translation="0.0 5.0 0" scale = "1.5 1 1" rotation="0 1 0 1.57">
+                    <shape use="rec_connector">
+                    </shape>
+                </transform>
+              
+<!-----------------------Тороид----------------------->  
+                <transform translation="0.0 12.0 0">
+            		<shape def="ElectricSphere">
+            			<appearance>
+                      		 <material diffusecolor="brown"></material>
+                                <imagetexture repeatS="true" repeatT="true" scale="true" url="facets.jpg"></imagetexture>
+                                <material diffusecolor="#eb9b34"></material>
+             		   </appearance>
+                	   <Sphere radius="2.2"></Sphere>
+                	</shape>
+                </transform>
+            </group> 	
+           </group>
+
+       
+      
+        
+
+
+        </scene>
+    </X3D>
+</body>
 </html>
