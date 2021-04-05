@@ -16,23 +16,487 @@
 
     <Scene>
 
-
+      <!-- ворота, главный вход -->
       <Transform translation="0 0 0">
+        <Transform translation="0 4 -5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="3 2 5"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="-2 2.5 -5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="1 5 5"></box>
+          </Shape>
+        </Transform>
+
+        <Transform translation="2 2.5 -5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="1 5 5"></box>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- башня у ворот 1 -->
+      <!-- нижняя часть башни-->
+      <Transform translation="0 0 0">
+        <Transform translation="3.5 2 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="4" radius="1"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- средняя часть башни -->
+        <Transform translation="3.5 4.5 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="1" radius="1.5"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- верхняя часть башни -->
+        <Transform translation="3.5 5.5 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="0.75"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- крыша башни -->
+        <Transform translation="3.5 7.5 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="1.5" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- башня у ворот 2 -->
+      <!-- нижняя часть башни-->
+      <Transform translation="0 0 0">
+        <Transform translation="-3.5 2 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="4" radius="1"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- средняя часть башни -->
+        <Transform translation="-3.5 4.5 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="1" radius="1.5"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- верхняя часть башни -->
+        <Transform translation="-3.5 5.5 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="0.75"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- крыша башни -->
+        <Transform translation="-3.5 7.5 -7.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="1.5" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- стена 1 -->
+      <Transform translation="8 2.5 -5" rotation="0 1 0 -0.523599">
         <Shape>
           <Appearance>
-            <Material diffuseColor="#CD5C5C" ></Material>
+            <Material diffuseColor="#CD5C5C"></Material>
           </Appearance>
-          <box size="10 10 10"></box>
+          <box size="10 5 0.5"></box>
         </Shape>
       </Transform>
 
-      <Transform translation="20 0 0">
+      <!-- стена 2 -->
+      <Transform translation="-8 2.5 -5" rotation="0 1 0 0.523599">
         <Shape>
           <Appearance>
-            <Material diffuseColor="#CD5C5C" ></Material>
+            <Material diffuseColor="#CD5C5C"></Material>
           </Appearance>
-          <box size="10 10 10"></box>
+          <box size="10 5 0.5"></box>
         </Shape>
+      </Transform>
+
+      <!-- башня 3 -->
+      <!-- нижняя часть башни-->
+      <Transform translation="0 0 0">
+        <Transform translation="12.5 2 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="4" radius="2"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- средняя часть башни -->
+        <Transform translation="12.5 4.5 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="1" radius="2.5"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- верхняя часть башни -->
+        <Transform translation="12.5 5.5 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="1.75"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- крыша башни -->
+        <Transform translation="12.5 7.5 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- башня 4 -->
+      <!-- нижняя часть башни-->
+      <Transform translation="0 0 0">
+        <Transform translation="-12.5 2 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="4" radius="2"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- средняя часть башни -->
+        <Transform translation="-12.5 4.5 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="1" radius="2.5"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- верхняя часть башни -->
+        <Transform translation="-12.5 5.5 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="1.75"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- крыша башни -->
+        <Transform translation="-12.5 7.5 -1.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- крепостная стена 1-->
+      <!-- стена внешняя -->
+      <Transform translation="0 0 0">
+        <Transform translation="14 2.5 3.5" rotation="0 1 0 1.570796">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="10 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- стена внутреняя -->
+        <Transform translation="11 2.5 3.5" rotation="0 1 0 1.570796">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="10 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- пол -->
+        <Transform translation="12.5 3.75 3.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="3 0.5 10"></box>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- крепостная стена 2-->
+      <!-- стена внешняя -->
+      <Transform translation="0 0 0">
+        <Transform translation="-14 2.5 3.5" rotation="0 1 0 1.570796">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="10 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- стена внутреняя -->
+        <Transform translation="-11 2.5 3.5" rotation="0 1 0 1.570796">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="10 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- пол -->
+        <Transform translation="-12.5 3.75 3.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="3 0.5 10"></box>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- башня 5 -->
+      <!-- нижняя часть башни-->
+      <Transform translation="0 0 0">
+        <Transform translation="12.5 2 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="4" radius="2"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- средняя часть башни -->
+        <Transform translation="12.5 4.5 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="1" radius="2.5"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- верхняя часть башни -->
+        <Transform translation="12.5 5.5 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="1.75"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- крыша башни -->
+        <Transform translation="12.5 7.5 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- башня 6 -->
+      <!-- нижняя часть башни-->
+      <Transform translation="0 0 0">
+        <Transform translation="-12.5 2 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="4" radius="2"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- средняя часть башни -->
+        <Transform translation="-12.5 4.5 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="1" radius="2.5"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- верхняя часть башни -->
+        <Transform translation="-12.5 5.5 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="1.75"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- крыша башни -->
+        <Transform translation="-12.5 7.5 8.5">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- башня 7 -->
+      <!-- нижняя часть башни-->
+      <Transform translation="0 0 0">
+        <Transform translation="0 2 10">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="4" radius="2"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- средняя часть башни -->
+        <Transform translation="0 4.5 10">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="1" radius="2.5"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- верхняя часть башни -->
+        <Transform translation="0 5.5 10">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="1.75"></Cylinder>
+          </Shape>
+        </Transform>
+
+        <!-- крыша башни -->
+        <Transform translation="0 7.5 10">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <!-- крепостная стена 3-->
+      <!-- стена внешняя -->
+      <Transform translation="0 0 0">
+        <Transform translation="6.5 2.5 10.5" rotation="0 1 0 0.10472">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="12.5 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- стена внутреняя -->
+        <Transform translation="6 2.5 7.5" rotation="0 1 0 0.10472">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="12 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- пол -->
+        <Transform translation="6.25 3.75 9" rotation="0 1 0 0.10472">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="12.5 0.5 3"></box>
+          </Shape>
+        </Transform>
+      </Transform>
+
+<!-- крепостная стена 4-->
+      <!-- стена внешняя -->
+      <Transform translation="0 0 0">
+        <Transform translation="-6.5 2.5 10.5" rotation="0 1 0 -0.10472">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="12.5 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- стена внутреняя -->
+        <Transform translation="-6 2.5 7.5" rotation="0 1 0 -0.10472">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="12 5 0.5"></box>
+          </Shape>
+        </Transform>
+
+        <!-- пол -->
+        <Transform translation="-6.25 3.75 9" rotation="0 1 0 -0.10472">
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="12.5 0.5 3"></box>
+          </Shape>
+        </Transform>
       </Transform>
 
 
