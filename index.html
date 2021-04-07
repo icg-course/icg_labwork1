@@ -18,7 +18,7 @@
 
       <Transform rotation="0 1 0 3.14">
 
-        <!-- ворота, главный вход -->
+        <!-- 1. Ворота -->
         <Transform translation="0 0 0">
           <Transform translation="0 4 -5">
             <Shape>
@@ -30,7 +30,41 @@
               <box size="3 2 5"></box>
             </Shape>
           </Transform>
+          <Transform translation="-2 2.5 -5">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="1 5 5"></box>
+            </Shape>
+          </Transform>
+          <Transform translation="2 2.5 -5">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="1 5 5"></box>
+            </Shape>
+          </Transform>
+          <Transform translation="0 2.25 -7.5" scale="1 0.75 1">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="re.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 2 0.0000001"></box>
+            </Shape>
+          </Transform>
 
+        </Transform>
+
+        <!-- 2. Малая башння (1) -->
+        <Transform translation="0 0 0">
           <Transform translation="0 5 -5">
             <Shape>
               <Appearance>
@@ -51,33 +85,11 @@
               <Cone bottomRadius="3" height="3" solid="false"></Cone>
             </Shape>
           </Transform>
-
-          <Transform translation="-2 2.5 -5">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale="1 1"></TextureTransform>
-                <ImageTexture url="st1.jpg"></ImageTexture>
-                <Material diffuseColor="#CD5C5C"></Material>
-              </Appearance>
-              <box size="1 5 5"></box>
-            </Shape>
-          </Transform>
-
-          <Transform translation="2 2.5 -5">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale="1 1"></TextureTransform>
-                <ImageTexture url="st1.jpg"></ImageTexture>
-                <Material diffuseColor="#CD5C5C"></Material>
-              </Appearance>
-              <box size="1 5 5"></box>
-            </Shape>
-          </Transform>
         </Transform>
 
-        <!-- 1. башня у ворот 1 слева-->
-        <!-- нижняя часть башни-->
+        <!-- 3. Полная башня (1): у ворот слева -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни -->
           <Transform translation="3.5 2 -7.5">
             <Shape>
               <Appearance>
@@ -123,9 +135,9 @@
           </Transform>
         </Transform>
 
-        <!-- 2. башня у ворот 2 справа-->
-        <!-- нижняя часть башни-->
+        <!-- 4. Полная башня (2): у ворот справа -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни -->
           <Transform translation="-3.5 2 -7.5">
             <Shape>
               <Appearance>
@@ -171,7 +183,7 @@
           </Transform>
         </Transform>
 
-        <!-- 3. стена 1 у ворот слева-->
+        <!-- 5. Одинарная стена (1): у ворот слева -->
         <Transform translation="8 1.75 -5" rotation="0 1 0 -0.523599">
           <Transform translation="0 0 0">
             <Shape>
@@ -183,8 +195,9 @@
               <box size="10 3.5 0.5"></box>
             </Shape>
           </Transform>
-          <!-- окно-->
+          <!-- 5.1 Группа окон -->
           <Transform translation="-8.25 -1.5 5">
+            <!-- окно-->
             <Transform translation="8 2.5 -5.500001" scale="0.25 0.25 0.25">
               <Shape>
                 <Appearance>
@@ -220,7 +233,7 @@
           </Transform>
         </Transform>
 
-        <!-- 4. стена 1 у ворот слева-->
+        <!-- 6. Одинарная стена (2): у ворот справа -->
         <Transform translation="-8 1.75 -5" rotation="0 1 0 0.523599">
           <Transform translation="0 0 0">
             <Shape>
@@ -232,8 +245,9 @@
               <box size="10 3.5 0.5"></box>
             </Shape>
           </Transform>
-          <!-- окно-->
+          <!-- 6.1 Группа окон -->
           <Transform translation="8.25 -1.5 -5">
+            <!-- окно-->
             <Transform translation="-8 2.5 4.499999" scale="0.25 0.25 0.25">
               <Shape>
                 <Appearance>
@@ -269,9 +283,9 @@
           </Transform>
         </Transform>
 
-        <!-- 5. башня 3 слева ближайшая-->
-        <!-- нижняя часть башни-->
+        <!-- 7. Полная башня (3): слева ближайшая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни -->
           <Transform translation="12.5 2 -1.5">
             <Shape>
               <Appearance>
@@ -317,9 +331,9 @@
           </Transform>
         </Transform>
 
-        <!-- 6. башня 4 справа ближайшая-->
-        <!-- нижняя часть башни-->
+        <!-- 8. Полная башня (4): справа ближайшая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни -->
           <Transform translation="-12.5 2 -1.5">
             <Shape>
               <Appearance>
@@ -365,131 +379,133 @@
           </Transform>
         </Transform>
 
-        <!-- 7. крепостная стена 1 левая-->
-        <!-- стена внешняя -->
-        <Transform translation="14 1.75 3.5" rotation="0 1 0 1.570796">
-          <Transform translation="0 0 0">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale="1 1"></TextureTransform>
-                <ImageTexture url="st1.jpg"></ImageTexture>
-                <Material diffuseColor="#CD5C5C"></Material>
-              </Appearance>
-              <box size="10 3.5 0.5"></box>
-            </Shape>
-          </Transform>
-          <!-- окно-->
-          <Transform translation="-14 -1.5 5">
-            <Transform translation="14 2.5 -4.499999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="12.5 2.5 -4.499999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="15.5 2.5 -4.499999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-          </Transform>
-        </Transform>
-
-        <!-- стена внутреняя -->
-        <Transform translation="11 1.75 3.5" rotation="0 1 0 1.570796">
-          <Shape>
-            <Appearance>
-              <TextureTransform scale="1 1"></TextureTransform>
-              <ImageTexture url="st1.jpg"></ImageTexture>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="10 3.5 0.5"></box>
-          </Shape>
-        </Transform>
-        <!-- пол -->
-        <Transform translation="12.5 1.75 3.5">
-          <Shape>
-            <Appearance>
-              <TextureTransform scale="1 1"></TextureTransform>
-              <ImageTexture url="st1.jpg"></ImageTexture>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="3 0.5 10"></box>
-          </Shape>
-        </Transform>
-
-        <!-- 8. крепостная стена 2 правая-->
-        <!-- стена внешняя -->
-        <Transform translation="-14 1.75 3.5" rotation="0 1 0 1.570796">
-          <Transform translation="0 0 0">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale="1 1"></TextureTransform>
-                <ImageTexture url="st1.jpg"></ImageTexture>
-                <Material diffuseColor="#CD5C5C"></Material>
-              </Appearance>
-              <box size="10 3.5 0.5"></box>
-            </Shape>
-          </Transform>
-          <!-- окно-->
-          <Transform translation="14 -1.5 -5">
-            <Transform translation="-14 2.5 4.499999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="-12.5 2.5 4.499999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="-15.5 2.5 4.499999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-          </Transform>
-        </Transform>
-
-        <!-- стена внутреняя -->
+        <!-- 9. Двойная стена с полом (1): левая -->
         <Transform translation="0 0 0">
+          <Transform translation="14 1.75 3.5" rotation="0 1 0 1.570796">
+            <!-- стена внешняя -->
+            <Transform translation="0 0 0">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="st1.jpg"></ImageTexture>
+                  <Material diffuseColor="#CD5C5C"></Material>
+                </Appearance>
+                <box size="10 3.5 0.5"></box>
+              </Shape>
+            </Transform>
+            <!-- 9.1 Группа окон -->
+            <Transform translation="-14 -1.5 5">
+              <!-- окно -->
+              <Transform translation="14 2.5 -4.499999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно -->
+              <Transform translation="12.5 2.5 -4.499999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно -->
+              <Transform translation="15.5 2.5 -4.499999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+            </Transform>
+          </Transform>
+          <!-- стена внутреняя -->
+          <Transform translation="11 1.75 3.5" rotation="0 1 0 1.570796">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="10 3.5 0.5"></box>
+            </Shape>
+          </Transform>
+          <!-- пол -->
+          <Transform translation="12.5 1.75 3.5">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 0.5 10"></box>
+            </Shape>
+          </Transform>
+        </Transform>
+
+        <!-- 10. Двойная стена с полом (2): правая -->
+        <Transform translation="0 0 0">
+          <Transform translation="-14 1.75 3.5" rotation="0 1 0 1.570796">
+            <!-- стена внешняя -->
+            <Transform translation="0 0 0">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="st1.jpg"></ImageTexture>
+                  <Material diffuseColor="#CD5C5C"></Material>
+                </Appearance>
+                <box size="10 3.5 0.5"></box>
+              </Shape>
+            </Transform>
+            <!-- 10.1 Группа окон -->
+            <Transform translation="14 -1.5 -5">
+              <!-- окно-->
+              <Transform translation="-14 2.5 4.499999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно-->
+              <Transform translation="-12.5 2.5 4.499999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно-->
+              <Transform translation="-15.5 2.5 4.499999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+            </Transform>
+          </Transform>
+          <!-- стена внутреняя -->
           <Transform translation="-11 1.75 3.5" rotation="0 1 0 1.570796">
             <Shape>
               <Appearance>
@@ -513,9 +529,9 @@
           </Transform>
         </Transform>
 
-        <!-- 9. башня 5 левая дальняя-->
-        <!-- нижняя часть башни-->
+        <!-- 11. Полная башня (5): левая дальняя -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни -->
           <Transform translation="12.5 2 8.5">
             <Shape>
               <Appearance>
@@ -561,9 +577,9 @@
           </Transform>
         </Transform>
 
-        <!-- 10. башня 6 правая дальняя-->
-        <!-- нижняя часть башни-->
+        <!-- 12. Полная башня (6): правая дальняя -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни -->
           <Transform translation="-12.5 2 8.5">
             <Shape>
               <Appearance>
@@ -609,9 +625,9 @@
           </Transform>
         </Transform>
 
-        <!-- 11. башня 7 самая дальняя-->
-        <!-- нижняя часть башни-->
+        <!-- 13. Полная башня (7): самая дальняя -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни -->
           <Transform translation="0 2 10">
             <Shape>
               <Appearance>
@@ -657,58 +673,58 @@
           </Transform>
         </Transform>
 
-        <!-- 12. крепостная стена 3 задняя левая-->
-        <!-- стена внешняя -->
-        <Transform translation="6.5 1.75 10.5" rotation="0 1 0 0.10472">
-          <Transform translation="0 0 0">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale="1 1"></TextureTransform>
-                <ImageTexture url="st1.jpg"></ImageTexture>
-                <Material diffuseColor="#CD5C5C"></Material>
-              </Appearance>
-              <box size="12.5 3.5 0.5"></box>
-            </Shape>
-          </Transform>
-          <!-- окно-->
-          <Transform translation="-6.75 -1.5 -10.5">
-            <Transform translation="6.5 2.5 11.000001" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="5 2.5 11.000001" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="8 2.5 11.000001" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-          </Transform>
-        </Transform>
-
-        <!-- стена внутреняя -->
+        <!-- 14. Двойная стена с полом (3): задняя левая -->
         <Transform translation="0 0 0">
+          <Transform translation="6.5 1.75 10.5" rotation="0 1 0 0.10472">
+            <!-- стена внешняя -->
+            <Transform translation="0 0 0">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="st1.jpg"></ImageTexture>
+                  <Material diffuseColor="#CD5C5C"></Material>
+                </Appearance>
+                <box size="12.5 3.5 0.5"></box>
+              </Shape>
+            </Transform>
+            <!-- 14.1 Группа окон-->
+            <Transform translation="-6.75 -1.5 -10.5">
+              <!-- окно-->
+              <Transform translation="6.5 2.5 11.000001" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно-->
+              <Transform translation="5 2.5 11.000001" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно-->
+              <Transform translation="8 2.5 11.000001" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+            </Transform>
+          </Transform>
+          <!-- стена внутреняя -->
           <Transform translation="6 1.75 7.5" rotation="0 1 0 0.10472">
             <Shape>
               <Appearance>
@@ -732,58 +748,58 @@
           </Transform>
         </Transform>
 
-        <!-- 13. крепостная стена 4 задняя правая-->
-        <!-- стена внешняя -->
-        <Transform translation="-6.5 1.75 10.5" rotation="0 1 0 -0.10472">
-          <Transform translation="0 0 0">
-            <Shape>
-              <Appearance>
-                <TextureTransform scale="1 1"></TextureTransform>
-                <ImageTexture url="st1.jpg"></ImageTexture>
-                <Material diffuseColor="#CD5C5C"></Material>
-              </Appearance>
-              <box size="12.5 3.5 0.5"></box>
-            </Shape>
-          </Transform>
-          <!-- окно-->
-          <Transform translation="6.75 -1.5 10.5">
-            <Transform translation="-6.5 2.5 -9.999999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="-5 2.5 -9.999999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-            <!-- окно-->
-            <Transform translation="-8 2.5 -9.999999" scale="0.25 0.25 0.25">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="okno.png"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="3 3.5 0" solid="true"></box>
-              </Shape>
-            </Transform>
-          </Transform>
-        </Transform>
-
-        <!-- стена внутреняя -->
+        <!-- 15. Двойная стена с полом (4): задняя правая -->
         <Transform translation="0 0 0">
+          <Transform translation="-6.5 1.75 10.5" rotation="0 1 0 -0.10472">
+            <!-- стена внешняя -->
+            <Transform translation="0 0 0">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="st1.jpg"></ImageTexture>
+                  <Material diffuseColor="#CD5C5C"></Material>
+                </Appearance>
+                <box size="12.5 3.5 0.5"></box>
+              </Shape>
+            </Transform>
+            <!-- 15.1 Группа окон -->
+            <Transform translation="6.75 -1.5 10.5">
+              <!-- окно-->
+              <Transform translation="-6.5 2.5 -9.999999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно-->
+              <Transform translation="-5 2.5 -9.999999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+              <!-- окно-->
+              <Transform translation="-8 2.5 -9.999999" scale="0.25 0.25 0.25">
+                <Shape>
+                  <Appearance>
+                    <TextureTransform scale="1 1"></TextureTransform>
+                    <ImageTexture url="okno.png"></ImageTexture>
+                    <Material diffuseColor="#CD5C5C"></Material>
+                  </Appearance>
+                  <box size="3 3.5 0" solid="true"></box>
+                </Shape>
+              </Transform>
+            </Transform>
+          </Transform>
+          <!-- стена внутреняя -->
           <Transform translation="-6 1.75 7.5" rotation="0 1 0 -0.10472">
             <Shape>
               <Appearance>
@@ -807,9 +823,9 @@
           </Transform>
         </Transform>
 
-        <!-- 14. внутренние крепостные стены-->
-        <!-- стена 1 передняя-->
+        <!-- 16. Внутренние одинарные стены -->
         <Transform translation="0 0 0">
+          <!-- стена 1 передняя-->
           <Transform translation="0 3.5 -2.75">
             <Shape>
               <Appearance>
@@ -832,29 +848,30 @@
             </Shape>
           </Transform>
           <!-- стена 3 задняя-->
+          <Transform translation="0 3.5 6.75">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="10 7 0.5"></box>
+            </Shape>
+          </Transform>
+          <!-- стена 4 правая-->
+          <Transform translation="-5 3.5 2" rotation="0 1 0 1.570796">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="10 7 0.5"></box>
+            </Shape>
+          </Transform>
+          <!-- Двойные стены (1): левые -->
           <Transform translation="0 0 0">
-            <Transform translation="0 3.5 6.75">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="st1.jpg"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="10 7 0.5"></box>
-              </Shape>
-            </Transform>
-            <!-- стена 4 правая-->
-            <Transform translation="-5 3.5 2" rotation="0 1 0 1.570796">
-              <Shape>
-                <Appearance>
-                  <TextureTransform scale="1 1"></TextureTransform>
-                  <ImageTexture url="st1.jpg"></ImageTexture>
-                  <Material diffuseColor="#CD5C5C"></Material>
-                </Appearance>
-                <box size="10 7 0.5"></box>
-              </Shape>
-            </Transform>
-            <!-- стена 5 левая передняя-->
+            <!-- передняя-->
             <Transform translation="8 1.75 -2">
               <Shape>
                 <Appearance>
@@ -865,7 +882,7 @@
                 <box size="6 3.5 0.5"></box>
               </Shape>
             </Transform>
-            <!-- стена 6 левая задняя-->
+            <!-- задняя-->
             <Transform translation="8 1.75 -1">
               <Shape>
                 <Appearance>
@@ -876,7 +893,7 @@
                 <box size="6 3.5 0.5"></box>
               </Shape>
             </Transform>
-            <!-- пол 1 левый-->
+            <!-- пол-->
             <Transform translation="8 1.75 -1.5">
               <Shape>
                 <Appearance>
@@ -887,7 +904,10 @@
                 <box size="6 0.5 1"></box>
               </Shape>
             </Transform>
-            <!-- стена 7 правая передняя-->
+          </Transform>
+          <!-- Двойные стены (2): правые -->
+          <Transform translation="0 0 0">
+            <!-- передняя-->
             <Transform translation="-8 1.75 -2">
               <Shape>
                 <Appearance>
@@ -898,7 +918,7 @@
                 <box size="6 3.5 0.5"></box>
               </Shape>
             </Transform>
-            <!-- стена 8 правая задняя-->
+            <!-- задняя-->
             <Transform translation="-8 1.75 -1">
               <Shape>
                 <Appearance>
@@ -909,7 +929,7 @@
                 <box size="6 3.5 0.5"></box>
               </Shape>
             </Transform>
-            <!-- пол 2 правый-->
+            <!-- пол-->
             <Transform translation="-8 1.75 -1.5">
               <Shape>
                 <Appearance>
@@ -923,9 +943,9 @@
           </Transform>
         </Transform>
 
-        <!-- 15. центральные башни -->
-        <!-- оснавная часть главной башни-->
+        <!-- 17. Малая башния (2): центральная -->
         <Transform translation="0 0 0">
+          <!-- оснавная часть главной башни-->
           <Transform translation="0 5 2">
             <Shape>
               <Appearance>
@@ -949,9 +969,9 @@
           </Transform>
         </Transform>
 
-        <!-- 16. боковые башни 1-->
-        <!-- нижняя часть башни-->
+        <!-- 18. Полная башня (8): боковая левая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни-->
           <Transform translation="8 1.75 2">
             <Shape>
               <Appearance>
@@ -998,9 +1018,9 @@
           </Transform>
         </Transform>
 
-        <!-- 17. боковые башни 2-->
-        <!-- нижняя часть башни-->
+        <!-- 19. Полная башня (9): боковые правая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни-->
           <Transform translation="-8 1.75 2">
             <Shape>
               <Appearance>
@@ -1046,9 +1066,9 @@
           </Transform>
         </Transform>
 
-        <!-- 18. боковая центральная башня 1-->
-        <!-- нижняя часть башни-->
+        <!-- 20. Полная башня (10): центральная ближайшая левая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни-->
           <Transform translation="3.25 4 -1.25">
             <Shape>
               <Appearance>
@@ -1094,9 +1114,9 @@
           </Transform>
         </Transform>
 
-        <!-- 19. боковая центральная башня 2-->
-        <!-- нижняя часть башни-->
+        <!-- 21. Полная башня (11): центральная ближайшая правая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни-->
           <Transform translation="-3.25 4 -1.25">
             <Shape>
               <Appearance>
@@ -1142,9 +1162,9 @@
           </Transform>
         </Transform>
 
-        <!-- 20. боковая центральная башня 3-->
-        <!-- нижняя часть башни-->
+        <!-- 22. Полная башня (12): центральная дальняя левая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни-->
           <Transform translation="3.5 6 5.5">
             <Shape>
               <Appearance>
@@ -1190,9 +1210,9 @@
           </Transform>
         </Transform>
 
-        <!-- 21. боковая центральная башня 4-->
-        <!-- нижняя часть башни-->
+        <!-- 23. Полная башня (13): центральная дальняя правая -->
         <Transform translation="0 0 0">
+          <!-- нижняя часть башни-->
           <Transform translation="-3.5 6 5.5">
             <Shape>
               <Appearance>
@@ -1238,7 +1258,7 @@
           </Transform>
         </Transform>
 
-        <!-- текст-->
+        <!-- 24. Текст -->
         <Transform translation="0 2 -25" rotation="0 1 0 3.141593">
           <Shape>
             <Appearance>
