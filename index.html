@@ -21,15 +21,40 @@
         <Transform translation="0 4 -5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="3 2 5"></box>
           </Shape>
         </Transform>
 
+        <Transform translation="0 5 -5">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cylinder height="2" radius="2"></Cylinder>
+          </Shape>
+        </Transform>
+        <Transform translation="0 7.5 -5">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <Cone bottomRadius="3" height="3" solid="false"></Cone>
+          </Shape>
+        </Transform>
+
         <Transform translation="-2 2.5 -5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="1 5 5"></box>
@@ -39,6 +64,8 @@
         <Transform translation="2 2.5 -5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="1 5 5"></box>
@@ -46,12 +73,14 @@
         </Transform>
       </Transform>
 
-      <!-- 1. башня у ворот 1 -->
+      <!-- 1. башня у ворот 1 слева-->
       <!-- нижняя часть башни-->
       <Transform translation="0 0 0">
         <Transform translation="3.5 2 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="4" radius="1"></Cylinder>
@@ -61,6 +90,8 @@
         <Transform translation="3.5 4.5 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.5"></Cylinder>
@@ -70,6 +101,8 @@
         <Transform translation="3.5 5.5 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="0.75"></Cylinder>
@@ -79,6 +112,8 @@
         <Transform translation="3.5 7.5 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="0.5 0.5"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="1.5" height="3" solid="false"></Cone>
@@ -86,12 +121,14 @@
         </Transform>
       </Transform>
 
-      <!-- 2. башня у ворот 2 -->
+      <!-- 2. башня у ворот 2 справа-->
       <!-- нижняя часть башни-->
       <Transform translation="0 0 0">
         <Transform translation="-3.5 2 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="4" radius="1"></Cylinder>
@@ -101,6 +138,8 @@
         <Transform translation="-3.5 4.5 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.5"></Cylinder>
@@ -110,6 +149,8 @@
         <Transform translation="-3.5 5.5 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="0.75"></Cylinder>
@@ -119,6 +160,8 @@
         <Transform translation="-3.5 7.5 -7.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="1.5" height="3" solid="false"></Cone>
@@ -126,32 +169,112 @@
         </Transform>
       </Transform>
 
-      <!-- 3. стена 1 -->
+      <!-- 3. стена 1 у ворот слева-->
       <Transform translation="8 1.75 -5" rotation="0 1 0 -0.523599">
-        <Shape>
-          <Appearance>
-            <Material diffuseColor="#CD5C5C"></Material>
-          </Appearance>
-          <box size="10 3.5 0.5"></box>
-        </Shape>
+        <Transform translation="0 0 0">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="10 3.5 0.5"></box>
+          </Shape>
+        </Transform>
+        <!-- окно-->
+        <Transform translation="-8.25 -1.5 5">
+          <Transform translation="8 2.5 -5.500001" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="6.5 2.5 -5.500001" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="9.5 2.5 -5.500001" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+        </Transform>
       </Transform>
 
-      <!-- 4. стена 2 -->
+      <!-- 4. стена 1 у ворот слева-->
       <Transform translation="-8 1.75 -5" rotation="0 1 0 0.523599">
-        <Shape>
-          <Appearance>
-            <Material diffuseColor="#CD5C5C"></Material>
-          </Appearance>
-          <box size="10 3.5 0.5"></box>
-        </Shape>
+        <Transform translation="0 0 0">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
+              <Material diffuseColor="#CD5C5C"></Material>
+            </Appearance>
+            <box size="10 3.5 0.5"></box>
+          </Shape>
+        </Transform>
+        <!-- окно-->
+        <Transform translation="8.25 -1.5 -5">
+          <Transform translation="-8 2.5 4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="-6.5 2.5 4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="-9.5 2.5 4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+        </Transform>
       </Transform>
 
-      <!-- 5. башня 3 -->
+      <!-- 5. башня 3 слева ближайшая-->
       <!-- нижняя часть башни-->
       <Transform translation="0 0 0">
         <Transform translation="12.5 2 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="4" radius="2"></Cylinder>
@@ -161,6 +284,8 @@
         <Transform translation="12.5 4.5 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="2.5"></Cylinder>
@@ -170,6 +295,8 @@
         <Transform translation="12.5 5.5 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="1.75"></Cylinder>
@@ -179,6 +306,8 @@
         <Transform translation="12.5 7.5 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
@@ -186,12 +315,14 @@
         </Transform>
       </Transform>
 
-      <!-- 6. башня 4 -->
+      <!-- 6. башня 4 справа ближайшая-->
       <!-- нижняя часть башни-->
       <Transform translation="0 0 0">
         <Transform translation="-12.5 2 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="4" radius="2"></Cylinder>
@@ -201,6 +332,8 @@
         <Transform translation="-12.5 4.5 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="2.5"></Cylinder>
@@ -210,6 +343,8 @@
         <Transform translation="-12.5 5.5 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="1.75"></Cylinder>
@@ -219,6 +354,8 @@
         <Transform translation="-12.5 7.5 -1.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
@@ -226,74 +363,162 @@
         </Transform>
       </Transform>
 
-      <!-- 7. крепостная стена 1-->
+      <!-- 7. крепостная стена 1 левая-->
       <!-- стена внешняя -->
-      <Transform translation="0 0 0">
-        <Transform translation="14 1.75 3.5" rotation="0 1 0 1.570796">
+      <Transform translation="14 1.75 3.5" rotation="0 1 0 1.570796">
+        <Transform translation="0 0 0">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="10 3.5 0.5"></box>
           </Shape>
         </Transform>
-        <!-- стена внутреняя -->
-        <Transform translation="11 1.75 3.5" rotation="0 1 0 1.570796">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="10 3.5 0.5"></box>
-          </Shape>
-        </Transform>
-        <!-- пол -->
-        <Transform translation="12.5 1.75 3.5">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="3 0.5 10"></box>
-          </Shape>
+        <!-- окно-->
+        <Transform translation="-14 -1.5 5">
+          <Transform translation="14 2.5 -4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="12.5 2.5 -4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="15.5 2.5 -4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
         </Transform>
       </Transform>
 
-      <!-- 8. крепостная стена 2-->
+      <!-- стена внутреняя -->
+      <Transform translation="11 1.75 3.5" rotation="0 1 0 1.570796">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="10 3.5 0.5"></box>
+        </Shape>
+      </Transform>
+      <!-- пол -->
+      <Transform translation="12.5 1.75 3.5">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="3 0.5 10"></box>
+        </Shape>
+      </Transform>
+      </Transform>
+
+      <!-- 8. крепостная стена 2 правая-->
       <!-- стена внешняя -->
-      <Transform translation="0 0 0">
-        <Transform translation="-14 1.75 3.5" rotation="0 1 0 1.570796">
+      <Transform translation="-14 1.75 3.5" rotation="0 1 0 1.570796">
+        <Transform translation="0 0 0">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="10 3.5 0.5"></box>
           </Shape>
         </Transform>
-        <!-- стена внутреняя -->
-        <Transform translation="-11 1.75 3.5" rotation="0 1 0 1.570796">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="10 3.5 0.5"></box>
-          </Shape>
-        </Transform>
-        <!-- пол -->
-        <Transform translation="-12.5 1.75 3.5">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="3 0.5 10"></box>
-          </Shape>
+        <!-- окно-->
+        <Transform translation="14 -1.5 -5">
+          <Transform translation="-14 2.5 4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="-12.5 2.5 4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="-15.5 2.5 4.499999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
         </Transform>
       </Transform>
 
-      <!-- 9. башня 5 -->
+      <!-- стена внутреняя -->
+      <Transform translation="-11 1.75 3.5" rotation="0 1 0 1.570796">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="10 3.5 0.5"></box>
+        </Shape>
+      </Transform>
+      <!-- пол -->
+      <Transform translation="-12.5 1.75 3.5">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="3 0.5 10"></box>
+        </Shape>
+      </Transform>
+      </Transform>
+
+      <!-- 9. башня 5 левая дальняя-->
       <!-- нижняя часть башни-->
       <Transform translation="0 0 0">
         <Transform translation="12.5 2 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="4" radius="2"></Cylinder>
@@ -303,6 +528,8 @@
         <Transform translation="12.5 4.5 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="2.5"></Cylinder>
@@ -312,6 +539,8 @@
         <Transform translation="12.5 5.5 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="1.75"></Cylinder>
@@ -321,6 +550,8 @@
         <Transform translation="12.5 7.5 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
@@ -328,12 +559,14 @@
         </Transform>
       </Transform>
 
-      <!-- 10. башня 6 -->
+      <!-- 10. башня 6 правая дальняя-->
       <!-- нижняя часть башни-->
       <Transform translation="0 0 0">
         <Transform translation="-12.5 2 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="4" radius="2"></Cylinder>
@@ -343,6 +576,8 @@
         <Transform translation="-12.5 4.5 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="2.5"></Cylinder>
@@ -352,6 +587,8 @@
         <Transform translation="-12.5 5.5 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="1.75"></Cylinder>
@@ -361,6 +598,8 @@
         <Transform translation="-12.5 7.5 8.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
@@ -368,12 +607,14 @@
         </Transform>
       </Transform>
 
-      <!-- 11. башня 7 -->
+      <!-- 11. башня 7 самая дальняя-->
       <!-- нижняя часть башни-->
       <Transform translation="0 0 0">
         <Transform translation="0 2 10">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="4" radius="2"></Cylinder>
@@ -383,6 +624,8 @@
         <Transform translation="0 4.5 10">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="2.5"></Cylinder>
@@ -392,6 +635,8 @@
         <Transform translation="0 5.5 10">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="1.75"></Cylinder>
@@ -401,6 +646,8 @@
         <Transform translation="0 7.5 10">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="2.5" height="3" solid="false"></Cone>
@@ -408,156 +655,262 @@
         </Transform>
       </Transform>
 
-      <!-- 12. крепостная стена 3-->
+      <!-- 12. крепостная стена 3 задняя левая-->
       <!-- стена внешняя -->
-      <Transform translation="0 0 0">
-        <Transform translation="6.5 1.75 10.5" rotation="0 1 0 0.10472">
+      <Transform translation="6.5 1.75 10.5" rotation="0 1 0 0.10472">
+        <Transform translation="0 0 0">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="12.5 3.5 0.5"></box>
           </Shape>
         </Transform>
-        <!-- стена внутреняя -->
-        <Transform translation="6 1.75 7.5" rotation="0 1 0 0.10472">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="12 3.5 0.5"></box>
-          </Shape>
-        </Transform>
-        <!-- пол -->
-        <Transform translation="6.25 1.75 9" rotation="0 1 0 0.10472">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="12.5 0.5 3"></box>
-          </Shape>
+        <!-- окно-->
+        <Transform translation="-6.75 -1.5 -10.5">
+          <Transform translation="6.5 2.5 11.000001" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="5 2.5 11.000001" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="8 2.5 11.000001" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
         </Transform>
       </Transform>
 
-      <!-- 13. крепостная стена 4-->
+      <!-- стена внутреняя -->
+      <Transform translation="6 1.75 7.5" rotation="0 1 0 0.10472">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="12 3.5 0.5"></box>
+        </Shape>
+      </Transform>
+      <!-- пол -->
+      <Transform translation="6.25 1.75 9" rotation="0 1 0 0.10472">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="12.5 0.5 3"></box>
+        </Shape>
+      </Transform>
+      </Transform>
+
+      <!-- 13. крепостная стена 4 задняя правая-->
       <!-- стена внешняя -->
-      <Transform translation="0 0 0">
-        <Transform translation="-6.5 1.75 10.5" rotation="0 1 0 -0.10472">
+      <Transform translation="-6.5 1.75 10.5" rotation="0 1 0 -0.10472">
+        <Transform translation="0 0 0">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="12.5 3.5 0.5"></box>
           </Shape>
         </Transform>
-        <!-- стена внутреняя -->
-        <Transform translation="-6 1.75 7.5" rotation="0 1 0 -0.10472">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="12 3.5 0.5"></box>
-          </Shape>
+        <!-- окно-->
+        <Transform translation="6.75 -1.5 10.5">
+          <Transform translation="-6.5 2.5 -9.999999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="-5 2.5 -9.999999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
+          <!-- окно-->
+          <Transform translation="-8 2.5 -9.999999" scale="0.25 0.25 0.25">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="okno.png"></ImageTexture>
+                <Material diffuseColor="#CD5C5C"></Material>
+              </Appearance>
+              <box size="3 3.5 0" solid="true"></box>
+            </Shape>
+          </Transform>
         </Transform>
-        <!-- пол -->
-        <Transform translation="-6.25 1.75 9" rotation="0 1 0 -0.10472">
-          <Shape>
-            <Appearance>
-              <Material diffuseColor="#CD5C5C"></Material>
-            </Appearance>
-            <box size="12.5 0.5 3"></box>
-          </Shape>
-        </Transform>
+      </Transform>
+
+      <!-- стена внутреняя -->
+      <Transform translation="-6 1.75 7.5" rotation="0 1 0 -0.10472">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="12 3.5 0.5"></box>
+        </Shape>
+      </Transform>
+      <!-- пол -->
+      <Transform translation="-6.25 1.75 9" rotation="0 1 0 -0.10472">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="st1.jpg"></ImageTexture>
+            <Material diffuseColor="#CD5C5C"></Material>
+          </Appearance>
+          <box size="12.5 0.5 3"></box>
+        </Shape>
+      </Transform>
       </Transform>
 
       <!-- 14. внутренние крепостные стены-->
-      <!-- стена 1-->
+      <!-- стена 1 передняя-->
       <Transform translation="0 0 0">
         <Transform translation="0 3.5 -2.75">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="10 7 0.5"></box>
           </Shape>
         </Transform>
-        <!-- стена 2-->
+        <!-- стена 2 левая-->
         <Transform translation="5 3.5 2" rotation="0 1 0 1.570796">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <box size="10 7 0.5"></box>
           </Shape>
         </Transform>
-        <!-- стена 3-->
+        <!-- стена 3 задняя-->
         <Transform translation="0 0 0">
           <Transform translation="0 3.5 6.75">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="10 7 0.5"></box>
             </Shape>
           </Transform>
-          <!-- стена 4-->
+          <!-- стена 4 правая-->
           <Transform translation="-5 3.5 2" rotation="0 1 0 1.570796">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="10 7 0.5"></box>
             </Shape>
           </Transform>
-          <!-- стена 5-->
+          <!-- стена 5 левая передняя-->
           <Transform translation="8 1.75 -2">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="6 3.5 0.5"></box>
             </Shape>
           </Transform>
-          <!-- стена 6-->
+          <!-- стена 6 левая задняя-->
           <Transform translation="8 1.75 -1">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="6 3.5 0.5"></box>
             </Shape>
           </Transform>
-          <!-- пол 1-->
+          <!-- пол 1 левый-->
           <Transform translation="8 1.75 -1.5">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="6 0.5 1"></box>
             </Shape>
           </Transform>
-          <!-- стена 7-->
+          <!-- стена 7 правая передняя-->
           <Transform translation="-8 1.75 -2">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="6 3.5 0.5"></box>
             </Shape>
           </Transform>
-          <!-- стена 8-->
+          <!-- стена 8 правая задняя-->
           <Transform translation="-8 1.75 -1">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="6 3.5 0.5"></box>
             </Shape>
           </Transform>
-          <!-- пол 2-->
+          <!-- пол 2 правый-->
           <Transform translation="-8 1.75 -1.5">
             <Shape>
               <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="st1.jpg"></ImageTexture>
                 <Material diffuseColor="#CD5C5C"></Material>
               </Appearance>
               <box size="6 0.5 1"></box>
@@ -572,6 +925,8 @@
         <Transform translation="0 5 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="10" radius="3"></Cylinder>
@@ -581,6 +936,8 @@
         <Transform translation="0 12.5 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="4" height="5" solid="false"></Cone>
@@ -594,6 +951,8 @@
         <Transform translation="8 1.75 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="3.25" radius="1.5"></Cylinder>
@@ -603,6 +962,8 @@
         <Transform translation="8 3.25 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.75"></Cylinder>
@@ -612,6 +973,8 @@
         <Transform translation="8 4.25 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1.75" radius="1.25"></Cylinder>
@@ -621,6 +984,9 @@
         <Transform translation="8 6 2">
           <Shape>
             <Appearance>
+
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="2" height="2.75" solid="false"></Cone>
@@ -634,6 +1000,8 @@
         <Transform translation="-8 1.75 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="3.25" radius="1.5"></Cylinder>
@@ -643,6 +1011,8 @@
         <Transform translation="-8 3.25 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.75"></Cylinder>
@@ -652,6 +1022,8 @@
         <Transform translation="-8 4.25 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1.75" radius="1.25"></Cylinder>
@@ -661,6 +1033,8 @@
         <Transform translation="-8 6 2">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="2" height="2.75" solid="false"></Cone>
@@ -674,6 +1048,8 @@
         <Transform translation="3.25 4 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="8" radius="1"></Cylinder>
@@ -683,6 +1059,8 @@
         <Transform translation="3.25 7.5 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.25"></Cylinder>
@@ -692,6 +1070,8 @@
         <Transform translation="3.25 8 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="0.75"></Cylinder>
@@ -701,6 +1081,8 @@
         <Transform translation="3.25 10 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="1.25" height="3" solid="false"></Cone>
@@ -714,6 +1096,8 @@
         <Transform translation="-3.25 4 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="8" radius="1"></Cylinder>
@@ -723,6 +1107,8 @@
         <Transform translation="-3.25 7.5 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.25"></Cylinder>
@@ -732,6 +1118,8 @@
         <Transform translation="-3.25 8 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="0.75"></Cylinder>
@@ -741,6 +1129,8 @@
         <Transform translation="-3.25 10 -1.25">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="1.25" height="3" solid="false"></Cone>
@@ -754,6 +1144,8 @@
         <Transform translation="3.5 6 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="12" radius="1"></Cylinder>
@@ -763,6 +1155,8 @@
         <Transform translation="3.5 12 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.25"></Cylinder>
@@ -772,6 +1166,8 @@
         <Transform translation="3.5 13 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="0.75"></Cylinder>
@@ -781,6 +1177,8 @@
         <Transform translation="3.5 15 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="1.25" height="3" solid="false"></Cone>
@@ -794,6 +1192,8 @@
         <Transform translation="-3.5 6 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="12" radius="1"></Cylinder>
@@ -803,6 +1203,8 @@
         <Transform translation="-3.5 12 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="1" radius="1.25"></Cylinder>
@@ -812,6 +1214,8 @@
         <Transform translation="-3.5 13 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="st1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cylinder height="2" radius="0.75"></Cylinder>
@@ -821,6 +1225,8 @@
         <Transform translation="-3.5 15 5.5">
           <Shape>
             <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="kr1.jpg"></ImageTexture>
               <Material diffuseColor="#CD5C5C"></Material>
             </Appearance>
             <Cone bottomRadius="1.25" height="3" solid="false"></Cone>
