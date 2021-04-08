@@ -1,13 +1,246 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+
+<head>
+  <meta charset="utf-8" />
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+  <title>Лабораторная работа 1</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+  <script src="https://www.x3dom.org/download/x3dom.js"></script>
+</head>
+
+<body style='width:100%; height:100%; border:0; margin:0; padding:0; background: url("14.jpg") no-repeat fixed; background-size: cover; background-position: center;'>
+  
+  <h1>Жданович Дмитрий 4841</h1>
+  
+  <X3D>
+    <Scene>
+      <Shape>
+        <Appearance>
+          <TextureTransform scale="1 2"></TextureTransform>
+          <ImageTexture url="1.jpg"></ImageTexture>
+        </Appearance>
+        <Box size="100 1 100"></Box>
+      </Shape>
+  
+       <!-- Подливыч-->
+      <!-- тело-->
+      <Transform translation="25 15 0">
+        <Transform translation="0 2.6 0">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="2.jpg"></ImageTexture>
+            </Appearance>
+            <box size="7 15 3.5"></box>
+          </Shape>
+        </Transform>
+
+
+        <!-- голова-->
+        <Transform translation="0 13.5 0 ">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="6.jpg"></ImageTexture>
+            </Appearance>
+            <Sphere radius="3.5"></Sphere>
+          </Shape>
+          <!-- рука-->
+          <Transform translation="4.5 -9 0 ">
+            <Transform rotation="0 0 1 0.5">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="4.jpg"></ImageTexture>
+
+
+                </Appearance>
+                <box size="2 10.4 2"></box>
+              </Shape>
+            </Transform>
+            
+            
+
+            <!-- рука-->
+            <Transform translation="-10 4 0 " rotation="0 0 1 -5.3">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="5.jpg"></ImageTexture>
+                </Appearance>
+                <box size="2 7.4 2"></box>
+              </Shape>
+            </Transform>
+
+            <Transform translation="-11 9 0 " rotation="0 0 1 -0.9">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="4.jpg"></ImageTexture>
+                </Appearance>
+                <box size="2 7.4 2"></box>
+              </Shape>
+            </Transform>
+          </Transform>
+          <!-- нога-->
+          <Transform translation="-2 -20 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="5.jpg"></ImageTexture>
+              </Appearance>
+              <box size="2.9 16 2.9"></box>
+            </Shape>
+          </Transform>
+
+
+          <!-- нога2-->
+          <Transform translation="2 -20 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="5.jpg"></ImageTexture>
+              </Appearance>
+              <box size="2.9 17 2.9"></box>
+            </Shape>
+          </Transform>
+
+
+        </Transform>
+        <!-- конец Подливычы -->
+
+        <!-- Гордей-->
+      <!-- тело-->
+      <Transform translation="-35 0 0">
+        <Transform translation="0 2.6 0">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="2.jpg"></ImageTexture>
+            </Appearance>
+            <box size="7 15 3.5"></box>
+          </Shape>
+        </Transform>
+
+
+        <!-- голова-->
+        <Transform translation="0 13.5 0 ">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="15.jpg"></ImageTexture>
+            </Appearance>
+            <Sphere radius="3.5"></Sphere>
+          </Shape>
+          <!-- рука-->
+          <Transform translation="4.5 -9 0 ">
+            <Transform rotation="0 0 1 0.5">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="4.jpg"></ImageTexture>
+
+
+                </Appearance>
+                <box size="2 10.4 2"></box>
+              </Shape>
+            </Transform>
+            
+            
+
+            <!-- рука-->
+            <Transform translation="-10 2 0 " rotation="0 0 -1 -2.3">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="1 1"></TextureTransform>
+                  <ImageTexture url="4.jpg"></ImageTexture>
+                </Appearance>
+                <box size="2 7.4 2"></box>
+              </Shape>
+            </Transform>
+              <!-- жезл-->
+            <Transform translation="-16 -1 0 " rotation="0 0 1 250">
+              <Shape>
+                <Appearance>
+                  <TextureTransform scale="2 1"></TextureTransform>
+                  <ImageTexture url="16.jpg"></ImageTexture>
+                </Appearance>
+                <Cylinder solid="false" height="7" radius="0.8"></Cylinder>
+              </Shape>
+            </Transform>
+          </Transform>
+          <!-- нога-->
+          <Transform translation="-2 -20 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="5.jpg"></ImageTexture>
+              </Appearance>
+              <box size="2.9 16 2.9"></box>
+            </Shape>
+          </Transform>
+
+
+          <!-- нога2-->
+          <Transform translation="2 -20 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="5.jpg"></ImageTexture>
+              </Appearance>
+              <box size="2.9 17 2.9"></box>
+            </Shape>
+          </Transform>
+
+
+        </Transform>
+        <!-- конец Гордея -->
+
+
+         <!-- Столб -->
+         <!-- Верх -->
+         
+        <Transform translation="20 5 4">
+          <Transform translation="0 -2.6 0">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="8.jpg"></ImageTexture>
+              </Appearance>
+              <box size="2 35 2"></box>
+            </Shape>
+          </Transform>
+  
+           <!-- Низ -->
+        
+          <Transform translation="0 13.5 0 ">
+            <Shape>
+              <Appearance>
+                <TextureTransform scale="1 1"></TextureTransform>
+                <ImageTexture url="7.jpg"></ImageTexture>
+              </Appearance>
+              <Sphere radius="3.5"></Sphere>
+            </Shape>
+
+
+
+
+
+            <Transform translation="0 7 0">
+              <Shape>
+                <Appearance>
+                  <Material diffuseColor="#f00"></Material>
+                </Appearance>
+                <Text string="Жданович Дмитрий 4841" solid="false">
+                  <FontStyle size="7" style="BOLD" family="Helvetica"> </FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+
+            
+    </Scene>
+  </X3D>
+</body>
+
 </html>
