@@ -8,6 +8,94 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>Здесь только я. А должна быть твоя лаба! :c</h1>
+    <X3D>
+      <Scene>
+      <!-- пол--
+      <Transform translation = "0 -4.5 0">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Box size="20 0.1 20" solid = "false"></Box>
+          </Shape>
+        </Transform>--> 
+      <!-- стол-->
+      <!-- столешница-->
+        <Transform translation = "0 0 0">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Box size="5 0.3 5" solid = "false"></Box>
+          </Shape>
+        </Transform>  
+      <!-- ножка-->
+        <Transform translation = "0 -2.25 0">
+          <Shape>
+                    <Appearance>
+                      <Material></Material>
+                   </Appearance>
+                   <Cylinder solid = "false" height = "4.5" radius = "0.15"></Cylinder>
+                  </Shape>
+                </Transform>
+            <!--основание ножки-->  
+                <Transform translation = "0 -4.25 0">
+                  <Shape>
+                    <Appearance>
+                      <Material></Material>
+                    </Appearance> 
+                    <Cone bottomRadius = "1.5" height = "0.5" solid = "false"></Cone>
+                  </Shape>    
+                </Transform>
+      <!-- стул-->
+      <!-- сидушка-->
+        <Transform translation = "-5.5 -2.05 0">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Box size="2.25 0.25 2.25" solid = "false"></Box>
+          </Shape>
+        </Transform>  
+      <!-- ножки-->
+      <!-- 1-->
+        <Transform translation = "-6.5 -3.35 0.9">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Box size="0.2 2.4 0.2" solid = "false"></Box>
+          </Shape>
+        </Transform>
+      <!-- 2--> 
+        <Transform translation = "-6.5 -3.35 -0.9">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Box size="0.2 2.4 0.2" solid = "false"></Box>
+          </Shape>
+        </Transform>
+      <!-- 3--> 
+        <Transform translation = "-4.5 -3.35 0.9">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Box size="0.2 2.4 0.2" solid = "false"></Box>
+          </Shape>
+        </Transform>
+      <!-- 4-->   
+        <Transform translation = "-4.5 -3.35 -0.9">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Box size="0.2 2.4 0.2" solid = "false"></Box>
+          </Shape>
+        </Transform>      
+      </Scene>
+    </X3D>
   </body> 
 </html>
