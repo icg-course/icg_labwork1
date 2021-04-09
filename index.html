@@ -8,7 +8,7 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба! :c</h1>
+    <h1>T_T</h1>
     <X3D>
       <Scene>
       <!-- пол--
@@ -33,21 +33,21 @@
       <!-- ножка-->
         <Transform translation = "0 -2.25 0">
           <Shape>
-                    <Appearance>
-                      <Material></Material>
-                   </Appearance>
-                   <Cylinder solid = "false" height = "4.5" radius = "0.15"></Cylinder>
-                  </Shape>
-                </Transform>
-            <!--основание ножки-->  
-                <Transform translation = "0 -4.25 0">
-                  <Shape>
-                    <Appearance>
-                      <Material></Material>
-                    </Appearance> 
-                    <Cone bottomRadius = "1.5" height = "0.5" solid = "false"></Cone>
-                  </Shape>    
-                </Transform>
+            <Appearance>
+              <Material></Material>
+            </Appearance>
+            <Cylinder solid = "false" height = "4.5" radius = "0.15"></Cylinder>
+          </Shape>
+        </Transform>
+      <!--основание ножки-->  
+        <Transform translation = "0 -4.25 0">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance> 
+            <Cone bottomRadius = "1.5" height = "0.5" solid = "false"></Cone>
+          </Shape>    
+        </Transform>
       <!-- стул-->
       <!-- сидушка-->
         <Transform translation = "-5.5 -2.05 0">
@@ -94,7 +94,89 @@
             </Appearance>
             <Box size="0.2 2.4 0.2" solid = "false"></Box>
           </Shape>
-        </Transform>      
+        </Transform>  
+        <!-- мороженное-->
+        <!-- вазочка--> 
+        <Transform translation = "-1 0 0">
+        <Transform rotation = "1 0 0 3.14">
+        <Transform translation = "0 -0.75 0">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance> 
+            <Cone bottomRadius = "0.51" height = "0.5" solid = "false" bottom = "false"></Cone>
+         </Shape>    
+         </Transform>
+         </Transform>  
+         <!-- ножка-->
+        <Transform translation = "0 0.35 0">
+          <Shape>
+           <Appearance>
+             <Material></Material>
+           </Appearance>
+           <Cylinder solid = "false" height = "0.5" radius = "0.07"></Cylinder>
+          </Shape>
+        </Transform>
+        <!--основание ножки-->  
+        <Transform translation = "0 0.22 0">
+          <Shape>
+            <Appearance>
+               <Material></Material>
+             </Appearance> 
+             <Cone bottomRadius = "0.25" height = "0.15" solid = "false"></Cone>
+          </Shape>    
+        </Transform>
+        <!-- мороженное-->
+        <!-- 1-->
+        <Transform translation = "0.15 1 -0.15">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance> 
+            <Sphere Radius = "0.2" solid = "false" ></Cone>
+          </Shape>    
+        </Transform>
+        <!-- 2-->
+        <Transform translation = "0.1 0.96 0.15">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance> 
+            <Sphere Radius = "0.2" solid = "false" ></Cone>
+          </Shape>    
+        </Transform>
+        <!-- 3-->
+        <Transform translation = "-0.15 0.95 0.05">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance> 
+            <Sphere Radius = "0.2" solid = "false" ></Cone>
+          </Shape>    
+        </Transform>
+        <!-- 5-->
+          <Transform translation = "0 0.8 0">
+            <Shape>
+              <Appearance>
+                <Material></Material>
+              </Appearance> 
+              <Sphere Radius = "0.2" solid = "false" ></Cone>
+            </Shape>    
+          </Transform>
+        <!-- ?-->
+        <Transform rotation = "-1 0 0 1.57">
+        <Transform translation = "0 0 1">
+          <Shape>
+            <Appearance>
+              <Material></Material>
+            </Appearance> 
+            <Torus innerRadius = "0.02" outerRadius = "0.5" solid = "false" ></Cone>
+          </Shape>    
+        </Transform>
+        </Transform>
+        <!-- ??-->
+        <!-- ???-->
+        </Transform>    
       </Scene>
     </X3D>
   </body> 
