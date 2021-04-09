@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба! и будет</h1>
-  </body> 
 <body>
     <x3d width="100vw" height="100vh">
         
@@ -60,14 +57,14 @@
 				<transform translation='0.4 0.55 -0.4'>
 				<shape>
 					<appearance>
-						<material diffuseColor="red"></material>
+						<imagetexture url="up.png"></imagetexture>
 					</appearance>
 					<box size="1.1 0.1 1.1"></box>
 				</shape>
 				<transform translation='0 0.125 0'>
 				<shape>
 					<appearance>
-						<material diffuseColor="green"></material>
+						<imagetexture url="up.png"></imagetexture>
 					</appearance>
 					<cylinder height="0.15" radius='0.55'></cylinder>
 				</shape>
@@ -99,7 +96,7 @@
 					<transform translation='0 0.3 0'>
 						<shape>
 							<appearance>
-								<material diffuseColor=".2.3.1" transparency='0.5'></material>
+								<material diffuseColor="#fbff00" transparency='0.5'></material>
 							</appearance>
 							<box size="0.2 0.4 0.2"></box>
 						</shape>
@@ -224,6 +221,182 @@
 			</shape>
 		</transform>
 	</transform>
+	<transform translation='-3 0 -5.2'>
+		<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!клонирование начинается здесь!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<shape>
+		<appearance>
+			<imagetexture url="m.png"></imagetexture>
+		</appearance>
+		<box size="0.2 1 0.2"></box>
+	</shape>
+		<transform translation='0.8 0 0'>
+			<shape>
+				<appearance>
+					<imagetexture url="m.png"></imagetexture>
+				</appearance>
+				<box size="0.2 1 0.2"></box>
+			</shape>
+		<transform translation='0 0 -0.8'>
+			<shape>
+				<appearance>
+					<imagetexture url="m.png"></imagetexture>
+				</appearance>
+				<box size="0.2 1 0.2"></box>
+			</shape>
+		<transform translation='-0.8 0 0'>
+			<shape>
+				<appearance>
+					<imagetexture url="m.png"></imagetexture>
+				</appearance>
+				<box size="0.2 1 0.2"></box>
+			</shape>
+		</transform>
+	</transform>
+</transform>
+<!--верхушка колонок-->
+		<transform translation='0.4 0.55 -0.4'>
+		<shape>
+			<appearance>
+				<imagetexture url="up.png"></imagetexture>
+			</appearance>
+			<box size="1.1 0.1 1.1"></box>
+		</shape>
+		<transform translation='0 0.125 0'>
+		<shape>
+			<appearance>
+				<imagetexture url="up.png"></imagetexture>
+			</appearance>
+			<cylinder height="0.15" radius='0.55'></cylinder>
+		</shape>
+		<transform translation='0 0.15 0'>
+		<shape>
+			<appearance>
+				<imagetexture url="u.png"></imagetexture>
+			</appearance>
+			<cone bottomRadius='0.55' height="0.15" ></cone>
+		</shape>
+		</transform>
+	</transform>
+</transform>
+<!--колонна с установкой верхушки и лампы-->
+		<transform translation='0.4 -2.5 -0.4'>
+			<shape>
+				<appearance>
+					<imagetexture url="r.png"></imagetexture>
+				</appearance>
+				<box size="1.2 4 1.2"></box>
+			</shape>
+			<transform translation='0 2.1 0'>
+			<shape>
+				<appearance>
+					<imagetexture url="m.png"></imagetexture>
+				</appearance>
+				<box size="0.4 0.2 0.4"></box>
+			</shape>
+			<transform translation='0 0.3 0'>
+				<shape>
+					<appearance>
+						<material diffuseColor="#fbff00" transparency='0.5'></material>
+					</appearance>
+					<box size="0.2 0.4 0.2"></box>
+				</shape>
+				<transform translation='0 -0.025 0'>
+				<shape>
+					<appearance>
+						<imagetexture url="s.png"></imagetexture>
+					</appearance>
+					<cylinder height="0.35" radius='0.1'></cylinder>
+				</shape>
+		</transform>
+	</transform>
+</transform>
+</transform>
+<!--дно колонны, боксы для тросов-->
+<transform translation='0.4 -4.8 -0.4' scale='7 1 2'>
+<shape>
+	<appearance>
+		<material diffuseColor="#de5918"></material>
+	</appearance>
+	<cone bottomRadius="1" height='2'></cone>
+</shape>
+</transform>
+<transform translation='1.1 -0.8 -0.4'>
+<shape>
+	<appearance>
+		<imagetexture url="m.png"></imagetexture>
+	</appearance>
+	<box size="0.2 0.5 0.2"></box>
+</shape>
+<transform translation='-1.4 0 0'>
+	<shape>
+		<appearance>
+			<imagetexture url="m.png"></imagetexture>
+		</appearance>
+		<box size="0.2 0.5 0.2"></box>
+	</shape>
+</transform>
+</transform>
+<!--троса-->
+<transform translation='2.2 -2.2 0' rotation='0 -1 1 0.95'>
+<shape>
+	<appearance>
+		<imagetexture url="t.png"></imagetexture>
+	</appearance>
+	<cylinder height="3.5" radius='0.02'></cylinder>
+</shape>
+</transform>
+<transform translation='-1.3 -2.2 0' rotation='0 1 -1 0.95'>
+<shape>
+	<appearance>
+		<imagetexture url="t.png"></imagetexture>
+	</appearance>
+	<cylinder height="3.5" radius='0.02'></cylinder>
+</shape>
+</transform>
+	</transform>
+	<!--боковая башня-->
+	<transform translation='-2.6 -3.5 0.2'>
+		<shape>
+			<appearance>
+				<imagetexture url="r.png"></imagetexture>
+			</appearance>
+			<cylinder height="3" radius='0.4'></cylinder>
+		</shape>
+		<transform translation='0 1.85 0'>
+		<shape>
+			<appearance>
+				<imagetexture url="u.png"></imagetexture>
+			</appearance>
+			<cone bottomRadius='0.4' height="0.7" ></cone>
+		</shape>
+		</transform>
+	</transform>
+	<transform translation='-2.6 -3.5 -6.2'>
+		<shape>
+			<appearance>
+				<imagetexture url="r.png"></imagetexture>
+			</appearance>
+			<cylinder height="3" radius='0.4'></cylinder>
+		</shape>
+		<transform translation='0 1.85 0'>
+		<shape>
+			<appearance>
+				<imagetexture url="u.png"></imagetexture>
+			</appearance>
+			<cone bottomRadius='0.4' height="0.7" ></cone>
+		</shape>
+		</transform>
+	</transform>
+	<!--текст-->
+	<Transform translation="-2.5 0 -3 " rotation="0 1 0 1.57">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor="0 0 0.6"></Material>
+          </Appearance>
+          <Text string="Вова 4841" solid="false"></Text>
+		  <FontStyle size="1" style="ITALIC" family="Lucida Sans Typewriter"></FontStyle>
+        </Shape>
+      </Transform>
 		</Scene>
     </x3d>
 </body>
