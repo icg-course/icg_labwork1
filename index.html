@@ -1,13 +1,150 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html lang='ru'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>ЛР 1</title>
+<script src='https://www.x3dom.org/download/x3dom.js'></script>
+<link rel='stylesheet' href='https://www.x3dom.org/download/x3dom.css'></link>
+</head>
+
+<body>
+  <h1>ЛР 1, Иванов А.С., гр. 4842</h1>
+  <X3D style='left: 0px; top: 0px; width: 100%; height: 100%; border: none;'>
+    <Scene>
+
+      <background skyAngle='1.5708' skyColor='0.6 0.75 1'>
+      </background>
+
+      <!-- Ground -->
+      <Transform translation='-100 -3000 0'>
+        <Shape>
+          <Appearance>
+            <ImageTexture url='tex/photo-1494344670326-077cb5f4d3e5.jpg' repeatT='true' repeatS='true'></ImageTexture>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
+          </Appearance>
+
+          <box size='20000 1 20000' />
+        </Shape>
+      </Transform>
+
+      <!-- Fuselage -->
+      <Transform rotation='0 0 -1 1.57' translation='-100 0 0'>
+        <Shape>
+          <Appearance>
+            <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
+            <TwoSidedMaterial solid='false' diffuseColor='#be9759'></TwoSidedMaterial>
+          </Appearance>
+
+          <Cylinder radius='10' height='200' side='true' bottom='false' top='true' />
+        </Shape>
+      </Transform>
+
+      <!-- NoseCone -->
+      <Transform rotation='0 0 1 1.57' translation='-205 0 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='#45823e' />
+          </Appearance>
+          <Cone bottomRadius='9.9' height='28' side='true' bottom='true' />
+        </Shape>
+      </Transform>
+
+      <!-- Wing -->
+      <transform DEF='Wing' translation='-120 0 0'>
+        <shape>
+          <appearance>
+            <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
+          </appearance>
+          <indexedFaceSet DEF='Wing-FACES'
+            coordIndex='0 2 3 -1 3 1 0 -1 4 5 7 -1 7 6 4 -1 0 1 5 -1 5 4 0 -1 8 9 11 -1 11 10 8 -1 3 2 6 -1 6 7 3 -1 2 0 4 -1 4 6 2 -1 1 3 9 -1 9 8 1 -1 7 5 10 -1 10 11 7 -1 5 1 8 -1 8 10 5 -1 3 7 11 -1 11 9 3 -1'>
+            <coordinate DEF='Wing-COORD'
+              point='-16.46 0 9.527 57.02 0 70 -16.46 0 -9.527 57.02 0 -70 -16.46 1 9.527 57.02 2.339 70 -16.46 1 -9.527 57.02 2.339 -70 67.02 0 70 67.02 0 -70 67.02 2.339 70 67.02 2.339 -70'>
+            </coordinate>
+          </indexedFaceSet>
+        </shape>
+      </transform>
+
+      <!-- VerticalStabilizer -->
+      <transform DEF='VerticalStabilizer' translation='-25 9.733 0'>
+        <shape>
+          <appearance>
+            <ImageTexture url='tex/desert-camouflage.jpg' />
+            <TextureTransform scale='0.1 0.7' />
+          </appearance>
+          <indexedFaceSet DEF='VerticalStabilizer-FACES'
+            coordIndex='0 3 4 -1 4 1 0 -1 1 4 5 -1 5 2 1 -1 6 7 10 -1 10 9 6 -1 7 8 11 -1 11 10 7 -1 0 1 7 -1 7 6 0 -1 1 2 8 -1 8 7 1 -1 2 5 11 -1 11 8 2 -1 5 4 10 -1 10 11 5 -1 9 10 4 -1 4 3 9 -1 3 0 6 -1 6 9 3 -1'>
+            <coordinate DEF='VerticalStabilizer-COORD'
+              point='-45 0.1335 0.25 0 0 0.25 25 0 0.25 -45 0.1335 -0.25 0 0 -0.25 25 0 -0.25 -45 0.4006 0.25 17 30.27 0.25 45 30.27 0.25 -45 0.4006 -0.25 17 30.27 -0.25 45 30.27 -0.25'>
+            </coordinate>
+          </indexedFaceSet>
+        </shape>
+      </transform>
+
+      <!-- HorizontalStabilizer Right -->
+      <transform DEF='HorizontalStabRight' translation='-20 0 -27'>
+        <shape>
+          <appearance>
+            <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
+            <material diffuseColor='#3a6534'></material>
+          </appearance>
+          <indexedFaceSet DEF='HorizontalStabRight-FACES'
+            coordIndex='0 3 4 -1 4 1 0 -1 1 4 5 -1 5 2 1 -1 6 7 10 -1 10 9 6 -1 7 8 11 -1 11 10 7 -1 0 1 7 -1 7 6 0 -1 1 2 8 -1 8 7 1 -1 2 5 11 -1 11 8 2 -1 5 4 10 -1 10 11 5 -1 4 3 9 -1 9 10 4 -1 3 0 6 -1 6 9 3 -1'>
+            <coordinate DEF='HorizontalStabRight-COORD'
+              point='-20 0 17.5 0 0 17.5 20 0 17.5 -20 0 17 32 0 -17.5 40 0 -17.5 -20 1 17.5 0 1 17.5 20 1 17.5 -20 1 17 32 1 -17.5 40 1 -17.5'>
+            </coordinate>
+          </indexedFaceSet>
+        </shape>
+      </transform>
+
+      <!-- HorizontalStabilizer Left -->
+      <transform DEF='HorizontalStabLeft' rotation='-1 0 0 -3.142' translation='-20 0 27'>
+        <shape>
+          <appearance>
+            <ImageTexture url='tex/desert-camouflage.jpg' repeatT='true' repeatS='true'></ImageTexture>
+            <TextureTransform translation='1 1' scale='1 1'></TextureTransform>
+            <material diffuseColor='#3a6534'></material>
+          </appearance>
+          <indexedFaceSet USE='HorizontalStabRight-FACES'></indexedFaceSet>
+        </shape>
+      </transform>
+
+      <!-- Cockpit -->
+      <transform DEF='Cockpit' translation='-205 9.5 0'>
+        <shape>
+          <appearance>
+            <material specularColor='#FFFFFF'></material>
+          </appearance>
+          <indexedFaceSet DEF='Cockpit-FACES'
+            coordIndex='0 3 4 -1 4 1 0 -1 1 4 5 -1 5 2 1 -1 6 7 10 -1 10 9 6 -1 12 13 10 -1 10 7 12 -1 0 1 7 -1 7 6 0 -1 1 2 8 -1 1 8 12 -1 1 12 7 -1 2 5 11 -1 11 8 2 -1 5 4 10 -1 5 10 13 -1 5 13 11 -1 4 3 9 -1 9 10 4 -1 3 0 6 -1 6 9 3 -1 8 11 13 -1 13 12 8 -1'>
+            <coordinate DEF='Cockpit-COORD'
+              point='46.18 -0.733 4 58.68 0 2.5 205 0 2.5 46.18 -0.8607 -4 68.3 0 1.25 205 0 -2.5 55.5 5.5 4 68.3 6.289 3 215 1.5 1 55.5 5.5 -4 68.3 6.289 -3 215 1.5 -1 110.3 5.616 2 110.3 5.616 -2'>
+            </coordinate>
+          </indexedFaceSet>
+        </shape>
+      </transform>
+
+
+      <!-- Nozzle -->
+      <transform DEF='Nozzle' rotation='0.5774 -0.5774 0.5774 -4.189' translation='4 0 0'>
+        <shape>
+          <appearance>
+            <material diffuseColor='#1e221d'></material>
+          </appearance>
+          <indexedFaceSet DEF='Nozzle-FACES'
+            coordIndex='0 1 7 -1 7 6 0 -1 1 2 8 -1 8 7 1 -1 2 3 9 -1 9 8 2 -1 3 4 10 -1 10 9 3 -1 4 5 11 -1 11 10 4 -1 5 0 6 -1 6 11 5 -1 6 7 13 -1 13 12 6 -1 7 8 14 -1 14 13 7 -1 8 9 15 -1 15 14 8 -1 9 10 16 -1 16 15 9 -1 10 11 17 -1 17 16 10 -1 11 6 12 -1 12 17 11 -1 12 13 19 -1 19 18 12 -1 13 14 20 -1 20 19 13 -1 14 15 21 -1 21 20 14 -1 15 16 22 -1 22 21 15 -1 16 17 23 -1 23 22 16 -1 17 12 18 -1 18 23 17 -1 18 19 25 -1 25 24 18 -1 19 20 26 -1 26 25 19 -1 20 21 27 -1 27 26 20 -1 21 22 28 -1 28 27 21 -1 22 23 29 -1 29 28 22 -1 23 18 24 -1 24 29 23 -1 24 25 31 -1 31 30 24 -1 25 26 32 -1 32 31 25 -1 26 27 33 -1 33 32 26 -1 27 28 34 -1 34 33 27 -1 28 29 35 -1 35 34 28 -1 29 24 30 -1 30 35 29 -1 30 31 37 -1 37 36 30 -1 31 32 38 -1 38 37 31 -1 32 33 39 -1 39 38 32 -1 33 34 40 -1 40 39 33 -1 34 35 41 -1 41 40 34 -1 35 30 36 -1 36 41 35 -1 36 37 43 -1 43 42 36 -1 37 38 44 -1 44 43 37 -1 38 39 45 -1 45 44 38 -1 39 40 46 -1 46 45 39 -1 40 41 47 -1 47 46 40 -1 41 36 42 -1 42 47 41 -1 42 43 49 -1 49 48 42 -1 43 44 50 -1 50 49 43 -1 44 45 51 -1 51 50 44 -1 45 46 52 -1 52 51 45 -1 46 47 53 -1 53 52 46 -1 47 42 48 -1 48 53 47 -1 48 49 55 -1 55 54 48 -1 49 50 56 -1 56 55 49 -1 50 51 57 -1 57 56 50 -1 51 52 58 -1 58 57 51 -1 52 53 59 -1 59 58 52 -1 53 48 54 -1 54 59 53 -1 54 55 61 -1 61 60 54 -1 55 56 62 -1 62 61 55 -1 56 57 63 -1 63 62 56 -1 57 58 64 -1 64 63 57 -1 58 59 65 -1 65 64 58 -1 59 54 60 -1 60 65 59 -1 60 61 67 -1 67 66 60 -1 61 62 68 -1 68 67 61 -1 62 63 69 -1 69 68 62 -1 63 64 70 -1 70 69 63 -1 64 65 71 -1 71 70 64 -1 65 60 66 -1 66 71 65 -1 66 67 73 -1 73 72 66 -1 67 68 74 -1 74 73 67 -1 68 69 75 -1 75 74 68 -1 69 70 76 -1 76 75 69 -1 70 71 77 -1 77 76 70 -1 71 66 72 -1 72 77 71 -1 72 73 79 -1 79 78 72 -1 73 74 80 -1 80 79 73 -1 74 75 81 -1 81 80 74 -1 75 76 82 -1 82 81 75 -1 76 77 83 -1 83 82 76 -1 77 72 78 -1 78 83 77 -1 78 79 85 -1 85 84 78 -1 79 80 86 -1 86 85 79 -1 80 81 87 -1 87 86 80 -1 81 82 88 -1 88 87 81 -1 82 83 89 -1 89 88 82 -1 83 78 84 -1 84 89 83 -1 84 85 91 -1 91 90 84 -1 85 86 92 -1 92 91 85 -1 86 87 93 -1 93 92 86 -1 87 88 94 -1 94 93 87 -1 88 89 95 -1 95 94 88 -1 89 84 90 -1 90 95 89 -1 90 91 97 -1 97 96 90 -1 91 92 98 -1 98 97 91 -1 92 93 99 -1 99 98 92 -1 93 94 100 -1 100 99 93 -1 94 95 101 -1 101 100 94 -1 95 90 96 -1 96 101 95 -1 96 97 103 -1 103 102 96 -1 97 98 104 -1 104 103 97 -1 98 99 105 -1 105 104 98 -1 99 100 106 -1 106 105 99 -1 100 101 107 -1 107 106 100 -1 101 96 102 -1 102 107 101 -1 102 103 1 -1 1 0 102 -1 103 104 2 -1 2 1 103 -1 104 105 3 -1 3 2 104 -1 105 106 4 -1 4 3 105 -1 106 107 5 -1 5 4 106 -1 107 102 0 -1 0 5 107 -1'>
+            <coordinate DEF='Nozzle-COORD'
+              point='0 -5 -4.581 0 -1.248 -7.417 0 4.057 -10 0 4.057 -10 0 -1.248 -7.417 0 -5 -4.581 1.567 -5 -4.304 2.537 -1.248 -6.969 3.42 4.057 -9.397 3.42 4.057 -9.397 2.537 -1.248 -6.969 1.567 -5 -4.304 2.944 -5 -3.509 4.767 -1.248 -5.682 6.428 4.057 -7.66 6.428 4.057 -7.66 4.767 -1.248 -5.682 2.944 -5 -3.509 3.967 -5 -2.29 6.423 -1.248 -3.708 8.66 4.057 -5 8.66 4.057 -5 6.423 -1.248 -3.708 3.967 -5 -2.29 4.511 -5 -0.7954 7.304 -1.248 -1.288 9.848 4.057 -1.736 9.848 4.057 -1.736 7.304 -1.248 -1.288 4.511 -5 -0.7954 4.511 -5 0.7954 7.304 -1.248 1.288 9.848 4.057 1.736 9.848 4.057 1.736 7.304 -1.248 1.288 4.511 -5 0.7954 3.967 -5 2.29 6.423 -1.248 3.708 8.66 4.057 5 8.66 4.057 5 6.423 -1.248 3.708 3.967 -5 2.29 2.944 -5 3.509 4.767 -1.248 5.682 6.428 4.057 7.66 6.428 4.057 7.66 4.767 -1.248 5.682 2.944 -5 3.509 1.567 -5 4.304 2.537 -1.248 6.969 3.42 4.057 9.397 3.42 4.057 9.397 2.537 -1.248 6.969 1.567 -5 4.304 0 -5 4.581 0 -1.248 7.417 0 4.057 10 0 4.057 10 0 -1.248 7.417 0 -5 4.581 -1.567 -5 4.304 -2.537 -1.248 6.969 -3.42 4.057 9.397 -3.42 4.057 9.397 -2.537 -1.248 6.969 -1.567 -5 4.304 -2.944 -5 3.509 -4.767 -1.248 5.682 -6.428 4.057 7.66 -6.428 4.057 7.66 -4.767 -1.248 5.682 -2.944 -5 3.509 -3.967 -5 2.29 -6.423 -1.248 3.708 -8.66 4.057 5 -8.66 4.057 5 -6.423 -1.248 3.708 -3.967 -5 2.29 -4.511 -5 0.7954 -7.304 -1.248 1.288 -9.848 4.057 1.736 -9.848 4.057 1.736 -7.304 -1.248 1.288 -4.511 -5 0.7954 -4.511 -5 -0.7954 -7.304 -1.248 -1.288 -9.848 4.057 -1.736 -9.848 4.057 -1.736 -7.304 -1.248 -1.288 -4.511 -5 -0.7954 -3.967 -5 -2.29 -6.423 -1.248 -3.708 -8.66 4.057 -5 -8.66 4.057 -5 -6.423 -1.248 -3.708 -3.967 -5 -2.29 -2.944 -5 -3.509 -4.767 -1.248 -5.682 -6.428 4.057 -7.66 -6.428 4.057 -7.66 -4.767 -1.248 -5.682 -2.944 -5 -3.509 -1.567 -5 -4.304 -2.537 -1.248 -6.969 -3.42 4.057 -9.397 -3.42 4.057 -9.397 -2.537 -1.248 -6.969 -1.567 -5 -4.304'>
+            </coordinate>
+          </indexedFaceSet>
+        </shape>
+      </transform>
+      <!-- Imported -->
+    </Scene>
+  </X3D>
+</body>
+
 </html>
