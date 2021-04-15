@@ -1,13 +1,255 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я!!!!!1 А должна быть твоя лаба!</h1>
-  </body> 
+
+<head>
+  <meta charset="utf-8" />
+  <title>Лабораторная работа 1</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+  <script type="text/javascript"
+    src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=YKM0c_n5kIgMnK9n8D0CEu1ND2wxssOMnEz0EtgurYBG1KbGvCrcfnJ2KK1cF-bAvbAFSN9e9fg0tX41WK5nmyDnkQjU7hg_ULnwsfAkUro"
+    charset="UTF-8"></script>
+  <script src="https://www.x3dom.org/download/x3dom.js"></script>
+</head>
+
+<body
+  style='width:100%; height:100%; border:0; margin:0; padding:0; background: url("fon.jpg") no-repeat fixed; background-size: cover; background-position: center;'>
+  <X3D width="100vw" height="100vh">
+    <Scene>
+      <!--field-->
+      <Transform translation="0 0 0">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="pole.jpg"></ImageTexture>
+          </Appearance>
+          <Box Size="20 0.05 10"></Box>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0.3 0">
+        <Shape>
+          <!--ball-->
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="soccer_sph.png"></ImageTexture>
+          </Appearance>
+          <Sphere radius="0.3"></Sphere>
+        </Shape>
+      </Transform>
+      <!--right leg-->
+      <Transform translation="2 0.7 0">
+        <Shape>
+          <Appearance>
+            <TextureTransform scale="1 1"></TextureTransform>
+            <ImageTexture url="leg1.jpg"></ImageTexture>
+          </Appearance>
+          <Box Size="0.28 1 0.28"></Box>
+        </Shape>
+        <!--right boot -->
+        <Transform translation=" -0.1 -0.6 0">
+          <Shape>
+            <Appearance>
+
+              <Material diffuseColor="#000000"></Material>
+            </Appearance>
+            <Box Size="0.5 0.2 0.3"></Box>
+          </Shape>
+          <Transform translation="0 0 0.66">
+            <Shape>
+              <Appearance>
+                <Material diffuseColor="#FFFFFF"></Material>
+              </Appearance>
+              <Text maxExtent="4" string="Nike" solid="false">
+                <FontStyle size="0.15" style="BOLD" family="Helvetica"> </FontStyle>
+              </Text>
+            </Shape>
+          </Transform>
+        </Transform>
+        <!--left leg-->
+        <Transform translation="0 0 0.5">
+          <Shape>
+            <Appearance>
+              <TextureTransform scale="1 1"></TextureTransform>
+              <ImageTexture url="leg1.jpg"></ImageTexture>
+            </Appearance>
+            <Box Size="0.28 1 0.28"></Box>
+          </Shape>
+          <!--left boot -->
+          <Transform translation=" -0.1 -0.6 0">
+            <Shape>
+
+              <Appearance>
+                <Material diffuseColor="#000000"></Material>
+              </Appearance>
+              <Box Size="0.5 0.2 0.3"></Box>
+            </Shape>
+            <Transform translation="0 0 -0.66">
+              <Transform rotation="0 1 0 3.14">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FFFFFF"></Material>
+                  </Appearance>
+                  <Text maxExtent="4" string="Nike" solid="false">
+                    <FontStyle size="0.15" style="BOLD" family="Helvetica"> </FontStyle>
+                  </Text>
+                </Shape>
+              </Transform>
+            </Transform>
+          </Transform>
+
+          <!--body-->
+
+          <Transform translation="0 1 -0.25">
+            <Shape>
+
+              <Appearance>
+                <Material diffuseColor="#0000FF"></Material>
+              </Appearance>
+              <Box Size="0.3 1.25 0.8"></Box>
+            </Shape>
+            <Transform translation="0.16 0.5 0">
+              <Transform rotation="0 1 0 1.57">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FFFFFF"></Material>
+                  </Appearance>
+                  <Text maxExtent="4" string="АРШАВИН" solid="false">
+                    <FontStyle size="0.14" style="BOLD" family="Helvetica"> </FontStyle>
+                  </Text>
+                </Shape>
+              </Transform>
+              <Transform translation="0 -0.4 0">
+                <Transform rotation="0 1 0 1.57">
+                  <Shape>
+                    <Appearance>
+                      <Material diffuseColor="#FFFFFF"></Material>
+                    </Appearance>
+                    <Text maxExtent="4" string="10" solid="false">
+                      <FontStyle size="0.5" style="BOLD" family="Helvetica"> </FontStyle>
+                    </Text>
+                  </Shape>
+                </Transform>
+              </Transform>
+            </Transform>
+
+              <!--neck-->
+              <Transform translation="0 0.5 0">
+                <Shape>
+                  <Appearance>
+
+                    <Material diffuseColor="#F5DEB3"></Material>
+                  </Appearance>
+                  <Cylinder radius="0.1" height="0.5" solid="false"></Cylinder>
+                </Shape>
+              </Transform>
+
+              <!--had-->
+              <Transform translation="0 1 0">
+                <Transform rotation="0 1 0 -1.57">
+                  <Shape>
+                    <Appearance>
+                      <TextureTransform scale="1 1"></TextureTransform>
+                      <ImageTexture url="shava1.jpg"></ImageTexture>
+                    </Appearance>
+                    <Sphere radius="0.3"></Sphere>
+                  </Shape>
+                </Transform>
+              </Transform>
+
+
+              <!--hands--->
+
+              <!--left hand--->
+              <Transform translation=" 0 0.165 0.6">
+                <Transform rotation="1 0 0 -0.80">
+                  <Shape>
+                    <Appearance>
+                      <Material diffuseColor="#0000FF"></Material>
+                    </Appearance>
+                    <Cylinder radius="0.13" height="1" solid="false"></Cylinder>
+                  </Shape>
+                </Transform>
+              </Transform>
+
+
+              <!--right hand--->
+              <Transform translation=" 0 0.165 -0.6">
+                <Transform rotation="1 0 0 0.80">
+                  <Shape>
+                    <Appearance>
+                      <Material diffuseColor="#0000FF"></Material>
+                    </Appearance>
+                    <Cylinder radius="0.13" height="1" solid="false"></Cylinder>
+                  </Shape>
+                </Transform>
+              </Transform>
+
+              <!--platforma konusa-->
+
+              <Transform translation="0 -1.6 3" rotation="2 0 0 1.57">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FF4500"></Material>
+                  </Appearance>
+                  <torus innerRadius="0.1" outerRadius="0.5"></torus>
+                </Shape>
+              </Transform>
+
+              <!--conus-->
+              <Transform translation="0 -1 3" rotation=" 1 0 0 0">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FF4500"></Material>
+                  </Appearance>
+                  <Cone bottomRadius="0.5" height="1" solid="false"></Cone>
+                </Shape>
+              </Transform>
+
+
+              <!--platforma konusa1-->
+
+              <Transform translation="2 -1.6 3" rotation="2 0 0 1.57">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FF4500"></Material>
+                  </Appearance>
+                  <torus innerRadius="0.1" outerRadius="0.5"></torus>
+                </Shape>
+              </Transform>
+
+              <!--conus1-->
+              <Transform translation="2 -1 3" rotation=" 1 0 0 0">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FF4500"></Material>
+                  </Appearance>
+
+                  <Cone bottomRadius="0.5" height="1" solid="false"></Cone>
+                </Shape>
+              </Transform>
+
+              <!--platforma konusa2-->
+
+              <Transform translation="4 -1.6 3" rotation="2 0 0 1.57">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FF4500"></Material>
+                  </Appearance>
+                  <torus innerRadius="0.1" outerRadius="0.5"></torus>
+                </Shape>
+              </Transform>
+
+              <!--conus2-->
+              <Transform translation="4 -1 3" rotation=" 1 0 0 0">
+                <Shape>
+                  <Appearance>
+                    <Material diffuseColor="#FF4500"></Material>
+                  </Appearance>
+                  <Cone bottomRadius="0.5" height="1" solid="false"></Cone>
+                </Shape>
+              </Transform>
+
+    </Scene>
+  </X3D>
+</body>
+
 </html>
