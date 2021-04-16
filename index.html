@@ -8,175 +8,185 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>T_T</h1>
     <X3D>
-      <Scene>
-      <!-- пол--
-      <Transform translation = "0 -4.5 0">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Box size="20 0.1 20" solid = "false"></Box>
-          </Shape>
-        </Transform>--> 
-      <!-- стол-->
-      <!-- столешница-->
+        <Scene>
+    <!-- стол-->
+    <!-- столешница-->
         <Transform translation = "0 0 0">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Box size="5 0.3 5" solid = "false"></Box>
-          </Shape>
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "wood1.png"></ImageTexture>
+                </Appearance>
+                <Box size="5 0.3 5" solid = "false"></Box>
+            </Shape>
         </Transform>  
-      <!-- ножка-->
+    <!-- ножка-->
         <Transform translation = "0 -2.25 0">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Cylinder solid = "false" height = "4.5" radius = "0.15"></Cylinder>
-          </Shape>
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "light.png"></ImageTexture>
+                </Appearance>
+                <Cylinder solid = "false" height = "4.5" radius = "0.15"></Cylinder>
+            </Shape>
         </Transform>
-      <!--основание ножки-->  
+    <!--основание ножки-->  
         <Transform translation = "0 -4.25 0">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance> 
-            <Cone bottomRadius = "1.5" height = "0.5" solid = "false"></Cone>
-          </Shape>    
+            <Shape>
+                <Appearance>
+                    <TextureTransform scale = "5 1"></TextureTransform>
+                    <ImageTexture url = "wood3.png"></ImageTexture>
+                </Appearance> 
+                <Cone bottomRadius = "1.5" height = "0.5" solid = "false"></Cone>
+            </Shape>    
         </Transform>
-      <!-- стул-->
-      <!-- сидушка-->
+    <!-- стул-->
+    <!-- сидушка-->
         <Transform translation = "-5.5 -2.05 0">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Box size="2.25 0.25 2.25" solid = "false"></Box>
-          </Shape>
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "woodw.png"></ImageTexture>
+                </Appearance>
+                <Box size="2.25 0.25 2.25" solid = "false"></Box>
+            </Shape>
         </Transform>  
-      <!-- ножки-->
-      <!-- 1-->
+    <!-- ножки-->
+    <!-- 1-->
         <Transform translation = "-6.5 -3.35 0.9">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Box size="0.2 2.4 0.2" solid = "false"></Box>
-          </Shape>
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "woodw.png"></ImageTexture>
+                </Appearance>
+                <Box size="0.2 2.4 0.2" solid = "false"></Box>
+            </Shape>
         </Transform>
-      <!-- 2--> 
+    <!-- 2--> 
         <Transform translation = "-6.5 -3.35 -0.9">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Box size="0.2 2.4 0.2" solid = "false"></Box>
-          </Shape>
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "woodw.png"></ImageTexture>
+                </Appearance>
+                <Box size="0.2 2.4 0.2" solid = "false"></Box>
+             </Shape>
         </Transform>
-      <!-- 3--> 
+    <!-- 3--> 
         <Transform translation = "-4.5 -3.35 0.9">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Box size="0.2 2.4 0.2" solid = "false"></Box>
-          </Shape>
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "woodw.png"></ImageTexture>
+                </Appearance>
+                <Box size="0.2 2.4 0.2" solid = "false"></Box>
+            </Shape>
         </Transform>
-      <!-- 4-->   
+    <!-- 4-->   
         <Transform translation = "-4.5 -3.35 -0.9">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance>
-            <Box size="0.2 2.4 0.2" solid = "false"></Box>
-          </Shape>
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "woodw.png"></ImageTexture>
+                </Appearance>
+                <Box size="0.2 2.4 0.2" solid = "false"></Box>
+            </Shape>
         </Transform>  
-        <!-- мороженное-->
-        <!-- вазочка--> 
+    <!-- мороженное-->
+    <!-- вазочка--> 
         <Transform translation = "-1 0 0">
         <Transform rotation = "1 0 0 3.14">
         <Transform translation = "0 -0.75 0">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance> 
-            <Cone bottomRadius = "0.51" height = "0.5" solid = "false" bottom = "false"></Cone>
-         </Shape>    
-         </Transform>
-         </Transform>  
-         <!-- ножка-->
-        <Transform translation = "0 0.35 0">
-          <Shape>
-           <Appearance>
-             <Material></Material>
-           </Appearance>
-           <Cylinder solid = "false" height = "0.5" radius = "0.07"></Cylinder>
-          </Shape>
-        </Transform>
-        <!--основание ножки-->  
-        <Transform translation = "0 0.22 0">
-          <Shape>
-            <Appearance>
-               <Material></Material>
-             </Appearance> 
-             <Cone bottomRadius = "0.25" height = "0.15" solid = "false"></Cone>
-          </Shape>    
-        </Transform>
-        <!-- мороженное-->
-        <!-- 1-->
-        <Transform translation = "0.15 1 -0.15">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance> 
-            <Sphere Radius = "0.2" solid = "false" ></Cone>
-          </Shape>    
-        </Transform>
-        <!-- 2-->
-        <Transform translation = "0.1 0.96 0.15">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance> 
-            <Sphere Radius = "0.2" solid = "false" ></Cone>
-          </Shape>    
-        </Transform>
-        <!-- 3-->
-        <Transform translation = "-0.15 0.95 0.05">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance> 
-            <Sphere Radius = "0.2" solid = "false" ></Cone>
-          </Shape>    
-        </Transform>
-        <!-- 5-->
-          <Transform translation = "0 0.8 0">
             <Shape>
-              <Appearance>
-                <Material></Material>
-              </Appearance> 
-              <Sphere Radius = "0.2" solid = "false" ></Cone>
+                <Appearance>
+                <Material diffuseColor = "0.5 0.7 0.8" specularColor = "0.44 0.28 0.89" transparency = "0.05"></Material>
+                </Appearance> 
+                <Cone bottomRadius = "0.51" height = "0.5" solid = "false" bottom = "false"></Cone>
             </Shape>    
-          </Transform>
-        <!-- ?-->
+        </Transform>
+        </Transform>  
+    <!-- ножка-->
+        <Transform translation = "0 0.35 0">
+            <Shape>
+                <Appearance>
+                    <Material diffuseColor = "0.5 0.7 0.8" specularColor = "0.44 0.28 0.89" transparency = "0.05"></Material>
+                </Appearance>
+                <Cylinder solid = "false" height = "0.5" radius = "0.07"></Cylinder>
+            </Shape>
+        </Transform>
+    <!--основание ножки-->  
+        <Transform translation = "0 0.22 0">
+            <Shape>
+                <Appearance>
+                    <Material diffuseColor = "0.5 0.7 0.8" specularColor = "0.44 0.28 0.89" transparency = "0.05"></Material>
+                </Appearance> 
+                <Cone bottomRadius = "0.25" height = "0.15" solid = "false"></Cone>
+            </Shape>    
+        </Transform>
+    <!-- мороженное-->
+    <!-- 1-->
+        <Transform translation = "0.15 1 -0.15">
+            <Shape>
+                <Appearance>
+                    <TextureTransform rotation = "0.78"></TextureTransform>
+                    <ImageTexture url = "ice.png"></ImageTexture>
+                </Appearance> 
+                <Sphere Radius = "0.2" solid = "false" ></Sphere>
+            </Shape>    
+        </Transform>
+    <!-- 2-->
+        <Transform translation = "0.1 0.96 0.15">
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "ice1.png"></ImageTexture>
+                </Appearance> 
+                <Sphere Radius = "0.2" solid = "false" ></Sphere>
+            </Shape>    
+        </Transform>
+    <!-- 3-->
+        <Transform translation = "-0.15 0.95 0.05">
+            <Shape>
+                <Appearance>
+                    <TextureTransform translation = "0.5 0.5" scale = "1 1" rotation = "0.78"></TextureTransform>
+                    <ImageTexture url = "ice2.png"></ImageTexture>
+                </Appearance> 
+                <Sphere Radius = "0.2" solid = "false" ></Sphere>
+            </Shape>    
+        </Transform>
+    <!-- 4-->
+        <Transform translation = "0 0.8 0">
+            <Shape>
+                <Appearance>
+                    <TextureTransform></TextureTransform>
+                    <ImageTexture url = "ice3.png"></ImageTexture>
+                </Appearance> 
+                <Sphere Radius = "0.2" solid = "false" ></Spheree>
+            </Shape>    
+        </Transform>
+    <!-- ободок вазочки-->
         <Transform rotation = "-1 0 0 1.57">
         <Transform translation = "0 0 1">
-          <Shape>
-            <Appearance>
-              <Material></Material>
-            </Appearance> 
-            <Torus innerRadius = "0.02" outerRadius = "0.5" solid = "false" ></Cone>
-          </Shape>    
+            <Shape>
+                <Appearance>
+                    <Material diffuseColor = "0.5 0.7 0.8" specularColor = "0.44 0.28 0.89" transparency = "0.05"></Material>
+                </Appearance> 
+                <Torus innerRadius = "0.02" outerRadius = "0.5" solid = "false" ></Torus>
+            </Shape>    
         </Transform>
         </Transform>
-        <!-- ??-->
-        <!-- ???-->
         </Transform>    
+    <!--текст-->
+            <Transform translation = "0.65 0.61 -0.9"  rotation="0 1 0 -0.8" >
+                <Shape>
+                    <Appearance>
+                         <Material diffuseColor = "0 0.7 0.6" ></Material>
+                    </Appearance>
+                    <Text string = "Ира 4841" solid = "false" ></Text>
+                         <FontStyle size = "1" style = "ITALIC" family = "Lucida Sans Typewriter" ></FontStyle>
+                </Shape>
+            </Transform>
       </Scene>
     </X3D>
   </body> 
