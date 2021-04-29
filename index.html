@@ -10,8 +10,8 @@
 
 </head>
 
-<body style='width:100%; height:100%; border:0; margin:0; padding:0; background: url("africa1.jpg") no-repeat fixed;background-size: cover; background-position: center;'
->
+<body
+  style='width:100%; height:100%; border:0; margin:0; padding:0; background: url("africa1.jpg") no-repeat fixed;background-size: cover; background-position: center;'>
   <X3D id="x3d" xmlns='https://www.x3dom.org/x3dom'>
     <Scene>
 
@@ -19,7 +19,7 @@
 
       <Shape>
         <Appearance>
-         <ImageTexture url="wood3.jpg"></ImageTexture>
+          <ImageTexture url="wood3.jpg"></ImageTexture>
           <!--<Material diffuseColor='brown'> </Material>-->
         </Appearance>
         <Box size="3 0.2 6"></Box>
@@ -28,7 +28,7 @@
       <Transform translation='0 0.2 0'>
         <Shape>
           <Appearance>
-            
+
             <ImageTexture url="wood3.jpg"></ImageTexture>
             <Material diffuseColor='brown'> </Material>
           </Appearance>
@@ -140,7 +140,7 @@
         <Shape>
           <Appearance>
             <ImageTexture url="latun.png"></ImageTexture>
-           <!-- <Material diffuseColor='black'> </Material>-->
+            <!-- <Material diffuseColor='black'> </Material>-->
           </Appearance>
           <Torus innerRadius="0.05" outerRadius='0.3'></Torus>
         </Shape>
@@ -340,16 +340,16 @@
         </Shape>
       </Transform>
 
-      <Transform translation='3.2 -0.9 -1.6' rotation='1 0 0 -1.1' >
-        <transform rotation='0 0 1 0.4'>
-        <Shape>
-          <Appearance>
-            <ImageTexture url="cat.jpg"></ImageTexture>
-            <Material diffuseColor='green'> </Material>
-          </Appearance>
-          <Box size="0.2 1.4 0.2"></Box>
-        </Shape>
-      </transform>
+      <Transform translation='3.2 -0.9 -1.6' rotation='1 0 0 -1.1'>
+        <Transform rotation='0 0 1 0.4'>
+          <Shape>
+            <Appearance>
+              <ImageTexture url="cat.jpg"></ImageTexture>
+              <Material diffuseColor='green'> </Material>
+            </Appearance>
+            <Box size="0.2 1.4 0.2"></Box>
+          </Shape>
+        </Transform>
       </Transform>
 
       <!--Человек 3-->
@@ -367,7 +367,7 @@
       <Transform translation='-2.5 -0.15 2 '>
         <Shape>
           <Appearance>
-           
+
             <Material diffuseColor='black'> </Material>
           </Appearance>
           <Cylinder radius="0.3" height='0.3'></Cylinder>
@@ -544,44 +544,44 @@
         </Shape>
       </Transform>
 
-      <Transform translation='3.2 -0.9 2.5' rotation='1 0 0 -1.1' >
-        <transform rotation='0 0 1 0.4'>
-        <Shape>
-          <Appearance>
-            <ImageTexture url="cat.jpg"></ImageTexture>
-            <Material diffuseColor='green'> </Material>
-          </Appearance>
-          <Box size="0.2 1.4 0.2"></Box>
-        </Shape>
-      </transform>
+      <Transform translation='3.2 -0.9 2.5' rotation='1 0 0 -1.1'>
+        <Transform rotation='0 0 1 0.4'>
+          <Shape>
+            <Appearance>
+              <ImageTexture url="cat.jpg"></ImageTexture>
+              <Material diffuseColor='green'> </Material>
+            </Appearance>
+            <Box size="0.2 1.4 0.2"></Box>
+          </Shape>
+        </Transform>
       </Transform>
 
       <!-- текст-->
       <Transform translation="0 -0.15 0 " rotation='1 0 0 1.55'>
-        <transform rotation ='0 0 1 1.6'>
-        <Shape>
-          <Appearance>
-            <Material diffuseColor="0.29 0 0.51" transparency="0.1" specularColor="0.29 0 0.51"></Material>
-          </Appearance>
-          <Text string="ДистанционОЧКА" >
-            <FontStyle size="0.5" style="BOLD" family="Helvetica"> </FontStyle>
-          </Text>
-        </Shape>
+        <Transform rotation='0 0 1 1.6'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0.29 0 0.51" transparency="0.1" specularColor="0.29 0 0.51"></Material>
+            </Appearance>
+            <Text string="ДистанционОЧКА">
+              <FontStyle size="0.5" style="BOLD" family="Helvetica"> </FontStyle>
+            </Text>
+          </Shape>
+        </Transform>
       </Transform>
-    </transform>
       <!-- кончился текст-->
-      
+
       <Sound>
         <AudioClip loop='true' enabled="true" url="astronomia.mp3" />
       </Sound>
-      
-          
-      
 
 
-      
 
-      
+
+
+
+
+
 
 
 
