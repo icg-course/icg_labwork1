@@ -8,6 +8,223 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <X3D>
+      <Scene>
+        <!-- Пол -->
+        <transform translation="0 0 -47.5">
+        <Shape>
+          <Appearance>
+            <ImageTexture repeatS='true' repeatT='true' scale='true'  url='https://images.freecreatives.com/wp-content/uploads/2016/06/stone-floor-tile-gray-Texture.jpg' ></ImageTexture> 
+            <TextureTransform scale='10, 10'  >
+            </TextureTransform> 
+          </Appearance>
+          <Box size="1000 1000 5"></Box>
+        </Shape>
+        </transform>
+        <!-- Стол -->
+        <transform translation="-25 0 -2.5">
+        <Shape>
+          <Appearance>
+            <ImageTexture repeatS='true' repeatT='true' scale='true'  url='https://thumbs.dreamstime.com/b/grey-marble-texture-delicate-veins-natural-pattern-backdrop-background-can-also-be-used-create-effect-to-145849461.jpg' ></ImageTexture> 
+          </Appearance>
+          <Box size="5 60 90"></Box>
+        </Shape>
+        </transform>
+        <transform translation="25 0 -2.5">
+        <Shape>
+          <Appearance>
+            <ImageTexture repeatS='true' repeatT='true' scale='true'  url='https://thumbs.dreamstime.com/b/grey-marble-texture-delicate-veins-natural-pattern-backdrop-background-can-also-be-used-create-effect-to-145849461.jpg' ></ImageTexture> 
+          </Appearance>
+          <Box size="5 60 90"></Box>
+        </Shape>
+        </transform>
+        <transform translation="0 0 45">
+        <Shape>
+          <Appearance>
+            <ImageTexture repeatS='true' repeatT='true' scale='true'  url='https://thumbs.dreamstime.com/b/grey-marble-texture-delicate-veins-natural-pattern-backdrop-background-can-also-be-used-create-effect-to-145849461.jpg' ></ImageTexture>
+          </Appearance>
+          <Box size="55 60 5"></Box>
+        </Shape>
+        </transform>
+    
+        <!-- подставка -->
+        <transform rotation='0 0 1 0.707' translation="-14 17 52.5">
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='0.8 0.8 0.8' ></Material>
+          </Appearance>
+          <Box size="10 10 10"></Box>
+        </Shape>
+        </transform>
+        <transform rotation='0 0 1 0.707' translation="15 -18 51">
+        <Shape>
+          <Appearance>
+            <Material  diffuseColor='0.8 0.8 0.8' ></Material>
+          </Appearance>
+          <Box size="7 7 7"></Box>
+        </Shape>
+        </transform>
+    
+        <!-- скипетр -->
+        <transform rotation="0 0 1 0.7">
+      <transform  rotation="1 0 0 0.07" translation="0 0 58">
+        <shape> <!-- основа -->
+          <Appearance >
+            <Material diffuseColor='0.23 0.49 0.39' shininess='0.16' specularColor='0.71 0.70 0.56'></Material>
+          </Appearance>
+          <Cylinder bottom='true' height='50' radius='2' side='true' solid='true' subdivision='32' top='true'></Cylinder>
+        </shape>
+
+        <!-- нижняя часть -->
+        <transform translation="0 -26 0">
+          <shape> 
+            <Appearance>
+              <Material   diffuseColor="1 0.8 0"
+                      specularColor="0.401 0.401 0.401"
+                    shininess="0.500"/>
+            </Appearance> 
+            <Cylinder bottom='true' height='2' radius='2.5' side='true' solid='true' subdivision='32' top='true'></Cylinder>
+          </shape>
+        </transform>
+
+        <transform translation="0 -27.25 0">
+          <shape>
+            <Appearance>
+              <Material   diffuseColor="1 0.8 0"
+                      specularColor="0.401 0.401 0.401"
+                    shininess="0.500"/>
+            </Appearance> 
+            <Cylinder bottom='true' height='0.5' radius='3' side='true' solid='true' subdivision='32' top='true'></Cylinder>
+          </shape>
+        </transform>
+
+        <!-- верхняя часть -->
+        <transform translation="0 26 0">
+          <shape> 
+            <Appearance>
+              <Material   diffuseColor="1 0.8 0"
+                      specularColor="0.401 0.401 0.401"
+                    shininess="0.500"/>
+            </Appearance> 
+            <Cylinder bottom='true' height='2' radius='2.5' side='true' solid='true' subdivision='32' top='true'></Cylinder>
+          </shape>
+        </transform>
+
+        <transform translation="0 27.25 0">
+          <shape>
+            <Appearance>
+              <Material   diffuseColor="1 0.8 0"
+                      specularColor="0.401 0.401 0.401"
+                    shininess="0.500"/>
+            </Appearance> 
+            <Cylinder bottom='true' height='0.5' radius='3.5' side='true' solid='true' subdivision='32' top='true'></Cylinder>
+          </shape>
+        </transform>
+
+        <transform translation="0 28 0">
+          <shape>
+            <Appearance>
+              <Material   diffuseColor="1 0.8 0"
+                      specularColor="0.401 0.401 0.401"
+                    shininess="0.500"/>
+            </Appearance> 
+            <Cylinder bottom='true' height='1' radius='3' side='true' solid='true' subdivision='32' top='true'></Cylinder>
+          </shape>
+        </transform>
+
+        <transform translation="0 30.75 0">
+          <shape>
+            <Appearance >
+              <Material diffuseColor='0.23 0.49 0.39' shininess='0.16' specularColor='0.71 0.70 0.56'></Material>
+            </Appearance>
+            <Sphere radius='3.5' solid='true'></Sphere>
+          </shape>
+        </transform>
+
+        <transform translation="0 30.75 0">
+          <shape>
+            <Appearance>
+              <Material   diffuseColor="1 0.8 0"
+                      specularColor="0.401 0.401 0.401"
+                    shininess="0.500"/>
+            </Appearance> 
+            <Cylinder bottom='true' height='1' radius='3.75' side='true' solid='true' subdivision='32' top='true'></Cylinder>
+          </shape>
+        </transform>
+
+        <!-- украшения -->
+        <!-- сферы -->
+        <transform translation="3.5 30.75 0">
+          <shape>
+            <Appearance >
+              <Material diffuseColor='1 0 0' shininess="0.500" ></Material>
+            </Appearance>
+            <Sphere radius='0.5' solid='true'></Sphere>
+          </shape>
+        </transform>
+
+        <transform rotation="0 1 0 2.094">
+          <transform translation="3.5 30.75 0" >
+            <shape>
+              <Appearance >
+                <Material diffuseColor='1 0 0' shininess="0.500"></Material>
+              </Appearance>
+              <Sphere radius='0.5' solid='true'></Sphere>
+            </shape>
+          </transform>
+        </transform>
+
+        <transform rotation="0 1 0 -2.094">
+          <transform translation="3.5 30.75 0" >
+            <shape>
+              <Appearance >
+                <Material diffuseColor='1 0 0' shininess="0.500"></Material>
+              </Appearance>
+              <Sphere radius='0.5' solid='true'></Sphere>
+            </shape>
+          </transform>
+        </transform>
+
+        <!-- конусы -->
+        <transform translation="-3.5 30.75 0">
+          <transform rotation="0 0 1 1.571">
+            <shape>
+              <Appearance >
+                <Material diffuseColor='1 0 0' shininess="0.500"></Material>
+              </Appearance>
+              <Cone bottomRadius='1' height='2.0' lit='true' side='true' solid='true' subdivision='32' top='true' topRadius='0'></Cone>
+            </shape>
+          </transform>
+        </transform>
+
+        <transform rotation="0 1 0 2.094">
+          <transform translation="-3.5 30.75 0">
+            <transform rotation="0 0 1 1.571">
+              <shape>
+                <Appearance >
+                  <Material diffuseColor='1 0 0' shininess="0.500"></Material>
+                </Appearance>
+                <Cone bottomRadius='1' height='2.0' lit='true' side='true' solid='true' subdivision='32' top='true' topRadius='0'></Cone>
+              </shape>
+            </transform>
+          </transform>
+        </transform>
+
+        <transform rotation="0 1 0 -2.094">
+          <transform translation="-3.5 30.75 0">
+            <transform rotation="0 0 1 1.571">
+              <shape>
+                <Appearance >
+                  <Material diffuseColor='1 0 0' shininess="0.500"></Material>
+                </Appearance>
+                <Cone bottomRadius='1' height='2.0'  side='true' subdivision='32' top='true'></Cone>
+              </shape>
+            </transform>
+          </transform>
+        </transform>
+      </transform>
+        </transform>
+      </Scene>
+    </X3D>
   </body> 
 </html>
