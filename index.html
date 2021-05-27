@@ -1,13 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+  <meta charset="utf-8" />
+  <title>Лабораторная работа 1</title>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
+  <script src="https://www.x3dom.org/download/x3dom.js"></script>
+</head>
+<body>
+<h1>Perevalkina E.O. 4843</h1>
+<X3D style="width:85%; height:85%; border:none;">
+  <Scene>
+    <!--Кузов-->
+    <transform rotation="0 0 1 1.57" translation="0 0 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="blue"></Material>
+        </Appearance>
+        <Cylinder radius="1.4" height="7"></Cylinder>
+      </Shape>
+    </transform>
+
+    <!--Кабина-->
+    <transform translation="4 1 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="blue"></Material>
+        </Appearance>
+        <Box size="2.5 5 3"></Box>
+      </Shape>
+    </transform>
+
+    <!--Крыша-->
+    <transform translation="4 4.6 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 1 0"></Material>
+        </Appearance>
+        <Cone height="2.2" bottomradius="2" ></Cone>
+      </Shape>
+    </transform>
+
+    <!--Основание кузова-->
+    <transform translation="0.5 -1.3 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="#ff0000"></Material>
+        </Appearance>
+        <Box size="9.5 0.5 3"></Box>
+      </Shape>
+    </transform>
+
+
+    <!--Колёса-->
+    <transform translation="-3.3 -2.49 1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="-1.4 -2.49 1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="0.5 -2.49 1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="2.4 -2.49 1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="4.3 -2.49 1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="-3.3 -2.49 -1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="-1.4 -2.49 -1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="0.5 -2.49 -1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="2.4 -2.49 -1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+    <transform translation="4.3 -2.49 -1.4">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="0.1 0.1 0.1"></Material>
+        </Appearance>
+        <Torus innerRadius="0.35" outerRadius="0.6"></Torus>
+      </Shape>
+    </transform>
+
+    <!--Окна-->
+    <transform translation="4 2 1.3">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="white"></Material>
+        </Appearance>
+        <Sphere radius="0.7"></Sphere>
+      </Shape>
+    </transform>
+    <transform translation="4 2 -1.3">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="white"></Material>
+        </Appearance>
+        <Sphere radius="0.7"></Sphere>
+      </Shape>
+    </transform>
+
+    <!--Труба-->
+    <transform translation="-2 2 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="gray"></Material>
+        </Appearance>
+        <Cylinder radius="0.5" height="1.5"></Cylinder>
+      </Shape>
+    </transform>
+
+    <!--Верхняя часть трубы-->
+    <transform translation="-2 3 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="gray"></Material>
+        </Appearance>
+        <Cone height="1" bottomradius="1" ></Cone>
+      </Shape>
+    </transform>
+
+    <!--Рельсы-->
+    <transform translation="0 -3.7 -1.5">
+      <Shape>
+        <Appearance>
+          <ImageTexture url="rels.jpg"> </ImageTexture>
+        </Appearance>
+        <Box size="35 0.5 16"></Box>
+      </Shape>
+    </transform>
+
+    <!--Текст-->
+    <transform translation="0 5 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="black"></Material>
+        </Appearance>
+        <Text string="Чух-чух" solid="false" ></Text>
+      </Shape>
+    </transform>
+  </Scene>
+</X3D>
+</body>
 </html>
