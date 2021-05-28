@@ -1,13 +1,94 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>laba1</title>
+    <script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+
+</head>
+<body>
+    <x3d width="100vw" height="100vh">
+        <scene>
+                
+            <transform translation="0 0 0">
+                <shape>
+                    <appearance>
+                        <imagetexture url="./2k_earth_daymap.jpg"></imagetexture>
+                        <texturetransform scale="1 1"></texturetransform>
+                        <material diffuseColor="#140c03"></material>
+                    </appearance>
+                    <sphere radius="3.8" > </sphere>
+                </shape>
+            </transform>
+
+            <transform translation="-2.7 5 2.35" rotation ="0 0 1 0" >
+                <shape>
+                    <appearance>
+                        <imagetexture url="./e084a38fec0513346b01c0f7666ca669.jpg"></imagetexture>
+                        <texturetransform scale="1 1"></texturetransform>
+                    </appearance>
+                    <cylinder  height="1" Radius = "0.2"> </cylinder>
+                </shape>
+            </transform>
+
+            <transform translation="-2.7 4.4 2.35" rotation ="0 0 1 0" >
+                <shape>
+                    <appearance>
+                        <imagetexture url="./e084a38fec0513346b01c0f7666ca669.jpg"></imagetexture>
+                        <texturetransform scale="1 1"></texturetransform>
+                    </appearance>
+                   <box size="0.4 0.2 0.4"></box>
+                </shape>
+            </transform>
+         
+
+            <transform translation="-3.5 1.4 4.35">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="#64c680"></material>
+                        </appearance>
+                            <text string="Мир наизнанку">
+                            <fontstyle family="Helvetica sans-serif" style="bold"></fontstyle>
+                        </text>
+                </shape>
+            </transform>
+
+            <transform translation="-2.7 5.65 2.35" rotation ="1 0 0 0">
+                <shape>
+                    <appearance>
+                        <imagetexture url="./red-texture-closeup.jpg"></imagetexture>
+                        <texturetransform scale="1 1"></texturetransform>
+                        
+                    </appearance>
+                    <cone bottomRadius="0.2" height="0.3" > </cone>
+                </shape>
+            </transform>
+
+            <transform translation="-2.7 4.2 2.35" rotation ="1 0 0 0">
+                <shape>
+                    <appearance>
+                        <imagetexture url="./fire-burst-texture-background_133982-241.jpg"></imagetexture>
+                        <texturetransform scale="1 1"></texturetransform>
+                    </appearance>
+                    <cone bottomRadius="0.2" height="0.4" > </cone>
+                </shape>
+            </transform>
+
+            <transform translation="0 0 0.5" rotation ="0 4 0 0">
+                <shape>
+                    <appearance>
+                        <imagetexture url="./2k_saturn.jpg"></imagetexture>
+                        <texturetransform scale="1 1"></texturetransform>
+                    </appearance>
+                    <torus outerRadius="5" innerRadius="0.5"> </torus>
+                </shape>
+            </transform>
+
+<!--             <Viewpoint position="-6.06334 4.20531 6.74917" orientation="-0.51196 -0.84732 -0.14121 0.83887" 
+    zNear="5.16810" zFar="17.34724" centerOfRotation="0.00000 0.00000 0.00000" fieldOfView="0.78540" description="defaultX3DViewpointNode"></Viewpoint> 
+ -->
+        </scene>
+    </x3d>
+</body>
 </html>
