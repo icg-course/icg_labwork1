@@ -1,0 +1,179 @@
+  <html> 
+        <head> 
+            <title>Lab3</title> 			
+
+            <link rel='stylesheet' type='text/css' href='http://x3dom.org/download/dev/x3dom.css'></link> 
+            <script src="http://x3dom.org/download/dev/x3dom-full.js"></script>
+  
+
+        </head> 
+        <body> 
+<h1>Klimov M.V. 4842</h1>
+          <x3d width='87em' height='37em'>
+    <scene>
+   <navigationInfo id="head" headlight='true' type='"ANY"'></navigationInfo>
+ <fog color= '1 1 1' fogtype='EXPONENTIAL' visibilityRange = '10'></fog>	         
+	         
+	<directionalLight color='1 1 1' attenuation='1 0 0' on = 'true' global = 'false' direction='0 -1 0'  location= '0 5 0' shadowIntensity='0.5'  shadowCascades="1" shadowFilterSize="16" shadowMapSize="512"></directionalLight >
+
+
+
+<transform translation="0 -0.7 0" scale="4 4 4" rotation="1 0 0 -1.57">	      
+  <shape>
+	            <appearance>
+	                <material diffuseColor='.3 .5 .7'></material>
+	            </appearance>
+	<plane solid="false"></plane>
+</shape>
+</transform>
+<transform DEF="Text" translation="0 3 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	<text string="Chaepitie" ></text>
+</shape>
+</transform>
+	<background color=".1 .1 .1"> </background>
+	<transform DEF="box1" translation="-1.7 0 -0.2" scale="0.1 0.7 0.1">
+	        <shape DEf="NOZKA">
+	            <appearance>
+	                <material diffuseColor='0.9608 0.9608 0.8627'></material>
+	            </appearance>
+	            <box></box>
+	        </shape>
+	</transform>
+	<transform DEF="box2" translation="1.7 0 -0.2" scale="0.1 0.7 0.1">
+	        <shape USE ="NOZKA">
+	        </shape>
+	</transform>
+	<transform DEF="box3" translation="-1.7 0 1.2" scale="0.1 0.7 0.1">
+	        <shape USE ="NOZKA">
+	        </shape>
+	</transform>
+	<transform DEF="box4" translation="1.7 0 1.2" scale="0.1 0.7 0.1">
+	        <shape USE ="NOZKA">
+	        </shape>
+	</transform>
+	<transform DEF="box5" translation="0 0.7 0.5" scale="2 0.1 1">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='0.9608 0.9608 0.8627'></material>
+	            </appearance>
+	            <box></box>
+	        </shape>
+	</transform>
+	<transform DEF="Baza" translation="0 .8 0.5" scale="0.6 0.2 0.6" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.7 .2 .2'></material>
+	            </appearance>
+	            <cone></cone>
+	        </shape>
+	</transform>
+	<transform DEF="Tapelka" translation="-1.5 .8 0.5" scale="0.4 0.07 0.4" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.7 .7 .7'></material>
+	            </appearance>
+	            <cone></cone>
+	        </shape>
+	</transform>
+	<transform DEF="HE_Tapelka" translation="-1.5 .9 0.5" scale=".1 .1 .1" rotation="1 0 0 1.57">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.5 .1 .5'></material>
+	            </appearance>
+	            <Torus></Torus>
+	        </shape>
+	</transform>
+	<transform DEF="Tort" translation="0 1.2 0.5" scale="0.5 0.2 0.5" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.5 .1 .5'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+<Group DEF="Svechka">
+	<transform DEF="S1" translation="0 1.5 0.5" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+	<transform DEF="O1" translation="0 1.6 0.5" scale="0.01 0.04 0.01" rotation="1 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 0 0' ></material>
+	            </appearance>
+	            <cone></cone>
+		<sphere></sphere>
+	        </shape>
+	</transform>
+</Group>
+	<transform DEF="S2" translation=".2 0 -0.3">
+	        <shape USE="Svechka">   </shape>
+	</transform>
+	<transform DEF="S3" translation="0.15 0 -0.15">
+	        <shape USE="Svechka">   </shape>
+	</transform>
+	<transform DEF="S4" translation="-0.15 0 -0.1" >
+	        <shape USE="Svechka">   </shape>
+	</transform>
+	<transform DEF="S5" translation="0.2 0 0.2" >
+	        <shape USE="Svechka">   </shape>
+	</transform>
+	<transform DEF="S6" translation="-0.2 0 0.2" >
+	        <shape USE="Svechka">   </shape>
+	</transform>
+	<transform DEF="S7" translation="0 0 0.3" >
+	        <shape USE="Svechka">   </shape>
+	</transform>
+	
+	<transform DEF="Chai" translation="1.1 .9 0.5" scale="0.3 0.3 0.3" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.15 .15 .15'></material>
+	            </appearance>
+	            <sphere></sphere>
+	        </shape>
+	</transform>
+	<transform DEF="Ni" translation="1.1 1.2 0.5" scale="0.1 0.1 0.1	" rotation="0 1 0 1.57">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.15 .15 .15'></material>
+	            </appearance>
+	            <torus innerRadius=".2" outerRadius="1.7"></torus>
+	        </shape>
+	</transform>
+	<transform DEF="K" translation="1.13 1 0.3" scale="0.05 0.2 0.05" rotation="1 0 0 -0.80">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.15 .15 .15'></material>
+	            </appearance>
+	            <cylinder></culinder>
+	        </shape>
+	</transform>
+	<transform DEF="Krygka" translation="-1.2 .9 -0.12" scale=".1 .15 .1" rotation="0 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.75 .75 .75'></material>
+	            </appearance>
+	            <cylinder></culinder>
+	        </shape>
+	</transform>
+	<transform DEF="Krygka2" translation="-1.2 .9 -0.24" scale=".1 .15 .1" rotation="0 1 0 1.57">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='.15 .15 .15'></material>
+	            </appearance>
+	            <torus innerRadius=".15" outerRadius=".5"></torus>
+	        </shape>
+	</transform>
+    </scene>
+</x3d>
+        </body> 
+    </html>
