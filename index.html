@@ -1,23 +1,13 @@
   <html> 
         <head> 
-            <title>Lab3</title> 			
-
-            <link rel='stylesheet' type='text/css' href='http://x3dom.org/download/dev/x3dom.css'></link> 
-            <script src="http://x3dom.org/download/dev/x3dom-full.js"></script>
-  
-
+            <title>Lab1</title> 			
+            <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script> 
+            <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link> 
         </head> 
         <body> 
 <h1>Klimov M.V. 4842</h1>
           <x3d width='87em' height='37em'>
     <scene>
-   <navigationInfo id="head" headlight='true' type='"ANY"'></navigationInfo>
- <fog color= '1 1 1' fogtype='EXPONENTIAL' visibilityRange = '10'></fog>	         
-	         
-	<directionalLight color='1 1 1' attenuation='1 0 0' on = 'true' global = 'false' direction='0 -1 0'  location= '0 5 0' shadowIntensity='0.5'  shadowCascades="1" shadowFilterSize="16" shadowMapSize="512"></directionalLight >
-
-
-
 <transform translation="0 -0.7 0" scale="4 4 4" rotation="1 0 0 -1.57">	      
   <shape>
 	            <appearance>
@@ -36,7 +26,7 @@
 </transform>
 	<background color=".1 .1 .1"> </background>
 	<transform DEF="box1" translation="-1.7 0 -0.2" scale="0.1 0.7 0.1">
-	        <shape DEf="NOZKA">
+	        <shape>
 	            <appearance>
 	                <material diffuseColor='0.9608 0.9608 0.8627'></material>
 	            </appearance>
@@ -44,15 +34,27 @@
 	        </shape>
 	</transform>
 	<transform DEF="box2" translation="1.7 0 -0.2" scale="0.1 0.7 0.1">
-	        <shape USE ="NOZKA">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='0.9608 0.9608 0.8627'></material>
+	            </appearance>
+	            <box></box>
 	        </shape>
 	</transform>
 	<transform DEF="box3" translation="-1.7 0 1.2" scale="0.1 0.7 0.1">
-	        <shape USE ="NOZKA">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='0.9608 0.9608 0.8627'></material>
+	            </appearance>
+	            <box></box>
 	        </shape>
 	</transform>
 	<transform DEF="box4" translation="1.7 0 1.2" scale="0.1 0.7 0.1">
-	        <shape USE ="NOZKA">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='0.9608 0.9608 0.8627'></material>
+	            </appearance>
+	            <box></box>
 	        </shape>
 	</transform>
 	<transform DEF="box5" translation="0 0.7 0.5" scale="2 0.1 1">
@@ -95,8 +97,55 @@
 	            <Cylinder></Cylinder>
 	        </shape>
 	</transform>
-<Group DEF="Svechka">
 	<transform DEF="S1" translation="0 1.5 0.5" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+	<transform DEF="S2" translation=".2 1.5 .2" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+	<transform DEF="S3" translation="0.15 1.5 0.35" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+	<transform DEF="S4" translation="-0.15 1.5 0.4" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+	<transform DEF="S5" translation="0.2 1.5 0.7" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+	<transform DEF="S6" translation="-0.2 1.5 0.7" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 1 1'></material>
+	            </appearance>
+	            <Cylinder></Cylinder>
+	        </shape>
+	</transform>
+	<transform DEF="S7" translation="0 1.5 0.8" scale="0.01 0.1 0.01" rotation="1 0 0 3.14">
 	        <shape>
 	            <appearance>
 	                <material diffuseColor='1 1 1'></material>
@@ -113,26 +162,60 @@
 		<sphere></sphere>
 	        </shape>
 	</transform>
-</Group>
-	<transform DEF="S2" translation=".2 0 -0.3">
-	        <shape USE="Svechka">   </shape>
+	<transform DEF="O2" translation="0.2 1.6 0.2" scale="0.01 0.04 0.01" rotation="1 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 0 0' ></material>
+	            </appearance>
+	            <cone></cone>
+		<sphere></sphere>
+	        </shape>
 	</transform>
-	<transform DEF="S3" translation="0.15 0 -0.15">
-	        <shape USE="Svechka">   </shape>
+	<transform DEF="O3" translation="0.15 1.6 0.35" scale="0.01 0.04 0.01" rotation="1 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 0 0' ></material>
+	            </appearance>
+	            <cone></cone>
+		<sphere></sphere>
+	        </shape>
 	</transform>
-	<transform DEF="S4" translation="-0.15 0 -0.1" >
-	        <shape USE="Svechka">   </shape>
+	<transform DEF="O4" translation="-0.15 1.6 0.4" scale="0.01 0.04 0.01" rotation="1 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 0 0' ></material>
+	            </appearance>
+	            <cone></cone>
+		<sphere></sphere>
+	        </shape>
 	</transform>
-	<transform DEF="S5" translation="0.2 0 0.2" >
-	        <shape USE="Svechka">   </shape>
+	<transform DEF="O5" translation="0.2 1.6 0.7" scale="0.01 0.04 0.01" rotation="1 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 0 0' ></material>
+	            </appearance>
+	            <cone></cone>
+		<sphere></sphere>
+	        </shape>
 	</transform>
-	<transform DEF="S6" translation="-0.2 0 0.2" >
-	        <shape USE="Svechka">   </shape>
+	<transform DEF="O6" translation="-0.2 1.6 0.7" scale="0.01 0.04 0.01" rotation="1 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 0 0' ></material>
+	            </appearance>
+	            <cone></cone>
+		<sphere></sphere>
+	        </shape>
 	</transform>
-	<transform DEF="S7" translation="0 0 0.3" >
-	        <shape USE="Svechka">   </shape>
+	<transform DEF="O7" translation="0 1.6 0.8" scale="0.01 0.04 0.01" rotation="1 0 0 0">
+	        <shape>
+	            <appearance>
+	                <material diffuseColor='1 0 0' ></material>
+	            </appearance>
+	            <cone></cone>
+		<sphere></sphere>
+	        </shape>
 	</transform>
-	
 	<transform DEF="Chai" translation="1.1 .9 0.5" scale="0.3 0.3 0.3" rotation="1 0 0 3.14">
 	        <shape>
 	            <appearance>
