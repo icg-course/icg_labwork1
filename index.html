@@ -1,13 +1,184 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html> 
+<head> 
+<title>Lab1</title> 
+<script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'>
+    // JS
+</script> 
+<link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link> 
+</head> 
+<body> 
+<h1>Prokopeva S.L. 4843</h1> 
+<x3d width='90em' height='40em'> 
+    <scene> 
+<!-- plane x3dom-->
+        <transform translation="0 -0.7 0" rotation="1 0 0 -1.57"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='.3 .5 .7'></material> 
+                </appearance> 
+                <plane size= '4 4 ' ></plane> 
+            </shape> 
+        </transform> 
+<!-- Text x3dom-->        
+        <transform DEF="Text" translation="0 3 0"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='1 1 1'></material> 
+                </appearance> 
+                <text string="Predmeti" ></text> 
+            </shape> 
+        </transform>              
+                    <background color="white"> </background> 
+<!-- Box x3dom-->           
+        <transform DEF="nozhka1" translation="-1.7 0 -0.2" > 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='0.365 0.365 0.8627'></material> 
+            </appearance> 
+            <box size="0.1 1.3 0.1"></box> 
+        </shape> 
+       </transform> 
+<!-- Box x3dom-->           
+        <transform DEF="nozhka2" translation="1.7 0 -0.2" > 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='0.365 0.365 0.8627'></material> 
+            </appearance> 
+            <box size="0.1 1.3 0.1"></box> 
+        </shape> 
+       </transform> 
+<!-- Box x3dom-->    
+        <transform DEF="nozhka3" translation="-1.7 0 1.2" > 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='0.365 0.365 0.8627'></material> 
+            </appearance> 
+            <box size="0.1 1.3 0.1"></box> 
+        </shape> 
+       </transform> 
+<!-- Box x3dom-->    
+        <transform DEF="nozhka4" translation="1.7 0 1.2" > 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='0.365 0.365 0.8627'></material> 
+            </appearance> 
+            <box size="0.1 1.3 0.1"></box> 
+        </shape> 
+    </transform> 
+<!-- Box x3dom-->    
+        <transform DEF="stpleshnica" translation="0 0.7 0.5" > 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='0.365 0.9608 0.8627'></material>
+		 </appearance> 
+            <box size="4 0.1 2"></box> 
+                    <Imagetexture url ='stol.png'></Imagetexture> 
+            <texturetransform rotation = '-1.57'></texturetransform>
+      </shape> 
+    </transform> 
+<!-- Cone x3dom-->    
+        <transform DEF="Tarelka" translation="1.5 .75 0.5"  rotation="1 0 0 3.14"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='0.365 0.365 0.8627'></material> 
+                </appearance> 
+                <cone bottomradius="0.4" height="0.1"></cone> 
+            </shape> 
+        </transform> 
+<!-- Cone x3dom-->    
+        <transform DEF="Tarelka1" translation="-1.5 .75 0.5"  rotation="1 0 0 3.14"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='0.365 0.365 0.8627'></material> 
+                </appearance> 
+                <cone bottomradius="0.4" height="0.1"></cone> 
+               </shape> 
+            </transform> 
+<!-- Torus x3dom-->    
+        <transform DEF="ponchik" translation="-1.5 .85 0.5"  rotation="1 0 0 1.57"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='.5 .1 .5'></material> 
+                </appearance> 
+                <Torus innerRadius=".05" outerRadius=".1"></Torus> 
+            </shape> 
+        </transform> 
+<!-- Sphere x3dom-->    
+        <transform DEF="frukt" translation="1.5 0.9 0.5"  rotation="1 0 0 3.14"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='255 69 0'></material> 
+                </appearance> 
+                <Sphere radius=".1"></Sphere> 
+            </shape> 
+        </transform> 
+        
+<!-- Chainik-->         
+<!-- Sphere x3dom-->           
+        <transform DEF="Chainik" translation="0 .95 0.5"  rotation="1 0 0 3.14"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='1 1 1'></material> 
+                </appearance> 
+                <sphere radius="0.3"></sphere> 
+            </shape> 
+        </transform> 
+<!-- Torus x3dom-->   
+        <transform DEF="ruchka" translation="0 1.2 0.5" scale="0.1 0.1 0.1 " rotation="0 1 0 1.57"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='.15 .15 .15'></material> 
+                </appearance> 
+                    <torus innerRadius=".2" outerRadius="1.7"></torus> 
+              </shape> 
+            </transform> 
+<!-- Cylinder x3dom-->             
+        <transform DEF="nosik" translation="0.03 1 0.3"  rotation="1 0 0 -0.80"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='.15 .15 .15'></material> 
+                </appearance> 
+                <cylinder radius=".05" height=".5"></cylinder> 
+            </shape> 
+        </transform> 
+<!-- Chainik -->                
+<!-- Cylinder x3dom-->         
+        <transform DEF="Krygka" translation="-1.2 .9 -0.12"  rotation="0 0 0 0"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='.75 .75 .75'></material> 
+                </appearance> 
+                <cylinder radius=".1" height=".3"></cylinder> 
+            </shape> 
+        </transform> 
+<!-- Torus x3dom-->         
+        <transform DEF="ruchka" translation="-1.2 .9 -0.24" scale=".1 .15 .1" rotation="0 1 0 1.57"> 
+            <shape> 
+                <appearance> 
+                      <material diffuseColor='.15 .15 .15'></material> 
+                </appearance> 
+                      <torus innerRadius=".15" outerRadius=".5"></torus> 
+             </shape> 
+        </transform> 
+<!-- Cylinder x3dom-->                 
+        <transform DEF="Krygka1" translation=" 1.2 .9 -0.12"  rotation="0 0 0 0"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='.75 .75 .75'></material> 
+                </appearance> 
+                <cylinder radius=".1" height=".3"></cylinder> 
+            </shape> 
+        </transform> 
+<!-- Torus x3dom-->                 
+        <transform DEF="ruchka1" translation=" 1.2 .9 -0.24" scale=".1 .15 .1" rotation="0 1 0 1.57"> 
+            <shape> 
+                <appearance> 
+                    <material diffuseColor='.15 .15 .15'></material> 
+                </appearance> 
+                    <torus innerRadius=".15" outerRadius=".5"></torus> 
+            </shape> 
+        </transform> 
+</scene> 
+</x3d> 
+</body> 
 </html>
