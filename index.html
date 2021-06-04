@@ -1,13 +1,129 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+﻿<html>
+<head>
+    <title>Lab1</title>
+    <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'>
+     // JS
+    </script>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
+</head>
+<body>
+    <h1>R.S.Khalikov 4843</h1>
+    <x3d width='90em' height='40em'>
+        <Scene>
+            <!--Text-->
+            <transform DEF="Text" translation="0 2 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='1 1 1'></material>
+                    </appearance>
+                    <text solid="false" string="coffee time"></text>
+                </shape>
+            </transform>
+            <!--Plane-->
+            <Transform DEF="plane" translation="0 -1 0" rotation="1 0 0 -1.5708">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0.5 0.5 0.5'></material>
+                    </appearance>
+                    <plane size='5 5'></plane>
+                </shape>
+            </Transform>
+            <background color=".1 .1 .1"></background>
+            <!--stol-->
+            <Transform DEF="stol" translation="0 0 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor='1 0.6 0.2'></material>
+                        <Imagetexture url='stol.png'></Imagetexture>
+                    </appearance>
+                    <box size="2 0.1 2"></box>
+                </shape>
+            </Transform>
+                <!--Nojki stola-->
+                <transform DEF="opora1" translation="0.6 -0.5 0.5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.5 0.2 0.1'></material>
+                        </appearance>
+                        <Cylinder radius="0.1" height="1"></Cylinder>
+                    </shape>
+                </transform>
+                <transform DEF="opora2" translation="0.6 -0.5 -0.5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.5 0.2 0.1'></material>
+                        </appearance>
+                        <Cylinder radius="0.1" height="1"></Cylinder>
+                    </shape>
+                </transform>
+                <transform DEF="opora3" translation="-0.6 -0.5 0.5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.5 0.2 0.1'></material>
+                        </appearance>
+                        <Cylinder radius="0.1" height="1"></Cylinder>
+                    </shape>
+                </transform>
+                <transform DEF="opora4" translation="-0.6 -0.5 -0.5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.5 0.2 0.1'></material>
+                        </appearance>
+                        <Cylinder radius="0.1" height="1"></Cylinder>
+                    </shape>
+                </transform>
+                <!--Lampa-->
+                <Transform DEF="sphere" translation="0.5 0.2 0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.2 0.1 0.13'></material>
+                        </appearance>
+                        <sphere radius="0.2"></sphere>
+                    </shape>
+                </Transform>
+                <Transform DEF="sphere2" translation="0.5 0.4 0" scale="1.6 2 1.6">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.2 0.1 0.13'></material>
+                        </appearance>
+                        <sphere radius="0.1"></sphere>
+                    </shape>
+                </Transform>
+                <Transform DEF="lampa" translation="0.5 1 0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='1 1 0'></material>
+                        </appearance>
+                        <cone bottomRadius="0.4" height="0.35"></cone>
+                    </shape>
+                </Transform>
+                <Transform DEF="cone" translation="0.5 0.8 0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.2 0.1 0.13'></material>
+                        </appearance>
+                        <cone bottomRadius="0.1" height="0.5"></cone>
+                    </shape>
+                </Transform>
+                <!--Chashka-->
+                <transform DEF="cup" translation="-0.7 0.2 0.35">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.5 0.3 0.3'></material>
+                        </appearance>
+                        <Cylinder radius="0.15" height="0.4"></Cylinder>
+                    </shape>
+                </transform>
+                <!--ruchkachashki-->
+                <transform DEF="ruchka" translation="-0.5 0.2 0.3" rotation="0 0 1 1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor='0.5 0.3 0.3'></material>
+                        </appearance>
+                        <Torus innerradius="0.01" outerradius="0.09"></Torus>
+                    </shape>
+                </transform>
+        </Scene>
+    </x3d>
+</body>
 </html>
