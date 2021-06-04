@@ -1,13 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Гвн2</title>
+    <link rel="stylesheet" href="style.css"></link>
+<script src="script.js"></script>
+<script type='text/javascript'
+src='https://www.x3dom.org/download/dev/x3dom-full.js'> </script>
+<link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link>
+</head>
+
+<body>
+    <h1>Калмыков Д.А. 4842</h1>
+    <x3d width="1024px" height="768px">
+        <Scene>
+            <Transform>
+                <Shape>
+                    <Appearance>
+                        <ImageTexture url = "SlavaUkraine.jpg"></ImageTexture>
+                        <Material diffuseColor = '#ff041a'></Material>
+                    </Appearance>
+                    <box></box>
+                </Shape>
+            </Transform>
+            <Transform translation="0 1.5 0">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#ff041a'></Material>
+                    </Appearance>
+                    <Sphere></Sphere>
+                </Shape>
+            </Transform>
+            <Transform translation = "-0.3 1.7 1" rotation = "1 0 0 1.5708">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#735184'></Material>
+                    </Appearance>
+                    <Cylinder radius = "0.2 " height = "0.2"></Cylinder>
+                </Shape>
+            </Transform>
+            <Transform translation = "0.3 1.7 1" rotation = "1 0 0 1.5708">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#735184'></Material>
+                    </Appearance>
+                    <Cylinder radius = "0.2 " height = "0.2"></Cylinder>
+                </Shape>
+            </Transform>
+            <Transform translation = "0 1.3 1">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#45161c'></Material>
+                    </Appearance>
+                    <Torus InnerRadius = "0.1" OuterRadius = "0.2"></Torus>
+                </Shape>
+            </Transform>
+            <Transform translation = "-1 0 0" rotation ="0 0 1 2">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#45161c'></Material>
+                    </Appearance>
+                    <Cone Radius = "0.5"></Cone>
+                </Shape>
+            </Transform>
+            <Transform translation = "1 0.5 0" rotation ="0 0 1 -1">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#45161c'></Material>
+                    </Appearance>
+                    <Cone Radius = "0.5"></Cone>
+                </Shape>
+            </Transform>
+            <Transform translation = "-0.4 -1 0" rotation = "1 0 0 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#45161c'></Material>
+                    </Appearance>
+                    <Cone BottomRadius = "0.7"></Cone>
+                </Shape>
+            </Transform>
+            <Transform translation = "0.4 -1 0" rotation = "1 0 0 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#45161c'></Material>
+                    </Appearance>
+                    <Cone BottomRadius = "0.7"></Cone>
+                </Shape>
+            </Transform>
+            <Transform translation = "0.4 -2 0.3">
+                <Shape>
+                    <Appearance>
+                        <imageTexture url="Gub.jpg"></imageTexture>
+                        <TextureTransform scale = "2 1"></TextureTransform>
+                    </Appearance>
+                    <Box size = "0.5 0.2 1"></Box>  
+                </Shape>
+            </Transform>
+            <Transform translation = "-0.4 -2 0.3">
+                <Shape>
+                    <Appearance>
+                        <imageTexture url="Gub.jpg"></imageTexture>
+                    </Appearance>
+                    <Box size = "0.5 0.2 1"></Box>
+                </Shape>
+            </Transform>
+            <Transform translation = "-2 3.5 -2">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor = '#0000FF'></Material>
+                    </Appearance>
+                    <Text string = "Леонардо Месси"></Text>
+                    <fontstyle family = "Times new Roman"></fontstyle>
+                </Shape>
+            </Transform>
+        </Scene>
+    </x3d>
+</body>
 </html>
