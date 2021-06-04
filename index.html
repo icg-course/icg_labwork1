@@ -2,12 +2,169 @@
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 1</title>
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <script src="https://x3dom.org/download/dev/x3dom-full.debug.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+    <h1>Мартынов В.Ю 4842</h1>
+    <X3D width="1280px" height="720px">
+      <Scene>
+          <!-- Луна -->
+          <transform Translation="0 -1 0">
+          <shape>
+            <appearance>
+              <ImageTexture url="Moon.jpg"></ImageTexture>
+            </appearance>
+            <sphere radius="6"></sphere>
+          </shape>
+        </transform>
+          <!-- Флагшток -->
+          <Transform Translation="-1 6.3 0">
+          <shape>
+            <appearance>
+              <material diffusecolor="0.5 0.5 0.5"></material>
+            </appearance>
+            <Cylinder radius="0.05" height="3"></Cylinder>
+          </shape>
+          </Transform>
+
+          <!-- Флаг -->
+          <Transform Translation="-0.5 7.5 0">
+            <shape>
+              <appearance>
+                <twosidedmaterial></twosidedmaterial>
+                <ImageTexture url="sr.jpg"></ImageTexture>
+              </appearance>
+              <Plane Size="1 0.6"></Plane>
+            </shape>
+            </Transform>
+
+          <!-- Элемент флага 1 -->
+            <Transform Translation="-1 7.8 0" rotation ="1 0 0 1.57">
+              <shape>
+                <appearance>
+                  <material diffusecolor="0.8 0.9 0.8"></material>
+                </appearance>
+                <torus innerRadius='0.02' outerRadius='0.04'></torus>
+              </shape>
+              </Transform>
+
+          <!-- Элемент флага 2 -->
+              <Transform Translation="-1 7.2 0" rotation ="1 0 0 1.57">
+                <shape>
+                  <appearance>
+                    <material diffusecolor="0.8 0.9 0.8"></material>
+                  </appearance>
+                  <torus innerRadius='0.02' outerRadius='0.04'></torus>
+                </shape>
+                </Transform>
+                
+          <!-- Стул -->
+
+               <!-- ножка 1 -->
+              <Transform Translation="-0.25 5 0" rotation ="1 0 0 1.57">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="wood.jpg"></ImageTexture>
+                  </appearance>
+                  <box size="0.05 0.05 1"></box>
+                </shape>
+                </Transform>
+
+                <!-- ножка 2 -->
+                <Transform Translation="0.25 5 0" rotation ="1 0 0 1.57">
+                  <shape>
+                    <appearance>
+                      <ImageTexture url="wood.jpg"></ImageTexture>
+                    </appearance>
+                    <box size="0.05 0.05 1"></box>
+                  </shape>
+                  </Transform>
+
+                <!-- ножка 3 -->
+                  <Transform Translation="-0.25 5 0.5" rotation ="1 0 0 1.57">
+                    <shape>
+                      <appearance>
+                        <ImageTexture url="wood.jpg"></ImageTexture>
+                      </appearance>
+                      <box size="0.05 0.05 1"></box>
+                    </shape>
+                    </Transform>
+
+                <!-- ножка 4 -->
+                    <Transform Translation="0.25 5 0.5" rotation ="1 0 0 1.57">
+                      <shape>
+                        <appearance>
+                          <ImageTexture url="wood.jpg"></ImageTexture>
+                        </appearance>
+                        <box size="0.05 0.05 1"></box>
+                      </shape>
+                      </Transform>
+
+                <!-- сиденье -->
+                    <Transform Translation="0 5.5 0.25" rotation ="1 0 0 1.57">
+                          <shape>
+                            <appearance>
+                              <ImageTexture url="wood.jpg"></ImageTexture>
+                            </appearance>
+                            <box size="0.56 0.56 0.1"></box>
+                          </shape>
+                          </Transform>
+                <!-- Спинка -->
+                    <Transform Translation="0 5.9 0" rotation ="1 0 0 1.57">
+                      <shape>
+                        <appearance>
+                          <ImageTexture url="wood.jpg"></ImageTexture>
+                        </appearance>
+                        <box size="0.56 0.05 0.7"></box>
+                      </shape>
+                      </Transform>
+                <!-- Текст -->
+                    <Transform Translation="-0.9 6.5 0" scale="0.5 0.5">
+                      <shape>
+                        <appearance>
+                          <material diffusecolor="#ff0000"></material>
+                        </appearance>
+                        <text string="Присядь">
+                          <fontstyle family="Helvetica sans-serif"></fontstyle>
+                          </text>
+                      </shape>
+                      </Transform>
+                <!-- Спутник -->
+                <Transform Translation="-3 7 -5" rotation ="0 0 1 1.7">
+                  <shape>
+                    <appearance>
+                      <ImageTexture url="sptn.jpg"></ImageTexture>
+                    </appearance>
+                    <cone></cone>
+                  </shape>
+                  </Transform>
+
+                  <!-- Часть спутника 1 -->
+                  <Transform Translation="-1 6.25 -5" rotation ="0 0 1 1.5">
+                    <shape>
+                      <appearance>
+                        <ImageTexture url="sptnpt.jpg"></ImageTexture>
+                      </appearance>
+                      <cylinder radius="0.1" height="2.1"></cylinder>
+                    </shape>
+                    </Transform>
+
+                   <!-- Часть спутника 2 -->
+                    <Transform Translation="-1.3 8.25 -5" rotation ="0 0 1 1.9">
+                      <shape>
+                        <appearance>
+                          <ImageTexture url="sptnpt.jpg"></ImageTexture>
+                        </appearance>
+                        <cylinder radius="0.1" height="2.1"></cylinder>
+                      </shape>
+                      </Transform>
+                    <!-- Фон -->
+                    <Background backUrl='space.jpg' ></Background>
+                    <Viewpoint position="0 5 10" orientation="0 0 0 0"
+                    zNear="0" zFar="100" centerOfRotation="0.00000 0.00000 0.00000" fieldOfView="0.9"></Viewpoint>
+      </Scene>
+   </X3D>
   </body> 
 </html>
