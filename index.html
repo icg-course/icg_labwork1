@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+  <head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <title>Laba_1</title>
+    <script src="http://www.x3dom.org/download/dev/x3dom.js"></script>
+    <link rel="stylesheet" href="http://www.x3dom.org/download/dev/x3dom.css/">
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+    <h1>Д. А. Ларченков</h1>
+    <X3D width = '1419px' height = '630px'> 
+    <Scene>
+      <Group DEF="Gr1">
+        <Transform rotation= "1 0 1 2.1">
+          <Transform rotation= "1 0 0 0.4">
+        <Transform rotation= "0 1 0 1.5"> 
+          <Shape>
+            <Appearance>
+              <ImageTexture url="Текстуры/швы-болты_44.png">
+              </ImageTexture>
+            <Material></Material>
+            </Appearance>
+            <Box size="5 0.4 0.4"></Box>
+          </Shape>
+        </Transform>
+        <Transform translation="-2.8 0 0"> 
+          <Shape>
+            <Appearance>
+              <ImageTexture url="Текстуры/ehUOQz.png">
+                </ImageTexture>
+            <Material></Material>
+            </Appearance>
+            <Cylinder height='3.32' radius='0.57'></Cylinder>
+          </Shape>
+        </Transform>
+      <Transform translation="2.8 0 0"> 
+        <Shape>
+          <Appearance>
+            <ImageTexture url="Текстуры/ehUOQz.png">
+            </ImageTexture>
+          <Material></Material>
+          </Appearance>
+          <Cylinder height='3.32' radius='0.57'></Cylinder>
+        </Shape>
+      </Transform>
+        <Transform>
+        <Shape>
+          <Appearance>
+            <ImageTexture url="Текстуры/eRxyb9.png">
+            </ImageTexture>>
+            <TextureTransform scale="3 3" rotation="0.78"></TextureTransform>
+           <Material>
+           </Material>
+          </Appearance>
+          <Sphere radius="1"></Sphere>
+        </Shape>
+      </Transform>
+      <Transform scale='1 1 1' rotation='0 1 0 1.55'>
+        <Shape>
+          <Appearance>
+            <ImageTexture url="Текстуры/10616486.png">
+            </ImageTexture>
+            <TextureTransform scale="3 3" rotation="0.78"></TextureTransform>
+           <Material>
+           </Material>
+          </Appearance>
+          <Torus innerRadius="0.7" outerRadius = "2.6"></Torus>
+        </Shape>
+      </Transform>
+      <Transform translation="-2.8 2.68 0">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="Текстуры/1500x500.png">
+            </ImageTexture>
+            <TextureTransform rotation="0.4"></TextureTransform>
+           <Material>
+           </Material>
+          </Appearance>
+          <Cone bottomRadius="0.5" height = "2"></Cone>
+        </Shape>
+      </Transform>
+      <Transform translation="2.8 2.68 0">
+        <Shape>
+          <Appearance>
+            <ImageTexture url="Текстуры/1500x500.png">
+            </ImageTexture>
+            <TextureTransform rotation="0.4"></TextureTransform>
+           <Material>
+           </Material>
+          </Appearance>
+          <Cone bottomRadius="0.5" height = "2"></Cone>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0"> 
+        <Shape>
+          <Appearance>
+            <ImageTexture url="Текстуры/швы-болты_44.png">
+            </ImageTexture>
+          <Material></Material>
+          </Appearance>
+          <Box size="5.7 0.5 0.7"></Box>
+        </Shape>
+      </Transform>
+      <Transform translation="3.38 1.1 0.32" rotation="1 0 0 -1.57">
+        <Transform rotation="0 1 0 1.57">
+        <Shape>
+          <Appearance>
+           <Material diffuseColor="1 0 1">
+           </Material>
+          </Appearance>
+          <Text string="Hiraishin" maxExtent="2.2" solid="false" > 
+           <FontStyle horizontal="true" leftToRight="true" ></FontStyle>
+          </Text>
+        </Shape>
+      </Transform>
+      </Transform>
+    </Transform>
+    </Transform>
+    </Group>
+    </Scene>
+    </X3D>
+  </body>
 </html>
+
