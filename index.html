@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
     <title>Лабораторная работа 1</title>
     <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <script src="https://x3dom.org/download/dev/x3dom-full.debug.js"></script>
   </head>
   <body>
     <h1>Parshin N.V. 4843</h1>
-    <X3D style="width:85%; height:85%; border:none;">
+    <x3d style="width:85%; height:85%; border:none;">
     <scene>
       <!--Корпус-->
         <transform rotation="1 0 0 -1.57">
@@ -36,7 +36,6 @@
               <Box size="4.8 4.8 0.7"></Box>
             </Shape>
         </transform>
-    </transform>
     <transform rotation="1 0 0 -1.57" translation="0 2.1 0">
         <Shape>
           <Appearance>
@@ -85,7 +84,8 @@
       </Appearance>
       <Box size="1.8 6 1.4"></Box>
     </Shape>
-</transform><transform rotation="0 0 1 -0.97" translation="3.2 -0.4 0">
+</transform>
+<transform rotation="0 0 1 -0.97" translation="3.2 -0.4 0">
     <Shape>
       <Appearance>
         <Material diffuseColor='.1 .1 .1'></Material>
@@ -93,7 +93,7 @@
       <Box size="6 1.4 1.8"></Box>
     </Shape>
 </transform>
-</transform><transform rotation="0 0 1 0.97" translation="-3.2 -0.4 0">
+<transform rotation="0 0 1 0.97" translation="-3.2 -0.4 0">
     <Shape>
       <Appearance>
         <Material diffuseColor='.1 .1 .1'></Material>
@@ -101,17 +101,7 @@
       <Box size="6 1.4 1.8"></Box>
     </Shape>
 </transform>
-<!--Земля-->
-</transform> <transform rotation="1 0 0 -1.57" translation="0 -2.4 0">
-  <Shape>
-    <Appearance>
-      <Material diffuseColor='green'></Material>
-      <ImageTexture
-      url =' "http://st.depositphotos.com/1782880/1328/i/450/depositphotos_13289313-Grass-Texture.jpg"'/>
-    </Appearance>
-    <Plane size="20 20" solid = "false"></Plane>
-  </Shape>
-</transform>
+
 <!--Алтарь-->
 <transform translation="1.2 2.8 1.2">
   <Shape>
@@ -217,6 +207,7 @@
     </Appearance>
     <Cylinder radius="0.1" height="1"></Cylinder>
   </Shape>
+</transform>
 <!--Крона дерева-->
 <transform translation="0 1 0">
   <Shape>
@@ -294,14 +285,24 @@
 <!--Текст-->
 <transform translation="6 12 -10.5">
   <shape>
-  <appearance>
-  <material diffuseColor='0 0 0'></material>
-  </appearance>
- <text string="AZTEC" solid = "false">
- </text>
- </shape>
+   <appearance>
+    <material diffuseColor='0 0 0'></material>
+   </appearance>
+   <text string="AZTEC" solid = "false">
+   </text>
+  </shape>
+</transform>
+ <!--Земля-->
+ <transform translation="-14 -2.4 -14">
+  <Shape>
+    <Appearance>
+      <Material diffuseColor='green'></Material>
+      <ImageTexture
+      url =' "http://st.depositphotos.com/1782880/1328/i/450/depositphotos_13289313-Grass-Texture.jpg"'/>
+    </Appearance> 
+  </Shape>
  </transform>
     </scene>
-    </x3d>
+   </x3d>
   </body> 
 </html>
