@@ -1,8 +1,4 @@
-<html>
-
-<head>
-
-    <title>Lab1</title>
+<title>Lab1</title>
 
     <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
 
@@ -13,106 +9,188 @@
 
 <body>
 
-
     <h1>M. S. Klykov 4842</h1>
 
     <x3d width='87em' height='37em'>
+
         <scene>
+
             <transform translation="0 -0.7 0" scale="4 4 4" rotation="1 0 0 -1.57">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#606060'></material>
+
                     </appearance>
+
                     <plane solid = "false"></plane>
+
                 </shape>
+
             </transform>
+
             <transform DEF="Text" translation="0 3 0">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='1 1 1'></material>
+
                     </appearance>
+
                     <text string="Kompudaxter"></text>
+
                 </shape>
+
             </transform>
+
             <background color=".1 .1 .1"> </background>
-            <!--object name-->
+
             <transform DEF="nozkaStulaLeftBack" translation="-1.7 0 -0.2" scale="0.1 0.7 0.1">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#D2691E'></material>
                         <ImageTexture url="./derevo.jpg"></ImageTexture>
                     </appearance>
+
                     <box></box>
+
                 </shape>
+
             </transform>
+
             <transform DEF="nozkaStulaRightBack" translation="1.7 0 -0.2" scale="0.1 0.7 0.1">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#D2691E'></material>
                         <ImageTexture url="./derevo.jpg"></ImageTexture>
                     </appearance>
+
                     <box></box>
+
                 </shape>
+
             </transform>
+
             <transform DEF="nozkaStulaLeftFront" translation="-1.7 0 1.2" scale="0.1 0.7 0.1">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#D2691E'></material>
                         <ImageTexture url="./derevo.jpg"></ImageTexture>
                     </appearance>
+
                     <box></box>
+
                 </shape>
+
             </transform>
+
             <transform DEF="nozkaStulaRightFront" translation="1.7 0 1.2" scale="0.1 0.7 0.1">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#D2691E'></material>
                         <ImageTexture url="./derevo.jpg"></ImageTexture>
                     </appearance>
+
                     <box></box>
+
                 </shape>
+
             </transform>
+
             <transform DEF="doska" translation="0 0.7 0.5" scale="2 0.1 1">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#D2691E'></material>
                         <ImageTexture url="./derevo.jpg"></ImageTexture>
                     </appearance>
+
                     <box></box>
+
                 </shape>
+
             </transform>
+
             <transform DEF="stoikaDlyaMonitora" translation="0 .8 0.3" scale="0.4 0.05 0.4" rotation="1 0 0 3.14">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#E6E6FA'></material>
+
                     </appearance>
+
                     <cylinder></coylinder>
+
                 </shape>
+
             </transform>
+
             <transform DEF="monitor" translation="0 1.44 0.3" scale="0.6 0.40 0.03" >
+
                 <shape>
+
                     <appearance>
                         <material diffuseColor='#E6E6FA'></material>
                     </appearance>
+
                     <Box></Box>
+
                 </shape>
+
             </transform>
-            <transform DEF="videonaMonitore" translation="0 1.44 0.35" scale="0.6 0.40 0.03" >
+
+            <transform DEF="videoOnMonitor" translation="0 1.44 0.35" scale="0.6 0.40 0.03" >
+
                 <shape>
-                    <appearance>                
-                        <MovieTexture  url="./pepe.mp4" loop="true"></MovieTexture>
-                    </appearance>
-                    <plane></plane>
-                </shape>
-            </transform>
-            <transform DEF="nozkaDlyaMonitora" translation="0 0.9 0.3" scale="0.05 0.15 0.05" rotation="1 0 0 3.14">
-                <shape>
+
                     <appearance>
-                        <material diffuseColor='1 1 1'></material>
+
+                        
+                        <MovieTexture  url="./pepe.mp4" loop="true" ></MovieTexture>
                     </appearance>
-                    <Cylinder></Cylinder>
+
+                    <plane ></plane>
+
                 </shape>
+
             </transform>
+
+            <transform DEF="palkaDlyaMonitora" translation="0 0.9 0.3" scale="0.05 0.15 0.05" rotation="1 0 0 3.14">
+
+                <shape>
+
+                    <appearance>
+
+                        <material diffuseColor='1 1 1'></material>
+
+                    </appearance>
+
+                    <Cylinder></Cylinder>
+
+                </shape>
+
+            </transform>
+
             <transform DEF = "klaviatura" translation = "0  0.8 1.1" scale = "0.7 0.3 0.01" rotation = "1 0 0 -1.57">
                 <shape>
                     <appearance>
@@ -121,6 +199,7 @@
                         <Box></Box>
                         </shape>
             </transform>
+
             <transform DEF = "mouseOsnova" translation = "1.2 0.8 1.1" scale = "0.1 0.01 0.2" rotation = "0 0 0 0">
                 <Shape>
                     <Appearance>
@@ -129,6 +208,7 @@
                     <Box></Box> 
                   </Shape>
             </transform>
+
             <transform DEF = "mouseKnopkaLeft" translation = "1.14 0.8 0.95" scale = "0.05 0.065 0.05" rotation = "0 0 0 0">
                 <Shape>
                     <Appearance>
@@ -137,6 +217,7 @@
                     <Box></Box> 
                   </Shape>
             </transform>
+
             <transform DEF = "mouseKnopkaRight" translation = "1.26 0.8 0.95" scale = "0.05 0.065 0.05" rotation = "0 0 0 0">
                 <Shape>
                     <Appearance>
@@ -145,6 +226,7 @@
                     <Box></Box> 
                   </Shape>
             </transform>
+
             <transform DEF = "mouseCenter" translation = "1.2 0.8 1.15" scale = "0.1 0.06 0.15" rotation = "0 0 0 0">
                 <Shape>
                     <Appearance>
@@ -153,7 +235,8 @@
                     <Box></Box> 
                   </Shape>
             </transform>
-            <transform DEF = "kolesomishi" translation = "1.2 0.85 0.97" scale = "0.04 0.02 0.03" rotation = "0 0 1 1.57">
+
+            <transform DEF = "mousekoleso" translation = "1.2 0.85 0.97" scale = "0.04 0.02 0.03" rotation = "0 0 1 1.57">
                 <Shape>
                     <Appearance>
                       <Material diffuseColor='#E0FFFF'></Material>
@@ -161,41 +244,77 @@
                     <Cylinder></Cylinder> 
                   </Shape>
             </transform>
+
             <transform DEF="Chai" translation="-1.5 .9 0.5" scale="0.3 0.3 0.3" rotation="1 0 0 3.14">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#303030'></material>
+
                     </appearance>
+
                     <sphere></sphere>
+
                 </shape>
+
             </transform>
-            <transform DEF="Nosik" translation="-1.5 1.2 0.5" scale="0.1 0.1 0.1 " rotation="0 1 0 1.97">
+
+            <transform DEF="Ni" translation="-1.5 1.2 0.5" scale="0.1 0.1 0.1 " rotation="0 1 0 1.97">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#303030'></material>
+
                     </appearance>
+
                     <torus innerRadius=".2" outerRadius="1.7"></torus>
+
                 </shape>
+
             </transform>
-            <transform DEF="Ruchka" translation="-1.41 1 0.7" scale="0.05 0.2 0.05" rotation="1 1 0 1" >
+
+            <transform DEF="K" translation="-1.41 1 0.7" scale="0.05 0.2 0.05" rotation="1 1 0 1" >
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#303030'></material>
+
                     </appearance>
+
                     <cylinder>
                         </culinder>
+
                 </shape>
+
             </transform>
+
             <transform DEF="Krygka" translation="-1.25 .9 1" scale=".1 .15 .1" rotation="0 0 0 0">
+
                 <shape>
+
                     <appearance>
+
                         <material diffuseColor='#FFFF00'></material>
+
                     </appearance>
+
                     <cylinder>
                         </culinder>
+
                 </shape>
+
             </transform>
+
         </scene>
+
     </x3d>
+
 </body>
+
 </html>
