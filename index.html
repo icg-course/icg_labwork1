@@ -1,13 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>laba1</title>
+<script src="https://www.x3dom.org/download/dev/x3dom.js"></script>
+<link rel="stylesheet" href="https://www.x3dom.org/download/dev/x3dom.css" />
+</head>
+<body>
+<h4>РАБОТА НОМЕР 1 НЕНАШЕВ С.А. </h4>
+ <x3d width="100vw" height="100vh">
+<scene>
+ <!--земля -->
+<transform translation="0 0 0">
+<shape>
+<appearance>
+ <imagetexture url="https://i.imgur.com/WrNRyuQ.jpg">
+ </imagetexture>
+</appearance>
+<sphere radius="3.8" > </sphere>
+</shape>
+</transform>
+<!--ядро -->
+<transform translation="0 0 0">
+<shape>
+<appearance>
+<material diffuseColor="#fa3402"></material>
+</appearance>
+<sphere radius="1.5" > </sphere>
+</shape>
+</transform>
+<!--Текст поехали -->
+<transform translation="-3.5 1.4 4.35">
+<shape>
+<appearance>
+<material diffuseColor="#64c680"></material>
+</appearance>
+<text string="Поехали!!">
+<fontstyle family="Helvetica sans-serif" style="bold"></fontstyle>
+</text>
+</shape>
+</transform>
+<transform rotation ="0 0 1 1.57" >
+<!--ракета основание -->
+<transform translation="-4 1 2.35" >
+<shape>
+<appearance> <imagetexture url="https://i.imgur.com/g0hdRgd.jpg">
+</imagetexture>
+ <texturetransform scale="1 1"></texturetransform>
+</appearance>
+<cylinder height="1" Radius = "0.2"> </cylinder>
+</shape>
+</transform>
+<!--ракета нижняя часть -->
+<transform translation="-4 0.4 2.35" rotation ="0 0 1 0" >
+<shape>
+<appearance>
+ <imagetexture url="https://i.imgur.com/CZM2Qoy.jpg">
+</imagetexture>
+ <texturetransform scale="1 1"></texturetransform>
+ </appearance>
+<box size="0.4 0.2 0.4"></box>
+</shape>
+</transform>
+<!--пламя -->
+<transform translation="-4 0.2 2.35" rotation ="1 0 0 0">
+<shape>
+<appearance>
+<imagetexture url="https://i.imgur.com/LJdSPfN.jpg">
+</imagetexture>
+<texturetransform scale="1 1"></texturetransform>
+</appearance>
+<cone bottomRadius="0.2" height="0.4" > </cone>
+</shape>
+</transform>
+<!--носовая часть -->
+<transform translation="-4 1.65 2.35" rotation ="1 0 0 0">
+<shape>
+<appearance>
+<imagetexture url="https://i.imgur.com/SLJcRLI.jpg">
+</imagetexture>
+<texturetransform scale="1 1"></texturetransform>
+</appearance>
+<cone bottomRadius="0.2" height="0.3" > </cone>
+</shape>
+</transform>
+</transform>
+<!--крылья у спутнка -->
+<transform translation="-2 4.4 2.35" rotation ="0 0 1 0" >
+<shape>
+<appearance>
+<material diffuseColor="#2c02fa"></material>
+</appearance><box size="0.75 0.2 0.01"></box>
+</shape>
+</transform>
+<transform translation="-2.4 4.4 2.35" rotation ="0 0 1 0" >
+<shape>
+<appearance>
+<material diffuseColor="#2c02fa"></material>
+</appearance>
+<box size="0.75 0.2 0.01"></box>
+</shape>
+</transform>
+<!--основание у спутника-->
+<transform translation="-2.2 4 2.4" rotation ="0 0 1 0" >
+<shape>
+<appearance>
+<imagetexture url="https://i.imgur.com/NtwOqkR.jpg">
+</imagetexture>
+<texturetransform scale="1 1"></texturetransform>
+</appearance>
+<cylinder height="1" Radius = "0.2"> </cylinder>
+</shape>
+</transform>
+ <Viewpoint position="-6.06334 4.20531 6.74917" orientation="-0.51196 -0.84732 -0.14121 0.83887" zNear="5.16810" zFar="17.34724" centerOfRotation="0.00000 0.00000 0.00000" fieldOfView=" 0.78540" description="defaultX3DViewpointNode"></Viewpoint>
+</scene>
+</x3d>
+</body>
 </html>
