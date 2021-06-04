@@ -1,13 +1,198 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+
+<head>
+  <meta charset="utf-8" />
+  <title>Лабораторная 1</title>
+  <script type='text/javascript' src='https://www.x3dom.org/download/x3dom-full.js'> </script>
+  <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+  </link>
+
+
+</head>
+
+<body>
+  
+  <x3d width='600px' height='400px'>
+    <scene>
+      <!-- cone -->
+      <transform translation='-3 0 0'>
+        <shape>
+          <appearance>
+            <material diffuseColor='0 1 0'></material>
+          </appearance>
+          <cone></cone>
+        </shape>
+      </transform>
+      <!-- torus -->
+      <transform translation='-3 -1.2 0' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <ImageTexture url='texttree.png'></ImageTexture>
+          </appearance>
+          <torus outerradius='1' innerradius='0.2'></torus>
+        </shape>
+      </transform>
+      <!-- sound -->
+      <Sound>
+        <AudioClip loop='true' enabled="true" url="musicshort.mp3"></AudioClip>
+      </Sound>
+
+      <transform translation='-3 1 0'>
+        <shape>
+          <appearance>
+            <material diffusecolor='#ff0000'></material>
+          </appearance>
+          <sphere radius='0.25'></sphere>
+        </shape>
+      </transform>
+
+
+      <transform translation='0 0 1.02'>
+        <shape>
+          <appearance>
+            <ImageTexture url='dababyhead.jpg'></ImageTexture>
+            <TextureTransform scale='1.01, 1.01'></TextureTransform>
+          </appearance>
+          <plane size='2, 2' solid='false'></plane>
+        </shape>
+      </transform>
+      <!-- front side of car -->
+      <transform translation='1.015 0 0' rotation='0 1 0 -1.5708'>
+        <shape>
+          <appearance>
+            <ImageTexture url='dababyfront2.png'></ImageTexture>
+            <TextureTransform></TextureTransform>
+          </appearance>
+          <plane size='2, 2' solid='false'> </plane>
+        </shape>
+      </transform>
+      <!-- TEXT -->
+      <transform translation='0 3 0'>
+        <shape>
+          <text string='Turned into convertible' length='3'>
+            <FontStyle family='SANS' style="BOLDITALIC"></FontStyle>
+          </text>
+          <appearance>
+            <material diffuseColor='#0000ff'></material>
+          </appearance>
+
+        </shape>
+      </transform>
+
+      <transform translation='0 3 0' rotation='0 1 0 3.14159'>
+        <shape>
+          <text string='Turned into convertible' length='3'>
+            <FontStyle family='SANS' style="BOLDITALIC"></FontStyle>
+          </text>
+          <appearance>
+            <material diffuseColor='#0000ff'></material>
+          </appearance>
+
+        </shape>
+      </transform>
+
+      <transform translation='0 0 -1.02'>
+        <shape>
+          <appearance>
+            <ImageTexture url='dababyhead.jpg'></ImageTexture>
+            <TextureTransform scale='1.01, 1.01'></TextureTransform>
+          </appearance>
+          <plane size='2, 2' solid='false'> </plane>
+        </shape>
+      </transform>
+
+      <transform>
+        <shape>
+          <appearance>
+            <material diffuseColor='1 1 1'></material>
+          </appearance>
+          <box></box>
+        </shape>
+      </transform>
+      <!-- right back wheel -->
+      <transform translation='-1 -1 1' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <ImageTexture url='carwheel.png'></ImageTexture>
+          </appearance>
+          <cylinder height='0.2' radius='0.3'></cylinder>
+        </shape>
+      </transform>
+      <!-- right back tire -->
+      <transform translation='-1 -1 0.97' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <material diffuseColor='0 0 0'></material>
+          </appearance>
+          <cylinder height='0.21' radius='0.32'></cylinder>
+        </shape>
+      </transform>
+      <!-- right front wheel -->
+      <transform translation='1 -1 1' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <ImageTexture url='carwheel.png'></ImageTexture>
+          </appearance>
+          <cylinder height='0.2' radius='0.3'></cylinder>
+        </shape>
+      </transform>
+
+      <!-- right back tire -->
+      <transform translation='1 -1 0.97' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <material diffuseColor='0 0 0'></material>
+          </appearance>
+          <cylinder height='0.21' radius='0.32'></cylinder>
+        </shape>
+      </transform>
+
+      <!-- left front wheel -->
+      <transform translation='1 -1 -1' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <ImageTexture url='carwheel.png'></ImageTexture>
+          </appearance>
+          <cylinder height='0.2' radius='0.3'></cylinder>
+        </shape>
+      </transform>
+
+      <!-- left front tire -->
+      <transform translation='1 -1 -0.97' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <material diffuseColor='0 0 0'></material>
+          </appearance>
+          <cylinder height='0.21' radius='0.32'></cylinder>
+        </shape>
+      </transform>
+      <!-- left back wheel -->
+      <transform translation='-1 -1 -1' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <ImageTexture url='carwheel.png'></ImageTexture>
+          </appearance>
+          <cylinder height='0.2' radius='0.3'></cylinder>
+        </shape>
+      </transform>
+
+      <!-- left front tire -->
+      <transform translation='-1 -1 -0.97' rotation='1 0 0 -1.5708'>
+        <shape>
+          <appearance>
+            <material diffuseColor='0 0 0'></material>
+          </appearance>
+          <cylinder height='0.21' radius='0.32'></cylinder>
+        </shape>
+      </transform>
+
+
+
+
+    </scene>
+  </x3d>
+
+</body>
+
 </html>
