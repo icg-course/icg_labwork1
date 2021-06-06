@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+ <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+        <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+<style>
+    section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+</style>
+
+<head>
+    <meta charset="utf-8"></meta>
+    <title>ЛР№1_Кутузов</title>
+    <link rel="stylesheet" href="http://x3dom.org/release/x3dom.css" />
+    <script src="http://x3dom.org/release/x3dom-full.js"></script>
+</head>
+
+<body style='width:100%; height:100%; border:0; margin:0; padding:0; background: linear-gradient(Green 0%, White 100%);'>
+    <x3d id='x3dElement' showStat='false' showLog='false' style='width:100%; height:100%; border:0'>
+        <scene DEF='scene'>
+            <viewpoint position="14.71854 15.00018 21.11263" orientation="-0.66475 0.73173 0.15059 0.81072"></viewpoint>
+            <transform translation='0 1 0' rotation='1 0 0 -1.57'>
+                <shape>
+                    <appearance>
+                        <ImageTexture url='qw.jpg'></ImageTexture>
+                    </appearance>
+                    <plane solid='false' size='16 8'></plane>
+                </shape>
+            </transform>
+            <transform translation='-3 2.5 0' rotation='0 0 0 -1.57'>
+                <Scene>
+                    <shape>
+                        <Appearance>
+                            <material diffuseColor='0.5 0.3 0.1'>
+                            </material>
+                        </Appearance>
+                        <cylinder height="3">
+                        </cylinder>
+                    </shape>
+                </Scene>
+            </transform>
+            <transform translation='-6 2 0' rotation='0 0 0 -1.57'>
+                <Scene>
+                    <Shape>
+                        <Appearance>
+                            <material diffuseColor='0.2 0.2 0.2'>
+                            </material>
+                        </Appearance>
+                        <Box size="3 2 2">
+                        </Box>
+                    </Shape>
+                </Scene>
+            </transform>
+
+            <transform translation='3 2.01 0' rotation='0 0 0 0'>
+                <shape>
+                    <appearance>
+                        <ImageTexture url='qx.jpg'></ImageTexture>
+                    </appearance>
+                    <cone></cone>
+                </shape>
+            </transform>
+
+            <transform translation='0 2.8 0' rotation='0 90 0 0'>
+                <shape>
+                    <appearance>
+                        <ImageTexture url='qd.jpg'></ImageTexture>
+                    </appearance>
+                    <sphere radius='1.8'></sphere>
+                </shape>
+            </transform>
+
+            <transform translation='6 2.52 0' rotation='0 90 0 -1'>
+                <shape>
+                    <appearance>
+                        <material diffuseColor='0.2 0.2 0.2'>
+                        </material>
+                        <material shininess='1'>
+                        </material>
+                    </appearance>
+                    <torus></torus>
+                </shape>
+            </transform>
+
+            <transform translation='3 -0.7 4'>
+                <shape>
+                    <appearance><material diffuseColor='0.6 0.1 0.2'></material></appearance>
+                    <text string='KUTUZ' solid='false'>
+                        <fontStyle family='SANS' horizontal='true' justify='MIDDLE' language='ru' leftToRight='true' size='2' spacing='2' style='BOLDITALIC' topToBottom='true'>
+                        </fontStyle>
+                    </text>
+                </shape>
+            </transform>
+        </scene>
+    </x3d>
+</body>
 </html>
