@@ -1,13 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
+
+<head>
     <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+
+
+    <script type='text/javascript' src='https://www.x3dom.org/download/dev/x3dom-full.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css' />
+
+</head>
+
+<body
+    style='width:100%; height:100%; border:0; margin:0; padding:0; background: url("1.jpg") no-repeat fixed; background-size: cover; background-position: center;'>
+
+
+
+    <X3D width="100vw" height="100vh">
+
+        <Scene>
+
+            <Viewpoint position="0.14445 4.05777 13.00574" orientation="-0.99821 0.02744 -0.05305 0.30304"
+                zNear="7.87097" zFar="20.98002" centerOfRotation="0.00000 0.00000 0.00000" fieldOfView="0.78540"
+                description="defaultX3DViewpointNode"></Viewpoint>
+
+            <Viewpoint position="-2.71559 4.18282 16.45954" orientation="-0.83830 -0.54518 -0.00529 0.29420"
+                zNear="7.87097" zFar="20.98002" centerOfRotation="0.00000 0.00000 0.00000" fieldOfView="0.78540"
+                description="defaultX3DViewpointNode"></Viewpoint>
+
+
+
+            <!-- тело -->
+
+            <transform scale='1 1 0.7'>
+                <shape>
+                    <Cylinder height='3' radius='1.5' side='true'></Cylinder>
+                    <appearance>
+                        <material diffusecolor='#a4c639'></material>
+                    </appearance>
+                </shape>
+            </transform>
+
+            <transform scale='1 0.7 0.7' translation='0 1.6 0'>
+                <shape>
+                    <sphere radius='1.5'></sphere>
+                    <appearance>
+                        <material diffusecolor='#a4c639'></material>
+                    </appearance>
+                </shape>
+            </transform>
+
+            <transform scale='1 0.1 0.7' translation='0 -1.5 0'>
+                <shape>
+                    <sphere radius='1.5'></sphere>
+                    <appearance>
+                        <material diffusecolor='#a4c639'></material>
+                    </appearance>
+                </shape>
+            </transform>
+
+            <transform translation='0 1.5 0' rotation='1 0 0 1.5708' scale='1 0.7 0.7'>
+                <shape>
+                    <torus innerradius='0.55' outterradius='1' solid='false'></torus>
+                    <appearance>
+                        <material diffusecolor='1 1 1'></material>
+                    </appearance>
+                </shape>
+            </transform>
+
+            <!-- глаза -->
+
+            <transform translation='-0.52 2 0.68'>
+                <shape DEF='eye'>
+                    <sphere radius='0.23'></sphere>
+                    <appearance>
+                        <material diffusecolor='1 1 1'></material>
+                    </appearance>
+                </shape>
+            </transform>
+
+            <transform translation='0.52 2 0.68'>
+                <shape USE='eye'>
+                </shape>
+            </transform>
+
+
+            <!-- конечности -->
+
+            <group DEF='limb'>
+                <transform translation='-2 0.5 0'>
+                    <shape>
+                        <Cylinder height='1.5' radius='0.4' side='true'></Cylinder>
+                        <appearance>
+                            <material diffusecolor='#a4c639'></material>
+                        </appearance>
+                    </shape>
+                </transform>
+
+                <transform translation='-2 1.25 0'>
+                    <shape>
+                        <sphere radius='0.4'></sphere>
+                        <appearance>
+                            <material diffusecolor='#a4c639'></material>
+                        </appearance>
+                    </shape>
+                </transform>
+
+                <transform translation='-2 -0.25 0'>
+                    <shape>
+                        <sphere radius='0.4'></sphere>
+                        <appearance>
+                            <material diffusecolor='#a4c639'></material>
+                        </appearance>
+                    </shape>
+                </transform>
+
+            </group>
+
+
+            <transform translation='4 0 0'>
+                <group USE='limb'>
+                </group>
+            </transform>
+
+            <!-- ноги -->
+
+            <transform translation='1.25 -2.5 0' scale='1 0.6 1'>
+                <group USE='limb'>
+                </group>
+            </transform>
+
+            <transform translation='2.75 -2.5 0' scale='1 0.6 1'>
+                <group USE='limb'>
+                </group>
+            </transform>
+
+            <!-- уши -->
+
+            <transform translation='-0.4 2.6 0' scale='0.1 0.4 0.1' rotation='0 0 1 0.6'>
+                <group USE='limb'>
+                </group>
+            </transform>
+
+            <transform translation='0.7 2.35 0' scale='0.1 0.4 0.1' rotation='0 0 1 -0.6'>
+                <group USE='limb'>
+                </group>
+            </transform>
+
+<!-- подставка  -->
+            <transform translation='0 -4 0'>
+                <shape>
+                    <box size='6 2 4'>
+                    </box>
+                    <appearance>
+                        <imagetexture url='wp.jpg'></imagetexture>
+                    </appearance>
+                </shape>
+            </transform>
+
+            <!-- Текст -->
+
+            <transform translation='0 -4 2.2'>
+                <shape>
+                    <appearance>
+                        <material diffusecolor='1 1 1'></material>
+                    </appearance>
+                    <Text string="Android" solid="false">
+                        <FontStyle size="1" style="BOLD" justify='MIDDLE' family='Calibri'> </FontStyle>
+                    </Text>
+                </shape>
+            </transform>
+
+            <!-- кепка -->
+
+            <transform translation='0 3 0'>
+                <shape>
+                    <Cone height='1' bottomradius='0.4' side='true'></Cone>
+                    <appearance>
+                        <imagetexture url='bd.jpg'></imagetexture>
+                        <texturetransform scale='1 1.1'></texturetransform>
+                    </appearance>
+                </shape>
+            </transform>
+
+            
+        </Scene>
+    </X3D>
+
+</body>
+
 </html>
